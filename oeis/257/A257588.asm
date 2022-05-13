@@ -6,9 +6,8 @@ lpb $0
   mov $2,$0
   mod $2,10
   pow $2,2
-  sub $2,$1
   div $0,10
-  div $1,49711
+  div $1,-1
   add $1,$2
 lpe
 gcd $0,$1

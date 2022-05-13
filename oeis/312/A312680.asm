@@ -8,16 +8,15 @@ add $0,$1
 mov $2,$1
 mov $3,$1
 trn $3,1
+sub $1,1
 mul $1,2
-sub $1,2
 add $0,$3
 add $0,4
 lpb $1
+  sub $1,2
   add $0,$1
-  sub $1,6
-  trn $1,2
+  trn $1,6
   sub $0,$1
-  sub $0,2
   trn $1,6
 lpe
 sub $0,4
