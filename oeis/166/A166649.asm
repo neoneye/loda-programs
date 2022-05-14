@@ -18,12 +18,10 @@ lpb $0
     sub $3,$4
   lpe
   div $0,$2
+  mul $1,3
   mov $4,$2
-  add $5,$2
-  lpb $5
-    mov $5,1
-    mul $4,9
-    add $4,9
-  lpe
+  mul $4,3
+  add $4,3
 lpe
-add $0,$1
+gcd $0,$1
+div $0,3
