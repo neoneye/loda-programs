@@ -14,4 +14,4 @@ lpb $0
   mov $1,$3
   mov $3,$5
 lpe
-gcd $0,$1
+mov $0,$1

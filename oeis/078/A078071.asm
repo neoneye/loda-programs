@@ -15,4 +15,4 @@ lpb $0
   sub $2,$1
   add $3,$2
 lpe
-add $0,$1
+mov $0,$1

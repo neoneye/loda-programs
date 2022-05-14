@@ -11,4 +11,4 @@ lpb $0
   gcd $3,$1
   add $1,$3
 lpe
-gcd $0,$1
+mov $0,$1
