@@ -17,8 +17,8 @@ lpb $1
   sub $1,6
   trn $1,10
   sub $0,$1
-  sub $0,2
   trn $1,6
+  sub $2,2
 lpe
 sub $0,4
 lpb $2
