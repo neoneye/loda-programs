@@ -7,9 +7,10 @@ lpb $0
   sub $0,$1
 lpe
 mov $2,$1
-mul $2,2
-add $2,1
-bin $1,$0
 sub $2,$0
-mul $2,$1
-mov $0,$2
+bin $1,$0
+add $0,$2
+add $0,1
+add $0,$2
+mul $1,$0
+mov $0,$1
