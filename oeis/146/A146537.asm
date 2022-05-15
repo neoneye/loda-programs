@@ -1,14 +1,13 @@
-; A146537: A144453/16.
-; Submitted by Jamie Morken(w3)
+; A146537: a(n) = A144453(n)/16.
+; Submitted by Simon Strandgaard
 ; 1,10,1,52,85,14,175,232,11,370,451,20,637,742,95,976,1105,46,1387,1540,21
 
 mul $0,4
-mov $2,$0
+mov $1,$0
 add $0,1
-add $2,$0
-add $2,7
-mul $2,$0
-mov $0,$2
-gcd $2,81
-div $0,$2
-div $0,8
+add $1,7
+div $1,4
+mul $1,$0
+mov $0,$1
+gcd $1,81
+div $0,$1

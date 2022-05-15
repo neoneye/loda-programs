@@ -4,14 +4,14 @@
 
 add $0,1
 pow $0,2
+add $0,5
+mov $1,1
 mov $3,$0
 div $3,4
 lpb $3
-  add $3,1
-  add $1,2
+  sub $1,2
   add $2,$3
-  sub $3,$1
+  add $3,$1
 lpe
-add $3,1
 add $2,$3
 mov $0,$2

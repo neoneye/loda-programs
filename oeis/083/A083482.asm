@@ -10,6 +10,7 @@ lpb $3
   mov $0,$2
   seq $0,19554 ; Smallest number whose square is divisible by n.
   mul $1,$0
-  add $2,$3
+  mul $2,$3
+  add $2,1
 lpe
 mov $0,$1
