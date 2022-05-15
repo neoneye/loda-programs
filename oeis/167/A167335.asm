@@ -17,12 +17,10 @@ lpb $0
     add $2,1
     sub $3,$4
   lpe
-  mul $1,2
-  mov $4,$2
-  mul $4,2
-  add $4,$2
-  add $4,1
   div $0,$2
+  mov $4,$2
+  add $4,$2
+  mul $4,3
+  add $4,2
 lpe
-gcd $0,$1
-div $0,2
+add $0,$1

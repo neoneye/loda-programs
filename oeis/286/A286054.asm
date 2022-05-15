@@ -8,10 +8,9 @@ div $0,2
 seq $0,284393 ; Positions of 1 in A284391; complement of A284392.
 mul $0,-1
 sub $2,$0
-sub $2,1
+sub $2,2
 mov $3,$2
 mul $3,4
-add $2,1
 mov $1,-1
 pow $1,$2
 min $2,1
@@ -20,6 +19,5 @@ lpb $2
   add $1,$3
 lpe
 mov $0,$1
-sub $0,5
 div $0,2
 add $0,2

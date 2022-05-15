@@ -12,10 +12,9 @@ add $3,1
 mov $0,$2
 lpb $0
   sub $0,1
-  mul $1,$4
+  mul $1,3
   add $1,$3
   trn $3,1
-  mov $4,3
   sub $1,$3
 lpe
 mov $0,$1
