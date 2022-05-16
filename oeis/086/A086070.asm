@@ -2,12 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,5,7,11,13,15,23,27,29,31,47,55,59,61,63,95,111,119,123,125,127,191,223,239,247,251,253,255,383,447,479,495,503,507,509,511,767,895,959,991,1007,1015,1019,1021,1023
 
-lpb $0
-  sub $0,1
-  mov $1,$0
-  max $1,0
-  seq $1,87136 ; Smallest positive number m such that A073642(m)=n.
-  mov $0,0
-lpe
+sub $0,1
+mov $2,1
+add $2,$0
+max $0,0
+seq $0,224195 ; Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
+sub $0,2
+mov $1,$2
 add $1,1
+max $1,$0
 mov $0,$1

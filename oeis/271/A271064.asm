@@ -9,12 +9,10 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,271060 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
-  sub $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2
+  mov $5,$0
 lpe
-min $4,1
-mul $4,$0
-sub $1,$4
+sub $1,$5
 mov $0,$1
