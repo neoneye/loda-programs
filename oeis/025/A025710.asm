@@ -1,15 +1,20 @@
 ; A025710: Index of 5^n within sequence of numbers of form 5^i*9^j.
-; Submitted by Simon Strandgaard
+; Submitted by WTBroughton
 ; 1,2,4,7,10,14,19,25,31,38,46,55,64,74,85,96,108,121,135,149,164,180,197,214,232,251,271,291,312,334,356,379,403,428,453,479,506,534,562,591,621,652,683,715,748,781,815,850,886,922,959,997,1036,1075,1115,1156,1198
 
-mov $1,2
-lpb $0
-  add $1,$0
-  mov $2,$0
-  mul $2,4
-  div $2,15
-  sub $0,1
-  sub $1,$2
+mov $2,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$2
+  sub $0,$3
+  mov $4,$0
+  mul $0,8
+  div $4,16
+  add $4,$0
+  div $4,11
+  add $4,1
+  add $1,$4
 lpe
-sub $1,1
 mov $0,$1
+add $0,1
