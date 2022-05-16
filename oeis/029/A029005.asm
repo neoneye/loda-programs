@@ -8,8 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,2
-  seq $2,25769 ; Expansion of 1/((1-x)(1-x^3)(1-x^8)).
+  seq $2,1399 ; a(n) is the number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of unlabeled multigraphs with 3 nodes and n edges.
   add $1,$2
   mov $3,8
 lpe
