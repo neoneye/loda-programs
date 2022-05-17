@@ -1,20 +1,22 @@
 ; A209246: Row sums of triangle A196020.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,3,6,7,12,12,18,15,27,20,30,28,36,30,50,31,48,49,54,42,72,50,66,60,77,60,96,56,84,94,90,63,120,80,114,93,108,90,144,90,120,130,126,90,182,110,138,124,151,135,192,108,156,166,180,120,216,140
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,339576 ; Row sums of triangle A236104.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+mov $3,$0
+mov $5,2
+lpb $5
+  sub $5,1
+  add $0,$5
+  sub $0,1
+  mov $4,$0
+  max $4,0
+  seq $4,339576 ; Row sums of triangle A236104.
+  mov $2,$5
+  mul $2,$4
+  mul $0,$5
+  add $1,$2
 lpe
-min $1,1
-mul $1,$0
-mov $0,$2
-sub $0,$1
+min $3,1
+mul $3,$4
+sub $1,$3
+mov $0,$1

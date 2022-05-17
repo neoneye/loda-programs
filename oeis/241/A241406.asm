@@ -11,6 +11,6 @@ add $0,$2
 div $2,2
 sub $2,2
 mov $1,3
-seq $1,98184 ; a(n) = 3a(n-1)+a(n-2)+a(n-3), a(0)=1, a(1)=1, a(2)=5.
+seq $1,315686 ; Coordination sequence Gal.6.209.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 mul $2,$1
 add $0,$2

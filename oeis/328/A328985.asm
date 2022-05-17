@@ -9,10 +9,10 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,328984 ; If n is even, a(n) = floor((5t+1)/2) where t=n/2; if n == 1 (mod 4) then a(n) = 10t+1 where t = (n-1)/4; and if n == 3 (mod 4) then a(n) = 10t+7 where t = (n-3)/4.
-  mov $2,$3
-  mul $2,$0
+  mul $0,16
   add $1,$2
-  mov $5,$0
+  mov $2,$0
 lpe
-sub $1,$5
+sub $1,$2
 mov $0,$1
+div $0,16
