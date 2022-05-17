@@ -9,8 +9,7 @@ div $1,3
 mul $1,2
 mul $0,7
 add $0,$1
+sub $0,3
 mul $0,2
 div $0,3
-sub $0,1
-trn $0,1
 add $0,1

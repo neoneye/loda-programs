@@ -23,8 +23,7 @@ lpb $0
   lpb $0
     dif $0,$2
     sub $2,1
-    sub $6,$4
-    mul $4,$2
+    add $4,$2
     sub $4,$6
     add $5,$4
     mul $5,$4
