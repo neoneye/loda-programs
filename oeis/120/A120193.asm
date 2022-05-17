@@ -12,4 +12,4 @@ lpb $0
   add $2,8
   div $2,7
 lpe
-add $0,$2
+mov $0,$2
