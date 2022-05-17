@@ -11,8 +11,9 @@ lpb $3
   seq $0,72272 ; Number of active cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 614", based on the 5-celled von Neumann neighborhood.
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
-  pow $4,$3
+  mov $5,$0
 lpe
-sub $1,$0
+sub $1,$5
 mov $0,$1
