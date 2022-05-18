@@ -5,8 +5,7 @@
 mov $1,8
 add $1,$0
 mov $2,$0
-sub $2,3
-trn $2,8
+trn $2,11
 sub $0,$2
 add $1,6
 mul $1,2
