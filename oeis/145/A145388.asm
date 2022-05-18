@@ -17,12 +17,12 @@ lpb $0
     add $2,1
     sub $3,$4
   lpe
-  sub $4,2
   mov $5,2
   lpb $0
     dif $0,$2
     mul $5,$2
   lpe
+  sub $5,2
   add $5,$4
   mul $1,$5
 lpe

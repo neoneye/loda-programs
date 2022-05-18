@@ -6,8 +6,7 @@ mov $1,$0
 trn $0,1
 seq $0,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
 add $1,$0
-add $1,$0
 div $1,$0
 add $1,$0
 mov $0,$1
-sub $0,2
+sub $0,1
