@@ -4,7 +4,6 @@
 
 mov $1,$0
 mov $3,$0
-mul $3,16
 add $3,1
 div $3,3
 add $3,4
@@ -16,7 +15,7 @@ sub $2,1
 div $2,3
 trn $2,1
 mov $4,$1
-mul $4,3
+mul $4,13
 add $3,$4
 div $3,3
 add $3,$2
