@@ -5,13 +5,12 @@
 add $0,1
 lpb $0
   sub $0,1
+  sub $1,$4
   add $2,$4
   min $2,$0
-  add $6,1
-  sub $1,$4
+  add $3,1
   mov $4,$1
   add $5,$2
-  mov $1,$6
+  mov $1,$3
 lpe
-add $3,$5
-mov $0,$3
+mov $0,$5
