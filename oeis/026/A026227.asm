@@ -5,11 +5,9 @@
 lpb $0
   trn $0,1
   seq $0,26232 ; a(n) = (1/3)*(s(n) + 1), where s = A026231.
-  mul $0,2
-  sub $0,1
   mov $1,$0
   mov $0,0
 lpe
+trn $1,1
 mov $0,$1
-div $0,2
 add $0,1

@@ -12,8 +12,7 @@ lpb $2
   add $4,$3
   mov $0,$1
   sub $0,$2
-  seq $0,26352 ; a(n) = floor(n*tau)+n+1.
-  sub $3,1
+  seq $0,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
   add $3,$0
   add $4,$3
 lpe
