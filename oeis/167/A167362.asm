@@ -10,7 +10,7 @@ lpb $0
   mul $1,$4
   mov $3,$0
   lpb $3
-    mov $4,$0
+    mul $4,$0
     mod $4,$2
     cmp $4,0
     cmp $4,0

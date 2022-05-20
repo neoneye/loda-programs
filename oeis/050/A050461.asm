@@ -9,8 +9,7 @@ lpb $0
   cmp $3,$0
   mul $3,$0
   pow $3,2
-  sub $0,2
-  trn $0,2
+  trn $0,4
   add $1,$3
   sub $2,1
 lpe

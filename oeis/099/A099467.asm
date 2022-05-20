@@ -4,12 +4,7 @@
 
 mov $1,$0
 seq $1,275973 ; A binary sequence due to Harold Jeffreys.
-add $1,$0
-mov $2,$1
-mul $2,2
-add $2,$1
 mul $0,3
-add $0,$2
-sub $0,4
-div $0,4
-add $0,1
+sub $0,$1
+div $0,2
+add $0,$1

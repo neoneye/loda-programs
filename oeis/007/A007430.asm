@@ -21,8 +21,6 @@ lpb $0
   lpb $0
     dif $0,$2
     sub $6,1
-    mul $4,$2
-    div $4,$2
     sub $4,$6
     add $4,1
     mul $5,$2
