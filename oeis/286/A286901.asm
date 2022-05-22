@@ -7,14 +7,13 @@ mov $2,$0
 add $2,2
 lpb $2
   sub $2,1
-  add $1,2
+  add $1,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   lpb $3
     div $3,4
     add $2,1
   lpe
   add $1,$2
-  sub $1,1
   add $3,$2
 lpe
 mov $0,$1
