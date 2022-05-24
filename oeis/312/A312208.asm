@@ -5,13 +5,12 @@
 mov $2,$0
 cmp $2,0
 mov $4,$0
+mul $4,3
 add $0,$2
 mov $3,$0
 seq $0,253262 ; Expansion of (x + x^2 + x^3) / (1 - x + x^2 - x^3 + x^4) in powers of x.
 mul $3,2
 sub $3,$0
-mov $5,$4
-mul $5,3
 mov $1,$3
-add $1,$5
+add $1,$4
 mov $0,$1

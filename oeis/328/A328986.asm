@@ -4,6 +4,6 @@
 
 mov $1,$0
 seq $1,1954 ; a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
-add $1,2
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+seq $0,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 add $0,$1
+add $0,1
