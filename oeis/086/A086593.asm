@@ -4,17 +4,17 @@
 
 mov $1,2
 mov $2,2
-mul $0,2
-add $0,1
 lpb $0
-  div $0,2
+  sub $2,$3
   add $3,$0
   mod $3,2
   mov $4,$2
+  div $0,2
   add $2,$1
   mul $3,$4
   add $1,$3
-  sub $2,$3
 lpe
+mul $2,2
+sub $2,$3
 mov $0,$2
 div $0,2
