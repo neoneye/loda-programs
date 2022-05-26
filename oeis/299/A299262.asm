@@ -11,12 +11,12 @@ add $8,$0
 add $8,1
 mov $4,$3
 mul $4,$8
+add $4,$0
 lpb $0
-  add $4,$0
+  trn $0,$4
   mov $8,2
   add $8,$4
   div $8,8
-  trn $0,$4
   sub $6,$8
   sub $6,2
 lpe
