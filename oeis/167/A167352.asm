@@ -28,8 +28,8 @@ lpb $0
     sub $4,$6
     add $5,$4
     mul $5,$4
-    mov $6,0
   lpe
   mul $1,$5
+  mov $6,0
 lpe
 mov $0,$1

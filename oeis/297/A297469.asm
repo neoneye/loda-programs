@@ -1,18 +1,19 @@
 ; A297469: Solution (bb(n)) of the system of 3 complementary equations in Comments.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,7,11,17,22,27,31,37,41,47,51,57,62,67,71,77,82,87,91,97,102,107,111,117,121,127,131,137,142,147,151,157,161,167,171,177,182,187,191,197,201,207,211,217,222,227,231,237,242,247,251,257,262,267,271,277,281,287,291,297,302,307,311,317,322,327,331,337,342,347,351,357,361,367,371,377,382,387,391,397,402,407,411,417,422,427,431,437,441,447,451,457,462,467,471,477,481,487,491,497
 
+mov $2,$0
+cmp $2,0
 mov $3,$0
-mul $3,5
-lpb $3
-  lpb $0
-    dif $0,4
-  lpe
-  mod $0,2
-  add $2,1
-  sub $3,1
-  max $3,1
-lpe
-add $2,$0
-mov $0,$2
-add $0,2
+mov $4,$0
+add $0,$2
+seq $0,261300 ; Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
+mod $0,2
+mul $3,2
+add $3,$0
+add $3,1
+mov $5,$4
+mul $5,3
+mov $1,$3
+add $1,$5
+mov $0,$1

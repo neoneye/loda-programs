@@ -8,8 +8,7 @@ lpb $0
   gcd $3,$0
   cmp $3,$0
   mul $3,$0
-  sub $0,2
-  trn $0,1
+  trn $0,3
   add $1,$3
   sub $2,1
 lpe
