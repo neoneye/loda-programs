@@ -4,17 +4,12 @@
 
 mov $1,$0
 mul $1,7
-add $1,7
 div $1,8
 mul $1,2
-add $1,4
-mov $2,$0
-mul $2,2
-sub $2,4
-add $2,$1
-div $2,3
-mul $2,2
-trn $2,1
-add $2,1
+add $1,2
+mul $0,5
+add $0,$1
+div $0,3
 mul $0,2
-add $0,$2
+trn $0,1
+add $0,1

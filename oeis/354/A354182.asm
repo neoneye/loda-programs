@@ -4,4 +4,5 @@
 
 mul $0,6
 seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
-seq $0,10764 ; a(n) = floor(n/2) mod floor(n/3).
+add $0,3
+div $0,6

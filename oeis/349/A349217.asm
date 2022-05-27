@@ -6,5 +6,4 @@ mov $1,$0
 seq $0,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
 mul $0,$1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $1,$0
-mov $0,$1
+add $0,$1

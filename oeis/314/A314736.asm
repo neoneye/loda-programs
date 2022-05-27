@@ -6,12 +6,8 @@ mov $1,$0
 add $1,4
 div $1,3
 mod $1,3
-mul $1,2
-mul $0,7
-add $0,1
-mul $0,2
-sub $0,$1
-add $0,1
+mul $0,14
+add $0,$1
 div $0,3
-trn $0,1
+trn $0,$1
 add $0,1

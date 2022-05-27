@@ -6,7 +6,6 @@ mov $1,$0
 seq $0,6068 ; a(n) is Gray-coded into n.
 trn $0,1
 seq $0,3188 ; Decimal equivalent of Gray code for n.
-add $0,1
 cmp $1,0
 cmp $1,0
-mul $0,$1
+add $0,$1
