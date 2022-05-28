@@ -5,15 +5,14 @@
 mov $1,$0
 mul $0,2
 lpb $0
-  add $0,1
   add $2,9
   sub $0,$2
-  trn $0,1
+  max $0,0
   sub $0,4
   add $0,$2
   add $2,1
 lpe
 mul $1,4
-trn $0,1
+trn $1,1
 add $0,$1
 add $0,1
