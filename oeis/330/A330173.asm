@@ -1,50 +1,9 @@
 ; A330173: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 4,9,15,19,25,30,34,40,45,51,55,60,66,70,76,81,87,91,96,102,106,112,117,121,127,132,138,142,148,153,157,163,168,174,178,183,189,193,199,204,208,214,219,225,229,235,240,244,250,255,261,265,270,276,280,286
 
-sub $6,2
-add $0,1
-bin $4,$0
-mov $2,1
-add $3,26
-div $4,$6
-mul $3,4
-lpb $3
-  mov $8,$1
-  mov $8,2
-  add $4,2
-  sub $8,1
-  add $2,$1
-  max $7,1
-  mul $1,2
-  mul $4,$0
-  add $1,1
-  sub $3,3
-  sub $2,1
-  mov $7,1
-  mov $8,$6
-  mov $5,1
-  add $1,$2
-lpe
-mov $10,0
-mov $7,$1
-add $1,$2
-mul $1,$0
-div $1,$2
-mov $0,$1
-mov $8,1
-add $0,2
-mov $10,$1
-mov $8,1
-sub $7,2
-mov $0,$1
-mul $0,3
-pow $2,2
-div $0,2
-sub $0,1
-sub $0,2
-mul $0,2
-add $0,6
-sub $0,8
-div $0,2
-add $0,4
+mov $1,$0
+mul $1,2
+add $1,2
+seq $0,190329 ; a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=1/s.
+add $0,$1
