@@ -1,11 +1,8 @@
 ; A330038: a(1) = 1, a(n) = [n/2] + a([n/2]) + a([(n+1)/2]) for n > 1, where [x] = floor(x).
+; Submitted by Simon Strandgaard
 ; 1,3,5,8,10,13,16,20,22,25,28,32,35,39,43,48,50,53,56,60,63,67,71,76,79,83,87,92,96,101,106,112,114,117,120,124,127,131,135,140,143,147,151,156,160,165,170,176,179,183,187,192,196,201,206,212,216,221,226,232
 
 mov $1,$0
-lpb $1
-  mov $2,$1
-  seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-  add $0,$2
-  sub $1,1
-lpe
+seq $1,788 ; Total number of 1's in binary expansions of 0, ..., n.
 add $0,1
+add $0,$1
