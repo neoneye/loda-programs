@@ -13,10 +13,6 @@ mov $3,$2
 mul $3,4
 mov $1,-1
 pow $1,$2
-min $2,1
-lpb $2
-  sub $2,1
-  add $1,$3
-lpe
+add $1,$3
 mov $0,$1
 div $0,2

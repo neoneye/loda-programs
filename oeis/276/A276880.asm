@@ -1,34 +1,26 @@
 ; A276880: Sums-complement of the Beatty sequence for 1 + sqrt(3).
+; Submitted by Simon Strandgaard
 ; 1,4,7,12,15,18,23,26,29,34,37,42,45,48,53,56,59,64,67,70,75,78,83,86,89,94,97,100,105,108,111,116,119,124,127,130,135,138,141,146,149,154,157,160,165,168,171,176,179,182,187,190,195,198,201,206,209,212
 
-mov $2,$0
-add $2,1
-mov $5,$0
+mov $1,$0
+mov $2,1
 lpb $2
-  mov $0,$5
   sub $2,1
-  sub $0,$2
-  mov $7,$0
-  mov $9,2
-  lpb $9
-    sub $9,1
-    add $0,$9
+  mov $7,2
+  lpb $7
+    sub $7,1
+    add $0,$7
     sub $0,1
     mov $3,$0
     mul $3,56
     div $3,41
-    mov $4,$3
-    mov $6,$9
+    mov $6,$7
     lpb $6
       sub $6,1
-      mov $8,$3
+      mov $5,$3
     lpe
   lpe
-  lpb $7
-    mov $7,0
-    sub $8,$4
-  lpe
-  mov $4,$8
+  mov $4,$5
   mul $4,2
   add $4,1
   add $1,$4
