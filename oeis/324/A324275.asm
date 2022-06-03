@@ -19,7 +19,7 @@ lpb $5
     pow $6,2
     div $6,2
   lpe
-  add $1,$6
 lpe
+add $1,$6
 mov $0,$1
 sub $0,2

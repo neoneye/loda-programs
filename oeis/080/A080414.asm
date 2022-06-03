@@ -8,9 +8,7 @@ lpb $0
 lpe
 mul $0,3
 add $0,10
-lpb $0
-  mod $0,7
-lpe
+mod $0,7
 add $1,$0
 mov $0,$1
 sub $0,3
