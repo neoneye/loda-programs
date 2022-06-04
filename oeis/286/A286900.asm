@@ -14,9 +14,7 @@ lpb $2
   mov $4,$0
   pow $4,2
   cmp $4,$0
-  lpb $0
-    trn $0,9
-  lpe
+  trn $0,9
   add $1,1
   mul $2,$4
   add $5,$1
