@@ -1,12 +1,12 @@
 ; A333219: Heinz number of the n-th composition in standard order.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,6,8,7,10,9,12,10,12,12,16,11,14,15,20,15,18,18,24,14,20,18,24,20,24,24,32,13,22,21,28,25,30,30,40,21,30,27,36,30,36,36,48,22,28,30,40,30,36,36,48,28,40,36,48,40,48,48,64,17,26,33,44
 
 mov $1,1
 mov $4,2
 lpb $0
   mul $1,$4
-  mov $3,$0
+  mov $3,1
   lpb $3
     mov $4,$0
     mod $4,2
