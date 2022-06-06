@@ -1,5 +1,5 @@
 ; A131873: Triangle, A131844 * A000012 as infinite lower triangular matrices.
-; Submitted by Simon Strandgaard
+; Submitted by PDW
 ; 1,8,4,15,8,7,22,12,11,10,29,16,15,14,13,36,20,19,18,17,16,43,24,23,22,21,20,19,50,28,27,26,25,24,23,22,57,32,31,30,29,28,27,26,25,64,36,35,34,33,32,31,30,29,28
 
 lpb $0
