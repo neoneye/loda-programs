@@ -1,0 +1,7 @@
+; A113049: Triangle of sums of Jacobsthal numbers related to binomial(4n,n)/(3n+1) mod 4.
+; Submitted by Simon Strandgaard
+; 3,11,13,43,45,53,171,173,181,213,683,685,693,725,853,2731,2733,2741,2773,2901,3413,10923,10925,10933,10965,11093,11605,13653,43691,43693,43701,43733,43861,44373,46421,54613,174763,174765,174773,174805,174933,175445,177493,185685,218453,699051,699053,699061,699093,699221,699733,701781,709973,742741,873813,2796203,2796205,2796213,2796245,2796373
+
+seq $0,18900 ; Sums of two distinct powers of 2.
+seq $0,145812 ; Odd positive integers a(n) such that for every odd integer m > 1 there exists a unique representation of m as a sum of the form a(l) + 2a(s).
+div $0,3
