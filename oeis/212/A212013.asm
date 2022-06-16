@@ -4,9 +4,8 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
+  add $1,$0
   seq $0,122797 ; A P_3-stuttered arithmetic progression with a(n+1) = a(n) if n is a triangular number, a(n+1) = a(n) + 1 otherwise.
   sub $0,1
-  add $1,$2
 lpe
-mov $0,$1
+add $0,$1
