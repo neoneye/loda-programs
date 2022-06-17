@@ -5,7 +5,7 @@
 lpb $0
   mov $1,$0
   seq $1,54576 ; Largest proper factor of the largest proper factor of n.
-  gcd $1,2
+  gcd $1,16
   div $0,$1
 lpe
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
