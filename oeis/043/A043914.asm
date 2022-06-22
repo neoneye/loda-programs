@@ -1,15 +1,15 @@
 ; A043914: Numbers k such that 0 and 4 occur juxtaposed in the base-7 representation of k but not of k+1.
-; Submitted by mmonnin
+; Submitted by Simon Strandgaard
 ; 28,53,77,102,126,151,175,202,224,249,273,298,322,347,377,396,420,445,469,494,518,545,567,592,616,641,665,690,720,739,763,788,812,837,861,888,910,935,959,984,1008,1033,1063,1082,1106
 
 mov $2,$0
-mov $3,49
 mov $4,$0
 add $4,5
 mov $5,$0
 max $0,1
+mov $3,49
+gcd $3,$0
 lpb $0
-  gcd $3,$0
   mov $0,0
   add $2,1
 lpe

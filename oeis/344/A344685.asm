@@ -6,10 +6,8 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-mov $2,$1
-add $1,$0
-mul $1,$0
-mov $0,10
-min $0,$2
-pow $0,2
-sub $0,$1
+sub $2,$1
+sub $2,$0
+pow $1,2
+mul $0,$2
+add $0,$1

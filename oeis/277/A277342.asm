@@ -9,8 +9,8 @@ lpb $0
   mov $1,1
   sub $2,1
   pow $3,0
-  mov $4,$2
 lpe
+mov $4,$2
 mod $4,99
 add $4,$3
 mul $4,2
