@@ -11,6 +11,5 @@ pow $0,3
 div $0,3
 mul $0,2
 add $0,$1
-mul $0,2
-add $0,24
-div $0,48
+add $0,12
+div $0,24

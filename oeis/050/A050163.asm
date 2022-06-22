@@ -5,15 +5,15 @@
 lpb $0
   add $2,1
   sub $0,$2
-  mov $1,$2
 lpe
 add $0,$2
 add $0,3
+mov $1,$2
+add $1,1
 mul $1,2
-add $1,2
 bin $1,$2
+add $2,1
 mul $2,2
-add $2,2
 bin $2,$0
 sub $1,$2
 mov $0,$1

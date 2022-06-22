@@ -11,10 +11,8 @@ lpb $0
   pow $1,2
 lpe
 add $0,$3
-sub $1,1
 pow $2,2
 mov $3,$2
 add $3,$1
 mul $3,$0
-add $3,$0
 mov $0,$3
