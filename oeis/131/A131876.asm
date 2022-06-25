@@ -14,5 +14,6 @@ mul $1,6
 sub $2,$0
 mul $2,2
 add $2,$1
+mul $2,2
 mov $0,$2
 add $0,1
