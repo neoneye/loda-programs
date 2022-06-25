@@ -6,9 +6,8 @@ mov $1,$0
 mul $1,20
 div $1,7
 add $1,1
-mul $1,2
-mul $0,2
 add $0,$1
+mul $0,2
 div $0,3
 mul $0,2
 trn $0,1
