@@ -4,7 +4,7 @@
 
 mul $0,5
 mov $1,$0
-add $0,4
+add $0,1
 sub $1,4
 lpb $1
   trn $1,4
@@ -14,4 +14,3 @@ lpb $1
   sub $0,1
   trn $1,3
 lpe
-sub $0,3

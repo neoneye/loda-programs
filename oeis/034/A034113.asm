@@ -18,8 +18,8 @@ lpb $0
   mul $4,2
   sub $3,$4
   mul $3,2
-  pow $4,2
 lpe
+pow $4,2
 add $1,$4
 add $1,$3
 div $1,4

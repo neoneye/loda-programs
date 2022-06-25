@@ -12,8 +12,8 @@ lpb $3
   lpb $1
     sub $1,9
     mul $2,2
-    sub $2,1
   lpe
+  sub $2,1
   mul $0,$1
 lpe
 sub $0,$2
