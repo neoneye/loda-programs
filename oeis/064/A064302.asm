@@ -1,45 +1,23 @@
 ; A064302: Sixth diagonal of triangle A064094.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,42,381,1606,4641,10746,21517,38886,65121,102826,154941,224742,315841,432186,578061,758086,977217,1240746,1554301,1923846,2355681,2856442,3433101,4092966,4843681,5693226
 
 mov $1,1
+mov $4,1
 mov $6,$0
-lpb $0
-  sub $0,1
-  add $1,4
-lpe
-mov $3,$6
+mov $0,4
+mov $3,4
 lpb $3
+  add $5,$3
+  add $5,$4
+  add $0,1
+  mul $1,$6
+  mul $1,$3
+  mul $1,$0
+  div $1,$5
+  add $2,$1
   sub $3,1
-  add $4,$6
+  sub $4,1
 lpe
-mov $5,$4
-mov $2,9
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$6
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $5,$4
-mov $2,14
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$6
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $2,14
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $0,$1
+mov $0,$2
+add $0,1
