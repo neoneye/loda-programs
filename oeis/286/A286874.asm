@@ -1,8 +1,10 @@
 ; A286874: Maximal number of binary vectors of length n such that the union (or bitwise OR) of any 2 distinct vectors does not contain any other vector.
+; Submitted by Simon Strandgaard
 ; 1,2,2,3,4,5,6,7,8,12,13,17
 
 mov $2,$0
 lpb $0
+  dif $0,16
   mov $3,$2
   dif $3,$0
   div $3,3
