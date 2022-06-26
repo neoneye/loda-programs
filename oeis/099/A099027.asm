@@ -10,9 +10,8 @@ lpb $4
   sub $0,$4
   add $2,$0
   mov $3,$0
-  pow $0,3
   lpb $0
-    dif $0,8
+    dif $0,2
     sub $2,$3
   lpe
   add $1,$2

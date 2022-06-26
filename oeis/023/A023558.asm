@@ -4,11 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,156279 ; 4 times the Lucas number A000032(n).
+  seq $2,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
   add $0,$3
   trn $0,3
   add $1,$2
   sub $3,1
 lpe
 mov $0,$1
-div $0,4

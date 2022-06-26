@@ -7,8 +7,6 @@ mov $1,$0
 pow $0,2
 sub $0,1
 div $0,4
-mul $0,2
 dif $1,2
 mul $1,$0
 mov $0,$1
-div $0,2

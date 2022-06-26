@@ -7,8 +7,5 @@ mov $1,$0
 sub $1,1
 div $1,8
 div $0,8
-add $1,$0
-mov $2,8
-add $2,$1
-mov $0,$2
-sub $0,7
+add $0,$1
+add $0,1
