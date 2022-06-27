@@ -5,5 +5,4 @@
 mov $1,$0
 seq $1,185102 ; a(n) is the recursion depth of repeatedly factoring n and then the exponents in its prime product factorization, until 1 is reached.
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $1,$0
-mov $0,$1
+gcd $0,$1

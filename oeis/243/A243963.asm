@@ -11,6 +11,5 @@ lpb $1
   trn $0,1
   seq $0,163747 ; Expansion of e.g.f. 2*exp(x)*(1-exp(x))/(1+exp(2*x)).
 lpe
-mul $2,$0
-mov $0,0
-sub $0,$2
+mul $0,$2
+mul $0,-1

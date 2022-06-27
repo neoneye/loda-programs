@@ -5,9 +5,8 @@
 mul $0,2
 add $0,1
 mov $1,$0
-seq $1,80958 ; a(n) = n!*(2/1 - 3/2 + 4/3 - ... + s*(n+1)/n), where s = (-1)^(n+1).
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-sub $1,$0
-gcd $0,$1
-div $1,$0
-mov $0,$1
+seq $0,80958 ; a(n) = n!*(2/1 - 3/2 + 4/3 - ... + s*(n+1)/n), where s = (-1)^(n+1).
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+sub $0,$1
+gcd $1,$0
+div $0,$1
