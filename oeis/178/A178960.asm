@@ -5,8 +5,8 @@
 mov $2,$0
 mul $0,3
 mov $4,$0
+sub $4,18
 lpb $0
-  sub $4,18
   mov $1,$4
   trn $4,15
   sub $4,$1

@@ -12,10 +12,10 @@ gcd $0,4
 lpb $0
   mov $0,1
   mov $3,$4
-  mod $3,5
 lpe
 mov $2,$5
 mul $2,3
+mod $3,5
 mov $1,$3
 add $1,$2
 sub $1,2
