@@ -1,5 +1,5 @@
 ; A018638: Divisors of 774.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,2,3,6,9,18,43,86,129,258,387,774
 
 mov $1,1
@@ -10,13 +10,16 @@ mov $8,$0
 lpb $8
   mov $5,$2
   lpb $5
-    add $2,5
+    add $2,3
+    mul $2,3
     mov $6,$2
     gcd $6,$3
     cmp $6,1
     cmp $6,0
-    mul $2,2
+    add $2,24
     sub $5,$6
+    add $0,1
+    add $3,1
   lpe
   add $2,1
   mov $4,$3
