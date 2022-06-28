@@ -1,7 +1,23 @@
 ; A330173: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 4,9,15,19,25,30,34,40,45,51,55,60,66,70,76,81,87,91,96,102,106,112,117,121,127,132,138,142,148,153,157,163,168,174,178,183,189,193,199,204,208,214,219,225,229,235,240,244,250,255,261,265,270,276,280,286
 
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+add $0,1
+mov $3,32
+lpb $3
+  sub $3,2
+  add $2,$1
+  add $1,1
+  mul $1,2
+  add $1,$2
+lpe
+add $1,$2
+mul $1,$0
+div $1,$2
+mov $0,$1
 mul $0,3
-div $0,4
+mov $4,$0
+add $4,4
+div $4,2
+mov $0,$4
+sub $0,2

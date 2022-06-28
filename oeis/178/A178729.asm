@@ -4,7 +4,8 @@
 
 mov $4,1
 mov $2,$0
-mul $2,3
+mul $2,2
+seq $2,6368 ; The "amusical permutation" of the nonnegative numbers: a(2n)=3n, a(4n+1)=3n+1, a(4n-1)=3n-1.
 lpb $2
   mov $3,$0
   add $3,$2

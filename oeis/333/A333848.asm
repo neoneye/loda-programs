@@ -12,6 +12,7 @@ lpb $0
   gcd $3,$1
   cmp $3,1
   mul $3,$0
+  add $1,1
   add $2,$3
 lpe
 mov $0,$2

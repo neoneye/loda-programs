@@ -1,5 +1,5 @@
 ; A348391: Row sums of irregular triangle A348390.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3,7,18,24,48,56,87,109,147,159,235,249,301,355,434,452,563,583,705,779,859,883,1087,1143,1237,1331,1499,1529,1781,1813,2004,2118,2240,2358,2701,2739,2875,3009,3339,3381,3729,3773
 
 add $0,1
