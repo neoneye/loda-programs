@@ -1,8 +1,9 @@
 ; A293606: Number of unlabeled antichains of weight n.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 1,1,2,3,6,9,20,33,72,139
 
 mov $2,$0
+mov $0,10
 lpb $0
   mov $3,$2
   dif $3,$0
