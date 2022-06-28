@@ -5,5 +5,4 @@
 mul $0,2
 add $0,1
 seq $0,143379 ; Expansion of q^(-7/24) * eta(q) * eta(q^4)^2 / eta(q^2) in powers of q.
-sub $1,$0
-mov $0,$1
+mul $0,-1

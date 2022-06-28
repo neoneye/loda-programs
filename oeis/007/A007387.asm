@@ -7,5 +7,4 @@ pow $1,$0
 seq $0,133394 ; a(n)=a(n-2)+a(n-5).
 seq $1,211010 ; Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
 sub $1,1
-max $1,$0
-mov $0,$1
+max $0,$1

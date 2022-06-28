@@ -5,6 +5,5 @@
 mov $1,$0
 seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
 seq $1,36430 ; Number of iterations needed to reach 1 under the map n -> Omega(n).
-gcd $1,$0
-mov $0,$1
+gcd $0,$1
 sub $0,1

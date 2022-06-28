@@ -16,5 +16,4 @@ lpe
 gcd $3,$1
 div $1,$3
 add $3,$1
-gcd $3,$0
-mov $0,$3
+gcd $0,$3
