@@ -9,8 +9,7 @@ lpb $2
   add $3,$2
   add $5,$3
   cmp $1,$5
-  cmp $1,0
-  add $1,5
+  add $1,6
   mov $2,0
   sub $3,9
   lpb $3
