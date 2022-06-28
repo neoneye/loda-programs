@@ -32,6 +32,6 @@ lpb $4
   lpe
   mov $0,$6
   add $0,1
-  add $5,$0
 lpe
+add $5,$0
 mov $0,$5

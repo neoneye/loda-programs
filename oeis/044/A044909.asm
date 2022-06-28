@@ -1,5 +1,5 @@
 ; A044909: Numbers whose base-8 run lengths alternate: odd, even, odd, ...
-; Submitted by ChelseaOilman
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,7,64,73,82,91,100,109,118,127,128,137,146,155,164,173,182,191,192,201,210,219,228,237,246,255,256,265,274,283,292,301,310,319,320,329,338,347,356,365,374,383,384,393,402
 
 mov $1,$0
@@ -20,13 +20,9 @@ lpb $2
     mov $7,$5
     mul $7,7
     div $7,8
-    mov $8,$6
-    lpb $8
-      sub $8,1
-      mov $9,$7
-    lpe
+    mov $8,$7
   lpe
-  mov $3,$9
+  mov $3,$8
   mul $3,8
   add $1,$3
 lpe
