@@ -11,10 +11,9 @@ lpb $0
   add $3,$1
   mod $3,2
   add $3,2
-  add $4,1
-  add $4,$3
   mul $2,$3
+  add $4,$3
+  add $4,1
 lpe
-add $4,2
 add $0,$4
-add $0,3
+add $0,5

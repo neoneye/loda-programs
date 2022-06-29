@@ -17,9 +17,9 @@ lpb $0
     add $2,1
     max $4,$5
     sub $3,$4
-    cmp $6,3
   lpe
   mov $5,1
+  cmp $6,3
   lpb $0
     dif $0,$2
     sub $6,6

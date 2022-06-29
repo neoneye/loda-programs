@@ -1,11 +1,12 @@
 ; A229661: Rounded percentage of primes less than 10^n.
-; Submitted by ChelseaOilman
+; Submitted by Simon Strandgaard
 ; 0,40,25,17,12,10,8,7,6,5,5,4,4,3,3,3,3,3,2,2,2,2,2,2,2,2
 
 mov $3,$0
 mul $3,3
 lpb $3
   sub $3,1
+  min $3,4
   add $2,1
   add $4,$2
   add $1,$4
