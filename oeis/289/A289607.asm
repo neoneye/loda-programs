@@ -1,11 +1,12 @@
 ; A289607: Related to number of mesh patterns of length 2 that avoid the pattern 321.
-; Submitted by Time_Traveler
+; Submitted by Simon Strandgaard
 ; 1,1,1,2,7,28,106,382,1345,4706,16504
 
 mov $6,1
 mov $5,$0
 lpb $5
   sub $5,1
+  mod $5,10
   mov $1,$3
   add $1,$5
   mul $1,2

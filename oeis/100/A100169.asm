@@ -6,9 +6,8 @@ mov $1,$0
 mul $1,22
 add $1,14
 mul $1,$0
-div $1,2
 mul $1,5
-add $1,2
+add $1,4
 add $0,1
 mul $0,$1
-div $0,2
+div $0,4

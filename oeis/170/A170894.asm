@@ -5,8 +5,8 @@
 lpb $0
   mov $2,$0
   seq $2,170895 ; First differences of A170894.
-  sub $0,1
   mod $0,12
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

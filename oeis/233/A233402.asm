@@ -5,7 +5,6 @@
 mov $1,$0
 add $1,2
 mov $0,$1
-sub $1,2
 lpb $0
   sub $0,2
   gcd $3,$0
@@ -14,4 +13,4 @@ lpb $0
   add $1,5
 lpe
 mov $0,$1
-add $0,4
+add $0,2
