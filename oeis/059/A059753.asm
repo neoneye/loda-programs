@@ -1,5 +1,5 @@
 ; A059753: Minimal degree of a height one multiple of (x-1)^n.
-; Submitted by JayPi
+; Submitted by Simon Strandgaard
 ; 1,3,6,11,15,22,30,41,48,61
 
 lpb $0
@@ -18,6 +18,7 @@ lpb $0
   sub $5,$4
   add $4,$2
   sub $4,$1
+  mod $0,10
   div $2,2
   sub $3,1
 lpe

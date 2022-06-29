@@ -1,11 +1,12 @@
 ; A294980: a(n) is the total number of elements after n-th stage in a hybrid cellular automaton formed by Y-toothpicks and V-toothpicks (see Comments lines for precise definition).
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 0,1,4,10,16,22,40,58,76,82
 
 mov $2,4
 mov $5,1
 lpb $0
   sub $0,1
+  mod $0,10
   mul $1,5
   sub $1,$2
   add $1,1

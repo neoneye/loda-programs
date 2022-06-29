@@ -1,5 +1,5 @@
 ; A192894: Number of symmetric 13-ary factorizations of the n-cycle (12...n).
-; Submitted by STE\/E
+; Submitted by Simon Strandgaard
 ; 1,1,7,13,112,247,2310,5525,53998,135408
 
 mov $4,1
@@ -17,6 +17,7 @@ lpb $3
   mul $1,$3
   div $1,$2
   sub $3,1
+  mod $3,10
   add $4,$1
   sub $1,$0
 lpe
