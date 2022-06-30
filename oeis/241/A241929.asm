@@ -15,7 +15,7 @@ lpb $0
   add $2,$1
   add $5,$4
   add $5,$7
-  mov $3,$5
 lpe
+mov $3,$5
 sub $3,$7
 gcd $0,$3
