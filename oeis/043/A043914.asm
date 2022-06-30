@@ -9,11 +9,8 @@ mov $5,$0
 max $0,1
 mov $3,49
 gcd $3,$0
-lpb $0
-  mov $0,0
-  add $2,1
-lpe
 mul $3,2
+add $2,1
 div $2,$3
 add $2,1
 mul $3,$2

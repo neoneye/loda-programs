@@ -1,14 +1,9 @@
 ; A192751: Define a pair of sequences c_n, d_n by c_0=0, d_0=1 and thereafter c_n = c_{n-1}+d_{n-1}, d_n = c_{n-1}+4*n+2; sequence here is c_n.
-; Submitted by Jamie Morken(s1)
+; Submitted by Simon Strandgaard
 ; 0,1,7,18,39,75,136,237,403,674,1115,1831,2992,4873,7919,12850,20831,33747,54648,88469,143195,231746,375027,606863,981984,1588945,2571031,4160082,6731223,10891419,17622760,28514301,46137187,74651618,120788939
 
-lpb $0
-  sub $0,1
-  add $1,$3
-  add $2,1
-  add $3,4
-  mov $4,$2
-  add $2,$1
-  mov $1,$4
-lpe
-mov $0,$2
+sub $1,$0
+mul $1,4
+seq $0,1911 ; a(n) = Fibonacci(n+3) - 2.
+mul $0,5
+add $0,$1
