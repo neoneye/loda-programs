@@ -22,15 +22,12 @@ lpb $0
   cmp $6,3
   lpb $0
     dif $0,$2
-    sub $6,2
+    sub $6,1
     mul $6,$2
+    add $6,1
     sub $4,$6
-    sub $4,$2
-    sub $4,1
     mul $5,$2
     add $5,$4
-    add $6,1
-    add $6,$2
   lpe
   mul $1,$5
 lpe
