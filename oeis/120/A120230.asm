@@ -7,10 +7,8 @@ add $1,$0
 mul $1,4
 add $0,1
 lpb $0
-  lpb $0
-    dif $0,4
-    mul $1,16
-  lpe
-  dif $1,256
+  dif $0,4
+  mul $1,16
 lpe
+dif $1,256
 mov $0,$1

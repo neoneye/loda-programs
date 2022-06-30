@@ -1,13 +1,22 @@
 ; A097071: Number of Shubnikov compounds.
+; Submitted by Simon Strandgaard
 ; 1,2,3,5,6,10,12,18,23,30
 
-mul $0,2
-lpb $0
-  mov $2,$0
-  seq $2,49641 ; a(n) = Sum_{i=0..n} ((-1)^i)*T(i,n-i), array T as in A049639.
-  trn $0,7
-  add $1,$2
-  sub $1,1
+add $0,1
+mov $1,2
+mov $4,4
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $5,$4
+  add $2,$1
+  add $4,2
+  mul $1,$3
+  mul $1,2
+  div $1,$5
+  add $2,$1
+  sub $3,1
 lpe
-mov $0,$1
+mov $0,$2
+div $0,2
 add $0,1
