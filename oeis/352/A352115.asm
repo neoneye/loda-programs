@@ -10,6 +10,5 @@ gcd $2,$0
 mul $0,2
 sub $0,3
 add $0,$2
-mul $1,$0
-mov $0,$1
+mul $0,$1
 div $0,3

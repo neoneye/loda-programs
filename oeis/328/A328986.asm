@@ -3,7 +3,6 @@
 ; 4,10,16,21,28,33,39,45,51,57,62,68,74,80,86,91,98,103,109,115,120,127,132,138,144,150,156,161,168,173,179,185,190,197,202,208,214,220,226,231,237,243,249,255,260,267,272,278,284,290,296,301,307,313,319
 
 mov $1,$0
-seq $1,1954 ; a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
-seq $0,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+seq $1,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+seq $0,184119 ; Upper s(n)-Wythoff sequence, where s(n) = 2n - 1; complement of A136119.
 add $0,$1
-add $0,1
