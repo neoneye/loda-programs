@@ -11,6 +11,5 @@ add $1,$0
 add $1,1
 pow $1,2
 div $1,4
-add $1,$0
 add $1,1
-mov $0,$1
+add $0,$1

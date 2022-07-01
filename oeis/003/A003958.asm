@@ -16,8 +16,7 @@ lpb $0 ; Start the main loop. We stop when there's nothing remaining in $0 anymo
   lpb $3 ; Which is done in this subloop: find the next prime >= $2 that divides $0, which = A020639($0).
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    min $4,1
     sub $3,$4 ; Subtract one if $2 did not divide n (to continue searching), otherwise subtract zero, and fall out of the loop.
     add $2,1 ; Note: when we fall out, the last instance of this incrementing is discarded, and we still have the spf-divisor in $2
   lpe
