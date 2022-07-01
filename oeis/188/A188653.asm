@@ -6,11 +6,8 @@ lpb $0
   add $1,$0
   sub $0,2
 lpe
-mov $3,$0
-sub $3,1
-mov $2,$3
-cmp $2,0
-mov $0,$3
+mov $2,$0
+sub $2,1
 add $0,$2
 div $1,$0
 mul $1,2
