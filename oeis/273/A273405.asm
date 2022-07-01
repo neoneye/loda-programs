@@ -10,13 +10,13 @@ lpb $1
   mov $2,$0
   pow $2,2
   mov $5,$2
-  sub $5,4
-  sub $3,$5
+  sub $5,2
   mod $0,2
-  add $0,2
-  sub $0,$3
+  mov $3,1
+  sub $3,$5
 lpe
 pow $4,2
 mul $4,2
+sub $0,$3
 sub $0,$3
 add $0,$4

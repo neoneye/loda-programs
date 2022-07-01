@@ -9,8 +9,7 @@ lpb $0
   sub $0,$1
   mov $2,$4
   div $2,$1
-  trn $3,$4
-  gcd $3,$2
+  mov $3,$2
   div $3,$1
   mul $3,$1
   add $5,$3

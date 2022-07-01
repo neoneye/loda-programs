@@ -8,11 +8,9 @@ dif $1,6
 div $1,3
 mod $1,3
 add $1,1
-mul $0,8
+mul $0,16
 sub $0,1
-mul $0,2
 add $0,$1
-add $0,1
 div $0,3
 trn $0,1
 add $0,1
