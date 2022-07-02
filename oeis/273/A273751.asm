@@ -6,9 +6,8 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-add $1,$0
-add $1,2
-pow $1,2
-div $1,4
-sub $1,$0
-mov $0,$1
+add $0,$1
+pow $0,2
+div $0,4
+add $0,$1
+add $0,1

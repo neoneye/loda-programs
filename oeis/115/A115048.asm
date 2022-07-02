@@ -5,15 +5,11 @@
 mov $1,100
 mov $2,1
 lpb $0
-  mov $3,$2
-  add $2,1
-  lpb $3
-    mov $3,0
-    gcd $4,$2
-  lpe
   sub $0,1
-  div $1,$4
+  add $2,1
+  gcd $3,$2
+  div $1,$3
   mul $1,$2
-  cmp $4,0
+  cmp $3,0
 lpe
 add $0,$1
