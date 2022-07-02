@@ -4,11 +4,9 @@
 
 mul $0,2
 add $0,3
-mov $1,$0
 sub $2,$0
 mul $0,$2
-add $1,$2
-add $1,$0
+mov $1,$0
 add $1,1
 div $0,2
 mul $0,3

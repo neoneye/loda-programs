@@ -2,10 +2,10 @@
 ; Submitted by Simon Strandgaard
 ; 2,4,6,8,11,14,18,21,25,29,33,37
 
-mov $4,$0
 mov $1,$0
+mov $4,$0
+div $0,3
 lpb $1
-  div $0,3
   add $2,1
   add $2,$0
   sub $1,$2

@@ -9,6 +9,5 @@ pow $0,2
 div $0,2
 pow $1,2
 div $1,2
-mul $1,$0
-mov $0,$1
+mul $0,$1
 div $0,12

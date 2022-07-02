@@ -1,11 +1,12 @@
 ; A144971: Integers of the form sum_{i=2521..j} i/(i-2520) for any upper limit j.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Simon Strandgaard
 ; 2521,3782,4623,5254,5759,6180,6541,6857,7138,7391
 
 mov $5,$0
 mov $2,$0
 lpb $2
   sub $2,1
+  mod $2,10
   mov $0,$5
   sub $0,$2
   mov $3,$0
