@@ -1,14 +1,17 @@
 ; A099615: Triangle read by rows, 2<=k<=n: T(n,k) = denominator of (1+1/n)^k-(1+k/n) and of (1-1/n)^k-(1-k/n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 4,9,27,16,64,256,25,125,625,3125,36,216,1296,7776,46656,49,343,2401,16807,117649,823543,64,512,4096,32768,262144,2097152,16777216,81,729,6561,59049,531441,4782969,43046721,387420489,100,1000,10000,100000
 
-mov $1,1
-add $0,2
 lpb $0
   add $1,1
-  mov $2,$0
-  trn $0,$1
-  add $0,1
+  sub $0,$1
+  add $3,1
 lpe
-pow $1,$2
-mov $0,$1
+mov $2,$0
+add $3,2
+mov $0,$3
+pow $0,$2
+mov $1,$3
+mul $1,$0
+mul $3,$1
+mov $0,$3

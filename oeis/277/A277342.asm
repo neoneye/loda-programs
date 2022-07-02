@@ -14,7 +14,5 @@ mod $3,99
 add $3,1
 mul $3,2
 mul $1,$3
-add $1,4
 div $1,2
-sub $1,2
 mov $0,$1
