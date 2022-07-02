@@ -4,7 +4,6 @@
 
 mov $1,$0
 seq $1,66096 ; Duplicate values in A060143.
-add $0,1
-seq $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
+add $0,3
+seq $0,66096 ; Duplicate values in A060143.
 add $0,$1
-add $0,2

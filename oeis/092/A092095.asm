@@ -10,8 +10,8 @@ lpb $0
   mov $1,$3
   add $2,1
   add $2,$3
-  mod $3,2
 lpe
+mod $3,2
 cmp $3,1
 add $3,$2
 mov $0,$3
