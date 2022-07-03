@@ -10,8 +10,7 @@ mov $8,$0
 lpb $8
   mov $5,$2
   lpb $5
-    add $2,3
-    mul $2,3
+    add $2,15
     mov $6,$2
     gcd $6,$3
     cmp $6,1
