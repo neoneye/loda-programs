@@ -9,16 +9,14 @@ mov $8,$0
 lpb $0
   gcd $0,5
   div $0,7
+  sub $4,3
   add $7,$3
   trn $7,$5
   add $6,$7
   mul $6,3
-  add $4,7
-  mod $4,3
   mul $3,7
   add $3,$6
   sub $3,$4
-  add $3,4
 lpe
 mov $1,$3
 add $1,32

@@ -1,10 +1,11 @@
 ; A247181: Total domination number of the n-hypercube graph.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 2,2,4,4,8,14,24,32,64,124
 
 mov $2,1
 mov $5,1
 lpb $0
+  dif $0,10
   sub $0,1
   mov $4,$6
   add $4,$1
@@ -16,6 +17,6 @@ lpb $0
   mov $2,$5
   add $5,$4
 lpe
-mov $0,$1
+add $0,$1
 mul $0,2
 add $0,2

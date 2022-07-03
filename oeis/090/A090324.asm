@@ -11,13 +11,10 @@ pow $1,$0
 mul $1,4
 add $1,3
 sub $0,$2
-sub $0,1
 dif $0,-1
 lpb $0
   sub $0,1
   mul $1,2
 lpe
 mov $0,$1
-sub $0,6
-div $0,2
-add $0,2
+sub $0,1

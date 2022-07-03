@@ -4,6 +4,5 @@
 
 mov $1,$0
 seq $1,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
-add $0,3
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,20695 ; Pisot sequence E(2,3).
 sub $0,$1
