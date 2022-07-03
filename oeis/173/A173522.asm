@@ -7,14 +7,8 @@ mov $3,2
 lpb $3
   sub $3,1
   mov $0,$1
-  add $0,$3
-  trn $0,1
   seq $0,6046 ; Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1). For n>0, a(n) = Sum_{i=0..n-1} 2^wt(i).
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+  trn $1,1
+  add $2,$0
 lpe
-min $1,1
-mul $1,$0
-add $1,$4
-mov $0,$1
+mov $0,$2

@@ -1,5 +1,5 @@
 ; A018679: Divisors of 846.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 1,2,3,6,9,18,47,94,141,282,423,846
 
 mov $1,1
@@ -10,14 +10,15 @@ mov $8,$0
 lpb $8
   mov $5,$2
   lpb $5
-    add $2,1
+    add $2,15
     mov $6,$2
     gcd $6,$3
-    mul $2,10
-    add $2,6
     cmp $6,1
     cmp $6,0
+    add $2,28
     sub $5,$6
+    add $0,1
+    add $3,1
   lpe
   add $2,1
   mov $4,$3

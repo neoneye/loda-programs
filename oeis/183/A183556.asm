@@ -1,10 +1,11 @@
 ; A183556: Positions of the records of the negative integers in A179319; a(n) is the first position in A179319 equal to -n.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,3,37,71,681,1291,12237,23183,219601,416019,3940597,7465175
 
 lpb $0
   sub $0,1
   trn $3,$0
+  mod $0,13
   mov $1,$3
   mul $1,16
   add $2,1

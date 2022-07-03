@@ -7,13 +7,13 @@ add $1,$0
 mul $1,3
 sub $1,8
 mov $3,1
-mov $5,$0
-mov $8,$0
-add $8,$0
 mov $4,1
+mov $5,$0
+mov $6,$0
+add $6,$0
 mov $7,$0
 sub $7,$0
-add $7,$8
+add $7,$6
 add $7,2
 lpb $0
   mov $0,0
@@ -21,11 +21,11 @@ lpb $0
   pow $3,2
   div $3,6
   add $7,1
-  add $4,$7
 lpe
 sub $1,1
 mov $2,$5
 mul $2,4
+add $4,$7
 add $4,$3
 mul $4,$1
 pow $5,2
