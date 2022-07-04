@@ -1,14 +1,11 @@
 ; A003989: Triangle T from the array A(x, y) = gcd(x,y), for x >= 1, y >= 1, read by antidiagonals.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,2,1,1,1,1,1,1,2,3,2,1,1,1,1,1,1,1,1,2,1,4,1,2,1,1,1,3,1,1,3,1,1,1,2,1,2,5,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,3,4,1,6,1,4,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,7,2,1,2,1,2,1,1,1,3,1,5,3,1,1,3
 
-mov $2,1
 lpb $0
-  sub $0,$2
-  add $2,1
+  add $1,1
+  sub $0,$1
 lpe
 add $0,1
-add $2,1
-lpb $0
-  gcd $0,$2
-lpe
+add $1,2
+gcd $0,$1
