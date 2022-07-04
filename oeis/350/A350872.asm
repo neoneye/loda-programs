@@ -1,14 +1,15 @@
 ; A350872: Number of coincidence site lattices of index n in square lattice.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,4,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,4,0,0
 
 add $0,1
-mul $0,2
 mov $2,$0
 lpb $0
   mov $3,$0
   sub $0,1
   pow $3,2
+  mul $3,2
+  sub $3,1
   sub $3,$0
   mod $3,$2
   cmp $3,$0
