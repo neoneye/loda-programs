@@ -4,6 +4,6 @@
 
 mov $1,$0
 seq $1,1690 ; Non-Fibonacci numbers.
-add $0,2
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+add $0,3
+seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
 add $0,$1
