@@ -1,13 +1,12 @@
 ; A071295: Product of numbers of 0's and 1's in binary representation of n.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,2,2,2,0,3,4,4,3,4,3,3,0,4,6,6,6,6,6,6,4,6,6,6,4,6,4,4,0,5,8,8,9,8,9,9,8,8,9,9,8,9,8,8,5,8,9,9,8,9,8,8,5,9,8,8,5,8,5,5,0,6,10,10,12,10,12,12,12,10,12,12,12,12,12,12,10,10,12,12,12,12,12,12,10,12,12,12,10,12,10,10,6,10,12,12,12
 
-mov $1,$0
-mov $0,0
+mov $1,1
 mov $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
+  mov $3,$0
   lpb $3
     mov $5,$3
     mod $5,2
@@ -15,10 +14,9 @@ lpb $2
     div $3,2
     add $4,$5
   lpe
+  mul $1,$4
   lpb $4
     sub $4,1
-    add $3,$0
-    add $0,$2
   lpe
 lpe
-mov $0,$3
+mov $0,$1

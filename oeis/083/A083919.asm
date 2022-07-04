@@ -1,21 +1,20 @@
 ; A083919: Number of divisors of n that are congruent to 9 modulo 10.
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,1,2,0
 
 add $0,1
+mov $4,6
 mov $2,$0
-lpb $0
-  mov $3,$2
-  dif $3,$0
-  cmp $3,$2
-  cmp $3,0
-  mul $3,$0
-  sub $0,1
+lpb $2
+  add $3,2
+  add $4,$3
   add $4,1
-  lpb $4
-    add $4,$3
-    mod $4,10
-    add $1,1
-  lpe
-  trn $4,3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  add $1,$5
+  sub $2,$3
+  mov $3,5
+  add $4,2
 lpe
 mov $0,$1

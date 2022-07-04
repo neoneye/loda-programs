@@ -1,21 +1,9 @@
 ; A316826: Image of 3 under repeated application of the morphism 3 -> 3,2, 2 -> 1,0,2,0,1,2, 1 -> 1,0,1,2, 0 -> 0,2.
+; Submitted by Simon Strandgaard
 ; 3,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,2,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,0,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,2,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,0,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,1,2,1,0
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,140592 ; a(n) = 2n if A010060(n-1) is 0, and a(n) = 2n+1 if A010060(n-1) is 1.
-  add $0,2
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
-lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
-sub $0,1
+pow $1,$0
+trn $0,1
+seq $0,29883 ; First differences of Thue-Morse sequence A001285.
+add $0,$1
+add $0,1
