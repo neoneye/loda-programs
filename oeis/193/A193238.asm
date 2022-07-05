@@ -1,12 +1,13 @@
 ; A193238: Number of prime digits in decimal representation of n.
-; Submitted by shiva
+; Submitted by Simon Strandgaard
 ; 0,0,1,1,0,1,0,1,0,0,0,0,1,1,0,1,0,1,0,0,1,1,2,2,1,2,1,2,1,1,1,1,2,2,1,2,1,2,1,1,0,0,1,1,0,1,0,1,0,0,1,1,2,2,1,2,1,2,1,1,0,0,1,1,0,1,0,1,0,0,1,1,2,2,1,2,1,2,1,1,0,0,1,1,0,1,0,1,0,0,0,0,1,1,0,1,0,1,0,0
 
 lpb $0
   mov $2,$0
   mod $2,10
-  seq $2,62301 ; Number of ways writing n-th prime as a sum of two primes.
+  seq $2,331044 ; a(n) is the greatest prime number of the form floor(n/10^k) for some k >= 0, or 0 if no such prime number exists.
   mov $3,$2
+  min $3,1
   mul $3,2
   div $0,10
   add $1,$3

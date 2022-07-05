@@ -1,15 +1,7 @@
 ; A078616: a(n) = Sum_{k=0..n} A010815(k).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,-1,-1,-1,0,0,1,1,1,1,1,0,0,0,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0
 
-mov $3,$0
-mov $5,$0
-lpb $3
-  mov $2,$5
-  seq $2,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
-  sub $3,1
-  add $4,$2
-  sub $5,1
-lpe
-mov $0,$4
-add $0,1
+seq $0,193832 ; Irregular triangle read by rows in which row n lists 2n-1 copies of 2n-1 and n copies of 2n, for n >= 1.
+sub $0,1
+seq $0,56594 ; Period 4: repeat [1,0,-1,0]; expansion of 1/(1 + x^2).

@@ -1,29 +1,7 @@
 ; A257196: Expansion of (1 + x) * (1 + x^5) / ((1 + x^2) * (1 + x^4)) in powers of x.
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 1,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1
 
-mov $1,1
-mov $2,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $2,1
-  mov $6,$0
-  mod $6,$2
-  cmp $6,0
-  mov $5,-1
-  pow $5,$6
-  mul $1,$5
-  mov $4,$2
-  pow $4,2
-  mov $5,$2
-  pow $5,$6
-  mov $6,$0
-  mod $6,$4
-  div $0,$5
-  mod $0,4
-  cmp $6,0
-  cmp $6,0
-  mul $1,$6
-lpe
-mov $0,$1
+seq $0,312506 ; Coordination sequence Gal.5.109.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+mod $0,3
+dif $0,-2

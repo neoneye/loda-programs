@@ -1,16 +1,14 @@
 ; A018416: Divisors of 368.
+; Submitted by Simon Strandgaard
 ; 1,2,4,8,16,23,46,92,184,368
 
-mov $2,1
-mov $4,206
-add $0,1
 lpb $0
-  mov $3,$2
-  dif $3,$0
-  sub $0,1
-  add $1,$4
-  mov $4,$2
-  add $2,$3
+  sub $0,5
+  add $1,2
 lpe
-mov $0,$1
-sub $0,205
+mul $1,11
+mov $2,2
+pow $2,$0
+mov $0,1
+add $0,$1
+mul $0,$2

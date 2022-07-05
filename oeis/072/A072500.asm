@@ -4,17 +4,19 @@
 
 add $0,1
 mov $1,1
-mov $2,$0
+mov $4,$0
+mov $5,47
+div $0,2
 lpb $0
-  mov $3,$2
-  dif $3,$0
-  trn $3,$0
-  add $3,$2
-  cmp $3,$2
-  lpb $3
-    mul $3,0
-    mul $1,$0
-  lpe
-  sub $0,1
+  trn $0,$1
+  mov $2,$4
+  gcd $2,$1
+  bin $2,$1
+  mov $3,$4
+  div $3,$1
+  pow $3,$2
+  mul $5,$3
+  add $1,1
 lpe
-mov $0,$1
+mov $0,$5
+div $0,47

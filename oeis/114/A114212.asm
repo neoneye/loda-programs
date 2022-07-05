@@ -1,33 +1,20 @@
 ; A114212: Generalized Gould sequence.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,4,4,6,8,6,4,6,8,8,8,12,16,10,4,6,8,8,8,12,16,12,8,12,16,16,16,24,32,18,4,6,8,8,8,12,16,12,8,12,16,16,16,24,32,20,8,12,16,16,16,24,32,24,16,24,32,32,32,48,64,34,4,6,8,8,8,12,16,12,8,12,16,16,16,24,32,20,8
 
-mov $2,$0
-mov $8,6
-lpb $0
-  sub $0,1
-  mov $3,$2
-  sub $3,$0
+mov $1,$0
+mov $3,2
+lpb $3
   sub $3,1
-  mov $6,0
-  cmp $8,0
-  mov $5,$3
-  add $5,$8
-  mov $7,$0
-  mov $4,$5
-  lpb $4
-    mov $9,$7
-    mod $9,2
-    mov $10,$5
-    mod $10,2
-    div $5,2
-    mul $9,$10
-    mov $4,$5
-    add $6,$9
-    div $7,2
-  lpe
-  cmp $6,0
-  add $1,$6
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  seq $0,60632 ; a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
+  mov $2,$3
+  mul $2,$0
+  add $4,$2
 lpe
+min $1,1
+mul $1,$0
+add $1,$4
 mov $0,$1
-add $0,1

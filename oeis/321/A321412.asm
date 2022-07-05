@@ -1,5 +1,5 @@
 ; A321412: Number of non-isomorphic self-dual multiset partitions of weight n with no singletons and with aperiodic parts.
-; Submitted by Fornax
+; Submitted by Simon Strandgaard
 ; 1,0,0,0,1,1,3,4,12,20,42
 
 sub $1,$0
@@ -8,6 +8,7 @@ mov $3,$0
 mov $0,6
 lpb $3
   sub $3,1
+  mod $3,10
   sub $4,2
   sub $0,4
   mul $1,$0

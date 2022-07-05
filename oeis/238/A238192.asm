@@ -1,10 +1,11 @@
 ; A238192: In the Collatz (3x+1) iteration of n, the last odd number before 1, or 0 if there is no such number.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,5,0,5,5,5,0,5,5,5,5,5,5,5,0,5,5,5,5,21,5,5,5,5,5,5,5,5,5,5,0,5,5,5,5,5,5,5,5,5,21,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,5,5,5,5,5,5,5,5,5,5,85,5,5,5,5,5,5,5,5,21,85,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 
 add $0,1
 mov $1,270
 lpb $1
+  dif $0,4
   mov $2,2
   sub $2,$0
   lpb $2

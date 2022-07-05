@@ -1,5 +1,5 @@
 ; A330239: Minimum circular (strong) similarity of a length-n binary word.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 0,0,1,2,3,4,3,4,5,6,5,6,7,8,7,8,9,10,9,10,11,12,11,12,13,14,15,14,15,16
 
 add $0,1
@@ -20,4 +20,5 @@ lpb $3
   lpe
   mov $1,1
   sub $3,1
+  trn $3,1
 lpe

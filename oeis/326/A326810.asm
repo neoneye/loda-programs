@@ -1,6 +1,10 @@
 ; A326810: The smallest prime that does not divide the prime product form (A276086) of the primorial base expansion of n.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 2,3,2,5,2,5,2,3,2,7,2,7,2,3,2,7,2,7,2,3,2,7,2,7,2,3,2,7,2,7,2,3,2,5,2,5,2,3,2,11,2,11,2,3,2,11,2,11,2,3,2,11,2,11,2,3,2,11,2,11,2,3,2,5,2,5,2,3,2,11,2,11,2,3,2,11,2,11,2,3,2,11,2,11,2,3,2,11,2,11,2,3,2,5,2,5,2,3,2,11
 
-seq $0,328580 ; a(n) is the largest primorial dividing A276086(n), where A276086 converts the primorial base expansion of n into its prime product form.
-seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+seq $0,328570 ; Index of the least significant zero digit in the primorial base expansion of n, when the rightmost digit is in the position 1.
+sub $0,1
+seq $0,129075 ; Numbers n such that (n-4)/3 is prime.
+sub $0,10
+div $0,3
+add $0,2

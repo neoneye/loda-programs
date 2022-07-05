@@ -4,9 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,66096 ; Duplicate values in A060143.
+  seq $2,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
   add $0,$3
   trn $0,3
+  sub $1,1
   add $1,$2
   sub $3,1
 lpe

@@ -4,9 +4,7 @@
 
 lpb $0
   mov $2,$0
-  lpb $2
-    mod $2,9
-  lpe
+  mod $2,9
   div $0,9
   mul $0,7
   add $1,$2

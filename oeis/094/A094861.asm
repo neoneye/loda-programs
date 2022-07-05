@@ -1,5 +1,5 @@
 ; A094861: Same as A094858, except that we fix X = 123123123...
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,6,10,14,24,36,58
 
 mov $1,2
@@ -10,6 +10,7 @@ mul $4,$0
 mov $5,2
 lpb $3
   sub $3,1
+  mod $3,10
   add $0,1
   add $2,$1
   mul $1,$3

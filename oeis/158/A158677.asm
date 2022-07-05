@@ -1,11 +1,11 @@
 ; A158677: Period 6: repeat [3, 4, 0, 5, 6, 3].
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5
 
 mod $0,6
 lpb $0
   mov $2,$0
-  seq $2,6094 ; Products of 2 successive primes.
+  seq $2,228190 ; a(n) = sum_{i=1..n} prime(i) + product_{i=1..n} prime(i).
   sub $2,2
   mod $0,2
   mov $1,$2

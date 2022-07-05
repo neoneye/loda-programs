@@ -1,7 +1,6 @@
 ; A290825: Least base-3 digit of n.
-; Submitted by Jamie Morken(m2)
+; Submitted by Simon Strandgaard
 ; 0,1,2,0,1,1,0,1,2,0,0,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 seq $0,7089 ; Numbers in base 3.
-seq $0,4186 ; Arrange digits of n in decreasing order.
-mod $0,10
+seq $0,54054 ; Smallest digit of n.

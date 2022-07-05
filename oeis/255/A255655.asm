@@ -1,17 +1,16 @@
 ; A255655: The sum of the odd terms in row n of A050873.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,5,2,9,5,13,4,21,9,21,10,25,13,45,8,33,21,37,18,65,21,45,20,65,25,81,26,57,45,61,16,105,33,117,42,73,37,125,36,81,65,85,42,189,45,93,40,133,65,165,50,105,81,189,52,185,57,117,90
 
-mov $4,$0
 add $0,1
-mul $0,2
 mov $2,$0
-lpb $0
-  sub $0,1
-  add $4,2
+dif $2,2
+mul $2,2
+add $2,1
+lpb $2
   mov $3,$2
-  gcd $3,$4
+  gcd $3,$0
   add $1,$3
+  sub $2,2
 lpe
 mov $0,$1
-div $0,4

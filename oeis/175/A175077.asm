@@ -1,10 +1,11 @@
 ; A175077: Final number reached by iterating r -> A049711(r) starting at r = n.
+; Submitted by Simon Strandgaard
 ; 1,2,1,1,2,1,2,1,2,1,1,1,2,1,2,1,1,1,2,1,2,1,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,2,1,1,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1
 
-lpb $0
-  mov $2,$0
-  max $2,2
-  seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
-  sub $0,$2
-lpe
+mov $1,$0
+trn $0,1
+seq $0,121559 ; Final result (0 or 1) under iterations of {r mod (max prime p <= r)} starting at r = n.
+cmp $1,0
+cmp $1,0
+mul $0,$1
 add $0,1

@@ -1,6 +1,13 @@
 ; A338863: Product of the nonzero digits of (n written in base 6).
-; Submitted by Jamie Morken(m3)
+; Submitted by Simon Strandgaard
 ; 1,1,2,3,4,5,1,1,2,3,4,5,2,2,4,6,8,10,3,3,6,9,12,15,4,4,8,12,16,20,5,5,10,15,20,25,1,1,2,3,4,5,1,1,2,3,4,5,2,2,4,6,8,10,3,3,6,9,12,15,4,4,8,12,16,20,5,5,10,15,20,25,2,2,4,6,8,10,2,2,4
 
-seq $0,7092 ; Numbers in base 6.
-seq $0,51801 ; Product of the nonzero digits of n.
+mov $1,1
+lpb $0
+  mov $2,$0
+  mod $2,6
+  mul $2,$1
+  div $0,6
+  max $1,$2
+lpe
+mov $0,$1

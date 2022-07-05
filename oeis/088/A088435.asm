@@ -1,25 +1,18 @@
 ; A088435: 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k>=1,1/3^(2^k)).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 3,2,2,1,2,3,2,1,3,2,1,2,2,3,2,1,3,2,2,1,2,3,1,2,3,2,1,2,2,3,2,1,3,2,2,1,2,3,2,1,3,2,1,2,2,3,1,2,3,2,2,1,2,3,1,2,3,2,1,2,2,3,2,1,3,2,2,1,2,3,2,1,3,2,1,2,2,3,2,1,3,2,2,1,2,3,1,2,3,2,1,2,2,3,1,2,3,2,2,1
 
-mov $1,1
-add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$4
-  bin $2,$0
-  mov $4,$1
-  mul $4,2
-  mov $3,$4
-  sub $3,$0
-  bin $3,$1
-  add $1,1
-  mul $3,$2
-  div $3,$1
-  mod $3,2
-  div $4,2
-  div $5,-1
-  add $5,$3
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  add $0,1
+  seq $0,73089 ; a(n) = (1/2)*(4n - 3 - Sum_{k=1..n} A007400(k)).
+  sub $0,$2
+  mov $2,$0
 lpe
-mov $0,$5
-add $0,2
+sub $1,$2
+add $1,2
+mov $0,$1

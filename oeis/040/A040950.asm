@@ -1,6 +1,6 @@
 ; A040950: Continued fraction for sqrt(982).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 31,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1
 
-seq $0,40616 ; Continued fraction for sqrt(642).
-seq $0,7094 ; Numbers in base 8.
+seq $0,40774 ; Continued fraction for sqrt(803).
+seq $0,7095 ; Numbers in base 9.

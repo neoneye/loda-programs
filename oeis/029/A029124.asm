@@ -8,8 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25787 ; Expansion of 1/((1-x)(1-x^7)(1-x^11)).
+  seq $2,25793 ; Expansion of 1/((1-x)(1-x^10)(1-x^11)).
   add $1,$2
-  mov $3,10
+  mov $3,7
 lpe
 mov $0,$1

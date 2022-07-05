@@ -1,21 +1,6 @@
 ; A347176: G.f.: Sum_{k>=1} (-1)^(k+1) * k * x^(k^2) / (1 - x^(k^2)).
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,1,1,-1,1,1,1,-1,4,1,1,-1,1,1,1,-5,1,4,1,-1,1,1,1,-1,6,1,4,-1,1,1,1,-5,1,1,1,-4,1,1,1,-1,1,1,1,-1,4,1,1,-5,8,6,1,-1,1,4,1,-1,1,1,1,-1,1,1,4,-13,1,1,1,-1,1,1,1,-4,1,1,6,-1,1,1,1,-5,13,1,1,-1,1,1,1,-1,1,4
 
-add $0,1
-mov $2,$0
-lpb $0
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
-  mov $3,$2
-  dif $3,$0
-  mod $3,$0
-  add $3,$2
-  cmp $3,$2
-  mul $3,$0
-  sub $0,1
-  mul $1,-1
-  add $1,$3
-lpe
-mov $0,$1
+seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
+seq $0,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.

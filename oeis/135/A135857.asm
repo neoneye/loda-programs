@@ -5,11 +5,12 @@
 lpb $0
   add $2,1
   sub $0,$2
-  add $1,1
 lpe
-bin $1,$0
 add $0,1
+mov $1,$2
+bin $1,$0
+mul $1,2
+add $2,1
 bin $2,$0
-mul $2,3
-add $2,$1
-mov $0,$2
+add $1,$2
+mov $0,$1

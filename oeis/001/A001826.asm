@@ -4,11 +4,11 @@
 
 add $0,1
 lpb $0
-  mov $3,$0
-  sub $0,1
-  add $2,4
-  mod $3,$2
-  cmp $3,1
+  mov $3,$2
+  gcd $3,$0
+  cmp $3,$0
+  trn $0,4
   add $1,$3
+  sub $2,1
 lpe
 mov $0,$1

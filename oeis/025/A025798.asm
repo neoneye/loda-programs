@@ -4,13 +4,12 @@
 
 add $0,3
 lpb $0
-  sub $0,3
-  sub $3,$2
-  div $3,5
+  sub $0,1
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8618 ; Expansion of 1/((1-x^2)(1-x^9)).
+  seq $2,8615 ; a(n) = floor(n/2) - floor(n/3).
   add $1,$2
+  mov $3,8
 lpe
 mov $0,$1
