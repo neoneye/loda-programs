@@ -1,17 +1,21 @@
 ; A156872: Period 12: 1,3,-1,3,1,0,-1,-3,1,-3,-1,0 repeated.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0
 
-mov $3,1
-mul $0,2
-add $0,1
-lpb $0
-  sub $0,1
-  sub $1,$3
+mov $4,$0
+mov $3,3
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  seq $0,154811 ; a(n) = Fibonacci(2n+1) mod 9.
   mov $2,$3
-  mul $3,20
-  mod $3,9
-  add $3,$1
-  mov $1,$2
+  mul $2,$0
+  mul $4,$3
+  sub $0,2
+  add $1,$2
+  mov $5,$0
 lpe
-mov $0,$3
+sub $1,$5
+mov $0,$1
+sub $0,2

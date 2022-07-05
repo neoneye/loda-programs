@@ -1,6 +1,6 @@
-; A175919: Convert n to binary. XOR each respective digit of binary n and binary A030101(n), where A030101(n) is the reversal of the order of the digits in the binary representation of n (given in decimal). a(n) is the decimal value of the result.
+; A344220: a(n) is the least k >= 0 such that n XOR k is a binary palindrome (where XOR denotes the bitwise XOR operator).
 ; Submitted by Simon Strandgaard
-; 0,0,3,0,5,0,5,0,9,0,15,6,15,6,9,0,17,0,27,10,17,0,27,10,27,10,17,0,27,10,17,0,33,0,51,18,45,12,63,30
+; 0,0,1,0,1,0,1,0,1,0,3,2,3,2,1,0,1,0,3,2,1,0,3,2,3,2,1,0,3,2,1,0,1,0,3,2,5,4,7,6,5,4,7,6,1,0,3,2,3,2,1,0,7,6,5,4,7,6,5,4
 
 mov $4,1
 mov $5,$0
@@ -8,7 +8,7 @@ seq $5,30101 ; a(n) is the number produced when n is converted to binary digits,
 max $2,$0
 seq $2,70939 ; Length of binary representation of n.
 lpb $2
-  sub $2,1
+  sub $2,2
   mov $3,$0
   add $3,$5
   mod $3,2

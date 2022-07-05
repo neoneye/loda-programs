@@ -2,21 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,3,4,5,6,7,7,8,9,10,10,11
 
-mov $1,1
-lpb $0
-  sub $0,1
-  mod $2,2
-  mov $5,$1
-  mov $6,$4
-  div $7,2
-  mov $1,1
-  add $1,$3
-  mov $4,$5
-  add $4,1
-  add $5,$2
-  mov $2,2
-  add $2,$7
-  mov $3,$5
-  mov $7,$6
-lpe
-mov $0,$1
+seq $0,314765 ; Coordination sequence Gal.6.194.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+sub $0,2
+div $0,6
+add $0,1
