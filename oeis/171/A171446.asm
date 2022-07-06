@@ -1,6 +1,14 @@
 ; A171446: a(n) = 0+1+2+...+n in lunar arithmetic in base 3 written in base 3.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,1,2,12,12,12,22,22,22,122,122,122,122,122,122,122,122,122,222,222,222,222,222,222,222,222,222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222,1222
 
-seq $0,171438 ; a(n) = 0+1+2+...+n in lunar arithmetic in base 3 written in base 10.
-seq $0,7089 ; Numbers in base 3.
+mov $3,1
+lpb $0
+  mov $2,$0
+  min $2,2
+  mul $2,$3
+  div $0,3
+  add $1,$2
+  mul $3,10
+lpe
+mov $0,$1

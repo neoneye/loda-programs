@@ -11,11 +11,9 @@ lpe
 add $0,$1
 mov $1,$0
 div $1,2
-mov $0,2
+mov $0,3
 pow $0,$2
-gcd $0,2
-add $0,1
-bin $0,2
+gcd $0,3
 div $2,2
 bin $1,$2
 mul $1,$0

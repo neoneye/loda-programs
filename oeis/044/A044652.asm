@@ -12,9 +12,9 @@ gcd $5,81
 lpb $0
   mov $0,1
   sub $3,$5
-  div $3,4
 lpe
 mul $2,81
+div $3,4
 sub $1,$3
 mul $1,3
 add $1,$2

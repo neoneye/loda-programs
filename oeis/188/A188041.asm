@@ -1,14 +1,6 @@
 ; A188041: a(n) = [n*r]-[k*r]-[n*r-k*r], where r=sqrt(2), k=3, [ ]=floor.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0
 
-mov $1,3
-lpb $0
-  dif $1,2
-  sub $0,$1
-  mov $1,-8
-  mov $2,$0
-  max $2,0
-  seq $2,187969 ; a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=3, [ ]=floor.
-lpe
-mov $0,$2
+trn $0,3
+seq $0,187969 ; a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=3, [ ]=floor.
