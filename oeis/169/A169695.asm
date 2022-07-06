@@ -2,14 +2,6 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,1,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 
-lpb $0
-  add $1,1
-  sub $0,$1
-  add $1,1
-lpe
-mov $1,1
-lpb $1
-  mov $1,$0
-lpe
-add $1,1
-mov $0,$1
+trn $0,1
+seq $0,49240 ; Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
+add $0,1

@@ -8,8 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25849 ; Expansion of 1/((1-x^3)(1-x^7)(1-x^12)).
+  seq $2,25857 ; Expansion of 1/((1-x^3)(1-x^10)(1-x^12)).
   add $1,$2
-  mov $3,7
+  mov $3,4
 lpe
 mov $0,$1
