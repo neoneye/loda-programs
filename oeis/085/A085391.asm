@@ -10,9 +10,7 @@ add $1,$0
 mul $0,-1
 add $0,$2
 bin $1,$0
-add $3,$2
+mov $3,$2
 bin $3,$0
-add $3,$1
-mul $1,2
 sub $3,$1
 mov $0,$3

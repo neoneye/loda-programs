@@ -4,10 +4,9 @@
 
 add $0,1
 mov $2,$0
-lpb $0
+lpb $2
   add $4,1
   min $0,$4
-  sub $2,1
   mov $3,$2
   dif $3,$0
   cmp $3,$2

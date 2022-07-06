@@ -10,10 +10,10 @@ lpb $4
   sub $0,$4
   add $2,1
   gcd $3,$0
-  pow $0,4
   lpb $0
     dif $0,5
     sub $2,$3
+    sub $2,3
   lpe
   add $1,$2
 lpe

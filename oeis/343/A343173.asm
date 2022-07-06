@@ -1,22 +1,17 @@
 ; A343173: First differences of paper-folding sequence A014577.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 0,-1,1,0,-1,0,1,0,0,-1,0,1,-1,0,1,0,0,-1,1,0,-1,0,0,1,0,-1,0,1,-1,0,1,0,0,-1,1,0,-1,0,1,0,0,-1,0,1,-1,0,0,1,0,-1,1,0,-1,0,0,1,0,-1,0,1,-1,0,1,0,0,-1,1,0,-1,0,1,0,0,-1,0,1,-1,0,1,0,0,-1,1,0,-1,0,0,1
 
-mov $1,$0
-add $1,2
+mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
-  mov $0,$1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  trn $0,2
-  seq $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+  seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+  gcd $0,2
+  add $1,$2
+  mov $2,$0
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
-div $0,2
+sub $1,$2
+mov $0,$1

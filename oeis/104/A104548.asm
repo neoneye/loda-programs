@@ -10,9 +10,9 @@ lpb $0
 lpe
 mul $0,2
 bin $1,$0
+add $0,1
 lpb $0
-  sub $0,1
+  sub $0,2
   mul $1,$0
-  sub $0,1
 lpe
 mov $0,$1

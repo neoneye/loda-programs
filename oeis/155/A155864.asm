@@ -12,7 +12,7 @@ sub $2,$0
 mul $2,$0
 mov $0,$2
 lpb $0
-  mov $0,0
+  mov $0,1
   mul $1,$2
 lpe
 mov $0,$1

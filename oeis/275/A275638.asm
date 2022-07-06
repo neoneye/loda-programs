@@ -7,6 +7,7 @@ lpb $0
   sub $0,3
   sub $0,$3
   mov $2,$0
+  mod $2,6
   max $2,0
   seq $2,78070 ; Expansion of (1-x)/(1 + 2*x + 2*x^2 + x^3).
   add $1,$2

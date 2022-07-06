@@ -1,10 +1,11 @@
 ; A058932: Number of unlabeled claw-free cubic graphs with 2n nodes and connectivity 1.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,1,1,3,5,11,20
 
 mov $1,$0
 lpb $0
   sub $0,2
+  mod $0,11
   mov $2,$0
   max $2,0
   seq $2,293046 ; Number of even permutations on {1,2,...,n} with exactly 2 weak excedances.

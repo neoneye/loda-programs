@@ -1,12 +1,13 @@
 ; A033823: Numbers of fixed points of elements of group M24.
-; Submitted by Bill F
+; Submitted by Simon Strandgaard
 ; 24,8,6,4,4,2,3,2,2,1,1,1
 
 mov $1,$0
-add $0,1
+add $0,2
 lpb $0
-  sub $0,1
+  sub $0,2
   pow $4,6
+  mul $4,2
   sub $4,1
   mov $3,$4
   mul $3,2
