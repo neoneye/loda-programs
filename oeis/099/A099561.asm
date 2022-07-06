@@ -4,16 +4,12 @@
 
 add $0,1
 lpb $0
-  sub $2,1
-  cmp $2,1
-  sub $2,$4
+  mov $2,$4
   bin $2,$0
-  bin $3,0
-  mul $3,$2
-  gcd $3,0
-  add $4,1
-  sub $0,2
-  trn $0,2
+  mov $3,$2
+  gcd $3,$2
+  sub $4,1
+  trn $0,4
   add $1,$3
 lpe
 mov $0,$1

@@ -5,7 +5,7 @@
 mov $1,1
 add $1,$0
 add $0,1
-seq $0,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
+seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $2,$0
 gcd $2,$1
 pow $2,2

@@ -5,9 +5,8 @@
 add $0,1
 mov $2,$0
 lpb $2
-  sub $4,$3
-  sub $4,2
   add $3,2
+  sub $4,$3
   mov $5,$0
   mod $5,$4
   cmp $5,0

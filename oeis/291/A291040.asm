@@ -1,14 +1,11 @@
 ; A291040: The arithmetic function u(n,3,2).
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 5,5,3,4,5,3,5,4,3,5,5,3,5,5,3,4,5,3,5,4,3,5,5,3,5,5,3,4,5,3,5,4,3,5,5,3,5,5,3,4,5,3,5,4,3,5,5,3,5,5,3,4,5,3,5,4,3,5,5,3,5,5,3,4,5,3,5,4,3,5
 
-add $0,1
+mov $1,$0
+pow $1,2
+add $0,11
+mul $0,$1
 gcd $0,12
-add $0,1
-lpb $0
-  div $0,2
-  pow $0,2
-  add $1,1
-lpe
-mov $0,$1
+div $0,6
 add $0,3

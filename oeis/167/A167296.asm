@@ -16,10 +16,9 @@ lpb $0
     sub $3,$4
   lpe
   mov $5,$2
-  mul $5,2
-  sub $5,4
+  sub $5,2
   dif $0,$2
-  mul $1,2
+  mul $1,4
   mul $1,$5
 lpe
 mul $0,$1

@@ -1,22 +1,21 @@
 ; A131036: First differences of A131711.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,3,-3,7,-9,9,-1,-3,3,-7,-1,1,1,3,-3,7,-9,9,-1,-3,3,-7,-1,1,1,3,-3,7,-9,9,-1,-3,3,-7,-1,1,1,3,-3,7,-9,9,-1,-3,3,-7,-1
 
-mul $0,2
-sub $0,1
-mov $1,1
-mov $2,2
-mov $3,1
-lpb $0
-  sub $0,1
-  mod $2,10
-  mov $3,1
-  add $3,$0
-  mod $3,2
-  mov $4,$2
-  sub $4,$1
-  add $2,$1
-  mul $3,$4
-  add $1,$3
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  max $0,0
+  seq $0,131711 ; Period 12: repeat 0, 1, 2, 5, 2, 9, 0, 9, 8, 5, 8, 1.
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
 lpe
-mov $0,$3
+min $5,1
+mul $5,$4
+sub $1,$5
+mov $0,$1

@@ -3,5 +3,5 @@
 ; 0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0
 
 seq $0,82907 ; A modified Pascal's triangle, read by rows, and modified as follows: binomial(n,j) is replaced by gcd(2^n, binomial(n,j)), i.e., the largest power of 2 dividing binomial(n,j).
-sub $0,1
-seq $0,20987 ; Zero-one version of Golay-Rudin-Shapiro sequence (or word).
+div $0,4
+mod $0,2

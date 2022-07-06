@@ -1,21 +1,18 @@
 ; A178143: Sum of squares d^2 over the divisors d=2 and/or d=3 of n.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4,0,13,0,4,9,4
 
-mul $0,11
-add $0,4
-mul $0,5
-mov $1,$0
-sub $0,1
-bin $1,3
-div $1,$0
-mov $0,$1
-mov $1,0
-mod $0,10
-seq $0,243502 ; Permutation of even numbers: a(n) = 2 * A064216(n).
+add $0,1
+mov $2,$0
+mov $0,3
 lpb $0
-  add $1,$0
-  div $0,10
+  mov $3,$2
+  dif $3,$0
+  cmp $3,$2
+  cmp $3,0
+  mul $3,$0
+  pow $3,2
+  sub $0,1
+  add $1,$3
 lpe
 mov $0,$1
-sub $0,2

@@ -9,10 +9,7 @@ lpe
 sub $1,$0
 add $0,1
 cmp $0,1
-mul $0,3
 mul $0,$1
-mul $0,4
-add $1,1
-mul $1,2
+mul $0,6
+add $0,1
 add $0,$1
-div $0,2

@@ -2,15 +2,15 @@
 ; Submitted by Simon Strandgaard
 ; 1,0,1,1,1,1,2,1,3,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,11,9,12,11,13,12,15,13,17,15,18,17,20,18,22,20,24,22,26,24,28,26,30,28,33,30,35,33,37,35,40,37,43,40,45,43,48,45,51
 
-mov $1,1
-add $0,7
+add $0,3
 lpb $0
-  mov $2,$0
-  seq $2,14682 ; The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
-  trn $2,$0
-  div $2,4
   sub $0,3
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  mul $2,2
+  seq $2,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
   add $1,$2
+  mov $3,5
 lpe
-sub $1,1
 mov $0,$1
