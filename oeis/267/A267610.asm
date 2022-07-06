@@ -4,10 +4,5 @@
 
 add $0,1
 mov $1,$0
-pow $1,2
-lpb $1
-  seq $0,262867 ; Total number of ON (black) cells after n iterations of the "Rule 153" elementary cellular automaton starting with a single ON (black) cell.
-  sub $0,1
-  sub $1,$0
-lpe
-mov $0,$1
+seq $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
+sub $0,$1

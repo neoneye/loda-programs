@@ -1,15 +1,14 @@
 ; A011640: 66th cyclotomic polynomial.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,1,0,-1,-1,0,1,1,0,-1,-1,-1,0,1,1,0,-1,-1,0,1,1
 
-add $0,7
-mov $2,$0
+mov $1,1
+mul $0,10
 lpb $0
-  sub $0,1
-  div $2,18
-  add $3,1
-  trn $3,$2
-  add $3,$1
-  sub $1,$3
+  sub $0,11
+  add $2,$1
+  sub $1,$2
 lpe
-mov $0,$3
+cmp $0,0
+mul $0,$2
+add $0,$1

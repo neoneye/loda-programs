@@ -9,22 +9,18 @@ lpb $0
   lpb $0
     div $0,90
     add $1,$2
-    add $6,$2
     mov $3,2
-    pow $3,$6
-    lpb $0,2
-      lpb $6
-        mov $6,2
-        sub $3,2
-      lpe
-      bin $1,0
+    pow $3,$1
+    lpb $1
+      mov $1,2
+      sub $3,2
     lpe
-    div $6,9
+    div $1,9
   lpe
 lpe
-mov $26,$3
-cmp $26,0
-add $3,$26
+mov $4,$3
+cmp $4,0
+add $3,$4
 mov $0,$3
 add $0,1
 mod $0,10

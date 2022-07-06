@@ -1,15 +1,15 @@
 ; A079977: Fibonacci numbers interspersed with zeros.
-; Submitted by [SG]ATA-Rolf
+; Submitted by Simon Strandgaard
 ; 1,0,1,0,2,0,3,0,5,0,8,0,13,0,21,0,34,0,55,0,89,0,144,0,233,0,377,0,610,0,987,0,1597,0,2584,0,4181,0,6765,0,10946,0,17711,0,28657,0,46368,0,75025,0,121393,0,196418,0,317811,0,514229,0,832040,0,1346269
 
-mov $1,1
+mov $2,1
+add $0,1
+mul $0,2
 lpb $0
-  sub $0,1
-  mov $5,$1
-  mov $1,$4
-  mov $4,$2
-  add $4,$5
-  mov $2,$3
-  mov $3,$5
+  sub $0,4
+  add $2,$1
+  mul $1,-1
+  add $1,$2
 lpe
-mov $0,$1
+bin $0,2
+mul $0,$2
