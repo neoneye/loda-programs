@@ -4,9 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
+  seq $2,4957 ; a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
   add $0,$3
   trn $0,3
+  sub $1,1
   add $1,$2
   sub $3,1
 lpe

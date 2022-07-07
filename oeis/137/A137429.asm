@@ -4,9 +4,8 @@
 
 mov $2,-1
 pow $2,$0
-mov $1,-1
-max $1,$2
-mul $1,2
+mov $1,2
+mul $1,$2
 lpb $0
   sub $0,1
   mul $1,2

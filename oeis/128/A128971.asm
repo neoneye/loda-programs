@@ -1,6 +1,17 @@
 ; A128971: A130125 * A000012.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,2,5,4,4,10,10,8,8,21,20,20,16,16,42,42,40,40,32,32,85,84,84,80,80,64,64,170,170,168,168,160,160,128
 
-seq $0,130328 ; Triangle of differences between powers of 2, read by rows.
-seq $0,265263 ; Change every other 1 bit in binary expansion of n to 0.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $1,2
+mov $2,$1
+sub $2,$0
+mov $3,2
+pow $3,$0
+mov $0,2
+pow $0,$2
+div $0,3
+mul $0,$3

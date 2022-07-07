@@ -4,13 +4,9 @@
 
 lpb $0
   mov $1,$0
-  seq $2,156845 ; 12167n - 8579.
-  mov $4,$2
-  min $4,1
   trn $0,8
-  add $3,$4
-  mul $3,9
-  mul $1,$3
+  mul $2,9
+  add $2,1
 lpe
-div $1,9
+mul $1,$2
 mov $0,$1

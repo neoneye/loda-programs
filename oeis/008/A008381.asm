@@ -1,16 +1,20 @@
 ; A008381: floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5).
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,1,1,2,4,8,16,16,24,36,54,81,81,108,144,192,256,256,320,400,500,625,625,750,900,1080,1296,1296,1512,1764,2058,2401,2401,2744,3136,3584,4096,4096,4608,5184,5832
 
-mov $3,1
-add $0,2
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mov $1,$3
-  trn $1,$0
-  seq $1,8497 ; a(n) = floor(n/5)*floor((n+1)/5).
-  mul $2,$1
-  add $3,1
+mov $3,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$3
+  add $0,$4
+  trn $0,1
+  seq $0,8382 ; Floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5)*floor((n+4)/5).
+  mov $2,$4
+  mul $2,$0
+  add $1,$2
 lpe
-mov $0,$2
+min $3,1
+mul $3,$0
+mov $0,$1
+sub $0,$3

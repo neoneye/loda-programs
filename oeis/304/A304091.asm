@@ -7,9 +7,9 @@ mov $1,1
 mov $3,-3
 mov $4,1
 mov $2,$0
-mul $2,2
+mul $2,4
+div $2,3
 lpb $2
-  sub $2,1
   mov $6,$4
   add $4,$3
   mov $5,$0

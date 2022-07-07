@@ -4,11 +4,11 @@
 
 mov $2,1
 mul $0,2
-add $0,1
 lpb $0
   mov $3,$0
+  max $3,3
+  sub $0,1
   div $0,2
-  trn $3,4
   add $3,$0
   mod $3,2
   mul $3,$2
