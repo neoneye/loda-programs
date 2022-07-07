@@ -13,7 +13,6 @@ mov $0,$1
 add $0,1
 pow $0,2
 mul $1,$2
-add $1,4
 add $0,$1
 div $0,2
-sub $0,1
+add $0,1

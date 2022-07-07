@@ -1,5 +1,5 @@
 ; A055373: Invert transform applied twice to Pascal's triangle A007318.
-; Submitted by STE\/E
+; Submitted by Simon Strandgaard
 ; 1,1,1,3,6,3,9,27,27,9,27,108,162,108,27,81,405,810,810,405,81,243,1458,3645,4860,3645,1458,243,729,5103,15309,25515,25515,15309,5103,729,2187,17496,61236,122472,153090,122472,61236,17496,2187,6561
 
 lpb $0
@@ -7,12 +7,8 @@ lpb $0
   sub $0,$1
 lpe
 mov $2,$1
+trn $2,1
 bin $1,$0
 mov $0,3
 pow $0,$2
-mul $1,3
-mul $1,$0
-mov $0,$1
-sub $0,9
-div $0,9
-add $0,1
+mul $0,$1

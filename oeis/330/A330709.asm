@@ -10,8 +10,8 @@ mov $1,$0
 add $2,1
 sub $2,$0
 mov $0,$2
+mod $0,2
 lpb $0
-  mod $0,2
   sub $0,1
   add $1,$2
 lpe

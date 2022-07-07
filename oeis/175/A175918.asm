@@ -15,12 +15,11 @@ lpb $2
   mod $6,2
   div $0,2
   add $3,$6
-  sub $3,2
-  cmp $3,0
+  trn $3,1
   cmp $3,0
   mul $3,$4
+  div $5,2
   add $1,$3
   mul $4,2
-  div $5,2
 lpe
 mov $0,$1
