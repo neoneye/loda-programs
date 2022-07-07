@@ -7,7 +7,7 @@ sub $1,10
 lpb $1
   mov $2,$1
   lpb $0
-    mov $0,0
+    mov $0,1
     mul $2,10
   lpe
   mov $0,$2
