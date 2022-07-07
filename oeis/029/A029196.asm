@@ -8,8 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25806 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^6)).
+  seq $2,25810 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^10)) in powers of x.
   add $1,$2
-  mov $3,10
+  mov $3,6
 lpe
 mov $0,$1

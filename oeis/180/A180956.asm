@@ -1,5 +1,11 @@
 ; A180956: Denominator in triangle T(n,k)=A180955/A180956 read by rows. A046161(A004736).
+; Submitted by Simon Strandgaard
 ; 1,2,1,8,2,1,16,8,2,1,128,16,8,2,1,256,128,16,8,2,1,1024,256,128,16,8,2,1,2048,1024,256,128,16,8,2,1,32768,2048,1024,256,128,16,8,2,1,65536,32768,2048,1024,256,128,16,8,2,1,262144,65536,32768,2048,1024,256,128
 
-seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
-seq $0,46161 ; a(n) = denominator of binomial(2n,n)/4^n.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+seq $1,46161 ; a(n) = denominator of binomial(2n,n)/4^n.
+mov $0,$1

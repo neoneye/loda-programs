@@ -4,8 +4,8 @@
 
 mov $7,$0
 mov $4,$0
+mod $4,10
 lpb $4
-  mod $4,10
   sub $4,1
   mov $0,$7
   sub $0,$4

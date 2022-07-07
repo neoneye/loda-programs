@@ -1,16 +1,15 @@
 ; A016411: 437th cyclotomic polynomial.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,1,-1,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,1,-1,0,0,1,-1,0,0,1,-1,0,0,0,0,0,1,-1,0,0,1,-1,0,0,1,-1,0,0,1,-1,0,0,1,-1,0,1,-1,0,0,1
 
 add $0,3
 lpb $0
   sub $0,3
-  mul $3,2
   sub $0,$3
   mov $2,$0
   max $2,0
   seq $2,14032 ; Inverse of 23rd cyclotomic polynomial.
   add $1,$2
-  mov $3,8
+  mov $3,16
 lpe
 mov $0,$1

@@ -5,12 +5,9 @@
 add $0,3
 lpb $0
   sub $0,3
-  sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,2
-  seq $2,25832 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^10)).
+  seq $2,25810 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^10)) in powers of x.
   add $1,$2
-  mov $3,7
 lpe
 mov $0,$1

@@ -1,22 +1,12 @@
 ; A040319: Continued fraction for sqrt(338).
-; Submitted by Jamie Morken(s3)
+; Submitted by Simon Strandgaard
 ; 18,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2,36,2,1,1,2
 
+seq $0,40953 ; Continued fraction for sqrt(985).
+mov $1,$0
 mul $0,2
-pow $0,2
-mov $2,54
-mov $3,$2
-mov $1,$3
-mov $4,$2
-lpb $0
-  mul $1,2
-  lpb $$0
-    div $1,224
-    add $1,2
-    add $1,$0
-    div $0,7
-  lpe
-  mod $0,5
-lpe
-div $1,3
+div $0,14
+add $1,$0
 mov $0,$1
+div $0,2
+add $0,1
