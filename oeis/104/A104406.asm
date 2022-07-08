@@ -1,11 +1,7 @@
 ; A104406: Number of numbers <= n having no 2 in ternary representation.
+; Submitted by Simon Strandgaard
 ; 1,1,2,3,3,3,3,3,4,5,5,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,9,9,10,11,11,11,11,11,12,13,13,14,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15
 
 add $0,1
-lpb $0
-  mov $2,$0
-  seq $2,39966 ; a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+seq $0,81611 ; Number of numbers <= n having no 2 in their ternary representation.
+sub $0,1

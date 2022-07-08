@@ -1,5 +1,5 @@
 ; A086260: Number of symmetric n X n conference matrices.
-; Submitted by Fornax
+; Submitted by Simon Strandgaard
 ; 1,2,0,0,0,384,0,0,0,2580480,0,0,0
 
 mov $2,2
@@ -10,6 +10,7 @@ lpb $0
   sub $3,$2
   gcd $3,4
   add $3,$1
+  dif $0,9
   mul $2,2
   mul $2,$3
   div $3,2

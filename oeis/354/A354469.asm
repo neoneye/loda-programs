@@ -1,10 +1,11 @@
 ; A354469: Write n in primorial base, then replace each nonzero digit d of radix p with p-d.
-; Submitted by Coleslaw
+; Submitted by Simon Strandgaard
 ; 0,1,4,5,2,3,24,25,28,29,26,27,18,19,22,23,20,21,12,13,16,17,14,15,6,7,10,11,8,9,180,181,184,185,182,183,204,205,208,209,206,207,198,199,202,203,200,201,192,193,196,197,194,195,186,187,190,191,188,189
 
+sub $1,$0
 mov $2,1
 mov $3,1
-mov $6,$0
+mov $6,5
 lpb $6
   sub $6,1
   add $2,1
@@ -15,7 +16,6 @@ lpb $6
   sub $0,$5
   min $5,$3
   mul $5,$2
-  sub $1,1
   add $1,$5
   add $2,$7
   mov $3,$4

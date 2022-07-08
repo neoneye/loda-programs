@@ -1,26 +1,23 @@
 ; A253414: G.f. satisfies (1+x^2)*g(x) = 1 + x*g(x^2).
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,1,-1,0,1,-1,-1,1,1,0,-1,-1,1,0,-1,1,1,0,-1,0,1,-1,-1,0,1,1,-1,-1,1,0,-1,1,1,0,-1,0,1,-1,-1,1,1,0,-1,-1,1,0,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,-1,1,0,-1,1,1,0,-1,0,1,-1,-1,1,1,0,-1,-1,1,0,-1,1,1,0,-1,0,1,-1,-1,0,1,1,-1,-1,1,0,-1,0,1,1,-1,0
 
-add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$4
-  trn $2,1
-  bin $2,$0
-  mov $4,$1
-  mul $4,2
-  mov $3,$4
-  sub $3,$0
-  bin $3,$1
-  add $1,1
-  mul $3,$2
-  div $3,$1
-  mod $3,2
-  add $4,2
-  div $4,2
-  add $4,2
-  div $5,-1
-  add $5,$3
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  add $0,$3
+  trn $0,1
+  mul $0,3
+  seq $0,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
 lpe
-mov $0,$5
+min $5,1
+mul $5,$4
+sub $1,$5
+mov $0,$1

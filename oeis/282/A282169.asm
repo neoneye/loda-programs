@@ -1,5 +1,5 @@
 ; A282169: a(n) is the minimal product of a positive integer sequence of length n with no duplicate substrings of length greater than 1, and every number different from its neighbors.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,2,2,6,6,24,24,120,120,576,720
 
 add $0,1
@@ -10,6 +10,7 @@ lpb $0
   mov $3,$2
   gcd $3,$0
   sub $0,1
+  dif $0,6
   gcd $2,2
   mov $4,$0
   div $4,$3
