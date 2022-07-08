@@ -7,10 +7,10 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  div $2,2
+  div $2,4
   max $2,0
-  mul $2,5
-  seq $2,25879 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^10)).
+  mul $2,3
+  seq $2,8649 ; Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
   add $1,$2
   mov $3,11
 lpe

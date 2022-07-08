@@ -1,9 +1,9 @@
 ; A127278: Number of fixed points in range [A014137(n-1)..A014138(n-1)] of permutation A126313/A126314.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 1,1,0,2,4,2,0,4,0,1,0,0,0
 
 mul $0,2
-max $0,2
+max $0,1
 mov $1,1
 mov $2,2
 lpb $0

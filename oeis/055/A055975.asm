@@ -9,8 +9,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,3188 ; Decimal equivalent of Gray code for n.
-  mov $2,$3
-  mul $2,$0
+  add $2,$5
   add $1,$2
   mul $4,$3
   mov $5,$0
