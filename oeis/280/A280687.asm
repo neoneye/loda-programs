@@ -18,9 +18,10 @@ lpb $2
   mul $6,$5
   add $1,$6
   mov $5,$0
+  div $5,2
+  add $5,1
   trn $5,$4
-  cmp $5,0
-  cmp $5,0
+  min $5,1
   sub $2,$5
   mov $3,$7
 lpe

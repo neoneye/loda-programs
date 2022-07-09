@@ -18,13 +18,13 @@ lpb $0
     max $4,$5
     sub $3,$4
   lpe
+  add $4,1
   mov $5,1
   mov $6,2
   lpb $0
     dif $0,$2
     mul $5,$2
     sub $5,$4
-    sub $5,1
     mul $5,$2
     add $5,1
     div $6,2

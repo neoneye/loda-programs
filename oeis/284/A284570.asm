@@ -8,11 +8,11 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,18892 ; Number of ways to write 1/n as a sum of exactly 2 unit fractions.
+  seq $0,63647 ; Number of ways to write 1/n as a difference of exactly 2 unit fractions.
   mov $2,$3
   mul $2,$0
-  mul $4,$3
   add $1,$2
+  mul $4,$3
   mov $5,$0
 lpe
 sub $1,$5

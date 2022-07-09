@@ -6,11 +6,9 @@ mov $2,$0
 mul $2,25
 mul $0,2
 add $0,1
-mov $1,3125
+mov $1,-3125
 gcd $1,$0
-mul $1,-1
-div $1,4
-mul $1,2
+div $1,-2
 add $1,12
 add $1,$2
 mov $0,$1

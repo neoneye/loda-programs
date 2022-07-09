@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   mov $6,2
   lpb $6
-    sub $6,1
+    mov $6,1
     mov $1,$0
     cmp $1,0
     mov $3,$0
@@ -24,9 +24,7 @@ lpb $4
       add $2,2
       div $0,10051
     lpe
-    mov $7,$6
-    mul $7,$2
-    add $5,$7
+    add $5,$2
   lpe
   mov $0,1
 lpe

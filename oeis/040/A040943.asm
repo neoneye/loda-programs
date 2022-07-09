@@ -1,18 +1,9 @@
 ; A040943: Continued fraction for sqrt(975).
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 31,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4,62,4,2,4
 
-seq $0,40282 ; Continued fraction for sqrt(300).
-dif $0,4
 mov $1,$0
-mul $0,5
-add $0,1
-mov $2,$1
-div $2,7
-sub $0,$2
-div $0,3
-add $0,6
-mul $0,4
+mod $1,2
+seq $0,40955 ; Continued fraction for sqrt(987).
+mul $1,$0
 add $0,$1
-div $0,4
-sub $0,7
