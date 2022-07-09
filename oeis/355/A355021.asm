@@ -1,13 +1,7 @@
 ; A355021: a(n) = (-1)^n * L(n) - 1, where L = A000032 (Lucas numbers).
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 1,-2,2,-5,6,-12,17,-30,46,-77,122,-200,321,-522,842,-1365,2206,-3572,5777,-9350,15126,-24477,39602,-64080,103681,-167762,271442,-439205,710646,-1149852,1860497,-3010350,4870846,-7881197,12752042,-20633240,33385281
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $2,1
-  add $1,$2
-  div $1,-1
-  add $2,$1
-lpe
-mov $0,$1
+add $0,1
+seq $0,61084 ; Fibonacci-type sequence based on subtraction: a(0) = 1, a(1) = 2 and a(n) = a(n-2)-a(n-1).
+sub $0,1

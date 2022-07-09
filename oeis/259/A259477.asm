@@ -5,6 +5,4 @@
 mov $1,$0
 seq $1,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
 seq $0,153861 ; Triangle read by rows, binomial transform of triangle A153860.
-mul $0,4
 mul $0,$1
-div $0,4

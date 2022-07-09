@@ -10,8 +10,7 @@ lpb $0
   mov $3,$2
   gcd $3,$2
   sub $4,1
-  sub $0,2
-  trn $0,6
+  trn $0,8
   add $1,$3
 lpe
 mov $0,$1

@@ -8,11 +8,10 @@ lpb $0
   mov $2,$1
 lpe
 bin $1,$0
+sub $0,1
 sub $2,$0
 mod $2,2
-cmp $2,0
+add $0,4
 mod $0,2
-cmp $0,0
 add $0,$2
-mul $1,$0
-mov $0,$1
+mul $0,$1

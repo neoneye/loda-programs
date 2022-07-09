@@ -1,16 +1,8 @@
 ; A237274: a(n) = A236283(n) mod 9.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 2,1,4,5,1,4,2,7,7,5,7,7,2,4,1,5,4,1,2,1,4,5,1,4,2,7,7,5,7,7,2,4,1,5,4,1,2,1,4,5,1,4,2,7,7,5,7,7,2,4,1,5,4,1,2,1,4,5,1,4,2,7,7,5,7,7,2,4,1,5,4,1
 
 pow $0,2
-mov $2,2
-add $2,$0
-mov $0,-1
-pow $0,$2
-add $0,2
-mov $1,$2
-div $1,2
-add $0,$1
-add $0,$1
-mod $0,18
-div $0,2
+seq $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
+mod $0,9
+add $0,1

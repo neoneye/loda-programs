@@ -9,10 +9,9 @@ lpb $0
   add $3,$0
   mod $3,2
   mul $3,$2
-  div $0,2
-  trn $0,1
-  add $0,1
   add $2,$1
+  div $0,2
+  max $0,2
   add $1,$3
 lpe
 mov $0,$1
