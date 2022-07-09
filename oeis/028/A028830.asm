@@ -1,4 +1,5 @@
 ; A028830: Distinct orders of elements of Conway simple group Co_2.
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,18,20,23,24,28,30
 
 mov $2,$0
@@ -15,7 +16,7 @@ lpb $0
   mul $1,$3
   mul $1,2
   div $1,$0
-  mov $0,1
+  mov $0,6
 lpe
 add $1,1
 add $1,$2

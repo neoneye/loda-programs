@@ -7,8 +7,8 @@ mov $2,$0
 mov $3,$0
 lpb $3
   mov $1,$2
+  dif $1,2
   lpb $2
-    dif $1,2
     lpb $1
       dif $1,$3
       sub $2,1
