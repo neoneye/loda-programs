@@ -21,7 +21,7 @@ lpb $0
   div $0,$4
   mov $1,$0
   add $1,3
-  div $0,10
+  div $0,120
 lpe
 sub $1,3
 add $1,$3

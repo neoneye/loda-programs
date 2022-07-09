@@ -12,8 +12,6 @@ lpb $3
   lpb $5
     mov $2,$0
     mod $2,$1
-    cmp $2,0
-    cmp $2,0
     div $0,$1
     sub $5,$2
   lpe
