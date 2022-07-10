@@ -8,10 +8,9 @@ lpb $0
 lpe
 bin $1,$0
 mov $2,$0
-add $2,1
+add $2,2
 mov $0,2
 pow $0,$2
-mul $0,2
 add $0,1
 div $0,3
 mul $0,$1

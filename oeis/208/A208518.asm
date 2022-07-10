@@ -9,15 +9,14 @@ lpe
 mov $1,$2
 bin $1,$0
 add $0,1
-add $2,1
 mov $3,$2
 bin $3,$0
 add $3,$1
 sub $0,1
 lpb $0
   sub $0,1
+  add $3,$1
   div $1,-1
   add $1,$3
-  add $3,$1
 lpe
 mov $0,$1
