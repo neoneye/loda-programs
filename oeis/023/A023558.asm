@@ -4,9 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
+  seq $2,1612 ; a(n) = a(n-1) + a(n-2) - 1 for n > 1, a(0)=3, a(1)=2.
   add $0,$3
   trn $0,3
+  sub $1,1
   add $1,$2
   sub $3,1
 lpe

@@ -7,7 +7,7 @@ mov $1,2
 mov $4,1
 mov $2,$0
 lpb $2
-  sub $2,1
+  sub $2,2
   gcd $3,10
   mov $7,$4
   mod $7,2

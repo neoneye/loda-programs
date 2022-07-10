@@ -1,10 +1,11 @@
 ; A120489: Number of nonisomorphic perfect 1-factorizations of complete bipartite graph K_{n,n}.
-; Submitted by p3d-cluster
+; Submitted by Simon Strandgaard
 ; 1,1,1,0,1,0,2,0,37,0
 
 mov $1,1
 mov $2,1
 mov $3,$0
+min $3,10
 sub $3,1
 lpb $3
   sub $3,2

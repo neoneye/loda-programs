@@ -6,7 +6,7 @@ add $0,1
 lpb $0
   mov $3,$0
   lpb $3
-    div $3,9
+    div $3,16
     mov $4,$0
     cmp $4,0
     cmp $4,0
