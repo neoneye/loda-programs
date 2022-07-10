@@ -8,8 +8,7 @@ lpb $0
   mov $2,$1
 lpe
 sub $2,$0
-min $0,$2
-mul $0,-4
-mul $1,3
-add $0,$1
+max $0,$2
+mul $0,4
 add $0,2
+sub $0,$1

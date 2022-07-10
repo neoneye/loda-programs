@@ -9,7 +9,5 @@ mod $0,2
 mov $2,-1
 sub $2,$0
 bin $2,$1
-mov $1,2
-pow $1,$0
-mul $2,$1
-mov $0,$2
+add $0,1
+mul $0,$2
