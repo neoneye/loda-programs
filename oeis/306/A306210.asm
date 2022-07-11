@@ -11,7 +11,6 @@ bin $1,$0
 add $2,$0
 div $2,2
 bin $2,$0
-sub $2,$1
-mov $1,1
 sub $1,$2
+add $1,1
 mov $0,$1
