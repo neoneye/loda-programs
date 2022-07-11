@@ -1,10 +1,10 @@
 ; A308901: Lexicographically earliest overlap-free binary sequence.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0
 
 mov $2,$0
 cmp $2,0
-add $0,$2
+mov $3,$2
 mov $1,$0
 add $1,57
 lpb $1

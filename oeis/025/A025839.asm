@@ -8,7 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8676 ; Expansion of 1/((1-x^3)*(1-x^5)).
+  mul $2,2
+  seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
   add $1,$2
   mov $3,11
 lpe

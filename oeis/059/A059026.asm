@@ -6,12 +6,10 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+add $1,1
+mov $2,$1
 add $1,$0
-add $1,2
 add $0,1
-lpb $0
-  gcd $0,$1
-lpe
+gcd $0,$2
 div $1,$0
 mov $0,$1
-sub $0,1
