@@ -1,18 +1,17 @@
-; A329517: G.f. = (2*x^6 - 3*x^4 - 3*x^3 - 3*x^2 - 2*x - 1)/(x - 1).
-; Submitted by Jamie Morken(w4)
+; A329517: Expansion of (2*x^6 - 3*x^4 - 3*x^3 - 3*x^2 - 2*x - 1)/(x - 1).
+; Submitted by Simon Strandgaard
 ; 1,3,6,9,12,12,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
 
-add $0,1
-mov $3,$0
-pow $3,5
-lpb $3
-  div $3,$0
-  trn $2,1
-  add $2,4
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
+mov $1,$0
+mov $2,1
+lpb $0
+  add $2,5
+  trn $2,$0
+  add $0,$2
+  sub $0,2
+  mov $1,4
 lpe
-mov $0,$2
-div $0,2
+mul $0,2
+trn $0,1
+add $0,$1
 add $0,1

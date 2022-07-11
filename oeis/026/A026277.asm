@@ -1,18 +1,24 @@
 ; A026277: a(n) = least k such that s(k) = n, where s = A026276.
-; Submitted by Gunnar Hjern
+; Submitted by Simon Strandgaard
 ; 1,2,3,5,7,9,10,12,13,15,16,18,20,21,23,25,26,28,30,31,33,34,36,38,39,41,42,44,46,47,49,50,52,54,55,57,59,60,62,63,65,67,68,70,72,73,75,76,78,80,81,83,85,86,88,89,91,93,94,96,97,99
 
-mov $2,8
+mov $2,4
+mov $3,2
+mov $4,$0
 lpb $0
   sub $0,1
+  sub $0,$3
   sub $1,$2
-  div $1,2
-  mov $3,1
+  bin $3,9
   add $3,$1
-  mod $3,2
-  add $3,2
-  add $4,$3
+  sub $3,1
+  gcd $3,2
+  add $4,1
+  div $1,2
+  mul $2,2
   mul $2,$3
+  dif $2,2
+  div $3,2
 lpe
-add $4,1
 mov $0,$4
+add $0,1

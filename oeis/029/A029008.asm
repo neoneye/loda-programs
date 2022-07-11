@@ -8,8 +8,8 @@ lpb $0
   div $2,2
   pow $2,2
   div $2,4
-  sub $0,5
-  trn $0,2
+  trn $0,8
+  add $0,1
   add $1,$2
 lpe
 mov $0,$1
