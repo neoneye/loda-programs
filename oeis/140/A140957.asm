@@ -9,11 +9,9 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,140951 ; Based on Jacobsthal numbers. Increasing order of different positive terms of A140950.
-  mul $0,16
   add $1,$2
   mov $2,$0
   pow $4,$3
 lpe
 sub $1,$2
 mov $0,$1
-div $0,16

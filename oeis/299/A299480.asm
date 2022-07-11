@@ -9,14 +9,13 @@ mov $2,$0
 lpb $2
   sub $2,1
   trn $2,1
-  add $3,$5
+  add $0,1
+  add $4,$5
   add $4,$3
   mov $5,$0
-  add $0,1
-  mul $0,-1
-  add $5,1
   mod $5,$4
   cmp $5,0
+  mul $0,-1
   add $1,$5
   mov $3,2
   sub $4,1
