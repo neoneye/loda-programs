@@ -1,5 +1,5 @@
 ; A321176: Number of integer partitions of n that are the vertex-degrees of some set system with no singletons.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,0,1,1,2,3,5,7,10,15,21,28
 
 add $0,1
@@ -9,6 +9,7 @@ mov $4,1
 mov $5,1
 add $0,1
 lpb $3
+  dif $3,16
   mul $4,$3
   mov $1,$2
   add $1,$4
