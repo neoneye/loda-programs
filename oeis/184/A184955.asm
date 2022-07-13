@@ -1,6 +1,6 @@
 ; A184955: Number of connected 5-regular simple graphs on 2n vertices with girth exactly 5.
 ; Submitted by Simon Strandgaard
-; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,90,420,455,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,90
 
 mov $3,$0
 lpb $3
