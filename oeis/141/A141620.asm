@@ -2,16 +2,22 @@
 ; Submitted by Simon Strandgaard
 ; 5,-3,10,-3,-5,17,-3,-5,-7,26,-3,-5,-7,-9,37,-3,-5,-7,-9,-11,50,-3,-5,-7,-9,-11,-13,65,-3,-5,-7,-9,-11,-13,-15,82,-3,-5,-7,-9,-11,-13,-15,-17,101,-3,-5,-7,-9,-11,-13,-15,-17,-19,122,-3,-5,-7,-9,-11,-13,-15,-17,-19,-21
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,120070 ; Triangle of numbers used to compute the frequencies of the spectral lines of the hydrogen atom.
-  add $1,$2
-  mov $2,$0
-  pow $4,$3
+mov $2,1
+lpb $0
+  add $2,1
+  sub $0,$2
 lpe
-sub $1,$2
-mov $0,$1
+mov $1,$0
+add $1,$0
+add $2,1
+pow $2,2
+add $2,1
+mul $0,2
+lpb $0
+  mod $0,2
+  add $1,1
+  add $1,$2
+  add $3,$1
+lpe
+sub $2,$3
+mov $0,$2
