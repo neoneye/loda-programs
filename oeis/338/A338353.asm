@@ -1,4 +1,5 @@
 ; A338353: A (0,1)-matrix in the first quadrant read by downward antidiagonals: an example of a non-uniformly recurrent 2-D word having uniformly recurrent rows and columns.
+; Submitted by Simon Strandgaard
 ; 1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,1,0,0,1,1,0,1,0,0,1,0,0,0,1,0,0,1,0,1
 
 mov $1,$0
@@ -19,8 +20,8 @@ lpb $4
     lpb $0
       mod $0,4
       mov $2,0
-      mul $4,0
     lpe
+    mul $4,0
   lpe
 lpe
 add $0,2

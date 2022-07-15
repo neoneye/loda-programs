@@ -7,9 +7,8 @@ add $3,1
 lpb $3
   sub $3,1
   add $4,1
-  sub $0,$2
   gcd $0,$4
-  mov $2,5
+  sub $0,$2
   add $2,$0
   div $2,12
   mul $2,2184
