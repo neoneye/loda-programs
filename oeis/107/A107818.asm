@@ -9,8 +9,8 @@ lpb $0
     mov $2,$0
     mod $2,10
     mod $0,6
-    add $1,$4
   lpe
+  add $1,$4
   add $3,$1
   lpb $2
     trn $2,4

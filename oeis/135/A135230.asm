@@ -6,12 +6,10 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-add $2,2
-sub $2,$0
-add $3,$0
-max $3,1
-sub $3,1
 sub $0,1
+add $2,1
+sub $2,$0
+max $3,$0
 mov $4,$0
 mov $0,$2
 lpb $0
