@@ -5,11 +5,11 @@
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
 lpe
+mov $2,$1
 mul $0,2
-add $0,1
-mov $1,4
-pow $1,$2
-mod $1,$0
-mov $0,$1
+mov $1,1
+add $1,$0
+mov $0,4
+pow $0,$2
+mod $0,$1

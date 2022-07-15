@@ -7,8 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 mul $1,3
-trn $1,3
-add $1,3
+max $1,3
 sub $1,$0
 add $0,1
 mul $1,$0

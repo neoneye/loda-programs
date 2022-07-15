@@ -4,21 +4,15 @@
 
 mov $2,$0
 mov $3,$0
-mul $3,2
-mov $0,$3
-mul $3,2
-lpb $2
-  mov $2,1
-  mov $0,5
-  sub $3,4
+trn $3,2
+lpb $0
+  mov $0,$3
+  add $1,5
+  sub $2,$3
 lpe
-mul $3,2
-add $0,$3
-add $0,2
+add $1,$2
+mov $3,$1
 mov $1,1
-add $1,$0
-lpb $2
-  sub $2,1
-  add $1,8
-lpe
-mov $0,$1
+add $1,$3
+add $0,3
+mul $0,$1
