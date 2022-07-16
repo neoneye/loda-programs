@@ -1,4 +1,5 @@
 ; A322029: Denominator of least value of the squared diameters of the enclosing circles of all strictly convex lattice n-gons with minimal area given by A070911. Numerators are A321693.
+; Submitted by Simon Strandgaard
 ; 1,1,9,1,1,1,49,1,1,1,1,1,1,1,169,1,1,1,1,1,1,1,1,1
 
 mov $7,$0
@@ -24,10 +25,7 @@ lpb $3
     mov $1,$6
   lpe
 lpe
-lpb $7
-  mov $7,0
-  sub $1,$4
-lpe
+sub $1,$4
 mul $1,8
 add $1,1
-mov $0,$1
+add $0,$1

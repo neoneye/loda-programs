@@ -2,12 +2,11 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,2,2,3,4,5,4,3,4,6,8,8,8,6,4,5,8,11,12,13,12,11,8,5
 
+mov $1,1
 lpb $0
-  add $1,1
   sub $0,$1
-  add $1,1
+  add $1,2
 lpe
-add $1,1
 sub $1,$0
 add $0,1
 mul $0,$1
