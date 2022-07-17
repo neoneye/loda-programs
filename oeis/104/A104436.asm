@@ -4,13 +4,12 @@
 
 mov $3,$0
 mul $3,4
+sub $3,1
 lpb $3
   mov $4,$0
   cmp $4,0
   add $0,$4
-  mov $1,2
   div $1,$0
-  sub $1,$0
   add $1,$3
   div $1,$0
   add $2,$1

@@ -9,14 +9,13 @@ lpb $0
 lpe
 mov $1,1
 sub $2,$0
-sub $2,1
 mov $3,1
 lpb $0
   sub $0,2
-  add $1,$5
-  mul $1,$2
   sub $2,1
   add $4,1
+  add $1,$5
+  mul $1,$2
   div $1,$4
   add $1,$5
   mov $5,$3
