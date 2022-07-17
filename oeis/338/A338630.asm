@@ -1,4 +1,5 @@
 ; A338630: Least number of odd primes that add up to n, or 0 if no such representation is possible.
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,1,2,1,2,3,2,1,2,1,2,3,2,1,2,1,2,3,2,1,2,3,2,3,2,1,2,1,2,3,2,3,2,1,2,3,2,1,2,1,2,3,2,1,2,3,2,3,2,1,2,3,2,3,2,1,2,1,2,3,2,3,2,1,2,3,2,1,2,1,2,3,2,3,2,1,2,3,2,1,2,3,2,3,2,1,2,3,2,3,2,3,2,1,2,3,2
 
 mov $3,1
@@ -20,6 +21,6 @@ lpb $2
     trn $5,$4
     add $1,2
   lpe
-  mov $2,0
+  mov $2,1
 lpe
 mov $0,$1
