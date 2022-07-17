@@ -1,11 +1,6 @@
 ; A088564: a(n)=sum(i=0,n,binomial(2*i,i) (mod 3)).
+; Submitted by Simon Strandgaard
 ; 1,3,3,5,6,6,6,6,6,8,9,9,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,14,15,15,16,18,18,18,18,18,19,21,21,23,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,26,27,27,28,30,30,30,30,30,31,33,33,35,36,36,36,36,36,36
 
-lpb $0
-  mov $2,$0
-  seq $2,6996 ; C(2n,n) mod 3.
-  sub $0,1
-  add $1,$2
-lpe
-add $1,1
-mov $0,$1
+seq $0,81611 ; Number of numbers <= n having no 2 in their ternary representation.
+seq $0,26430 ; a(n) is the sum of first n terms of A001285 (Thue-Morse sequence).
