@@ -6,16 +6,14 @@ mov $5,$0
 mov $4,$0
 lpb $4
   sub $4,1
+  add $2,2
   mov $0,$5
   sub $0,$4
-  add $2,1
-  gcd $3,$0
-  pow $0,3
   lpb $0
-    dif $0,8
+    gcd $3,$0
+    dif $0,2
     add $2,$3
   lpe
   add $1,$2
 lpe
-mul $1,2
 mov $0,$1

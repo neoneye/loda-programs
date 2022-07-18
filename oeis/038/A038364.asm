@@ -2,10 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 0,19,29,39,49,59,69,79,89,99
 
-mov $1,$0
-add $0,1
-lpb $1
-  mov $1,0
-  mul $0,10
-lpe
-sub $0,1
+mul $0,10
+add $0,8
+div $0,9
+mul $0,10
+trn $0,1
