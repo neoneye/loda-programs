@@ -7,10 +7,11 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
+  div $2,4
   max $2,0
-  mul $2,2
-  seq $2,25808 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^8)).
+  mul $2,3
+  seq $2,8649 ; Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
   add $1,$2
-  mov $3,12
+  mov $3,5
 lpe
 mov $0,$1

@@ -2,5 +2,6 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0
 
-seq $0,276854 ; Beatty sequence for 1 + sqrt(5).
+mul $0,2
+seq $0,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
 mod $0,2
