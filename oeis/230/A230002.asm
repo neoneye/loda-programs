@@ -8,12 +8,5 @@ lpb $0
   add $1,1
 lpe
 sub $1,$0
-div $1,2
-mod $0,2
-div $0,-1
-mov $2,-1
-bin $2,$1
-mov $1,2
-pow $1,$0
-mul $2,$1
-mov $0,$2
+seq $1,56594 ; Period 4: repeat [1,0,-1,0]; expansion of 1/(1 + x^2).
+mov $0,$1
