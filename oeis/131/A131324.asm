@@ -4,12 +4,12 @@
 
 lpb $0
   mov $1,$0
-  div $1,2
   add $2,1
   sub $0,$2
 lpe
 add $2,$0
 mod $2,2
+div $1,2
 bin $1,$0
 gcd $1,$2
 mov $0,$1

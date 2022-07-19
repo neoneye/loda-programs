@@ -5,11 +5,10 @@
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
 lpe
-sub $2,$0
-add $0,2
-mov $1,2
-pow $1,$2
-mod $1,$0
-mov $0,$1
+sub $1,$0
+mov $2,$0
+add $2,2
+mov $0,2
+pow $0,$1
+mod $0,$2

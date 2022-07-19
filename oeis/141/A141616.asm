@@ -8,10 +8,9 @@ lpb $0
   sub $0,$1
   cmp $2,0
 lpe
-add $0,1
-add $1,1
 sub $2,$0
+add $0,2
 add $0,$1
+mul $0,4
 add $1,$2
-mul $1,4
 mul $0,$1

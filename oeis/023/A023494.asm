@@ -6,5 +6,6 @@ mov $1,$0
 add $1,1
 seq $1,90946 ; Non-Lucas numbers: complement of A000204.
 add $0,1
-seq $0,20695 ; Pisot sequence E(2,3).
+seq $0,226271 ; Index of 1/n in the Fibonacci (or rabbit) ordering of the positive rationals.
+sub $0,1
 add $0,$1

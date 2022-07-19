@@ -20,9 +20,7 @@ lpb $0
   lpe
   mov $5,$1
   div $5,$2
-  add $5,2
   mul $5,-1
-  add $1,2
   add $1,$5
 lpe
 mov $0,$1
