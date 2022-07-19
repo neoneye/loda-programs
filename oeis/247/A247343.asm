@@ -16,7 +16,6 @@ lpb $0
     add $2,1
     max $4,$5
     sub $3,$4
-    sub $4,2
   lpe
   lpb $0
     dif $0,$2
@@ -24,6 +23,7 @@ lpb $0
   lpe
   mov $5,$4
   mul $5,5
+  sub $5,10
   add $5,$6
   bin $5,$6
   mul $1,$5

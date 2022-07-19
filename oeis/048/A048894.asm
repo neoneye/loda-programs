@@ -1,18 +1,10 @@
 ; A048894: n - 1 - A048893(n).
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,2,0,8,0,0,0
 
-pow $0,3
-lpb $0
-  mov $7,1
-  lpb $7
-    seq $0,72670 ; Number of ways to write n as i*j + i + j, 0 < i <= j.
-    add $6,163271
-    clr $1,$0
-    add $0,$6
-    sub $0,3
-    trn $7,3
-  lpe
-  mov $1,$0
-lpe
-mod $1,10
-mov $0,$1
+add $0,1
+mov $1,$0
+add $1,1
+seq $1,284254 ; Largest divisor of n such that all its prime factors are greater than the square of smallest prime factor of n, a(1) = 1.
+seq $0,129728 ; a(n) = 2*(n-1) + Fibonacci(n).
+mod $0,$1

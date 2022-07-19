@@ -13,7 +13,7 @@ lpb $0
     add $1,$0
     div $0,4
   lpe
-  mov $2,1
+  mov $2,0
 lpe
 lpb $1
   mod $1,4

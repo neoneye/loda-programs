@@ -3,12 +3,8 @@
 ; 5,6,8,9,12,15,18,22,27,31,37,43,49,56,64,71,80
 
 mov $1,$0
-mul $0,2
-mul $0,$1
-div $0,8
-add $0,5
-mul $1,2
-lpb $1
-  trn $1,3
-  add $0,1
-lpe
+add $1,$0
+add $1,2
+add $0,4
+seq $0,212986 ; Number of (w,x,y) with all terms in {0,...,n} and 2w = 3x+y.
+sub $0,$1
