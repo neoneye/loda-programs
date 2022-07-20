@@ -7,9 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 mov $2,$1
-sub $2,$0
 bin $1,$0
-mov $0,6
-pow $0,$2
-mod $0,10
+cmp $0,$2
+gcd $0,6
 mul $0,$1

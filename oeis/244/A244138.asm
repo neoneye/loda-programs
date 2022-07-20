@@ -7,16 +7,12 @@ lpb $0
   sub $0,$1
 lpe
 sub $0,1
-mov $2,$1
+sub $1,$0
+bin $2,$0
+mul $2,3
 sub $2,$0
-cmp $3,$0
-mul $3,2
-sub $3,1
 sub $0,1
-sub $3,$0
-pow $3,$0
+pow $2,$0
 add $0,2
-pow $0,$2
-mov $1,$3
-mul $1,$0
-mov $0,$1
+pow $0,$1
+mul $0,$2
