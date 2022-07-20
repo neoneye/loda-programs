@@ -9,8 +9,7 @@ lpb $0
   mov $3,$0
   pow $3,4
   mod $3,$2
-  trn $3,$1
   sub $0,1
-  add $1,$3
+  max $1,$3
 lpe
 mov $0,$1
