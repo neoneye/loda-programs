@@ -6,10 +6,8 @@ add $0,1
 lpb $0
   sub $0,1
   mul $1,5
-  add $1,2
-  dif $1,2
-  sub $1,1
-  div $1,2
+  pow $1,2
+  div $1,7
   mod $1,4
   bin $3,$1
   add $1,1
