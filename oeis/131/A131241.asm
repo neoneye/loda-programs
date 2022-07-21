@@ -13,10 +13,7 @@ mov $1,$0
 div $1,2
 mov $0,0
 pow $0,$2
-gcd $0,2
-mul $0,2
-sub $0,1
+gcd $0,3
 div $2,2
 bin $1,$2
-mul $1,$0
-mov $0,$1
+mul $0,$1
