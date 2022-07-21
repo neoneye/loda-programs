@@ -17,8 +17,7 @@ lpb $0
   add $4,1
   mul $1,$2
   div $1,$4
-  mul $1,2
-  div $3,-1
+  mul $1,-2
   add $3,$1
 lpe
-mov $0,$3
+gcd $0,$3

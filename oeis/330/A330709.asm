@@ -9,9 +9,7 @@ lpe
 mov $2,$1
 sub $2,$0
 mod $0,2
-add $2,2
 mul $2,$0
 sub $1,$2
 mov $0,$1
-add $0,1
 div $0,2
