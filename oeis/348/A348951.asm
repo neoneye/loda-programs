@@ -13,7 +13,6 @@ lpb $2
   mod $0,2
   mul $0,2
   sub $0,1
-  mul $0,47
   mul $3,$4
   cmp $3,$2
   mul $3,$0
@@ -23,4 +22,3 @@ lpb $2
   sub $2,$4
 lpe
 mov $0,$1
-div $0,47
