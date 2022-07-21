@@ -1,8 +1,18 @@
 ; A001468: There are a(n) 2's between successive 1's.
-; Submitted by [DPC] hansR
+; Submitted by Simon Strandgaard
 ; 1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1
 
-seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
-min $0,1
-max $0,0
-add $0,1
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  seq $0,66096 ; Duplicate values in A060143.
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $5,$0
+lpe
+sub $1,$5
+mov $0,$1
