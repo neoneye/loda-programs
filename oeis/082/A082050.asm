@@ -15,8 +15,8 @@ lpb $2
   mul $6,$5
   add $1,$6
   mov $5,$0
+  sub $5,$4
   add $5,1
-  trn $5,$4
   min $5,1
   sub $2,$5
   cmp $3,1

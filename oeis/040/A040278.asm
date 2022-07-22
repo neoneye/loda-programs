@@ -1,9 +1,8 @@
 ; A040278: Continued fraction for sqrt(296).
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 17,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1
 
-mov $1,$0
-seq $1,40290 ; Continued fraction for sqrt(308).
-mod $0,2
-mul $0,3
-add $0,$1
+seq $0,10124 ; Continued fraction for sqrt(19).
+seq $0,155989 ; List of numbers prime(k) as k runs through the numbers with a single prime digit.
+div $0,2
+sub $0,1

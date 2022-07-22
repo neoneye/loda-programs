@@ -1,17 +1,11 @@
 ; A101090: Third partial sums of fourth powers (A000583).
-; Submitted by Simon Strandgaard
 ; 1,19,135,605,2054,5778,14178,31350,63855,121693,219505,378027,625820,1001300,1555092,2352732,3477741,5035095,7155115,9997801,13757634,18668870,25011350,33116850,43375995,56245761,72257589,92026135
 
-add $0,3
+mov $1,1
 lpb $0
+  mov $2,$0
+  seq $2,101089 ; Second partial sums of fourth powers (A000583).
   sub $0,1
-  sub $2,1
-  mov $4,1
-  add $4,$2
-  sub $5,$4
-  mov $3,$0
-  pow $3,4
-  mul $3,$5
-  add $1,$3
+  add $1,$2
 lpe
 mov $0,$1
