@@ -4,5 +4,10 @@
 
 add $0,1
 mov $1,$0
-seq $1,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-mod $0,$1
+lpb $1
+  mov $2,$1
+  mod $2,10
+  div $1,10
+  add $3,$2
+lpe
+mod $0,$3

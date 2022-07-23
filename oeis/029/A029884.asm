@@ -9,10 +9,9 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,29883 ; First differences of Thue-Morse sequence A001285.
-  add $2,$5
-  add $1,$2
+  mov $1,$2
+  mov $2,$0
   mul $4,$3
-  mov $5,$0
 lpe
-sub $1,$5
+sub $1,$2
 mov $0,$1

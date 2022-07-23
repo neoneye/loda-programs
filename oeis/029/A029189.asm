@@ -8,8 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25805 ; Expansion of 1/((1-x^2)(1-x^4)(1-x^11)).
+  seq $2,25804 ; Expansion of 1/((1-x^2)(1-x^4)(1-x^9)).
   add $1,$2
-  mov $3,9
+  mov $3,11
 lpe
 mov $0,$1
