@@ -11,7 +11,6 @@ lpb $0
   mod $2,$1
   mov $3,$4
   mov $4,$2
-  add $1,2
   add $2,$3
 lpe
 div $0,2
