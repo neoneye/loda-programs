@@ -9,8 +9,7 @@ lpb $2
   min $0,$4
   mov $3,$2
   dif $3,$0
-  mov $0,2
-  add $0,$3
+  mov $0,$3
   mod $0,2
   mul $0,2
   sub $0,1

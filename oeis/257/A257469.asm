@@ -9,10 +9,8 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
-  mov $3,2
-  add $3,$4
-  mul $3,3
-  add $4,2
+  add $4,6
   add $1,$2
+  mov $3,$4
 lpe
 mov $0,$1
