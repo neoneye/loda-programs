@@ -4,10 +4,12 @@
 
 add $0,2
 pow $0,2
+sub $0,2
 div $0,2
 mov $1,$0
 pow $1,2
-lpb $1
+mov $2,2
+lpb $0
   sub $0,$2
   sub $1,$0
   add $2,1

@@ -1,12 +1,18 @@
 ; A269697: Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,6,10,30,34,54,70,150,154,174,190,270,286,366,430,750,754,774,790,870,886,966,1030,1350,1366,1446,1510,1830,1894,2214,2470,3750,3754,3774,3790,3870,3886,3966,4030,4350,4366,4446,4510,4830,4894,5214,5470,6750,6766,6846,6910,7230,7294,7614,7870,9150,9214,9534,9790,11070,11326,12606,13630,18750,18754,18774,18790,18870,18886,18966,19030,19350,19366,19446,19510,19830,19894,20214,20470,21750,21766,21846,21910,22230,22294,22614,22870,24150,24214,24534,24790,26070,26326,27606,28630,33750,33766,33846
 
-lpb $0
-  mov $2,$0
-  seq $2,269695 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
-  sub $0,1
+mov $3,2
+lpb $3
+  sub $3,1
+  add $0,$3
+  mov $4,$0
+  div $4,2
+  seq $4,116520 ; a(0) = 0, a(1) = 1; a(n) = max { 4*a(k) + a(n-k) | 1 <= k <= n/2 }, for n > 1.
+  mul $0,2
+  mov $2,$3
+  mul $2,$4
   add $1,$2
 lpe
-add $1,1
-mov $0,$1
+add $4,$1
+mov $0,$4

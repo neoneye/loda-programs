@@ -6,23 +6,18 @@ mov $1,$0
 mov $2,1
 lpb $2
   sub $2,1
-  mov $5,2
-  lpb $5
-    sub $5,1
+  mov $4,2
+  lpb $4
+    sub $4,1
     mov $3,1
-    add $0,$5
+    add $0,$4
     sub $0,2
     lpb $0
       mul $3,10
       trn $0,$3
     lpe
-    mov $6,$5
-    lpb $6
-      sub $6,1
-      mov $4,$3
-    lpe
+    sub $4,1
   lpe
-  mov $3,$4
   div $3,9
   mul $3,8
   add $3,1
