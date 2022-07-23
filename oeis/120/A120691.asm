@@ -9,12 +9,12 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  gcd $1,$0
   seq $0,3417 ; Continued fraction for e.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+  mov $2,$3
+  mul $2,$0
+  add $4,$2
 lpe
+min $1,1
 mul $1,$0
-mov $0,$2
+mov $0,$4
 sub $0,$1

@@ -4,12 +4,12 @@
 
 add $0,1
 mov $2,$0
+sub $0,1
 lpb $0
   sub $0,1
   pow $3,2
   add $3,1
   mod $3,$2
-  trn $1,$3
-  add $1,$3
+  max $1,$3
 lpe
 mov $0,$1
