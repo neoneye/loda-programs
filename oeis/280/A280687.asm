@@ -20,7 +20,7 @@ lpb $2
   mov $5,$0
   div $5,2
   add $5,1
-  trn $5,$4
+  sub $5,$4
   min $5,1
   sub $2,$5
   mov $3,$7

@@ -4,8 +4,8 @@
 
 add $0,1
 mov $1,$0
+min $1,1
 seq $0,6068 ; a(n) is Gray-coded into n.
 sub $0,1
 seq $0,268389 ; a(n) = greatest k such that polynomial (X+1)^k divides the polynomial (in polynomial ring GF(2)[X]) that is encoded in the binary expansion of n. (See the comments for details).
-min $1,1
 add $0,$1
