@@ -1,22 +1,21 @@
 ; A291295: Domination number of n-Fibonacci cube graph.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w1)
 ; 1,1,2,3,4,5,8,12,17,25,39
 
-mov $1,1
-mov $2,1
-mov $5,1
 lpb $0
   sub $0,1
-  sub $3,$4
-  mov $4,$2
-  mov $2,$3
-  add $2,$1
-  sub $2,$6
+  add $4,$1
+  add $1,$3
+  add $1,$2
+  mov $5,$3
   add $5,$4
-  mov $1,$3
+  add $5,$2
+  div $4,10
+  add $2,1
+  add $2,$4
   mov $3,$5
-  mov $5,$4
-  sub $6,$1
+  sub $3,$1
+  add $4,$2
 lpe
-sub $0,$6
+mov $0,$3
 add $0,1

@@ -1,6 +1,7 @@
 ; A296135: {0->01}-transform of the Fibonacci word A003849.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1
 
-seq $0,159917 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
-seq $0,325937 ; Expansion of Sum_{k>=1} (-1)^(k + 1) * x^(2*k) / (1 - x^k).
+add $0,1
+seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+mod $0,2

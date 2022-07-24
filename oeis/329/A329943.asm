@@ -6,11 +6,9 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-add $1,1
 sub $1,$0
 add $0,1
-mov $2,2
-pow $2,$1
-sub $2,1
-pow $2,$0
-mov $0,$2
+add $1,1
+seq $1,255047 ; 1 together with the positive terms of A000225.
+pow $1,$0
+mov $0,$1
