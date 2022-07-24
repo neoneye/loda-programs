@@ -16,8 +16,8 @@ lpb $1
   dif $0,2
   trn $1,7
   add $4,15
-  add $4,$0
 lpe
+add $4,$0
 add $2,$4
 mov $0,$2
 sub $0,15
