@@ -1,11 +1,7 @@
 ; A188438: Positions of 1 in A188436; complement of A188437.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 8,16,21,29,37,42,50,55,63,71,76,84,92,97,105,110,118,126,131,139,144,152,160,165,173,181,186,194,199,207,215,220,228,236,241,249,254,262,270,275,283,288,296,304,309,317,325,330,338,343,351,359,364,372,377,385,393,398
 
 add $0,1
-mov $1,$0
-seq $1,66096 ; Duplicate values in A060143.
-mul $1,3
 mul $0,2
-add $0,$1
-add $0,3
+seq $0,188217 ; Positions of 0 in A188192; complement of A188218.
