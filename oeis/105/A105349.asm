@@ -1,6 +1,12 @@
 ; A105349: Characteristic sequence for the Pell numbers.
+; Submitted by Simon Strandgaard
 ; 1,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 pow $0,2
-div $0,2
-seq $0,5369 ; a(n) = 1 if n is of the form m(m+1), else 0.
+lpb $0
+  add $1,4
+  sub $0,$1
+lpe
+mov $1,1
+bin $1,$0
+mov $0,$1
