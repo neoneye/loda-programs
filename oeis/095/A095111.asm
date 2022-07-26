@@ -1,13 +1,9 @@
 ; A095111: One minus the parity of 1-fibits in Zeckendorf expansion A014417(n).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,0,0,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,0,0,1,0,1,1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,1,0,0
 
-lpb $0
-  mov $2,$0
-  seq $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
-  mov $0,$2
-  add $1,1
-lpe
-mov $0,$1
+seq $0,104324 ; The Fibonacci word over the nonnegative integers; or, the number of runs of identical bits in the binary Zeckendorf representation of n.
+add $0,1
+div $0,2
 add $0,1
 mod $0,2
