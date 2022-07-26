@@ -1,10 +1,23 @@
 ; A018280: Divisors of 96.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 1,2,3,4,6,8,12,16,24,32,48,96
 
 mov $1,$0
-div $0,11
+mov $2,1
+lpb $0
+  sub $0,1
+  div $1,2
+  mov $4,$3
+  add $4,1
+  mul $3,$1
+  add $3,$2
+  div $1,5
+  add $2,$4
+  mul $2,$1
+  sub $2,$4
+  mul $4,3
+  add $2,$4
+lpe
+mov $0,$4
+div $0,3
 add $0,1
-add $0,$1
-seq $0,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
-div $0,2
