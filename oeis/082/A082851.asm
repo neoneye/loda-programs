@@ -1,11 +1,11 @@
 ; A082851: Partial sums of A082850.
+; Submitted by Simon Strandgaard
 ; 1,2,4,5,6,8,11,12,13,15,16,17,19,22,26,27,28,30,31,32,34,37,38,39,41,42,43,45,48,52,57,58,59,61,62,63,65,68,69,70,72,73,74,76,79,83,84,85,87,88,89,91,94,95,96,98,99,100,102,105,109,114,120,121,122,124,125,126
 
-lpb $0
-  mov $2,$0
-  seq $2,82850 ; Let S(0) = {}, S(n) = {S(n-1), S(n-1), n}; sequence gives S(infinity).
-  sub $0,1
-  add $1,$2
+mov $1,$0
+add $0,1
+lpb $1
+  seq $1,234016 ; Partial sums of the characteristic function of A055938.
+  add $0,$1
+  sub $1,1
 lpe
-add $1,1
-mov $0,$1
