@@ -1,10 +1,11 @@
 ; A018499: Divisors of 522.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,3,6,9,18,29,58,87,174,261,522
 
 mov $1,1
 mov $2,1
 mov $3,1
+mov $9,1
 mov $8,$0
 lpb $8
   mov $5,$2
@@ -12,11 +13,12 @@ lpb $8
     add $2,1
     mov $6,$2
     gcd $6,$3
-    mul $2,2
-    bin $2,$0
     cmp $6,1
     cmp $6,0
+    add $2,24
     sub $5,$6
+    add $0,1
+    add $3,1
   lpe
   add $2,1
   mov $4,$3
@@ -29,6 +31,9 @@ lpb $8
   pow $7,$5
   mul $1,$7
   mov $3,$4
-  sub $8,1
+  mov $7,$0
+  cmp $7,0
+  sub $8,$9
+  sub $9,$7
 lpe
 mov $0,$1

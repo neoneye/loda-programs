@@ -1,12 +1,17 @@
 ; A126950: a(1) = 1; for n>1, a(n) = the smallest number p > a(n-1) such that (a(n-1)+p)/2 is a cube.
+; Submitted by Simon Strandgaard
 ; 1,15,39,89,161,271,415,609,849,1151,1511,1945,2449,3039,3711,4481,5345,6319,7399,8601,9921,11375,12959,14689,16561,18591,20775,23129,25649,28351,31231,34305,37569,41039,44711,48601,52705,57039,61599,66401
 
 lpb $0
   mov $2,$0
-  seq $2,164016 ; 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
-  trn $0,2
+  add $2,$0
+  add $2,2
+  mul $2,$0
+  mul $2,3
+  sub $0,1
+  trn $0,1
+  add $1,2
   add $1,$2
 lpe
-div $1,3
 add $1,1
 mov $0,$1
