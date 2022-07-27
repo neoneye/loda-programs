@@ -5,6 +5,9 @@
 mov $2,$0
 add $2,1
 mul $2,2
+add $0,1
+mul $0,2
+div $0,3
 lpb $0
   max $0,1
   mov $3,$2

@@ -9,9 +9,8 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
-  add $1,$2
-  mov $3,2
-  add $3,$4
   add $4,2
+  add $1,$2
+  mov $3,$4
 lpe
 mov $0,$1

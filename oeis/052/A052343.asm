@@ -8,10 +8,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,5369 ; a(n) = 1 if n is of the form m(m+1), else 0.
-  mov $3,1
-  add $3,$4
-  add $1,$2
+  seq $2,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
   add $4,2
+  add $1,$2
+  mov $3,$4
 lpe
 mov $0,$1

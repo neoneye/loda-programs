@@ -6,10 +6,10 @@ lpb $0
   add $1,1
   mov $3,$1
   sub $0,$1
-  mov $2,$1
 lpe
-bin $1,$0
+mov $2,$1
 sub $2,$0
+bin $1,$0
 min $0,$2
 add $0,1
 pow $0,$3

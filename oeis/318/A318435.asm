@@ -1,5 +1,5 @@
 ; A318435: Decimal expansion of the nominal Jovian mass parameter in m^3 s^-2.
-; Submitted by emoga
+; Submitted by Simon Strandgaard
 ; 1,2,6,6,8,6,5,3,0,0,0,0,0,0,0,0,0,0
 
 add $0,1
@@ -13,6 +13,7 @@ lpb $0
   mov $3,$4
   div $3,2
   bin $3,$1
+  min $0,8
   add $1,1
   mul $3,$2
   div $3,$1

@@ -4,11 +4,12 @@
 
 lpb $0
   mov $2,$0
-  seq $2,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
+  seq $2,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
+  sub $2,1
   add $0,$3
   trn $0,3
-  sub $1,1
   add $1,$2
   sub $3,1
 lpe
 mov $0,$1
+div $0,2
