@@ -10,9 +10,8 @@ sub $1,$0
 add $0,1
 cmp $0,1
 mul $0,$1
-mul $0,6
-add $1,1
-gcd $1,2
-mul $1,3
+mul $0,3
+add $0,1
+mod $1,2
+mul $1,2
 add $0,$1
-div $0,2
