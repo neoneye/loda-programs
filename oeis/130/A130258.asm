@@ -1,10 +1,19 @@
 ; A130258: Partial sums of the 'upper' odd Fibonacci Inverse A130256.
+; Submitted by Simon Strandgaard
 ; 0,0,2,5,8,11,15,19,23,27,31,35,39,43,48,53,58,63,68,73,78,83,88,93,98,103,108,113,118,123,128,133,138,143,148,154,160,166,172,178,184,190,196,202,208,214,220,226,232,238,244,250,256,262,268,274,280,286,292,298,304,310,316,322,328,334,340,346,352,358,364,370,376,382,388,394,400,406,412,418,424,430,436,442,448,454,460,466,472,478,485,492,499,506,513,520,527,534,541,548
 
-lpb $0
-  mov $2,$0
-  seq $2,130256 ; Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
-  sub $0,1
-  add $1,$2
+mov $2,$0
+sub $0,1
+lpb $2
+  sub $2,1
+  add $1,$0
+  mov $3,$5
+  seq $3,1906 ; F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  add $5,1
 lpe
 mov $0,$1

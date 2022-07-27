@@ -1,22 +1,7 @@
 ; A284391: 1-limiting word of the morphism 0 -> 1, 1 -> 001.
-; Submitted by Stony666
+; Submitted by Simon Strandgaard
 ; 1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0,0
 
-mov $2,2
-lpb $0
-  sub $0,1
-  sub $1,$2
-  add $1,1
-  div $1,2
-  mul $2,2
-  mov $3,$2
-  add $3,$1
-  gcd $3,4
-  div $1,$3
-  mul $2,2
-lpe
-mov $0,$1
-add $0,1
-mod $0,2
-add $0,2
-mod $0,2
+trn $0,1
+seq $0,92606 ; Fixed point of the morphism 0 -> 021, 1 -> 0, 2 -> 0; starting with a(1) = 0.
+cmp $0,0

@@ -1,4 +1,5 @@
 ; A003892: Degrees of irreducible representations of group L2(32).
+; Submitted by Simon Strandgaard
 ; 1,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,32,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33
 
 mov $5,$0
@@ -19,10 +20,7 @@ lpb $2
   lpe
   sub $2,1
   add $4,$1
-  mov $1,0
 lpe
-mul $4,2
-add $1,$4
-div $1,2
+mov $1,$4
 add $1,1
 mov $0,$1

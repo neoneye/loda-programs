@@ -14,9 +14,9 @@ lpb $1
   div $0,$1
   sub $0,$2
   dif $0,2
-  trn $1,7
-  add $4,15
+  sub $1,3
 lpe
+mov $4,15
 add $4,$0
 add $2,$4
 mov $0,$2
