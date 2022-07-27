@@ -1,5 +1,5 @@
 ; A279083: Numbers k such that there exists at least one tetrahedral number with exactly k divisors.
-; Submitted by Simon Strandgaard
+; Submitted by Orange Kid
 ; 1,3,4,6,8,12,16,18,20,24,28,30,32,36,40
 
 mov $1,$0

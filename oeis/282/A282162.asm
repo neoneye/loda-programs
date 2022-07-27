@@ -1,6 +1,17 @@
 ; A282162: Difference sequence of the upper Wythoff sequence, A001950, with 2 prepended.
-; Submitted by Simon Strandgaard
+; Submitted by BorderlineNeutrino
 ; 2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2
 
-seq $0,276867 ; First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
-sub $0,1
+mov $2,2
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  sub $1,1
+  div $1,2
+  mov $3,$1
+  gcd $3,2
+  mul $2,$3
+lpe
+mov $0,$3
+add $0,1

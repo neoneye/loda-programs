@@ -1,14 +1,19 @@
 ; A026465: Length of n-th run of identical symbols in the Thue-Morse sequence A010060 (or A001285).
-; Submitted by Simon Strandgaard
+; Submitted by Stony666
 ; 1,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1
 
+mov $2,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $1,$0
-  max $1,0
-  seq $1,194688 ; First differences of A036554 (numbers whose binary representation ends in an odd number of zeros).
-  mov $0,0
+  dif $1,$3
+  sub $1,$2
+  div $1,2
+  sub $1,1
+  bin $3,$2
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
 lpe
-mov $0,$1
-div $0,4
-add $0,1
+mov $0,$3

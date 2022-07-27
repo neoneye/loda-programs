@@ -1,6 +1,23 @@
 ; A260188: Greatest primorial less than or equal to n.
-; Submitted by Simon Strandgaard
-; 1,2,2,2,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
+; Submitted by Orange Kid
+; 1,2,2,2,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
 
-seq $0,111972 ; a(n) = Max(omega(k): 1<=k<=n), where omega(n) = A001221(n), the number of distinct prime factors of n.
-seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+add $0,1
+mov $2,1
+mov $3,1
+mov $1,$0
+lpb $1
+  sub $1,1
+  add $0,$5
+  add $2,1
+  mov $4,$3
+  mul $4,$2
+  mov $5,$0
+  mod $5,$4
+  sub $0,$5
+  add $2,$6
+  min $5,$3
+  mov $3,$4
+  mov $6,1
+lpe
+mov $0,$5
