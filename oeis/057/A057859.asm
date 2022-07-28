@@ -15,14 +15,13 @@ lpb $0
     add $2,1
     sub $3,$4
   lpe
-  sub $1,2
   lpb $0
     dif $0,$2
   lpe
-  add $1,3
   mov $5,$1
   div $5,$2
   mul $5,-1
+  add $1,1
   add $1,$5
 lpe
 mov $0,$1

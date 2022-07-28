@@ -1,13 +1,9 @@
 ; A202278: Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,2,3,5,8,13,21,34,55,89
 
-mov $1,1
-lpb $0
-  sub $0,1
-  sub $3,$2
-  add $1,$3
-  mov $2,$3
-  mov $3,$1
-lpe
-mov $0,$3
+add $0,1
+mov $1,$0
+pow $1,3
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+mod $0,$1

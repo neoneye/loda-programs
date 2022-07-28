@@ -2,9 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $2,$0
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mod $2,$0
-bin $1,$2
-mov $0,$1
+mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+gcd $0,$1
+div $0,$1

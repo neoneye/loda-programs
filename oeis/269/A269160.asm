@@ -4,16 +4,16 @@
 
 mov $2,$0
 mov $4,1
-seq $0,163617 ; a(2*n) = 2*a(n), a(2*n + 1) = 2*a(n) + 2 + (-1)^n, for all n in Z.
-mul $0,2
+mul $0,4
 lpb $0
   mov $3,$0
+  dif $3,2
   add $3,$2
   mod $3,2
   mul $3,$4
+  mul $4,2
   div $0,2
   add $1,$3
   div $2,2
-  mul $4,2
 lpe
 mov $0,$1

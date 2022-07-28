@@ -4,7 +4,5 @@
 
 mov $1,$0
 mod $1,2
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mul $0,2
-sub $0,1
+seq $0,114003 ; Rows sums of triangle A114002.
 sub $0,$1

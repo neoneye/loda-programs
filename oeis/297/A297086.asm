@@ -1,6 +1,10 @@
 ; A297086: a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
-; Submitted by Ragnarsdad
+; Submitted by Simon Strandgaard
 ; 1,1,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0
 
-seq $0,9195 ; a(n) = gcd(n, phi(n)).
-cmp $0,1
+mov $1,$0
+seq $0,121048 ; n + phi(n), for Euler totient function phi(n).
+add $1,1
+gcd $1,$0
+mov $0,1
+div $0,$1
