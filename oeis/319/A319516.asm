@@ -14,9 +14,8 @@ lpb $0
     min $4,1
     add $2,1
     sub $3,$4
-    add $4,1
   lpe
-  add $4,3
+  add $4,4
   mov $5,1
   lpb $0
     dif $0,$2

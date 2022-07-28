@@ -9,13 +9,15 @@ mul $3,6
 lpb $3
   lpb $1
     mod $2,$0
-    cmp $2,1
+    cmp $2,0
     add $3,$1
     sub $1,$2
   lpe
-  mov $1,$4
-  add $2,$4
-  sub $3,3
+  mov $1,1
+  add $1,$4
+  add $2,$1
+  sub $3,1
   add $4,1
 lpe
+add $2,1
 mov $0,$2

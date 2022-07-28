@@ -1,6 +1,7 @@
 ; A086100: A086099 in binary.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,11,10,11,0,111,110,111,100,111,110,111,0,1111,1110,1111,1100,1111,1110,1111,1000,1111,1110,1111,1100,1111,1110,1111,0,11111,11110,11111,11100,11111,11110,11111,11000,11111,11110,11111,11100
 
 seq $0,86099 ; a(n) = OR(k AND (n-k): 0<=k<=n), AND and OR bitwise.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+seq $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
+div $0,6

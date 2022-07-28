@@ -11,14 +11,13 @@ sub $2,$0
 add $3,$0
 mov $4,$0
 mov $0,$2
+sub $0,1
 lpb $0
-  sub $0,1
   add $3,$0
   bin $3,$0
-  add $0,1
+  sub $0,1
   div $0,2
   mul $0,2
-  sub $0,1
   add $1,$3
   mov $3,$4
 lpe

@@ -8,15 +8,15 @@ mov $3,1
 mov $9,1
 mov $8,$0
 lpb $8
-  mov $5,$2
+  mov $5,3
   lpb $5
-    add $2,1
+    add $2,15
     mov $6,$2
     gcd $6,$3
-    mul $2,4
-    add $2,2
     cmp $6,1
     cmp $6,0
+    add $0,6
+    add $3,1
     sub $5,$6
   lpe
   add $2,1
