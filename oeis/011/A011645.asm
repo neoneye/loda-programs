@@ -1,5 +1,5 @@
 ; A011645: 90th cyclotomic polynomial.
-; Submitted by Simon Strandgaard
+; Submitted by PDW
 ; 1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1
 
 mov $1,-1
