@@ -9,12 +9,7 @@ lpe
 mov $1,$2
 bin $1,$0
 sub $2,1
-add $3,$2
-bin $3,$0
-add $3,$1
-lpb $0
-  mov $0,0
-  mul $3,2
-lpe
-mov $0,$3
-div $0,2
+bin $2,$0
+min $0,1
+mul $0,$1
+add $0,$2

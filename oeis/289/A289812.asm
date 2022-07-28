@@ -4,16 +4,15 @@
 
 mov $3,$0
 mov $4,59
-mov $6,$0
-sub $6,60
+mov $5,$0
+sub $5,60
 mov $0,60
 lpb $0
+  pow $5,2
+  div $5,$4
   add $5,1
-  pow $6,2
-  div $6,$4
-  add $6,$5
   add $2,$0
-  mov $4,$6
+  mov $4,$5
   sub $4,11
   max $4,1
   mul $0,2

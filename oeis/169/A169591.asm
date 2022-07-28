@@ -9,6 +9,5 @@ lpe
 sub $1,$0
 add $0,1
 pow $0,$1
-add $1,1
-mul $0,$1
-mod $0,2
+gcd $1,2
+mod $0,$1

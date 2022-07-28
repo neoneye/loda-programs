@@ -4,4 +4,5 @@
 
 seq $0,53191 ; a(n) = n^2 * phi(n).
 sub $0,1
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,39649 ; a(n) = phi(n)+1.
+sub $0,1
