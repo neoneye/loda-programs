@@ -1,20 +1,21 @@
 ; A305716: Order of rowmotion on the divisor lattice for n.
-; Submitted by Simon Strandgaard
+; Submitted by Stony666
 ; 2,3,3,4,3,4,3,5,4,4,3,5,3,4,4,6,3,5,3,5,4,4,3,6,4,4,5,5,3,5,3,7,4,4,4,6,3,4,4,6,3,5,3,5,5,4,3,7,4,5,4,5,3,6,4,6,4,4,3,6,3,4,5,8,4,5,3,5,4,5,3,7,3,4,5,5,4,5,3,7,6,4,3,6,4,4,4,6,3,6,4,5,4,4,4,8,3,5,5,6
 
-mov $1,1
 mov $2,2
 add $0,1
 lpb $0
   mov $3,$0
-  sub $3,1
   lpb $3
     mov $4,$0
     mod $4,$2
+    mul $4,3
     add $2,1
     sub $3,$4
   lpe
-  add $1,1
   div $0,$2
+  add $1,3
 lpe
-add $0,$1
+mov $0,$1
+div $0,3
+add $0,1

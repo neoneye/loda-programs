@@ -1,8 +1,10 @@
 ; A100260: Fixed point of morphism 0 -> 01, 1 -> 02, 2 -> 31, 3 -> 32.
-; Submitted by Simon Strandgaard
+; Submitted by Orange Kid
 ; 0,1,0,2,0,1,3,1,0,1,0,2,3,2,0,2,0,1,0,2,0,1,3,1,3,2,3,1,0,1,3,1,0,1,0,2,0,1,3,1,0,1,0,2,3,2,0,2,3,2,3,1,3,2,0,2,0,1,0,2,3,2,0,2,0,1,0,2,0,1,3,1,0,1,0,2,3,2,0,2,0,1,0,2,0,1,3,1,3,2,3,1,0,1,3,1,3,2,3,1
 
-seq $0,105584 ; Fixed point of the morphism 1 -> 34, 2 -> 32, 3 -> 12, 4 -> 14, starting from a(0) = 1.
-sub $0,1
-pow $0,3
-mod $0,5
+mov $1,$0
+seq $1,20987 ; Zero-one version of Golay-Rudin-Shapiro sequence (or word).
+sub $0,$1
+mul $1,2
+mod $0,2
+add $0,$1
