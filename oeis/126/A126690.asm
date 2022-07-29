@@ -1,32 +1,27 @@
 ; A126690: Multiplicative function defined for prime powers by a(p^k) = p + p^2 + p^3 + ... + p^(k-1) - 1 (k >= 1).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,-1,-1,1,-1,1,-1,5,2,1,-1,-1,-1,1,1,13,-1,-2,-1,-1,1,1,-1,-5,4,1,11,-1,-1,-1,-1,29,1,1,1,2,-1,1,1,-5,-1,-1,-1,-1,-2,1,-1,-13,6,-4,1,-1,-1,-11,1,-5,1,1,-1,1,-1,1,-2,61,1,-1,-1,-1,1,-1,-1,10,-1,1,-4,-1,1,-1,-1,-13,38,1,-1,1,1,1,1,-5,-1,2,1,-1,1,1,1,-29,-1,-6,-2,4
 
 mov $1,1
+mov $2,2
+mov $4,1
 add $0,1
 lpb $0
   mov $3,$0
+  sub $3,2
   lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
+    min $4,1
     add $2,1
-    max $4,$5
     sub $3,$4
-    trn $5,$0
   lpe
+  mov $5,-2
   lpb $0
     dif $0,$2
-    mul $5,$2
-    add $5,1
+    add $5,$4
+    mul $4,$2
   lpe
-  sub $5,2
   mul $1,$5
 lpe
 mov $0,$1

@@ -2,18 +2,15 @@
 ; Submitted by Simon Strandgaard
 ; 3,3,1,3,3,1,3,2,1,3,1,1,2,3,1,1,3,1,3,3,1,2,1,1,3,1,1,2,2,1,1,3,1,3,2,1,1,2,1,3,1,1,2,1,1,1,3,1,3,2,1,3,2,1,3,1,1,1,1,1,1,3,1,2,1,1,3,2,1,1,1,1,2,2,1,1,3,1,1,2,1,3,1,1,2,1,1,2,3,1,1,1,1,3,3,1,2,2,1,1
 
-mov $4,$0
-mov $2,16
-lpb $2
-  mov $3,$4
-  add $3,2
-  mul $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,$0
-  add $4,1
-  add $1,1
-  mul $1,$3
-  sub $2,$1
-lpe
-mov $0,$1
+mov $2,$0
+add $2,2
 add $0,1
+mov $3,$0
+lpb $3
+  mov $1,$2
+  seq $1,101264 ; a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
+  add $2,$0
+  sub $3,$1
+lpe
+div $2,$0
+mov $0,$2

@@ -16,12 +16,10 @@ lpb $0
   lpe
   mov $3,$2
   add $3,1
-  mov $5,1
   lpb $0
     dif $0,$2
-    mul $5,$3
+    mul $1,$3
   lpe
-  dif $5,$3
-  mul $1,$5
+  div $1,$3
 lpe
 mul $0,$1

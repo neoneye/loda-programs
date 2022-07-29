@@ -9,7 +9,7 @@ lpb $0
   div $0,2
   mul $0,2
   trn $0,1
-  seq $0,98228 ; a(n) = floor(n/(n-phi(n)) = floor(n/cototient(n)).
+  seq $0,56167 ; Numbers k such that k! is not divisible by the square of (f+1)!, where f = floor(k/2).
   mul $1,$0
   sub $0,1
   div $1,$0
