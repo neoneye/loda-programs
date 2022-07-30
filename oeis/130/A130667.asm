@@ -5,14 +5,13 @@
 mov $1,1
 add $0,1
 lpb $0
-  mul $0,2
+  mul $2,5
   lpb $0
     dif $0,2
     mul $1,6
   lpe
   div $0,2
-  mul $2,5
+  mul $0,2
   add $2,$1
 lpe
 gcd $0,$2
-div $0,6

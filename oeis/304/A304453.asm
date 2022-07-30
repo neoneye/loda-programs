@@ -1,7 +1,20 @@
 ; A304453: An expanded binary notation for n: the normal binary expansion for n is expanded by mapping each 1 to 10 and retaining the existing 0's.
-; Submitted by Sabroe_SMC
+; Submitted by Simon Strandgaard
 ; 0,10,100,1010,1000,10010,10100,101010,10000,100010,100100,1001010,101000,1010010,1010100,10101010,100000,1000010,1000100,10001010,1001000,10010010,10010100,100101010,1010000,10100010,10100100,101001010,10101000,101010010,101010100,1010101010,1000000,10000010,10000100,100001010,10001000,100010010,100010100,1000101010,10010000,100100010,100100100,1001001010,100101000,1001010010,1001010100,10010101010,10100000,101000010,101000100,1010001010,101001000,1010010010,1010010100,10100101010,101010000
 
-seq $0,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mul $0,10
+mov $1,1
+mov $3,1
+add $0,1
+lpb $0
+  mov $2,1
+  sub $0,1
+  mul $0,2
+  lpb $0
+    dif $0,2
+    mul $2,10
+  lpe
+  add $3,$1
+  mul $1,$2
+lpe
+add $0,$3
+sub $0,2

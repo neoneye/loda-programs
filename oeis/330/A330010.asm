@@ -1,21 +1,11 @@
 ; A330010: Number of length-n ternary strings x with the property that if w is a subword of x and |w| >= 3, then w reversed is not a subword of x.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,3,9,18,30,48,78,126,204,330,534,864,1398,2262,3660,5922,9582,15504,25086,40590,65676,106266,171942,278208,450150,728358,1178508,1906866,3085374,4992240,8077614,13069854,21147468,34217322,55364790,89582112,144946902,234529014,379475916,614004930,993480846,1607485776,2600966622,4208452398,6809419020,11017871418,17827290438,28845161856,46672452294,75517614150,122190066444,197707680594,319897747038,517605427632,837503174670,1355108602302,2192611776972,3547720379274,5740332156246,9288052535520
 
-mov $1,1
-mov $5,1
-lpb $0
-  sub $0,1
-  mov $1,$4
-  add $1,1
-  mov $4,$2
-  mov $2,$3
-  mov $3,$5
-  trn $4,1
-  add $4,$1
-  add $4,$2
-  add $4,$5
-  mul $1,3
-  add $5,$2
+mov $1,$0
+trn $0,1
+seq $0,54886 ; Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/3,0) (this is the classical modular tessellation).
+lpb $1
+  mov $1,0
+  mul $0,3
 lpe
-mov $0,$1
