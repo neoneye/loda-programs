@@ -13,8 +13,8 @@ lpb $0
   mov $4,$5
   mov $5,$3
   mov $6,1
-  add $6,$4
 lpe
+add $6,$4
 add $6,2
 mov $1,4
 add $1,$6
