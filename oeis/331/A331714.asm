@@ -5,5 +5,5 @@
 sub $1,$0
 add $0,1
 seq $0,2624 ; Expansion of (1-x)^(-3) * (1-x^2)^(-2).
-add $0,$1
 sub $0,2
+add $0,$1
