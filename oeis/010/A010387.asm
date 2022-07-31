@@ -2,7 +2,6 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,4,6,9,11,14,16,19,21,24
 
-add $0,1
-mul $0,72
-div $0,29
-trn $0,3
+mul $0,28
+div $0,11
+trn $0,1

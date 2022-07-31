@@ -6,5 +6,4 @@ mov $1,$0
 seq $0,33880 ; Abundance of n, or (sum of divisors of n) - 2n.
 trn $1,1
 seq $1,46666 ; a(n) = n - (smallest prime dividing n).
-gcd $1,$0
-mov $0,$1
+gcd $0,$1
