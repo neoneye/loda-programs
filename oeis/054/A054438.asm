@@ -4,7 +4,6 @@
 
 mov $1,9
 lpb $1
-  sub $1,1
-  div $1,2
+  div $1,3
   seq $0,38554 ; Derivative of n: write n in binary, replace each pair of adjacent bits with their mod 2 sum (a(0)=a(1)=0 by convention). Also n XOR (n shift 1).
 lpe
