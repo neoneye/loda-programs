@@ -1,6 +1,9 @@
 ; A272900: Fibonacci-products fractal sequence.
+; Submitted by Simon Strandgaard
 ; 1,1,1,2,1,2,1,3,2,1,3,2,1,3,4,2,1,3,4,2,1,3,5,4,2,1,3,5,4,2,1,3,5,6,4,2,1,3,5,6,4,2,1,3,5,7,6,4,2,1,3,5,7,6,4,2,1,3,5,7,8,6,4,2,1,3,5,7,8,6,4,2,1,3,5,7,9,8,6,4,2,1,3,5,7,9,8,6,4,2,1,3,5,7,9,10,8,6,4,2
 
-mul $0,4
+mul $0,2
+seq $0,253146 ; A fractal tree, read by rows: for n > 2, T(n,1) = T(n-1,1)+2, T(n,n) = T(n-1,1)+3, and for k=2..n-1, T(n,k) = T(n-2,k-1).
+sub $0,1
+div $0,4
 add $0,1
-seq $0,8967 ; Coefficients of Gaussian polynomials q_binomial(n-2, 2). Also triangle of distribution of rank sums: Wilcoxon's statistic. Irregular triangle read by rows.

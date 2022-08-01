@@ -2,15 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 4,5,6,7,8,9,10,11,13,14,16,21
 
-mov $7,$0
+mov $4,$0
 mov $5,1
 lpb $5
   sub $5,1
   mov $2,2
   lpb $2
-    sub $2,1
-    add $0,$2
-    sub $0,1
+    mov $2,1
     mov $1,$0
     mov $3,$0
     mul $3,4
@@ -27,12 +25,8 @@ lpb $5
     mov $0,$1
     add $0,3
     mod $0,10
-    mov $8,$2
-    mul $8,$0
-    add $4,$8
   lpe
-  mov $0,$4
   add $0,1
-  add $7,$0
+  add $4,$0
 lpe
-mov $0,$7
+mov $0,$4
