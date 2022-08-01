@@ -6,10 +6,9 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-sub $1,$0
-bin $2,$1
-mov $1,2
-pow $1,$0
-gcd $2,3
-mul $2,$1
-mov $0,$2
+cmp $1,$0
+gcd $1,3
+add $2,$0
+mov $0,2
+pow $0,$2
+mul $0,$1
