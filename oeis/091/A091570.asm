@@ -1,22 +1,17 @@
 ; A091570: Sum of odd proper divisors of n. Sum of the odd divisors of n that are less than n.
-; Submitted by Simon Strandgaard
+; Submitted by eclipse99
 ; 0,1,1,1,1,4,1,1,4,6,1,4,1,8,9,1,1,13,1,6,11,12,1,4,6,14,13,8,1,24,1,1,15,18,13,13,1,20,17,6,1,32,1,12,33,24,1,4,8,31,21,14,1,40,17,8,23,30,1,24,1,32,41,1,19,48,1,18,27,48,1,13,1,38,49,20,19,56,1,6,40,42,1,32,23,44,33,12,1,78,21,24,35,48,25,4,1,57,57,31
 
 add $0,1
-mov $4,1
-mov $2,$0
-lpb $2
-  add $4,$3
-  mov $5,$0
-  mod $5,$4
-  cmp $5,0
-  mov $6,$4
-  mul $6,$5
-  add $1,$6
-  mov $5,$2
-  trn $5,$4
-  min $5,1
-  sub $2,$5
-  mov $3,2
+mov $1,1
+mov $4,$0
+lpb $0
+  sub $0,2
+  mov $3,$4
+  mod $3,$1
+  cmp $3,0
+  mul $3,$1
+  add $1,2
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2
