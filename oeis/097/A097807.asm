@@ -1,8 +1,11 @@
 ; A097807: Riordan array (1/(1+x),1) read by rows.
-; Submitted by Jamie Morken(s3)
+; Submitted by Simon Strandgaard
 ; 1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1
 
-seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
-mov $1,-1
-bin $1,$0
-mov $0,$1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+mov $0,-1
+pow $0,$1
