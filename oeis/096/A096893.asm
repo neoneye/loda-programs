@@ -8,6 +8,7 @@ mov $2,$0
 add $2,1
 mov $0,8
 lpb $0
+  sub $0,1
   mov $3,$2
   dif $3,$0
   mov $4,$3

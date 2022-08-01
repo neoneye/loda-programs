@@ -1,14 +1,11 @@
 ; A122165: Continued fraction expansion of constant x = Sum_{n>=0} 1/5^(2^n).
-; Submitted by dkester788
+; Submitted by Simon Strandgaard
 ; 0,4,7,5,5,3,5,7,5,3,7,5,3,5,5,7,5,3,7,5,5,3,5,7,3,5,7,5,3,5,5,7,5,3,7,5,5,3,5,7,5,3,7,5,3,5,5,7,3,5,7,5,5,3,5,7,3,5,7,5,3,5,5,7,5,3,7,5,5,3,5,7,5,3,7,5,3,5,5,7,5,3,7,5,5,3,5,7,3,5,7,5,3,5,5,7,3,5,7,5
 
+seq $0,4200 ; Continued fraction for Sum[ 1/3^(2^n),{n,0,Infinity} ].
+mov $1,$0
 lpb $0
-  pow $1,$1
-  mov $2,$0
-  seq $2,6464 ; Continued fraction for Sum_{n>=0} 1/4^(2^n).
-  sub $2,$1
-  mod $0,$1
-  add $3,$2
-  add $3,2
+  div $0,12
+  add $1,2
 lpe
-mov $0,$3
+mov $0,$1

@@ -1,8 +1,13 @@
 ; A014063: Inverse of 54th cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0
 
-seq $0,73378 ; Eighth convolution of A001045(n+1) (generalized (1,2)-Fibonacci), n>=0, with itself.
-add $0,1
-mod $0,3
-sub $0,1
+mov $2,1
+mul $0,2
+lpb $0
+  sub $0,18
+  sub $2,$1
+  add $1,$2
+lpe
+cmp $0,0
+mul $0,$2
