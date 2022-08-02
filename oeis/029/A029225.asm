@@ -8,8 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25815 ; Expansion of 1/((1-x^2)(1-x^6)(1-x^11)).
+  seq $2,25827 ; Expansion of 1/((1-x^2)(1-x^11)(1-x^12)).
   add $1,$2
-  mov $3,12
+  mov $3,6
 lpe
 mov $0,$1
