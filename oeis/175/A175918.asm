@@ -8,13 +8,14 @@ mov $4,4
 lpb $0
   mov $3,$0
   mul $3,$2
-  add $3,1
   mod $3,2
   mul $3,$4
+  mul $4,2
   div $0,2
   add $1,$3
   div $2,2
-  mul $4,2
 lpe
-mov $0,$1
+sub $4,$1
+mov $0,$4
+sub $0,4
 div $0,4

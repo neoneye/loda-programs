@@ -6,4 +6,4 @@ mov $1,$0
 add $0,1
 pow $0,2
 add $0,$1
-seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
+seq $0,56924 ; Number of divisors of n that are smaller than sqrt(n).

@@ -4,7 +4,8 @@
 
 add $0,1
 mov $2,$0
-sub $0,1
+div $0,2
+add $0,1
 lpb $0
   sub $0,1
   pow $3,2
@@ -12,4 +13,4 @@ lpb $0
   mod $3,$2
   max $1,$3
 lpe
-mov $0,$1
+add $0,$1
