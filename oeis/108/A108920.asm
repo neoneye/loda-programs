@@ -4,15 +4,14 @@
 
 mov $2,$0
 add $2,1
-mul $2,2
 pow $2,2
-mul $0,2
+mul $2,2
 lpb $0
+  max $0,1
   mov $3,$2
-  dif $3,$0
-  cmp $3,$2
-  cmp $3,0
-  sub $0,2
+  gcd $3,$0
+  div $3,$0
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

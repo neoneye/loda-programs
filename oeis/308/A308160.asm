@@ -2,17 +2,5 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,1,0,2,2,5,3,7,7,12,9,15,15,22,18,26,26,35,30,40,40,51,45,57,57,70,63,77,77,92,84,100,100,117,108,126,126,145,135,155,155,176,165,187,187,210,198,222,222,247,234,260,260,287,273,301,301,330,315
 
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $0
-  sub $0,2
-  mov $3,$4
-  mod $3,2
-  mul $3,$2
-  add $1,$3
-  sub $2,1
-  add $4,1
-lpe
-dif $1,2
-mov $0,$1
+seq $0,296805 ; Sum of the larger parts in the partitions of n into two distinct parts with the larger part even.
+div $0,2
