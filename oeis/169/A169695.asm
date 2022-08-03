@@ -2,6 +2,6 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,1,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 
-trn $0,1
-seq $0,49240 ; Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
-add $0,1
+seq $0,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+mul $0,-1
+add $0,2

@@ -1,13 +1,8 @@
 ; A030132: Digital root of Fibonacci(n).
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 0,1,1,2,3,5,8,4,3,7,1,8,9,8,8,7,6,4,1,5,6,2,8,1,9,1,1,2,3,5,8,4,3,7,1,8,9,8,8,7,6,4,1,5,6,2,8,1,9,1,1,2,3,5,8,4,3,7,1,8,9,8,8,7,6,4,1,5,6,2,8,1,9,1,1,2,3,5,8,4,3,7,1,8,9,8,8,7,6,4,1,5,6,2,8,1,9,1,1,2
 
-lpb $0
-  sub $0,1
-  add $1,1
-  mod $2,9
-  mov $3,$1
-  mov $1,$2
-  add $2,$3
-lpe
-mov $0,$3
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+sub $0,1
+mod $0,9
+add $0,1
