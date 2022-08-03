@@ -1,6 +1,21 @@
 ; A004011: Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
-; Submitted by Sphynx
+; Submitted by Simon Strandgaard
 ; 1,24,24,96,24,144,96,192,24,312,144,288,96,336,192,576,24,432,312,480,144,768,288,576,96,744,336,960,192,720,576,768,24,1152,432,1152,312,912,480,1344,144,1008,768,1056,288,1872,576,1152,96,1368,744,1728,336,1296,960,1728,192,1920,720,1440,576,1488,768,2496,24,2016,1152,1632,432,2304,1152,1728,312,1776,912,2976,480,2304,1344,1920,144,2904,1008,2016,768,2592,1056,2880,288,2160,1872,2688,576,3072,1152,2880,96,2352,1368,3744
 
-mul $0,2
-seq $0,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
+mov $2,$0
+mov $4,1
+lpb $0
+  dif $2,2
+  mov $3,$2
+  dif $3,$0
+  cmp $3,$2
+  cmp $3,0
+  mul $3,$0
+  mov $4,24
+  sub $0,1
+  add $1,$3
+lpe
+add $1,1
+gcd $3,$1
+mul $3,$4
+mov $0,$3

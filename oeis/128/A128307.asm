@@ -6,6 +6,9 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-mul $0,-1
-add $0,$1
-seq $0,34008 ; a(n) = floor(2^|n-1|/2). Or: 1, 0, followed by powers of 2.
+sub $1,$0
+mov $0,2
+pow $0,$1
+mul $0,2
+dif $0,4
+div $0,2
