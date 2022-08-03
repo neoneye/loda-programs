@@ -4,7 +4,7 @@
 
 mov $1,$0
 mul $1,2
-seq $0,22838 ; Beatty sequence for sqrt(3); complement of A054406.
-div $0,4
 add $0,1
+seq $0,308358 ; Beatty sequence for sqrt(3)/4.
 add $0,$1
+add $0,1
