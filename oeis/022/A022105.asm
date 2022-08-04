@@ -1,13 +1,14 @@
 ; A022105: Fibonacci sequence beginning 1, 15.
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 1,15,16,31,47,78,125,203,328,531,859,1390,2249,3639,5888,9527,15415,24942,40357,65299,105656,170955,276611,447566,724177,1171743,1895920,3067663,4963583,8031246,12994829
 
-mov $1,1
-mov $2,14
+mov $1,15
+mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
-  mov $3,$2
   mov $2,$1
   add $1,$3
+  mov $3,$2
 lpe
-mov $0,$1
+gcd $0,$1
