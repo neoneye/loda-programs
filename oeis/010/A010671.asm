@@ -2,9 +2,16 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,2,2,2,2,6,8
 
+add $0,1
 mov $1,$0
-seq $1,29103 ; Expansion of 1/((1-x)(1-x^5)(1-x^10)(1-x^11)).
-mul $0,$1
-sub $0,4
-div $0,16
-add $0,$1
+lpb $0
+  sub $0,3
+  div $0,8
+  mov $3,$1
+  div $3,6
+  mul $1,2
+  add $1,1
+  add $2,1
+  add $2,$3
+lpe
+mov $0,$2

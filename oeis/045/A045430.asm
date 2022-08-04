@@ -2,9 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,3,3,4,3,3,2,2,1,1
 
+mov $1,12
+sub $1,$0
+min $0,$1
 add $0,2
-lpb $0
-  sub $0,16
-  dif $0,-1
-lpe
 div $0,2

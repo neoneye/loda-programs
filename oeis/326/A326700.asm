@@ -5,7 +5,6 @@
 add $0,1
 mov $1,$0
 seq $1,73642 ; Replace 2^k in the binary representation of n with k (i.e., if n = 2^b + 2^c + 2^d + ... then a(n) = b + c + d + ...).
-mul $0,2
-seq $0,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 gcd $1,$0
 div $0,$1

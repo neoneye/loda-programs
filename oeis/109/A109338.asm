@@ -2,8 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,2,4,4,2,1
 
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-div $0,3
-dif $0,2
-mod $0,10
-add $0,1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+mul $1,$0
+add $1,1
+div $1,3
+mov $0,2
+pow $0,$1
