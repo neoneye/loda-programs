@@ -1,16 +1,15 @@
 ; A211159: Number of integer pairs (x,y) such that 0<x<y<=n and x*y=n+1.
-; Submitted by Cruncher Pete
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,1,0,1,0,1,0,2,0,1,1,1,0,2,0,2,1,1,0,3,0,1,1,2,0,3,0,2,1,1,1,3,0,1,1,3,0,3,0,2,2,1,0,4,0,2,1,2,0,3,1,3,1,1,0,5,0,1,2,2,1,3,0,2,1,3,0,5,0,1,2,2,1,3,0,4,1,1,0,5,1,1,1,3,0,5,1,2,1,1,1,5,0,2,2,3,0
 
-add $0,3
-mov $2,$0
-lpb $2
-  add $3,2
-  sub $4,1
-  mov $5,$0
-  mod $5,$4
-  cmp $5,1
-  add $1,$5
-  sub $2,$3
+mov $1,4
+lpb $0
+  sub $0,$1
+  mov $3,$0
+  mul $3,2
+  gcd $3,$1
+  cmp $3,$1
+  add $1,2
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2
