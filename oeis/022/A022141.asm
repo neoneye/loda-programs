@@ -1,13 +1,16 @@
 ; A022141: Fibonacci sequence beginning 5, 17.
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 5,17,22,39,61,100,161,261,422,683,1105,1788,2893,4681,7574,12255,19829,32084,51913,83997,135910,219907,355817,575724,931541,1507265,2438806,3946071,6384877,10330948
 
-mov $1,5
-mov $2,12
+mov $1,12
+mov $2,5
 lpb $0
-  sub $0,1
-  mov $3,$2
-  mov $2,$1
-  add $1,$3
+  sub $0,2
+  add $1,$2
+  add $2,$1
 lpe
-mov $0,$1
+lpb $0
+  trn $0,$2
+  add $2,$1
+lpe
+mov $0,$2

@@ -2,18 +2,12 @@
 ; Submitted by Simon Strandgaard
 ; 6,10,13,15,17,18,18,21,23,25,26,26
 
-mov $1,1
-mov $2,4
-mul $0,3
-lpb $0
-  sub $0,1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  add $1,$2
-  mod $2,2
-  mov $3,$5
-  mov $5,$4
-lpe
-mov $0,$1
-add $0,5
+mov $1,$0
+sub $1,1
+mul $1,12
+mod $1,10
+min $1,2
+add $1,8
+seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+sub $0,1
+add $0,$1
