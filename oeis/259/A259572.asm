@@ -16,9 +16,7 @@ sub $0,1
 lpb $0
   sub $0,1
   add $4,1
-  gcd $1,$2
-  div $1,$1
-  mul $1,$4
+  mov $1,$4
   div $1,$2
   add $3,$1
   add $4,$5
