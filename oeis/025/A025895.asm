@@ -9,12 +9,13 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  gcd $1,$0
-  seq $0,29104 ; Expansion of 1/((1-x)(1-x^5)(1-x^10)(1-x^12)).
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+  seq $0,29212 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^10)(1-x^12)).
+  trn $1,$3
+  mov $2,$3
+  mul $2,$0
+  add $4,$2
 lpe
-mul $0,$1
-mul $0,-1
-add $0,$2
+min $1,1
+mul $1,$0
+mov $0,$4
+sub $0,$1

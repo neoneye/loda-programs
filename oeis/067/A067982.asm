@@ -1,19 +1,22 @@
 ; A067982: Convolution of L(n+1) := A000204(n+1) (Lucas), n>=0, with L(n+4), n>=0.
-; Submitted by Stefano Spezia
+; Submitted by Simon Strandgaard
 ; 7,32,79,176,360,706,1341,2492,4553,8210,14648,25908,45491,79384,137795,238084,409704,702518,1200777,2046580,3479197,5900902,9987064,16870056,28446175,47887376,80493751,135112472
 
+mov $2,-9
+add $0,1
+lpb $0
+  add $1,33
+  sub $0,$1
+lpe
+mov $1,$0
 add $0,2
 lpb $0
-  add $1,$0
   sub $0,1
-  add $1,6
+  add $1,2
   add $1,$0
-  add $2,$0
-  mov $3,$1
-  add $3,1
-  mov $1,$2
-  sub $1,5
-  add $2,$3
+  add $1,$2
+  mul $2,-1
+  add $2,1
+  add $2,$1
 lpe
-mov $0,$2
-sub $0,8
+mov $0,$1
