@@ -1,5 +1,5 @@
 ; A043643: Numbers whose base-10 representation has exactly 7 runs.
-; Submitted by Simon Strandgaard
+; Submitted by Skivelitis2
 ; 1010101,1010102,1010103,1010104,1010105,1010106,1010107,1010108,1010109,1010120,1010121,1010123,1010124,1010125,1010126,1010127,1010128,1010129,1010130,1010131,1010132,1010134,1010135,1010136
 
 mov $1,1
@@ -7,8 +7,9 @@ lpb $0
   add $1,3
   mov $3,$1
   mul $3,2
+  add $3,2
   mov $4,$0
-  sub $4,1
+  sub $4,3
   add $3,$4
   mov $0,2
   add $0,$3
@@ -18,6 +19,5 @@ lpb $0
   sub $2,4
   mov $1,$2
 lpe
-add $1,$0
-mov $0,$1
+add $0,$1
 add $0,1010100

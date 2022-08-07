@@ -1,15 +1,29 @@
 ; A047669: Row 5 of array in A047666.
-; Submitted by Simon Strandgaard
+; Submitted by Dacicus Geometricus
 ; 5,26,95,276,681,1486,2947,5416,9357,15362,24167,36668,53937,77238,108043,148048,199189,263658,343919,442724,563129,708510,882579,1089400,1333405,1619410,1952631,2338700,2783681,3294086,3876891
 
-mov $2,$0
-mov $3,16
-lpb $3
-  div $3,6
-  mov $0,$2
-  add $0,$3
-  seq $0,35599 ; Number of points of L1 norm 5 in cubic lattice Z^n.
-  add $1,$0
+mov $5,$0
+mov $6,$0
+lpb $6
+  sub $6,1
+  mov $0,$5
+  sub $0,$6
+  mov $2,0
+  mov $3,$0
+  pow $3,2
+  mov $4,$0
+  add $4,5
+  lpb $0
+    add $4,$3
+    mov $3,$4
+    mul $3,$4
+    div $3,3
+    add $2,$3
+    mul $2,2
+    div $0,$2
+    sub $2,11
+  lpe
+  add $1,$2
 lpe
 mov $0,$1
-div $0,4
+add $0,5
