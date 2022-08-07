@@ -9,12 +9,12 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  gcd $1,$0
   seq $0,106348 ; Partial sums of a generalized Fredholm-Rueppel sequence.
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+  mov $4,$3
+  mul $4,$0
+  add $2,$4
 lpe
-min $1,1
 mul $1,$0
-mov $0,$4
+mov $0,$2
 sub $0,$1

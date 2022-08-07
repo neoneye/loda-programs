@@ -7,7 +7,7 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
+  max $2,2
   seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   add $1,$2
   mov $3,1
