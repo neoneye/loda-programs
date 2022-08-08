@@ -2,11 +2,16 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,3,4,5,8,9,12,15,18,21,27,30,36,42,48,54,64,70,80,90,100,110,125,135,150,165,180,195,216,231,252,273,294,315,343,364,392,420,448,476,512,540,576,612,648,684,729,765,810,855,900,945,1000,1045,1100
 
-lpb $0
-  mov $2,$0
-  seq $2,86159 ; Number of partitions of n into the first three triangular numbers, 1, 3 and 6.
-  sub $0,2
-  add $1,$2
+mov $2,$0
+add $2,6
+lpb $2
+  mov $0,$2
+  sub $0,3
+  pow $0,2
+  mul $0,2
+  add $0,10
+  div $0,24
+  add $1,$0
+  sub $2,6
 lpe
 mov $0,$1
-add $0,1

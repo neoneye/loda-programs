@@ -5,8 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
+  seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   sub $0,$2
   mul $1,$2
 lpe

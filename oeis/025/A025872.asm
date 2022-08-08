@@ -4,10 +4,15 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
-  trn $2,1
-  seq $2,33183 ; a(n) = number of pairs (p,q) such that 4*p + 9*q = n.
-  trn $0,8
-  add $1,$2
+  sub $0,2
+  mov $2,$4
+  div $2,2
+  sub $2,2
+  add $2,$0
+  mov $3,$2
+  add $3,2
+  sub $4,1
+  trn $0,2
+  trn $1,$3
 lpe
 mov $0,$1
