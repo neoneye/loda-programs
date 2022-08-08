@@ -8,8 +8,7 @@ lpb $0
   trn $2,1
   mul $2,2
   seq $2,25834 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^12)).
-  sub $0,2
-  trn $0,7
+  trn $0,9
   add $1,$2
 lpe
 mov $0,$1
