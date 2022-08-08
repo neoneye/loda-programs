@@ -3,5 +3,5 @@
 ; 1,2,1,2,1,3,2,2,1,2,1,3,2,2,1,2,1,3,2,2,1,4,4,3,2,2,1,2,1,4,3,3,3,2,1,3,3,2,1,2,1,3,2,2,1,4,2,3,2,2,1,4,2,3,2,2,1,2,1,4,3,3,3,2,1,3,2,2,1,2
 
 seq $0,204895 ; The prime q such that n divides p-q, where p>q is the least prime for which such a prime q exists.
-seq $0,65881 ; Ultimate modulo 10: right-hand nonzero digit of n.
+add $0,1
 div $0,2
