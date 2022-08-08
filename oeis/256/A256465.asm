@@ -9,10 +9,8 @@ lpb $3
   mov $0,$2
   add $0,$3
   seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
-  sub $1,1
   add $1,$0
   mul $2,$3
 lpe
 mov $0,$1
 div $0,2
-add $0,1
