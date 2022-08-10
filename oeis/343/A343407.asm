@@ -5,10 +5,10 @@
 add $0,1
 mov $2,$0
 lpb $2
-  sub $2,1
-  add $3,1
+  add $3,2
   add $4,$3
   mov $5,$0
+  mul $5,2
   mod $5,$4
   cmp $5,0
   add $1,$5

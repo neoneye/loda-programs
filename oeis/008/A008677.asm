@@ -6,7 +6,8 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,8676 ; Expansion of 1/((1-x^3)*(1-x^5)).
+  mul $2,2
+  seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
   trn $0,7
   add $1,$2
 lpe
