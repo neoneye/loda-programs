@@ -1,6 +1,9 @@
 ; A040961: Continued fraction for sqrt(993).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 31,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1
 
-seq $0,40484 ; Continued fraction for sqrt(507).
-seq $0,7093 ; Numbers in base 7.
+seq $0,10225 ; Continued fraction for sqrt(183).
+mov $1,$0
+div $0,4
+mul $0,6
+add $0,$1
