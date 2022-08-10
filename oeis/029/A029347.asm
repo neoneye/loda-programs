@@ -7,9 +7,9 @@ add $0,6
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
+  max $2,4
   seq $2,308066 ; Number of triangles with perimeter n whose side lengths are even.
-  add $1,$2
   mov $3,7
+  add $1,$2
 lpe
 mov $0,$1

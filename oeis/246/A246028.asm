@@ -6,10 +6,8 @@ mov $1,2
 mov $3,2
 lpb $0
   mov $2,$0
-  mul $2,3
-  add $2,2
   mod $2,4
-  div $2,3
+  trn $2,2
   mul $2,$3
   mov $3,$1
   div $0,2
