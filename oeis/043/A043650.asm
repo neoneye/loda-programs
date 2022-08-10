@@ -13,7 +13,7 @@ lpb $3
     sub $2,5
     trn $2,6
   lpe
-  add $1,$4
 lpe
+add $1,$4
 add $1,1786324
 mov $0,$1

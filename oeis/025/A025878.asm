@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-  sub $0,8
-  trn $0,1
+  trn $0,9
   add $1,$2
 lpe
 mov $0,$1

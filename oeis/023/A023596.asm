@@ -4,8 +4,8 @@
 
 mov $1,$0
 seq $0,23557 ; Convolution of A023531 and Fibonacci numbers.
-add $1,3
-seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+add $0,3
+seq $1,169622 ; a(n) = a(n-1) + Fibonacci(n), a(1)=5.
 sub $1,$0
 mov $0,$1
 sub $0,1
