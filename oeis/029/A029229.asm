@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,25816 ; Expansion of 1/((1-x^2)*(1-x^7)*(1-x^8)).
-  sub $0,4
-  trn $0,8
+  trn $0,12
   add $1,$2
 lpe
 mov $0,$1
