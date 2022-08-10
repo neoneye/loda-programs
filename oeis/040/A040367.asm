@@ -1,9 +1,9 @@
 ; A040367: Continued fraction for sqrt(387).
-; Submitted by Simon Strandgaard
+; Submitted by x8CdHfMQ4f
 ; 19,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2,19,2,1,38,1,2
 
-seq $0,10144 ; Continued fraction for sqrt(59).
-mov $1,$0
-div $0,3
-mul $0,6
-add $0,$1
+seq $0,40261 ; Continued fraction for sqrt(278).
+mul $0,18
+sub $0,18
+div $0,15
+add $0,1
