@@ -9,11 +9,9 @@ mul $0,8
 mul $1,2
 lpb $1
   sub $0,$1
-  div $1,2
-  add $1,1
   add $6,$0
   mov $4,$6
-  sub $4,$1
+  sub $4,$2
   mov $0,$4
   add $0,6
   mov $1,4
