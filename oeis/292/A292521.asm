@@ -15,5 +15,4 @@ lpb $0
   mov $5,$2
   add $5,1
 lpe
-trn $0,1
 add $0,$1

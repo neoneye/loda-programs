@@ -5,12 +5,11 @@
 add $0,1
 lpb $0
   sub $0,1
+  sub $4,1
   mov $2,$4
-  sub $2,1
   bin $2,$0
   mov $3,$2
   gcd $3,$2
-  sub $4,1
   trn $0,2
   max $1,$3
 lpe

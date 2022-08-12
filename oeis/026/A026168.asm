@@ -1,13 +1,9 @@
 ; A026168: Numbers k such that A026166(j) < A026166(k) for all j < k.
-; Submitted by Penguin
+; Submitted by Simon Strandgaard
 ; 1,2,3,5,6,9,11,12,14,15,18,21,23,24,27,29,30,32,33,36,38,39,41,42,45,48,50,51,54,57,59,60,63,65,66,68,69,72,75,77,78,81,83,84,86,87,90,92,93,95,96,99,102,104,105,108,110,111,113,114
 
-sub $0,1
-lpb $0
-  trn $0,1
-  seq $0,26225 ; Numbers of the form 3^i * (3k+1).
-  mov $1,$0
-  mov $0,0
-lpe
-add $0,$1
-add $0,2
+cmp $1,$0
+trn $0,1
+seq $0,26138 ; Numbers k such that s(j) < s(k) for all j < k, where s = A026136.
+add $0,1
+sub $0,$1

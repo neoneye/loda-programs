@@ -1,16 +1,11 @@
 ; A011652: 114th cyclotomic polynomial.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1
 
-add $0,12
-lpb $0
-  sub $0,1
-  dif $0,30
-  add $1,$2
-  sub $2,$1
-  add $1,3
+mov $1,$0
+add $1,9
+lpb $1
+  sub $1,27
+  add $0,1
 lpe
-mov $0,$2
-mul $0,3
-add $0,9
-div $0,9
+seq $0,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
