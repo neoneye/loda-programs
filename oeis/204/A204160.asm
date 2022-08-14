@@ -6,10 +6,9 @@ lpb $0
   add $1,4
   sub $0,$1
 lpe
-cmp $0,0
-mul $0,3
 add $0,1
-div $1,$0
-sub $0,1
+cmp $0,1
 mul $0,$1
+mul $0,3
+div $0,4
 add $0,1

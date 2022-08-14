@@ -10,7 +10,7 @@ lpb $0
   mul $2,3
   div $2,2
   max $2,0
-  seq $2,307897 ; Dimensions of space of harmonic polynomials of each degree invariant under the icosahedral rotation group.
+  seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
   add $1,$2
   mov $3,14
 lpe

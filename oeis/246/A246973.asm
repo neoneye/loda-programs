@@ -4,10 +4,9 @@
 
 mov $1,$0
 add $1,1
-mov $2,$1
-pow $2,2
-pow $0,2
 pow $1,2
+mov $2,$1
+pow $0,2
 lpb $1
   div $1,10
   mul $0,10
