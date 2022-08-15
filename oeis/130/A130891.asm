@@ -20,8 +20,8 @@ lpb $0
   lpb $0
     dif $0,$2
     add $0,$3
-    mul $5,$2
   lpe
+  mul $5,$2
   div $5,10
   sub $5,1
 lpe

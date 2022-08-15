@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,14028 ; Inverse of 19th cyclotomic polynomial.
-  sub $0,3
-  trn $0,8
+  trn $0,11
   add $1,$2
 lpe
 mov $0,$1

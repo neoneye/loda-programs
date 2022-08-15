@@ -1,25 +1,22 @@
 ; A008901: x->x/2 if x even, x->3x-1 if x odd.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 90,45,134,67,200,100,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34,17,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34,17,50,25,74,37,110,55,164
 
 add $0,1
 mov $1,$0
-mov $0,90
+min $0,1
+mul $0,74
+add $0,16
 lpb $1
   mov $2,$0
+  mov $3,$0
+  dif $0,2
   mod $2,2
-  mov $3,1
-  sub $3,$2
-  mov $4,$0
   lpb $2
     sub $2,1
     mul $0,3
     sub $0,1
   lpe
-  lpb $3
-    sub $3,1
-    div $0,2
-  lpe
   sub $1,1
 lpe
-mov $0,$4
+mov $0,$3
