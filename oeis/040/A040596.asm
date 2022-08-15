@@ -1,10 +1,11 @@
 ; A040596: Continued fraction for sqrt(621).
-; Submitted by Simon Strandgaard
+; Submitted by Skyman
 ; 24,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11,2,11,1,48,1,11
 
 seq $0,10182 ; Continued fraction for sqrt(117).
 gcd $1,$0
 add $1,2
 div $1,5
-mul $1,7
+sub $0,$1
+mul $1,8
 add $0,$1
