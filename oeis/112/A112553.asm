@@ -2,12 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2,0,2,1,-1,-1,0,0,0,1,1,-1,-2
 
-add $0,4
-lpb $0
-  sub $0,4
-  mov $2,$0
-  max $2,0
-  seq $2,100051 ; A Chebyshev transform of 1,1,1,...
-  add $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+add $1,7
+seq $1,56594 ; Period 4: repeat [1,0,-1,0]; expansion of 1/(1 + x^2).
+add $0,1
+seq $0,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
+add $0,$1
