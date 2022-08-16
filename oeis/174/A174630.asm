@@ -1,5 +1,5 @@
 ; A174630: A weight function for the case N = 24 and k = 6 in Butler-Graham shuffling.
-; Submitted by Simon Strandgaard
+; Submitted by fix
 ; 0,1,4,5,6,7,1,2,5,6,7,8,1,2,3,4,7,8,2,3,4,5,8,9
 
 mov $1,$0

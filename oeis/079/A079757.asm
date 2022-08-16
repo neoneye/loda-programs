@@ -1,12 +1,11 @@
 ; A079757: Periodic sequence 1 0 -2 3 -2 0,...
-; Submitted by Simon Strandgaard
+; Submitted by Gibson Praise
 ; 1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0,1,0,-2,3,-2,0
 
 mov $3,$0
 mod $0,2
-seq $0,2893 ; a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(2*k,k).
+seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
-trn $2,$3
 add $2,$3
 sub $3,6005
 max $3,$0

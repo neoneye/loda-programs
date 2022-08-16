@@ -1,8 +1,6 @@
 ; A349552: a(n) is the number of halving partitions of n (see Comments for definition).
-; Submitted by Simon Strandgaard
+; Submitted by stoneageman
 ; 1,1,1,1,2,1,2,1,2,2,3,1,3,2,2,1
 
-add $0,1
-seq $0,126606 ; Fixed point of transformation of the seed sequence {0,2}.
-div $0,5
+seq $0,339893 ; a(n) = A000523(n) - A001222(n); floor(log_2(n)) minus the number of prime divisors of n, counted with multiplicity.
 add $0,1

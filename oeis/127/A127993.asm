@@ -1,5 +1,5 @@
 ; A127993: Minimum bowling score for a game with n strikes.
-; Submitted by Simon Strandgaard
+; Submitted by JZD
 ; 0,10,20,30,40,50,60,70,90,120,180,240,300
 
 mov $1,1
@@ -13,8 +13,8 @@ lpb $3
   add $1,$2
   div $1,44
   div $2,44
-  sub $3,$1
-  max $3,1
+  sub $3,1
+  mov $0,2
   add $4,$1
 lpe
 mov $0,$4
