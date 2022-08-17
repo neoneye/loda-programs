@@ -2,15 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,1,1,3,4,8,12,20,32
 
-mov $2,1
 lpb $0
   sub $0,1
-  cmp $4,0
-  add $3,$4
+  mov $5,$3
+  cmp $3,$4
+  add $3,$1
   mov $4,$2
   mov $2,$1
-  add $5,$1
-  mov $1,$3
-  mov $3,$5
+  add $1,$5
 lpe
-add $0,$3
+add $0,$1
