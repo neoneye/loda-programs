@@ -1,16 +1,14 @@
 ; A327152: r values of Triphosian primes.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 2,2,2,0,0,0,5,5,5,0,0,0,11,11,11,0,0,0
 
-mov $2,5
+mov $1,2
+div $0,3
+mul $0,2
 lpb $0
-  sub $0,3
-  mov $1,$2
-  sub $2,$3
-  mul $3,3
-  add $2,$3
-  div $2,$1
-  mov $3,$1
+  sub $0,4
+  mul $1,2
+  add $1,1
 lpe
-mov $0,$2
-div $0,2
+cmp $0,0
+mul $0,$1
