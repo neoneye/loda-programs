@@ -4,16 +4,15 @@
 
 mov $2,$0
 add $2,1
-mov $0,0
+mov $0,1
 mov $1,$2
 lpb $2
   add $2,$0
-  add $0,1
   add $1,$0
   div $0,2
-  add $0,4
+  add $0,5
   sub $2,8
-  trn $2,1
+  trn $2,2
 lpe
 sub $1,1
 mov $0,$1

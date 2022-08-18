@@ -1,25 +1,19 @@
 ; A236326: a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3, 4, 5; pattern 1) after n rotations.
+; Submitted by Simon Strandgaard
 ; 3,6,10,17,24,27,30,34,41,48,51,54,58,65,72,75,78,82,89,96,99,102,106,113,120,123,126,130,137,144,147,150,154,161,168,171,174,178,185,192,195,198,202,209,216,219,222,226,233,240,243,246,250,257,264,267,270,274,281,288,291,294,298,305,312,315,318,322
 
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,0
-  sub $0,$3
-  mod $0,5
-  mul $0,2
-  add $2,$0
-  div $2,3
-  pow $2,2
-  mov $4,$2
-  add $4,3
-  mov $6,$2
-  cmp $6,0
-  add $1,$4
-  mov $5,$2
-  add $5,$6
-  mov $2,2
-  div $2,$5
+mov $1,$0
+mov $2,$0
+mul $0,2
+add $0,$2
+mul $1,2
+sub $1,3
+mul $1,2
+lpb $1
+  sub $0,1
+  add $0,$1
+  trn $1,10
+  sub $0,$1
+  trn $1,10
 lpe
-mov $0,$1
+add $0,3
