@@ -12,7 +12,6 @@ mul $0,$2
 pow $1,2
 mul $1,2
 sub $1,$0
-mul $1,$0
-mov $0,$1
+mul $0,$1
 mul $0,2
 max $0,1

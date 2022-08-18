@@ -14,8 +14,8 @@ lpb $3
     lpb $3
       mov $3,$0
       cmp $1,0
-      sub $2,$1
     lpe
+    sub $2,$1
     add $4,1
   lpe
   div $0,2

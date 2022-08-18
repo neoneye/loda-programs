@@ -1,8 +1,34 @@
 ; A348011: a(n) = phi(n^2) * Sum_{d|n} 2^omega(d) / d.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,4,10,20,28,40,54,88,102,112,130,200,180,216,280,368,304,408,378,560,540,520,550,880,740,720,954,1080,868,1120,990,1504,1300,1216,1512,2040,1404,1512,1800,2464,1720,2160,1890,2600,2856,2200,2254,3680,2730,2960
 
-mov $1,$0
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-seq $0,60648 ; Number of cyclic subgroups of the group C_n X C_n (where C_n is the cyclic group of order n).
-mul $0,$1
+mov $1,1
+mov $2,2
+mov $4,1
+add $0,1
+lpb $0
+  mov $3,$0
+  sub $3,1
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    min $4,1
+    add $2,1
+    sub $3,$4
+  lpe
+  mov $5,1
+  mov $6,2
+  lpb $0
+    dif $0,$2
+    mul $5,$2
+    sub $5,$4
+    sub $6,1
+    mul $4,$2
+    mul $4,$2
+    sub $5,$6
+    add $5,$4
+    mov $6,1
+  lpe
+  mul $1,$5
+lpe
+mov $0,$1
