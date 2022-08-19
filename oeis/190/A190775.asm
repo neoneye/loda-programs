@@ -1,5 +1,5 @@
 ; A190775: [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(1/2),3,2) and [ ]=floor.
-; Submitted by Elzeard BOUFFIER
+; Submitted by Simon Strandgaard
 ; 2,1,0,2,2,1,3,2,1,0,2,1,0,3,2,1,0,2,1,0,2,2,1,3,2,1,0,2,1,1,3,2,1,0,2,1,0,3,2,1,3,2,1,0,2,1,1,3,2,1,0,2,1,0,3,2,1,0,2,1,0,2,2,1,3,2,1,0,2,1,1,3,2,1,0,2,1,0,2,2,1,3,2,1,0,2,1,1,3,2,1,0,2,1,0,3,2,1,0,2
 
 mov $2,$0
@@ -7,10 +7,11 @@ mov $5,2
 lpb $5
   sub $5,1
   mov $0,$2
-  seq $0,182769 ; Beatty sequence for (4 + sqrt(2))/2.
+  seq $0,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
   sub $1,1
   sub $4,$3
   sub $4,$1
+  sub $4,1
   mul $4,2
   mov $1,$0
   add $0,$4
@@ -19,4 +20,4 @@ lpb $5
   add $3,$0
 lpe
 mov $0,$3
-sub $0,9
+sub $0,1
