@@ -1,14 +1,7 @@
 ; A355324: Lower midsequence of the Fibonacci numbers (1,2,3,5,8,...) and Lucas numbers (1,3,4,7,11,...); see Comments.
-; Submitted by shiva
+; Submitted by Simon Strandgaard
 ; 1,2,3,6,9,15,25,40,65,106,171,277,449,726,1175,1902,3077,4979,8057,13036,21093,34130,55223,89353,144577,233930,378507,612438,990945,1603383,2594329,4197712,6792041,10989754,17781795,28771549,46553345,75324894,121878239
 
-mov $1,2
-mov $2,3
-lpb $0
-  sub $0,1
-  mov $3,$2
-  mov $2,$1
-  add $1,$3
-lpe
-div $1,2
-mov $0,$1
+seq $0,22318 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 4.
+add $0,1
+div $0,2

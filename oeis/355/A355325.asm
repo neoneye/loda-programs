@@ -1,15 +1,7 @@
 ; A355325: Upper midsequence of the Fibonacci numbers (1,2,3,5,8,...) and Lucas numbers (1,3,4,7,11,...); see Comments.
-; Submitted by arkiss
+; Submitted by Simon Strandgaard
 ; 1,3,4,6,10,16,25,41,66,106,172,278,449,727,1176,1902,3078,4980,8057,13037,21094,34130,55224,89354,144577,233931,378508,612438,990946,1603384,2594329,4197713,6792042,10989754,17781796,28771550,46553345,75324895,121878240
 
-mov $1,2
-mov $2,3
-lpb $0
-  sub $0,1
-  mov $3,$2
-  mov $2,$1
-  add $1,$3
-lpe
-add $1,1
-div $1,2
-mov $0,$1
+seq $0,22318 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 4.
+add $0,2
+div $0,2
