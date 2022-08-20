@@ -1,16 +1,8 @@
 ; A141679: Triangle of coefficients of the inverse of A058071.
-; Submitted by Odd-Rod
+; Submitted by Simon Strandgaard
 ; 1,-1,1,-1,-1,1,0,-1,-1,1,0,0,-1,-1,1,0,0,0,-1,-1,1,0,0,0,0,-1,-1,1,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,0,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-sub $0,$1
-bin $1,$0
-add $0,2
-mov $2,1
-bin $2,$0
-mul $2,-1
-add $1,$2
-mov $0,$1
+seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
+dif $0,2
+mul $0,-1
+pow $0,$0

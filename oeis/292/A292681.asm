@@ -4,17 +4,18 @@
 
 mov $2,$0
 mov $4,1
-div $0,2
-seq $2,48724 ; Write n and 2n in binary and add them mod 2.
-lpb $2
+mul $0,4
+lpb $0
   mov $3,$0
   add $3,$2
-  mul $3,$2
-  mod $3,2
+  mod $3,10
+  dif $3,2
+  cmp $3,1
   mul $3,$4
+  div $3,2
+  mul $4,2
   div $0,2
   add $1,$3
   div $2,2
-  mul $4,2
 lpe
 mov $0,$1

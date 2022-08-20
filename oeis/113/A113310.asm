@@ -9,11 +9,11 @@ lpe
 add $2,2
 sub $2,$0
 sub $4,$0
+add $4,2
 mov $0,$2
 lpb $0
   sub $0,2
   mov $3,$4
-  add $3,2
   bin $3,$0
   add $1,$3
 lpe
