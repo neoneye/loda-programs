@@ -1,9 +1,11 @@
 ; A011643: 84th cyclotomic polynomial.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1
 
-mov $1,$0
-div $1,2
-add $1,$0
-seq $1,16329 ; 126th cyclotomic polynomial.
-mov $0,$1
+mov $1,-1
+pow $1,$0
+add $1,1
+dif $0,2
+seq $0,11635 ; 42nd cyclotomic polynomial.
+mul $0,$1
+div $0,2
