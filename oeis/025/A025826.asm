@@ -8,8 +8,7 @@ lpb $0
   trn $2,1
   mul $2,3
   seq $2,325488 ; Dimensions of space of harmonic polynomials of each degree invariant under the full icosahedral group.
-  sub $0,3
-  trn $0,8
+  trn $0,11
   add $1,$2
 lpe
 mov $0,$1
