@@ -1,13 +1,17 @@
 ; A206547: Positive odd numbers relatively prime to 21.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,5,11,13,17,19,23,25,29,31,37,41,43,47,53,55,59,61,65,67,71,73,79,83,85,89,95,97,101,103,107,109,113,115,121,125,127,131,137,139,143,145,149,151,155,157,163,167,169,173,179,181,185,187,191,193,197,199,205,209,211
 
-add $0,6
+mov $2,1
 lpb $0
-  mov $1,$0
-  seq $1,160545 ; Numbers coprime to 21.
-  mov $0,0
+  add $3,13
+  lpb $3
+    add $2,2
+    mul $1,42
+    gcd $1,$2
+    div $3,$1
+  lpe
+  add $2,2
+  sub $0,1
 lpe
-mov $0,$1
-mul $0,2
-sub $0,21
+add $0,$2
