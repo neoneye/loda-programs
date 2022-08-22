@@ -8,7 +8,7 @@ mov $3,$0
 lpb $3
   mov $1,$0
   mod $1,$2
-  min $1,1
+  min $1,2
   add $2,1
   sub $3,$1
 lpe
