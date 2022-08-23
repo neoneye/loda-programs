@@ -1,14 +1,15 @@
 ; A011676: A binary m-sequence: expansion of reciprocal of x^7+x^6+x^4+x^2+1.
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0,1,1,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,1,0,1,1,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,1,1,1,1,0,1,0,0,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0
 
+mul $0,3
+add $0,2
 lpb $0
-  sub $0,1
-  add $2,5
-  mov $3,$0
-  bin $3,$2
-  mod $1,2
-  add $1,$3
-  add $2,1
+  sub $0,6
+  mov $2,$3
+  bin $2,$0
+  add $3,1
+  add $1,$2
 lpe
 mov $0,$1
+mod $0,2
