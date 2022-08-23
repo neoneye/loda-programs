@@ -6,7 +6,7 @@ mov $1,$0
 mov $2,2
 lpb $2
   sub $2,1
-  mov $0,$1
+  max $2,1
   trn $0,1
 lpe
 seq $0,281785 ; a(n) is multiplicative with a(2^e) = 1, a(3^e) = -8 if e>0, a(p^e) = (p^(e+1) - 1) / (p - 1) if p>3.
