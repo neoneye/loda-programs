@@ -16,8 +16,4 @@ lpb $1
   dif $0,2
   sub $1,3
 lpe
-mov $4,15
-add $4,$0
-add $2,$4
-mov $0,$2
-sub $0,15
+add $0,$2
