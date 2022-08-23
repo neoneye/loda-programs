@@ -2,18 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,1,0,0,1,1,0,0,1,1,1,0,0,1,1,1,0,1,0,0
 
-mov $2,$0
-seq $2,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-seq $0,1224 ; If F(n) is the n-th Fibonacci number, then a(2n) = (F(2n+1) + F(n+2))/2 and a(2n+1) = (F(2n+2) + F(n+1))/2.
-mov $4,$0
-min $0,$2
-lpb $2
-  sub $2,1
-  mov $3,$0
-  mul $3,$4
-  div $0,2
-  add $1,$3
-  div $4,2
-lpe
-mov $0,$1
-mod $0,2
+mul $0,2
+seq $0,117384 ; Positive integers, each occurring twice in the sequence, such that a(n) = a(k) when n+k = 4*a(n), starting with a(1)=1 and filling the next vacant position with the smallest unused number.
+sub $0,1
+seq $0,86483 ; Bit that is two places to left of least significant 1-bit in the binary expansion of n.
