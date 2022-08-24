@@ -4,11 +4,11 @@
 
 add $0,2
 mov $1,$0
+cmp $1,3
 lpb $0
-  cmp $1,3
-  sub $1,3
   sub $0,2
   mod $0,6
+  sub $1,3
   add $1,$0
   bin $1,$0
   trn $0,6
