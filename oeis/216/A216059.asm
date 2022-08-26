@@ -1,10 +1,10 @@
 ; A216059: Smallest number not in Collatz trajectory starting at n.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 2,3,6,3,3,7,3,3,3,3,3,7,3,3,3,3,3,3,3,3,3,3,3,7,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,7,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,7,3,3,3,3
 
 lpb $0
   mov $2,$0
-  gcd $2,9
+  gcd $2,81
   sub $0,$2
   add $1,4
   bin $1,$0
