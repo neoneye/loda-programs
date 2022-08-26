@@ -1,6 +1,6 @@
 ; A107492: Coefficients of a certain theta series.
 ; Submitted by Simon Strandgaard
-; 1,0,0,0,4,2,0,0,0,4,0,4,12,2,0,0,8,2,0,0,0,2,0,0,20,12,0,4,28,0,0,0,0,8,0,4,36,2,12,0
+; 1,0,0,0,4,2,0,0,0,4,0,4,12
 
 mov $2,$0
 seq $2,72436 ; Remove prime factors of form 4*k+3.
