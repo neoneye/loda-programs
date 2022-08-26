@@ -5,11 +5,11 @@
 mov $2,8
 mov $3,3
 mov $4,$0
+sub $0,1
 lpb $0
-  sub $0,1
   sub $0,$3
   sub $1,$2
-  bin $3,9
+  trn $3,3
   add $3,$1
   sub $3,1
   gcd $3,2
@@ -18,7 +18,6 @@ lpb $0
   mul $2,2
   mul $2,$3
   dif $2,2
-  div $3,2
 lpe
 mov $0,$4
 add $0,1
