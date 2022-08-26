@@ -6,7 +6,8 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,8649 ; Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
+  seq $2,25769 ; Expansion of 1/((1-x)(1-x^3)(1-x^8)).
+  sub $0,1
   trn $0,8
   add $1,$2
 lpe
