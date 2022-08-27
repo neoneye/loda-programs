@@ -1,10 +1,16 @@
 ; A129232: a(n)=Floor(n*r)+Floor((n-2)*r)+Floor((n-4)*r)+...+Floor(k*r), where r = 2^(1/2) and k=0 if n is even, k=1 if n is odd.
+; Submitted by Simon Strandgaard
 ; 0,1,2,5,7,12,15,21,26,33,40,48,56,66,75,87,97,111,122,137,150,166,181,198,214,233,250,271,289,312,331,355,376,401,424,450,474,502,527,557,583,614,642,674,704,737,769,803,836,872,906,944,979,1018,1055,1095
 
+add $0,2
 lpb $0
-  mov $2,$0
-  seq $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  trn $0,2
-  add $1,$2
+  sub $0,2
+  max $2,88
+  sub $2,23
+  mov $3,$2
+  mul $3,$0
+  add $3,1
+  div $3,46
+  add $1,$3
 lpe
 mov $0,$1

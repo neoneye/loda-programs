@@ -1,10 +1,10 @@
 ; A216022: Largest number m such that the Collatz trajectory starting at n contains all numbers not greater than m.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 1,2,5,2,2,6,2,2,2,2,2,6,2,2,2,2,2,2,2,2,2,2,2,6,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6,2,2,2,2
 
 lpb $0
   mov $2,$0
-  gcd $2,9
+  gcd $2,81
   sub $0,$2
   add $1,4
   bin $1,$0
