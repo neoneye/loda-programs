@@ -12,6 +12,6 @@ lpb $2
   div $0,12
   add $1,$0
   sub $2,7
-  max $2,2
+  max $2,5
 lpe
 mov $0,$1

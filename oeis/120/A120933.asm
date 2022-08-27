@@ -8,10 +8,9 @@ lpb $0
 lpe
 sub $1,$0
 bin $2,$1
+add $0,1
 add $0,$2
-trn $1,1
 mov $2,2
 pow $2,$1
+dif $2,2
 mul $0,$2
-add $2,$0
-mov $0,$2
