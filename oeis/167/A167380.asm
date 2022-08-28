@@ -7,6 +7,7 @@ mov $2,2
 mov $3,3
 sub $0,1
 lpb $0
+  dif $0,7
   sub $0,1
   sub $1,$2
   mov $2,$3
