@@ -9,11 +9,9 @@ lpb $0
   mov $2,$0
   max $2,0
   mul $2,2
-  seq $2,89807 ; Expansion of Jacobi theta function (3theta_3(q^9)-theta_3(q))/2.
-  add $4,1
+  seq $2,89810 ; Expansion of Jacobi theta function theta_3(Pi/6, q) in powers of q.
   add $1,$2
-  mov $3,2
   add $3,$4
-  add $4,2
+  mov $4,3
 lpe
 mov $0,$1
