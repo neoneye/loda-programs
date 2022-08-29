@@ -8,12 +8,11 @@ lpb $0
 lpe
 sub $2,$0
 mov $3,1
-mov $4,1
 lpb $0
   sub $0,1
-  max $1,$4
+  add $4,$3
+  mov $1,$4
   mul $1,$2
   add $3,$1
-  add $4,$3
 lpe
 mov $0,$3

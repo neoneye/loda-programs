@@ -12,11 +12,9 @@ mov $3,$2
 add $3,1
 sub $2,$0
 mul $2,$0
-mov $0,$2
 mul $2,$3
 lpb $0
-  div $0,$3
+  div $0,$1
   mul $1,$2
-  mov $3,1
 lpe
 mov $0,$1
