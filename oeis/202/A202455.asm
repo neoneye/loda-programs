@@ -13,8 +13,8 @@ lpb $0
   mov $3,6
   sub $3,$4
   div $3,2
-  pow $3,2
 lpe
+pow $3,2
 mov $5,$2
 mul $5,$2
 mul $5,$2

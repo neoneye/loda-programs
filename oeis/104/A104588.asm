@@ -4,4 +4,5 @@
 
 add $0,1
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-seq $0,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
+sub $0,1
+seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).

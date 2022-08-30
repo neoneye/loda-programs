@@ -1,17 +1,16 @@
 ; A107410: Each term is sum of three previous terms mod 9.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2,5,2,0,7,0,7,5,3,6,5,5,7,8,2,8,0,1,0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2,5,2,0,7,0,7,5,3,6,5,5,7,8,2,8,0,1,0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2
 
+mov $1,1
 mov $2,1
-mov $3,1
 lpb $0
   sub $0,1
-  mov $1,$4
+  mod $2,9
+  mov $3,$4
   mov $4,$2
-  add $4,$1
-  mov $2,$1
+  add $2,$1
   add $2,$3
-  mov $3,$1
+  mov $1,$3
 lpe
-mov $0,$4
-mod $0,9
+add $0,$4
