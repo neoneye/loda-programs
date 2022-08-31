@@ -7,8 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-add $0,1
-cmp $0,1
+cmp $0,0
 mul $0,$1
 mul $0,3
 add $0,1
