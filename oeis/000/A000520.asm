@@ -1,8 +1,13 @@
 ; A000520: Nearest integer to log_10(n).
-; Submitted by Simon Strandgaard
+; Submitted by [SG]ATA-Rolf
 ; 0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 
 add $0,1
-pow $0,2
-seq $0,55642 ; Number of digits in decimal expansion of n.
-div $0,2
+mov $2,$0
+pow $2,2
+lpb $2
+  div $2,10
+  add $1,1
+lpe
+div $1,2
+mov $0,$1
