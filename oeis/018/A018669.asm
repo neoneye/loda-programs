@@ -1,21 +1,8 @@
 ; A018669: Divisors of 828.
-; Submitted by mmonnin
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,6,9,12,18,23,36,46,69,92,138,207,276,414,828
 
-mov $2,1
-lpb $0
-  mul $1,9
-  mov $3,$2
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    trn $4,$3
-    cmp $4,0
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mov $1,92
-lpe
-mov $0,$2
+seq $0,18752 ; Divisors of 972.
+mul $0,3
+seq $0,57889 ; Bit-reverse of n, including as many leading as trailing zeros.
+div $0,3
