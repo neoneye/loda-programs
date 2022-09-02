@@ -4,11 +4,10 @@
 
 lpb $0
   add $1,1
-  mul $2,2
   add $2,$1
   sub $0,$2
   add $1,$2
-  mul $2,-1
+  mul $2,-2
 lpe
+add $1,5
 add $0,$1
-add $0,5
