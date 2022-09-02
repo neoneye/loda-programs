@@ -1,14 +1,11 @@
 ; A069497: Triangular numbers of the form 6*k.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,6,36,66,78,120,210,276,300,378,528,630,666,780,990,1128,1176,1326,1596,1770,1830,2016,2346,2556,2628,2850,3240,3486,3570,3828,4278,4560,4656,4950,5460,5778,5886,6216,6786,7140,7260,7626,8256,8646,8778,9180
 
 mov $1,$0
-lpb $1
-  add $0,$1
-  add $0,$1
-  div $1,2
-  mod $1,2
-lpe
-sub $1,$0
-bin $1,2
-mov $0,$1
+div $1,2
+mod $1,2
+mul $0,2
+add $0,$1
+seq $0,104777 ; Integer squares congruent to 1 mod 6.
+div $0,8
