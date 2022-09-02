@@ -1,11 +1,19 @@
 ; A276757: Infinite Fibonacci word on the alphabet {1,2,3,4,5}.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,1,2,3,4,5,1,2,3,4,5,1,2,3,1,2,3
 
+mov $2,4
+mov $3,2
 lpb $0
-  mov $1,$0
-  add $1,4
-  seq $1,130312 ; Each Fibonacci number F(n) appears F(n) times.
-  sub $0,$1
+  sub $0,3
+  sub $0,$3
+  div $1,2
+  sub $1,$2
+  mov $3,1
+  add $3,$1
+  gcd $3,4
+  div $1,2
+  mul $2,$3
+  div $3,2
 lpe
 add $0,1
