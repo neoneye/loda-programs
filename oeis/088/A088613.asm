@@ -6,7 +6,7 @@ mov $1,$0
 mov $2,4
 lpb $2
   sub $2,1
-  seq $3,107078 ; Whether n has non-unitary prime divisors.
+  seq $3,336563 ; Sum of proper divisors of n that are divisible by every prime that divides n.
   add $2,$3
   mov $3,$0
   add $0,1
