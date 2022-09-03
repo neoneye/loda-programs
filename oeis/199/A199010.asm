@@ -2,12 +2,12 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,2,2,1,1,2,2,1,1,1,3,1,1,3,1,1,1,2
 
-mov $1,$0
-lpb $1
-  mov $2,$1
-  mul $2,2
-  seq $2,216278 ; Number of solutions to the equation x^2+2y^2 = n with x and y > 0.
-  mov $1,1
+lpb $0
+  mov $2,$0
+  seq $2,113411 ; Excess of number of divisors of 2n+1 of form 8k+1, 8k+3 over those of form 8k+5, 8k+7.
+  mov $0,1
+  add $1,$2
 lpe
-mov $0,$2
-add $0,1
+div $1,2
+add $1,1
+mov $0,$1
