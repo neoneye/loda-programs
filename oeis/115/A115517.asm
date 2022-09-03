@@ -1,9 +1,9 @@
 ; A115517: The mode of the bits of n (using 1 if bimodal).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1
 
-seq $0,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-add $0,3044713024868432726596
-mov $1,3044713024868432726596
-div $1,$0
-mov $0,$1
+mov $1,$0
+seq $1,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+seq $0,157666 ; a(n) = 19683*n - 13716.
+add $1,$0
+div $0,$1
