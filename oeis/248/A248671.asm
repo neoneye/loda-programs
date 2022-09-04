@@ -5,6 +5,5 @@
 mov $1,$0
 seq $1,48250 ; Sum of the squarefree divisors of n.
 seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-add $1,$0
-mov $0,$1
 sub $0,1
+add $0,$1
