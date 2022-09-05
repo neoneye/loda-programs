@@ -8,8 +8,8 @@ mov $2,2
 lpb $2
   mod $2,2
   mul $0,95
-  add $1,1
 lpe
+add $1,1
 mov $3,$1
 mul $3,68
 add $0,$3

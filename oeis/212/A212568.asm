@@ -1,13 +1,19 @@
 ; A212568: Number of (w,x,y,z) with all terms in {1,...,n} and  w<|x-y|+|y-z|.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 0,0,2,24,98,272,608,1184,2092,3440,5350,7960,11422,15904,21588,28672,37368,47904,60522,75480,93050,113520,137192,164384,195428,230672,270478,315224,365302,421120,483100,551680,627312,710464,801618
 
-lpb $0
+mov $3,$0
+lpb $3
+  sub $3,2
+  mov $1,$0
+  sub $1,1
+  mov $2,$1
+  mul $2,10
+  mul $2,$3
+  add $2,4
   sub $0,2
-  mov $2,$0
-  max $2,0
-  seq $2,6564 ; Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
-  add $1,$2
+  mul $1,$2
+  div $1,2
+  add $4,$1
 lpe
-mov $0,$1
-mul $0,2
+mov $0,$4
