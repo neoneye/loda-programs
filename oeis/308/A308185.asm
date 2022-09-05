@@ -1,5 +1,5 @@
 ; A308185: Fixed point (beginning with a) of the morphism a -> abab, b -> b, over the alphabet {a,b} = {0,1}.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,1,1,0,1,0,1,1
 
 add $0,1
@@ -13,5 +13,4 @@ lpb $1
   lpe
 lpe
 mov $0,$1
-add $0,1
-mod $0,2
+cmp $0,0

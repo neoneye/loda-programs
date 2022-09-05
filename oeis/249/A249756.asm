@@ -9,11 +9,10 @@ lpe
 mov $1,$2
 bin $1,$0
 add $0,1
-mov $3,1
-add $3,$2
-bin $3,$0
-lpb $0
-  mov $0,1
-  add $1,$3
-lpe
-mov $0,$1
+add $2,1
+bin $2,$0
+cmp $0,1
+gcd $0,2
+div $0,2
+mul $0,$2
+add $0,$1

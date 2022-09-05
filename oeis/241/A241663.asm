@@ -20,8 +20,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mul $5,$2
-    sub $5,$4
-    max $5,0
+    trn $5,$4
     mov $4,0
   lpe
   mul $1,$5

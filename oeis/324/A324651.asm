@@ -5,5 +5,4 @@
 mul $0,2
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 sub $0,1
-seq $0,39649 ; a(n) = phi(n)+1.
-sub $0,1
+seq $0,62570 ; a(n) = phi(2*n).

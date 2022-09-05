@@ -4,15 +4,13 @@
 
 mov $1,-2
 mov $2,1
+mov $4,-2
 lpb $0
   sub $0,1
   sub $1,$5
-  add $2,2
   sub $3,$4
-  sub $3,1
   mov $4,$2
   add $2,$1
-  sub $5,3
   add $5,$2
   mov $1,$3
   gcd $2,0
