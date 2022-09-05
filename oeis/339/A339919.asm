@@ -6,7 +6,7 @@ mov $2,$0
 mul $2,3
 lpb $0
   sub $0,1
-  max $0,1
+  max $0,2
   mov $3,$2
   div $3,$0
   mod $3,3
