@@ -15,17 +15,16 @@ lpb $0
     add $2,1
     sub $3,$4
   lpe
-  mov $3,$2
-  sub $3,1
-  mov $5,1
+  min $3,$2
+  mul $3,-1
+  add $3,1
+  mov $5,-1
   lpb $0
     dif $0,$2
     mul $5,$3
   lpe
-  div $4,2
-  sub $4,1
+  gcd $5,0
   dif $5,$3
-  div $5,$4
   mul $1,$5
 lpe
 mov $0,$1

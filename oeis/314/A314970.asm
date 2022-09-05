@@ -4,11 +4,11 @@
 
 mov $1,$0
 div $1,2
-gcd $1,2
+add $1,1
 mov $2,$0
 add $2,$1
+div $1,2
 div $2,2
 sub $2,$1
-seq $0,313930 ; Coordination sequence Gal.6.638.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-sub $0,1
-sub $0,$2
+seq $0,312144 ; Coordination sequence Gal.6.151.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+add $0,$2

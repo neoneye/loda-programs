@@ -4,5 +4,4 @@
 
 seq $0,70824 ; Number of divisors of n which are > 1 and < n (nontrivial divisors).
 add $0,1
-seq $0,39649 ; a(n) = phi(n)+1.
-sub $0,1
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

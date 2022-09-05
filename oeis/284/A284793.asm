@@ -1,20 +1,17 @@
 ; A284793: Difference sequence of A284775.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,-1,0,1,0,-1,1,-1,1,-1,0,1,0,-1,0,1,0,-1,1,-1,0,1,0,-1,1,-1,0,1,0,-1,1,-1,1,-1,0,1,0,-1,0,1,0,-1,1,-1,1,-1,0,1,0,-1,0,1,0,-1,1,-1,0,1,0,-1,1,-1,1,-1,0,1,0,-1,0,1,0,-1,1,-1,0,1,0,-1,1,-1,1,-1,0,1,0,-1,0,1,0,-1,1,-1,0,1,0,-1,1,-1,0,1
 
-mov $1,$0
+mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
-  mov $0,$1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  trn $0,1
-  seq $0,285305 ; Fixed point of the morphism 0 -> 10, 1 -> 1001.
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+  seq $0,284775 ; Fixed point of the morphism 0 -> 01, 1 -> 0011.
+  add $1,$2
+  mov $2,$0
+  mul $4,$3
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
+sub $1,$2
+mov $0,$1
