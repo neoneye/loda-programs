@@ -10,9 +10,8 @@ lpb $4
   sub $0,$4
   trn $2,1
   gcd $3,$0
-  pow $0,3
   lpb $0
-    dif $0,8
+    dif $0,2
     add $2,$3
   lpe
   add $1,$2
