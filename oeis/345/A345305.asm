@@ -18,8 +18,8 @@ lpb $0
   lpe
   lpb $0
     dif $0,$2
-    mov $5,$1
   lpe
+  mov $5,$1
   dif $5,$2
   pow $5,2
   gcd $5,$1

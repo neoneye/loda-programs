@@ -1,21 +1,19 @@
 ; A024463: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = [ (n+1)/2 ], s = (Fibonacci numbers), t = (odd natural numbers).
-; Submitted by GolfSierra
+; Submitted by Simon Strandgaard
 ; 1,3,8,12,26,34,63,77,136,160,272,312,521,587,968,1076,1762,1938,3159,3445,5600,6064,9840,10592,17169,18387,29784,31756,51418,54610,88399,93565,151432,159792,258592,272120,440345,462235,747960,783380,1267586
 
 mov $1,$0
-add $1,1
 div $0,2
 mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  mov $3,$5
-  mov $5,$4
   mov $0,$1
   sub $0,$2
   mul $0,2
-  sub $0,1
+  add $0,1
+  add $0,$4
+  mov $4,$3
   add $3,$0
-  add $4,$3
 lpe
-mov $0,$4
+mov $0,$3
