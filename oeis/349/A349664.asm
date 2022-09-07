@@ -1,9 +1,26 @@
 ; A349664: a(n) is the number of solutions for n^4 = z^2 - x^2 with {z,x} >= 1.
-; Submitted by Simon Strandgaard
+; Submitted by Merowig
 ; 0,1,2,3,2,7,2,5,4,7,2,17,2,7,12,7,2,13,2,17,12,7,2,27,4,7,6,17,2,37,2,9,12,7,12,31,2,7,12,27,2,37,2,17,22,7,2,37,4,13,12,17,2,19,12,27,12,7,2,87,2,7,22,11,12,37,2,17,12,37,2,49,2,7,22,17,12,37,2,37,8,7,2,87,12,7,12,27,2,67,12,17,12,7,12,47,2,13,22,31
 
+mov $1,1
+mov $2,2
+mov $4,-1
 add $0,1
-pow $0,2
-dif $0,2
-sub $0,1
-seq $0,63647 ; Number of ways to write 1/n as a difference of exactly 2 unit fractions.
+lpb $0
+  mov $3,$0
+  sub $3,2
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    min $4,1
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+    add $4,4
+  lpe
+  mul $1,$4
+lpe
+mov $0,$1
+div $0,2
