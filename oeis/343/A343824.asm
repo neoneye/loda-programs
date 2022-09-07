@@ -4,17 +4,20 @@
 
 add $0,1
 mov $2,$0
-mov $4,-1
+mov $4,2
+div $0,2
 lpb $0
-  add $1,$4
   mov $3,$2
   dif $3,$0
   cmp $3,$2
+  add $1,1
+  max $1,2
+  sub $1,$3
   cmp $3,0
-  sub $0,1
   add $4,$3
+  sub $0,1
+  mul $3,$0
+  add $1,$3
 lpe
-add $4,2
-add $1,$4
-mul $4,$1
-mov $0,$4
+mul $1,$4
+mov $0,$1
