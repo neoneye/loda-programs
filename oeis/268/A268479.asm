@@ -15,7 +15,5 @@ lpb $0
   lpe
   mov $2,0
 lpe
-lpb $1
-  mod $1,4
-lpe
+mod $1,4
 mov $0,$1

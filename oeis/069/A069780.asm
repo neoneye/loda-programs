@@ -4,7 +4,6 @@
 
 mov $1,$0
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-seq $0,15995 ; a(n) = (tau(n^3)+2)/3.
-mul $0,3
-sub $0,2
+add $0,1
+seq $0,48785 ; a(0) = 0; a(n) = tau(n^3), where tau = number of divisors (A000005).
 gcd $0,$1

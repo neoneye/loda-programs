@@ -9,9 +9,8 @@ lpe
 sub $2,$0
 mov $0,$2
 add $2,$1
-bin $1,$0
-add $0,2
 add $2,2
-bin $2,$0
+bin $2,$1
+bin $1,$0
 add $1,$2
 mov $0,$1
