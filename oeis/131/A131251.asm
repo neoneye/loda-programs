@@ -13,8 +13,7 @@ mov $3,$2
 lpb $0
   sub $0,1
   add $4,1
-  mul $1,$2
-  gcd $1,$2
+  mov $1,$2
   bin $1,$4
   add $3,$1
 lpe
