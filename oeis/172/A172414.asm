@@ -1,15 +1,6 @@
 ; A172414: Triangle read by rows: Catalan number C(n) repeated 2*n+1 times.
-; Submitted by GolfSierra
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,2,2,2,2,2,5,5,5,5,5,5,5,14,14,14,14,14,14,14,14,14,42,42,42,42,42,42,42,42,42,42,42,132,132,132,132,132,132,132,132,132,132,132,132,132,429,429,429,429,429,429,429,429,429,429,429,429,429,429,429
 
-add $0,1
-lpb $0
-  sub $0,1
-  trn $0,$2
-  mov $3,$2
-  bin $3,$1
-  add $1,1
-  add $2,2
-  dif $3,$1
-lpe
-mov $0,$3
+seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
