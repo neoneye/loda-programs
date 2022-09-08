@@ -1,5 +1,5 @@
 ; A284387: {010->2}-transform of the infinite Fibonacci word A003849.
-; Submitted by [TA]crashtech
+; Submitted by Simon Strandgaard
 ; 2,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,2,1,0,2,1,0,2,2,1,0,2,2,1,0,2,1,0,2,2
 
 mov $2,$0
@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   mov $0,$2
   trn $0,1
-  seq $0,287792 ; Positions of 1 in A287790; complement of A287791.
+  seq $0,308898 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
   mod $0,3
   add $1,$3
 lpe

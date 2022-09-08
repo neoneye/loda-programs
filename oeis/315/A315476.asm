@@ -4,13 +4,12 @@
 
 mov $1,$0
 pow $1,3
-add $1,1
-mul $1,5
+mul $1,7
 div $1,6
 mod $1,2
-mul $0,8
+mul $1,2
+mul $0,16
 add $0,$1
-mul $0,2
 div $0,3
 trn $0,1
 add $0,1
