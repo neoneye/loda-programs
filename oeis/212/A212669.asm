@@ -5,11 +5,10 @@
 mul $0,2
 mov $2,-6
 bin $2,$0
-add $0,1
 mov $1,$2
 mul $1,16
 add $0,$1
-sub $0,17
+sub $0,16
 div $0,2
 mul $0,2
 add $0,18
