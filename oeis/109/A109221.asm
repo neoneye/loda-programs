@@ -9,6 +9,5 @@ lpe
 sub $1,$0
 mul $1,2
 div $0,2
-add $1,$0
-bin $1,$0
-mov $0,$1
+add $0,$1
+bin $0,$1
