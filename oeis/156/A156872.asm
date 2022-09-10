@@ -9,11 +9,9 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,154811 ; a(n) = Fibonacci(2n+1) mod 9.
-  mov $2,$3
-  mul $2,$0
   add $1,$2
+  mov $2,$0
   mul $4,$3
-  mov $5,$0
 lpe
-sub $1,$5
+sub $1,$2
 mov $0,$1
