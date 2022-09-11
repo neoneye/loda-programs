@@ -1,18 +1,6 @@
 ; A060594: Number of solutions to x^2 == 1 (mod n), that is, square roots of unity modulo n.
-; Submitted by pututu
+; Submitted by Simon Strandgaard
 ; 1,1,2,2,2,2,2,4,2,2,2,4,2,2,4,4,2,2,2,4,4,2,2,8,2,2,2,4,2,4,2,4,4,2,4,4,2,2,4,8,2,4,2,4,4,2,2,8,2,2,4,4,2,2,4,8,4,2,2,8,2,2,4,4,4,4,2,4,4,4,2,8,2,2,4,4,4,4,2,8,2,2,2,8,4,2,4,8,2,4,4,4,4,2,4,8,2,2,4,4
 
-add $0,1
-mov $2,$0
-sub $0,1
-lpb $0
-  mov $3,$0
-  pow $3,2
-  mod $3,$2
-  cmp $3,1
-  sub $0,1
-  add $1,$3
-lpe
-mov $0,$1
-trn $0,1
+seq $0,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
 add $0,1
