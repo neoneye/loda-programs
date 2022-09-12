@@ -1,20 +1,20 @@
 ; A276055: Number of palindromic compositions of n with parts in {1,2,4,6,8,10,...}.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,2,1,4,2,7,3,13,6,23,10,42,19,75,33,136,61,244,108,441,197,793,352,1431,638,2576,1145,4645,2069,8366,3721,15080,6714,27167,12087,48961,21794,88215,39254,158970,70755,286439,127469,516164,229725,930072
 
+mov $1,-2
+mov $2,1
+mov $4,-2
+add $0,1
 lpb $0
   sub $0,1
-  add $4,$1
+  sub $1,$5
+  sub $3,$4
+  mov $4,$2
+  add $2,$1
+  mov $5,3
   add $5,$2
-  sub $5,$3
-  add $1,$3
-  mov $2,$3
-  mov $3,$5
-  add $4,$1
-  add $4,1
-  trn $1,$5
-  sub $1,$4
-  add $2,$4
+  mov $1,$3
+  gcd $2,0
 lpe
-mov $0,$3
-add $0,1
+add $0,$2
