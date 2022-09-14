@@ -12,8 +12,7 @@ dif $2,2
 bin $1,$0
 mov $0,-4
 bin $0,$2
-pow $2,10
+pow $2,4
 add $2,1
 div $0,$2
-mul $1,$0
-mov $0,$1
+mul $0,$1
