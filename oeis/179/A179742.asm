@@ -1,10 +1,8 @@
 ; A179742: The number of syllables in each letter of the English alphabet.
-; Submitted by Simon Strandgaard
-; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,3,1,1,3,5,1,1,1,1,1,3,1,1,1,1,1,5,1
+; Submitted by [AF>Amis des Lapins] Jean-Luc
+; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1
 
-add $0,1
-seq $0,14032 ; Inverse of 23rd cyclotomic polynomial.
 mov $1,$0
-add $0,1
-mul $0,$1
-add $0,1
+seq $1,1694 ; Powerful numbers, definition (1): if a prime p divides n then p^2 must also divide n (also called squareful, square full, square-full or 2-powerful numbers).
+seq $0,186424 ; Odd terms in A186423.
+gcd $0,$1
