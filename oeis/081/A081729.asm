@@ -1,14 +1,10 @@
 ; A081729: Expansion of Sum(k>=0, x^(2^k)) + 1/(1+x). First differences of A007456 (gossip sequence) for n>1.
-; Submitted by Jamie Morken(s3)
+; Submitted by Simon Strandgaard
 ; 1,0,2,-1,2,-1,1,-1,2,-1,1,-1,1,-1,1,-1,2,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,2,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,2,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1
 
-lpb $0
-  dif $0,2
-  mov $1,2
-lpe
-lpb $0
-  mov $0,1
-  sub $1,1
-lpe
-bin $1,$0
-mov $0,$1
+mov $1,$0
+mul $1,2
+mod $1,4
+seq $0,209229 ; Characteristic function of powers of 2, cf. A000079.
+add $0,1
+sub $0,$1

@@ -1,22 +1,17 @@
 ; A086213: Tribonacci numbers that start with first three cubes.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,8,27,36,71,134,241,446,821,1508,2775,5104,9387,17266,31757,58410,107433,197600,363443,668476,1229519,2261438,4159433,7650390,14071261,25881084,47602735,87555080,161038899,296196714,544790693,1002026306
 
-mov $2,2
+mov $1,10
+mov $3,4
+mov $4,1
 lpb $0
   sub $0,1
-  sub $3,$4
-  add $1,$3
-  max $1,2
-  add $1,$2
-  mov $3,$2
-  add $4,1
-  mov $2,$4
-  add $2,$3
-  mov $4,3
-  add $4,$1
-  add $1,1
-  add $3,20
+  mov $2,$3
+  add $4,$3
+  mov $3,$1
+  mov $1,$4
+  sub $4,1
+  add $4,$2
 lpe
 mov $0,$4
-add $0,1
