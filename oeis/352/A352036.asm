@@ -1,20 +1,22 @@
 ; A352036: Sum of the 8th powers of the odd proper divisors of n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,6562,1,1,6562,390626,1,6562,1,5764802,397187,1,1,43053283,1,390626,5771363,214358882,1,6562,390626,815730722,43053283,5764802,1,2563287812,1,1,214365443,6975757442,6155427,43053283,1,16983563042,815737283,390626,1
 
 add $0,1
-mov $2,$0
-mul $0,2
+mov $1,1
+mov $4,$0
+add $0,1
 lpb $0
-  sub $0,1
-  mov $3,$2
-  div $3,$0
-  max $3,2
-  mul $3,$0
-  cmp $3,$2
-  mul $3,$0
-  pow $3,8
-  sub $0,1
-  add $1,$3
+  sub $0,3
+  mov $2,$4
+  gcd $2,$1
+  mul $2,2
+  trn $2,$1
+  pow $2,2
+  mov $3,$1
+  pow $3,6
+  mul $3,$2
+  add $5,$3
+  add $1,2
 lpe
-mov $0,$1
+mov $0,$5
