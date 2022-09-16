@@ -5,6 +5,5 @@
 mov $1,$0
 seq $1,134816 ; Padovan's spiral numbers.
 add $0,1
-seq $0,22093 ; Fibonacci sequence beginning 0, 10.
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 mul $0,$1
-div $0,10
