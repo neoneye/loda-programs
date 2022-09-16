@@ -1,35 +1,35 @@
 ; A145396: a(n) = Sum_{d|n} sigma(d) + 3*Sum_{2c|n} sigma(c).
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w3)
 ; 1,7,5,23,7,35,9,59,18,49,13,115,15,63,35,135,19,126,21,161,45,91,25,295,38,105,58,207,31,245,33,291,65,133,63,414,39,147,75,413,43,315,45,299,126,175,49,675,66,266,95,345,55,406,91,531,105,217,61,805,63,231,162,607
 
 mov $1,1
-mov $2,2
-mov $4,1
-mov $6,-3
 add $0,1
 lpb $0
   mov $3,$0
-  sub $3,1
   lpb $3
+    mov $6,$2
+    cmp $6,0
+    add $2,$6
     mov $4,$0
     mod $4,$2
-    min $4,1
+    cmp $4,0
+    cmp $4,0
+    mov $5,$2
+    cmp $5,1
     add $2,1
+    max $4,$5
     sub $3,$4
-    cmp $6,3
   lpe
   mov $5,1
   lpb $0
     dif $0,$2
-    mul $4,$2
-    sub $4,$6
+    mov $7,$6
+    mul $7,3
+    add $4,$7
     add $4,1
+    mul $5,$2
     add $5,$4
   lpe
   mul $1,$5
 lpe
 mov $0,$1
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1
