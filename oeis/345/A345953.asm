@@ -1,20 +1,19 @@
 ; A345953: Number of ways to tile a 2 X n strip with squares and P-shaped pentominos.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,1,1,5,9,15,37,75,145,311,641,1295,2689,5543,11345,23383,48145,98903,203521,418791,861169,1771543,3644513,7496231,15419985,31720375,65248385,134217351,276091313,567924823,1168234977,2403096999,4943230993,10168353527,20916591169
 
-add $0,2
+mov $5,1
+add $0,1
 lpb $0
   sub $0,1
-  add $4,1
-  add $6,$2
-  sub $5,$3
-  add $5,$6
-  mov $6,$4
-  mul $1,2
+  div $2,2
+  add $2,$3
   mov $4,$2
-  add $2,$1
-  add $5,$4
+  mul $6,4
+  mov $2,$1
   mov $1,$3
-  mov $3,$5
+  mov $3,$6
+  mov $6,$5
+  add $5,$4
 lpe
-mov $0,$3
+mov $0,$6

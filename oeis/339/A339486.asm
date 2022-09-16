@@ -1,8 +1,9 @@
 ; A339486: Number of possible destination squares after n knight's moves on an 8x8 chessboard beginning on a corner square.
-; Submitted by vanos0512
+; Submitted by Simon Strandgaard
 ; 1,2,10,22,31,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
 
 mov $3,$0
+min $3,10
 mul $3,4
 lpb $3
   sub $3,2

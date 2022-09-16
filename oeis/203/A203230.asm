@@ -1,16 +1,17 @@
 ; A203230: (n-1)-st elementary symmetric function of the first n terms of A010684.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 1,4,7,24,33,108,135,432,513,1620,1863,5832,6561,20412,22599,69984,76545,236196,255879,787320,846369,2598156,2775303,8503056,9034497,27634932,29229255,89282088,94065057,286978140,301327047,918330048
 
-mov $1,1
-add $0,1
+mov $1,3
+mov $2,1
+mov $3,3
 lpb $0
   sub $0,1
-  add $2,1
+  div $2,-1
+  add $2,4
   mul $3,$2
   add $3,$1
   mul $1,$2
-  mod $2,3
-  mul $2,2
 lpe
 mov $0,$3
+div $0,3

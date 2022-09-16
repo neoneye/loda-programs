@@ -1,12 +1,15 @@
 ; A165678: Sixth right hand column of triangle A165674.
+; Submitted by Simon Strandgaard
 ; 1764,8028,24552,60216,127860,245004,434568,725592,1153956,1763100,2604744,3739608,5238132,7181196,9660840,12780984,16658148,21422172,27216936,34201080,42548724,52450188,64112712,77761176,93638820
 
+mov $1,1
+mov $2,$0
+mov $0,6
 lpb $0
-  mov $2,$0
-  seq $2,165677 ; Fifth right hand column of triangle A165674
   sub $0,1
-  add $1,$2
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
 lpe
-mul $1,6
-add $1,1764
-mov $0,$1
+mov $0,$3

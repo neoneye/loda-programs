@@ -1,16 +1,14 @@
 ; A063010: Carryless binary square of n; also Moser-de Bruijn sequence written in binary.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,1,100,101,10000,10001,10100,10101,1000000,1000001,1000100,1000101,1010000,1010001,1010100,1010101,100000000,100000001,100000100,100000101,100010000,100010001,100010100,100010101,101000000,101000001
 
-mov $2,7
+mov $2,1
 lpb $0
   mov $3,$0
   mod $3,2
   mul $3,$2
-  pow $3,2
   div $0,2
   add $1,$3
-  mul $2,10
+  mul $2,100
 lpe
 mov $0,$1
-div $0,49
