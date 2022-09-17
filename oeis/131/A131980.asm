@@ -1,15 +1,15 @@
 ; A131980: A coefficient tree from the list partition transform relating A000129, A000142, A000165, A110327, and A110330.
-; Submitted by Gunnar Hjern
+; Submitted by Simon Strandgaard
 ; 1,2,6,2,24,24,120,240,24,720,2400,720,5040,25200,15120,720,40320,282240,282240,40320,362880,3386880,5080320,1451520,40320,3628800,43545600,91445760,43545600,3628800,39916800,598752000,1676505600,1197504000,199584000,3628800
 
 mov $1,1
-mov $3,3
+mov $3,1
 lpb $0
   add $2,1
+  mul $3,$1
   sub $0,$2
   mov $2,$1
   div $2,2
-  mul $3,$1
   add $1,1
 lpe
 mul $0,2
@@ -17,4 +17,3 @@ add $0,1
 bin $1,$0
 mul $3,$1
 mov $0,$3
-div $0,3

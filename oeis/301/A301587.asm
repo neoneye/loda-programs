@@ -8,11 +8,10 @@ mul $1,11
 div $1,8
 mul $1,4
 add $1,1
-mul $0,7
 add $0,1
+mul $0,7
 add $0,$1
 div $0,3
-add $0,2
 mul $0,2
 trn $0,$1
 add $0,1

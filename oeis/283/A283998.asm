@@ -4,7 +4,7 @@
 
 mov $2,$0
 seq $2,11371 ; a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
-mov $4,4
+mov $4,1
 lpb $0
   mov $3,$0
   mul $3,$2
@@ -16,4 +16,3 @@ lpb $0
   mul $4,2
 lpe
 mov $0,$1
-div $0,4

@@ -1,26 +1,22 @@
 ; A072512: Product of all n - d, where 1 < d < n and d is a divisor of n.
-; Submitted by Fornax
+; Submitted by Simon Strandgaard
 ; 1,1,1,2,1,12,1,24,6,40,1,4320,1,84,120,1344,1,25920,1,43200,252,220,1,31933440,20,312,432,183456,1,136080000,1,322560,660,544,840,12563527680,1,684,936,919296000,1,1155772800,1,1219680,1814400,1012,1
 
-mov $2,2
-mov $3,$0
+add $0,1
+mov $1,2
 mov $4,$0
-add $4,1
-mov $0,1
-lpb $3
-  mov $5,$4
-  lpb $5
-    lpb $5
-      dif $5,$3
-    lpe
-    cmp $6,3
-    cmp $6,0
-    mov $1,$2
-    sub $1,1
-  lpe
-  pow $1,$6
-  add $2,1
-  mul $0,$1
-  mov $1,1
-  sub $3,1
+mov $5,47
+sub $0,2
+lpb $0
+  sub $0,2
+  mov $2,$4
+  gcd $2,$1
+  bin $2,$1
+  mov $3,$4
+  sub $3,$1
+  pow $3,$2
+  mul $5,$3
+  add $1,1
 lpe
+mov $0,$5
+div $0,47

@@ -1,18 +1,19 @@
 ; A049868: a(n)=Sum{a(k): k=0,1,2,...,n-4,n-2,n-1}; a(n-3) is not a summand; 3 initial terms required.
-; Submitted by DoctorNow
+; Submitted by Simon Strandgaard
 ; 1,2,2,4,7,14,26,49,91,170,317,592,1105,2063,3851,7189,13420,25052,46766,87301,162970,304226,567917,1060165,1979074,3694457,6896666,12874423,24033463,44864717,83751677,156344314,291857374
 
-mov $2,1
-mov $5,1
+mov $2,2
+mov $3,1
+mov $4,2
+sub $0,1
 lpb $0
   sub $0,1
-  sub $3,$4
-  add $1,$3
-  mov $3,$4
+  add $5,$4
+  mov $1,$3
+  add $3,$4
   mov $4,$2
-  add $5,$2
-  mov $2,$3
-  add $2,$1
-  mov $3,$5
+  mov $2,$5
+  add $2,2
+  add $5,$1
 lpe
-mov $0,$5
+add $0,$4
