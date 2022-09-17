@@ -1,20 +1,18 @@
 ; A131023: First subdiagonal of triangular array T: T(j,1) = 1 for ((j-1) mod 6) < 3, else 0; T(j,k) = T(j-1,k-1) + T(j-1,k) for 2 <= k <= j.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,7,14,37,101,256,593,1267,2534,4825,8921,16384,30581,58975,117950,242461,504605,1048576,2156201,4371451,8742902,17308657,34085873,67108864,132623405,263652487,527304974,1059392917,2133134741
 
-mov $1,4
-mov $2,1
-mov $3,2
-mov $4,3
+mov $2,-1
+mov $4,1
 lpb $0
   sub $0,1
-  mov $3,$2
-  add $3,$4
-  mul $2,2
-  add $2,1
-  sub $4,$1
-  add $4,$3
-  add $1,$3
+  mul $1,2
+  add $1,$4
+  sub $3,$4
+  add $4,$2
+  mov $2,$3
+  mul $3,2
+  add $3,1
 lpe
-mov $0,$3
-div $0,2
+add $1,1
+mov $0,$1

@@ -1,20 +1,18 @@
 ; A251705: 4-step Fibonacci sequence starting with 1, 1, 1, 0.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,1,0,3,5,9,17,34,65,125,241,465,896,1727,3329,6417,12369,23842,45957,88585,170753,329137,634432,1222907,2357229,4543705,8758273,16882114,32541321,62725413,120907121,233055969,449229824,865918327,1669111241
 
 mov $2,1
-mov $4,-2
+mov $5,1
 lpb $0
   sub $0,1
-  add $1,$5
-  sub $1,1
-  sub $3,$4
   mov $4,$2
-  mov $2,$3
-  add $2,$1
-  add $5,$4
+  add $5,$2
+  mov $2,$1
   mov $1,$3
   mov $3,$5
-  add $4,1
+  sub $5,2
+  add $5,$1
+  add $5,$4
 lpe
-mov $0,$2
+mov $0,$5

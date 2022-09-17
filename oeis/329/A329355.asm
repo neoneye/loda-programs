@@ -1,16 +1,15 @@
 ; A329355: The binary expansion of a(n) is the second through n-th terms of A000002 - 1.
-; Submitted by Jason Jung
+; Submitted by Simon Strandgaard
 ; 0,1,3,6,12,25,50,101,203,406,813,1627,3254,6508,13017,26034,52068,104137,208275,416550,833101,1666202,3332404,6664809,13329618,26659237,53318475,106636950,213273900,426547801,853095602,1706191204,3412382409,6824764818
 
+mov $1,2
 mov $2,2
-add $0,1
 lpb $0
   sub $0,1
   sub $1,$2
   div $1,2
   add $3,$1
-  mod $3,2
-  add $3,2
+  gcd $3,2
   mul $4,2
   sub $4,1
   add $4,$3

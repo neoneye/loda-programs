@@ -1,18 +1,17 @@
 ; A280223: Precipice of n: descending by the main diagonal of the pyramid described in A245092, a(n) is the height difference between the n-th level (starting from the top) and the level of the next terrace.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,2,1,2,1,2,1,1,3,2,1,3,2,1,1,2,1,2,1,4,3,2,1,1,3,2,1,2,1,2,1,3,2,1,1,4,3,2,1,2,1,3,2,1,3,2,1,1,1,4,3,2,1,2,1,4,3,2,1,3,2,1,1,2,1,4,3,2,1,2,1,5,4,3,2,1,3,2,1,1,3,2,1,4,3,2,1,2,1,1,5,4,3,2,1,2,1,1,1,4
 
-mov $2,$0
+add $0,1
 mov $1,$0
-lpb $1
-  sub $1,1
-  mov $0,$2
-  mul $0,2
-  sub $0,$1
-  seq $0,347950 ; Characteristic function of numbers that have middle divisors.
-  add $0,1
-  mul $1,$0
-  add $3,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $3,$1
+  seq $3,347950 ; Characteristic function of numbers that have middle divisors.
+  add $4,1
+  add $1,1
+  add $2,$3
 lpe
-mov $0,$3
+mov $0,$4
 add $0,1
