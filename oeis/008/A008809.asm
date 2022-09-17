@@ -5,15 +5,14 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  sub $5,1
-  add $0,$5
+  bin $5,$4
   sub $0,1
   mov $4,$0
-  trn $4,1
+  max $4,0
   seq $4,188270 ; Number of nondecreasing strings of numbers (x(i), i=1..n) in -2..2 with sum x(i)^3 equal to 0.
-  mul $0,$5
   mov $2,$5
   mul $2,$4
+  mul $0,$5
   add $1,$2
 lpe
 min $3,1
