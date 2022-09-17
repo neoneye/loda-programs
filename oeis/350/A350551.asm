@@ -1,20 +1,17 @@
 ; A350551: Convolution of Jacobsthal numbers and Pell numbers.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 0,0,1,3,10,28,77,203,526,1340,3377,8435,20930,51660,126981,311083,760070,1853068,4509897,10960243,26605146,64520060,156344317,378606795,916354110,2216907420,5361353761,12961984563,31330062130,75711587308,182932193717
 
-mov $1,1
-mov $4,1
+mov $3,1
 lpb $0
   sub $0,1
-  mov $2,$1
-  add $1,$4
-  mul $3,2
-  sub $3,$4
   mov $4,$2
+  mul $4,3
   add $4,$1
-  add $5,$2
-  mov $2,$3
-  mov $3,$5
-  add $5,$2
+  mov $1,$3
+  add $1,$2
+  mov $2,$5
+  mul $3,2
+  add $5,$4
 lpe
 mov $0,$5
