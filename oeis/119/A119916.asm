@@ -1,17 +1,11 @@
 ; A119916: Number of runs of 0's of odd length in all ternary words of length n.
+; Submitted by Simon Strandgaard
 ; 0,1,4,17,64,233,820,2825,9568,31985,105796,346913,1129312,3653657,11758132,37665881,120172096,382039649,1210689028,3825777329,12058462720,37918780361,118986517684,372650082857,1165021837984
 
-mul $0,2
-mov $2,$0
-add $2,2
-mov $1,$2
-lpb $0
-  sub $0,2
-  mul $1,3
-  sub $1,1
-lpe
-add $1,1
-div $1,6
-mul $1,4
-div $1,8
-mov $0,$1
+mov $1,3
+pow $1,$0
+mul $0,4
+add $0,3
+mul $0,$1
+add $0,7
+div $0,24
