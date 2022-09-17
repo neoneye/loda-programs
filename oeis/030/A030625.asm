@@ -11,5 +11,4 @@ lpb $2
   seq $0,2083 ; Narayana-Zidek-Capell numbers: a(2n) = 2a(2n-1), a(2n+1) = 2a(2n) - a(n).
 lpe
 add $0,$1
-mul $1,$0
-mov $0,$1
+mul $0,$1
