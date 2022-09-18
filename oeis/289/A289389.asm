@@ -4,7 +4,7 @@
 
 mov $1,4
 mov $4,$0
-mul $0,2
+mov $0,10
 lpb $0
   sub $0,1
   max $0,1

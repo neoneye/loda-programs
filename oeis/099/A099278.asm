@@ -1,18 +1,17 @@
 ; A099278: Unsigned member r=-20 of the family of Chebyshev sequences S_r(n) defined in A092184.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 0,1,20,441,9680,212521,4665780,102434641,2248896320,49373284401,1083963360500,23797820646601,522468090864720,11470500178377241,251828535833434580,5528757288157183521,121380831803624602880
 
 mov $3,1
 lpb $0
   sub $0,1
-  mov $1,$2
-  add $3,$4
-  add $3,$2
-  mul $2,20
-  add $4,$2
-  mov $2,$4
-  sub $2,$1
+  mul $2,2
   add $2,$3
   mov $3,$1
+  mov $1,$2
+  dif $2,5
+  mul $2,5
 lpe
+mul $2,$1
 mov $0,$2
+div $0,5
