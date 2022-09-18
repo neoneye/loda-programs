@@ -1,6 +1,27 @@
 ; A351313: Sum of the 7th powers of the square divisors of n.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,1,16385,1,1,1,16385,4782970,1,1,16385,1,1,1,268451841,1,4782970,1,16385,1,1,1,16385,6103515626,1,4782970,16385,1,1,1,268451841,1,1,1,78368963450,1,1,1,16385,1,1,1,16385,4782970,1,1,268451841,678223072850,6103515626,1,16385,1,4782970,1,16385,1,1,1,16385,1,1,4782970,4398314962945,1,1,1,16385,1,1,1,78368963450,1,1,6103515626,16385,1,1,1,268451841,22876797237931,1,1,16385,1,1,1,16385,1,4782970,1,16385,1,1,1,268451841,1,678223072850,4782970,100006103532010
 
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-seq $0,13962 ; a(n) = sigma_14(n), the sum of the 14th powers of the divisors of n.
+add $0,1
+mov $1,1
+mov $3,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  mov $6,$4
+  pow $6,7
+  mul $6,$5
+  add $1,$6
+  mov $5,$0
+  add $5,1
+  trn $5,$4
+  cmp $5,0
+  cmp $5,0
+  sub $2,$5
+lpe
+mov $0,$1
