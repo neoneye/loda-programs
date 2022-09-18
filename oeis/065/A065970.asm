@@ -21,9 +21,8 @@ lpb $0
   lpe
   mov $5,$1
   div $5,$2
-  mul $5,-1
   dif $5,$2
-  add $5,$1
-  add $6,$5
+  add $6,$1
+  sub $6,$5
 lpe
 mov $0,$6

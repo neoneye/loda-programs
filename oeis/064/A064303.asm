@@ -1,56 +1,23 @@
 ; A064303: Seventh diagonal of triangle A064094.
+; Submitted by Simon Strandgaard
 ; 1,132,2307,14506,55797,161376,387607,817062,1563561,2777212,4649451,7418082,11372317,16857816,24281727,34117726,46911057,63283572,83938771,109666842,141349701,179966032,226596327,282427926,348760057,427008876,518712507,625536082,749276781
 
+mov $1,1
+mov $4,1
 mov $6,$0
-lpb $0
-  sub $0,1
-  add $1,5
-lpe
-add $1,1
-mov $3,$6
+mov $0,5
+mov $3,5
 lpb $3
+  add $5,$3
+  add $5,$4
+  add $0,1
+  mul $1,$6
+  mul $1,$3
+  mul $1,$0
+  div $1,$5
+  add $2,$1
   sub $3,1
-  add $4,$6
+  sub $4,1
 lpe
-mov $5,$4
-mov $2,14
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$6
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $5,$4
-mov $2,28
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$6
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $5,$4
-mov $2,42
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$6
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $2,42
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $0,$1
+mov $0,$2
+add $0,1

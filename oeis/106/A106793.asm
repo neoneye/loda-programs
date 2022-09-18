@@ -1,16 +1,13 @@
 ; A106793: Number of words (over an alphabet of size 26) of length n with all different letters.
+; Submitted by Simon Strandgaard
 ; 1,26,650,15600,358800,7893600,165765600,3315312000,62990928000,1133836704000,19275223968000,308403583488000,4626053752320000,64764752532480000,841941782922240000,10103301395066880000
 
-mov $1,26
-mov $2,2
-add $0,1
+mov $1,1
 lpb $0
-  mul $2,$1
-  mov $3,$0
-  cmp $3,1
-  add $0,$3
   sub $0,1
-  sub $1,1
+  mov $2,$1
+  mul $2,$0
+  mul $1,26
+  sub $1,$2
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1
