@@ -4,8 +4,5 @@
 
 mov $1,$0
 seq $1,288429 ; a(n) = 2*a(n-1) - a(n-2) + a(n-3) - a(n-4), where a(0) = 2, a(1) = 4, a(2) = 5, a(3) = 6.
-add $0,1
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-add $1,$0
+seq $0,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
 add $0,$1
-sub $0,1

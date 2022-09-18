@@ -1,5 +1,5 @@
 ; A112292: An invertible triangle of ratios of double factorials.
-; Submitted by Roadranner
+; Submitted by Simon Strandgaard
 ; 1,1,1,3,3,1,15,15,5,1,105,105,35,7,1,945,945,315,63,9,1,10395,10395,3465,693,99,11,1,135135,135135,45045,9009,1287,143,13,1,2027025,2027025,675675,135135,19305,2145,195,15,1,34459425,34459425,11486475,2297295,328185,36465,3315,255,17,1
 
 lpb $0
@@ -7,13 +7,12 @@ lpb $0
   sub $0,$2
 lpe
 mov $1,1
-sub $0,$2
-mul $2,2
-dif $0,-1
-lpb $0
-  sub $0,1
+sub $2,$0
+mul $0,2
+lpb $2
   sub $2,1
-  mul $1,$2
-  sub $2,1
+  add $0,1
+  mul $1,$0
+  add $0,1
 lpe
 mov $0,$1
