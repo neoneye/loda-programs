@@ -1,10 +1,9 @@
 ; A095042: One of two (v,k,lambda)=(31,15,7) cyclic difference sets. The other one is A095041.
-; Submitted by eclipse99
+; Submitted by Simon Strandgaard
 ; 1,2,4,5,7,8,9,10,14,16,18,19,20,25,28
 
 mov $1,6
-mov $2,$0
-pow $2,2
+mov $2,196
 lpb $2
   sub $2,1
   mov $3,$1
