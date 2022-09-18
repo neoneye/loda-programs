@@ -1,16 +1,12 @@
 ; A013981: Number of commutative elements in Coxeter group H_n.
-; Submitted by Jamie Morken(s3)
+; Submitted by Simon Strandgaard
 ; 1,2,9,44,195,804,3185,12368,47607,182720,701349,2695978,10384231,40083848,155052001,600949336,2333344095,9074611032,35344215245,137844431690,538253680159,2104090575136,8233413950409
 
-mov $2,$0
 add $0,1
-mov $4,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  mov $3,$4
+mov $2,$0
+lpb $0
+  sub $0,1
+  mov $3,$2
   bin $3,$0
   sub $3,1
   pow $3,2

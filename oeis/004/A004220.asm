@@ -1,22 +1,14 @@
 ; A004220: 10*log_10 (n) rounded to nearest integer.
-; Submitted by Gunnar Hjern
+; Submitted by Simon Strandgaard
 ; 0,3,5,6,7,8,8,9,10,10,10,11,11,11,12,12,12,13,13,13,13,13,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,17,17,17,17,18
 
-mov $2,5
-mul $2,$0
-add $2,6
-bin $2,3
+mov $1,1
+add $0,1
+pow $0,10
 lpb $0
-  mov $0,0
-  mov $3,-1
-  mov $1,$2
-  mul $1,9
-  lpb $1
-    div $1,2
-    add $3,1
-  lpe
-  mov $1,$3
-  mov $2,0
+  add $0,6
+  div $0,10
+  add $1,1
 lpe
-trn $1,7
+sub $1,2
 mov $0,$1

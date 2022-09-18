@@ -1,20 +1,16 @@
 ; A124999: Number of base 5 circular n-digit numbers with adjacent digits differing by 3 or less.
-; Submitted by Vato
+; Submitted by Simon Strandgaard
 ; 1,5,23,101,467,2165,10055,46709,216995,1008101,4683383,21757829,101081459,469599317,2181641639,10135364501,47086382915,218751625157,1016265649367,4721317472933,21934066839827,101900219778101,473403079631879,2199312977861813
 
+mov $2,1
 lpb $0
   sub $0,1
+  add $2,$3
+  mov $3,$1
+  mov $1,$2
   mul $1,3
-  add $1,$2
-  mov $3,$2
-  mov $2,$1
-  trn $2,1
-  add $2,1
-  mov $1,$3
-  add $1,$2
+  mul $2,2
+  add $2,3
+  add $3,$2
 lpe
-add $3,$1
-add $3,$1
-mov $0,$3
-mul $0,2
-add $0,1
+mov $0,$2
