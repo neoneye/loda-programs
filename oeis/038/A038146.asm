@@ -1,9 +1,10 @@
 ; A038146: Number of n-celled helicenes with peri-fragments.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,3,36,342,2736
 
 sub $0,6
 mov $4,$0
+mod $4,4
 mul $4,5
 add $0,1
 lpb $0
