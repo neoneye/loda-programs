@@ -1,23 +1,19 @@
 ; A080428: First differences of A079255.
-; Submitted by shiva
+; Submitted by Simon Strandgaard
 ; 3,2,3,3,3,3,2,3,3,2,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,2,3,3,2,3,3,3,3,2,3,3
 
-mov $2,-2
-mov $4,-1
-add $0,3
+mov $2,4
+add $0,1
 lpb $0
   sub $0,1
-  add $4,1
-  gcd $3,$4
-  mov $4,74
-  add $4,$3
   sub $1,$2
-  add $1,1
   div $1,2
   add $3,$1
-  gcd $3,4
+  div $3,4
+  mod $3,2
+  add $3,2
+  mul $2,2
   mul $2,$3
-  div $3,2
 lpe
-add $3,1
 mov $0,$3
+add $0,1
