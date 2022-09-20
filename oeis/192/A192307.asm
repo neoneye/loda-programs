@@ -1,14 +1,19 @@
 ; A192307: 0-sequence of reduction of (3n) by x^2 -> x+1.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 3,3,12,24,54,108,213,405,756,1386,2508,4488,7959,14007,24492,42588,73698,126996,218025,373065,636468,1082958,1838232,3113424,5262699,8879403,14956428,25153440,42241806,70844796
 
-mov $3,1
+mov $2,2
 lpb $0
-  mov $2,$3
-  add $3,$1
-  mov $1,$0
+  sub $0,2
   add $1,$2
-  sub $0,1
+  add $1,$0
+  add $2,1
+  add $2,$1
 lpe
-mov $0,$3
+lpb $0
+  div $0,4
+  add $2,$1
+lpe
+mov $0,$2
+sub $0,1
 mul $0,3
