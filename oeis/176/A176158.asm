@@ -1,14 +1,15 @@
 ; A176158: A polynomial coefficient sequence:p(x,n,m)=(1 + 2*Binomial[n, m]*x)^n
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,3,3,9,25,9,27,343,343,27,81,6561,28561,6561,81,243,161051,4084101,4084101,161051,243,729,4826809,887503681,4750104241,887503681,4826809,729,2187,170859375,271818611107,9095120158391,9095120158391
 
 lpb $0
-  add $2,1
-  sub $0,$2
-  mov $1,$2
-  bin $1,$0
+  add $1,1
+  sub $0,$1
 lpe
-mul $1,2
-add $1,1
-pow $1,$2
-mov $0,$1
+mov $2,$1
+bin $1,$0
+mov $0,4
+mul $0,$1
+div $0,2
+add $0,1
+pow $0,$2
