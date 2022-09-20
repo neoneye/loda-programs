@@ -5,5 +5,6 @@
 mov $1,$0
 add $1,1
 seq $1,90946 ; Non-Lucas numbers: complement of A000204.
-seq $0,20695 ; Pisot sequence E(2,3).
+sub $1,1
+seq $0,48577 ; Pisot sequence L(3,4).
 add $0,$1

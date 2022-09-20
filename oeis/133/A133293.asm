@@ -1,17 +1,20 @@
 ; A133293: First differences of A133292.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0,1,2,3,-5,5,-3,-2,-1,0
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $2,$1
-  dif $2,10
-  sub $4,$3
-  add $3,1
-  mov $1,1
-  add $1,$3
-  mov $3,$2
-  add $3,$4
+mov $4,$0
+mov $3,2
+lpb $3
+  bin $3,2
+  mov $0,$4
+  add $0,$3
+  bin $0,2
+  seq $0,277547 ; a(n) = n/9^m mod 9, where 9^m is the greatest power of 9 that divides n.
+  mov $2,$3
+  mul $2,$0
+  mul $4,$3
+  add $1,$2
+  mov $5,$0
 lpe
-mov $0,$3
+sub $1,$5
+mov $0,$1
