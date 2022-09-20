@@ -2,11 +2,14 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,6,10,15,21,28,35,43,52
 
+mov $1,$0
+mov $2,2
+seq $0,194082 ; Sum{floor(sqrt(3)*k/2) : 1<=k<=n}
+add $0,$1
 lpb $0
-  mov $1,$0
-  seq $1,194082 ; Sum{floor(sqrt(3)*k/2) : 1<=k<=n}
-  add $1,$0
-  mod $0,2
+  pow $0,2
+  sub $0,1
+  add $2,1
+  sub $0,$2
 lpe
-add $1,1
-mov $0,$1
+add $0,1

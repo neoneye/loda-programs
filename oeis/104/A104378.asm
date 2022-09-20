@@ -8,10 +8,11 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,102370 ; "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
-  add $1,$2
+  seq $0,105023 ; a(n) = A102370(n) - n. Or, 2*A103185(n).
+  mov $1,$2
   mov $2,$0
   mul $4,$3
 lpe
+add $1,1
 sub $1,$2
 mov $0,$1
