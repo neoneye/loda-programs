@@ -6,9 +6,8 @@ lpb $0
   trn $3,2
   mov $2,$0
   lpb $2
-    sub $2,1
-    div $2,2
     add $2,1
+    div $2,2
     add $1,$3
     mov $3,2
   lpe

@@ -1,4 +1,5 @@
 ; A045534: Number of squarefree self-avoiding walks in 2 dimensions.
+; Submitted by Simon Strandgaard
 ; 1,4,8,16,16,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,2
@@ -15,7 +16,7 @@ lpb $0
   lpb $0
     sub $0,$3
     max $0,0
-    seq $0,173919 ; Numbers that are prime or one less than a prime.
+    seq $0,53661 ; For n > 1: if n is present, 2n is not.
     trn $1,8
   lpe
   lpb $0

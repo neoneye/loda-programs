@@ -1,13 +1,15 @@
 ; A067636: Row 1 of table in A067640.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 2,20,210,2352,27720,339768,4294290,55621280,734959368,9873696560,134510127752,1854385377600,25828939188000,362995937665200,5141806953167250,73343003232628800,1052697272275341000,15194039267330154000,220410039466873456200
 
+mov $1,-1
+sub $1,$0
+add $0,2
+bin $1,$0
+mov $2,-1
+sub $2,$0
+bin $2,$0
 add $0,1
-mov $1,$0
-add $0,1
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-mul $0,$1
-seq $1,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-mul $0,$1
-div $0,2
-mul $0,2
+mul $1,$2
+div $1,$0
+mov $0,$1

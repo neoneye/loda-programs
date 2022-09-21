@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
-  sub $0,1
-  trn $0,8
+  trn $0,9
   add $1,$2
 lpe
 mov $0,$1

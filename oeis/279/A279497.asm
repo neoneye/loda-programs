@@ -6,13 +6,12 @@ add $0,1
 mov $4,1
 mov $2,$0
 lpb $2
-  add $3,2
+  add $3,4
   add $4,$3
-  add $4,2
-  add $3,1
   mov $5,$0
   mod $5,$4
   cmp $5,0
+  sub $3,1
   add $1,$5
   sub $2,$3
 lpe

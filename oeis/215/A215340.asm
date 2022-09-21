@@ -11,13 +11,12 @@ lpb $0
   add $2,$6
   bin $2,$0
   sub $4,1
+  trn $0,2
   mov $3,$4
   bin $3,$1
   mul $3,$2
-  gcd $3,0
-  sub $0,1
-  trn $0,1
   add $1,1
+  gcd $3,0
   div $3,$1
   sub $1,1
   add $5,$3

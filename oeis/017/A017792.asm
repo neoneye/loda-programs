@@ -4,12 +4,10 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
   sub $0,1
-  cmp $2,0
-  add $2,37
+  mov $2,35
   bin $2,$0
-  mov $3,39
+  mov $3,41
   bin $3,$1
   mul $3,$2
   add $1,1

@@ -14,8 +14,7 @@ lpb $0
   gcd $3,$2
   div $3,$1
   mul $3,$2
-  pow $3,5
-  mul $3,$2
+  pow $3,6
   add $5,$3
   add $1,1
 lpe

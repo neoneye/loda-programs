@@ -1,14 +1,13 @@
 ; A136520: A001263 * A027656.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 1,1,3,13,44,146,530,1975,7314,27262
 
 mov $3,$0
 mov $5,$0
 lpb $5
-  sub $5,1
+  sub $5,2
   mov $0,$3
   sub $0,$5
-  mul $0,2
   mov $1,$3
   bin $1,$0
   mov $2,$3
