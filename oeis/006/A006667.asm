@@ -16,11 +16,13 @@ lpb $1
   mod $2,2
   lpb $2
     sub $2,1
-    add $3,1
     mul $0,3
+    add $0,1
+    add $3,1
   lpe
-  add $0,1
-  div $0,2
+  lpb $0
+    dif $0,2
+  lpe
   sub $1,1
 lpe
-mov $0,$3
+mul $0,$3

@@ -1,14 +1,10 @@
 ; A061007: a(n) = -(n-1)! mod n.
-; Submitted by Penguin
+; Submitted by Simon Strandgaard
 ; 0,1,1,2,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
-mov $2,$0
+mov $1,$0
+cmp $1,3
+mul $1,16
+div $1,7
 seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-sub $0,1
-mov $3,$2
-sub $3,2
-mul $3,$0
-add $3,2
-mov $1,2
-bin $1,$3
-mov $0,$1
+add $0,$1

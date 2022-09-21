@@ -14,10 +14,8 @@ lpb $0
   gcd $3,$2
   div $3,$1
   mul $3,$2
-  pow $3,5
-  add $1,1
-  pow $2,4
-  mul $3,$2
+  pow $3,9
   add $5,$3
+  add $1,1
 lpe
 mov $0,$5

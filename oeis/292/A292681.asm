@@ -12,10 +12,10 @@ lpb $0
   dif $3,2
   cmp $3,1
   mul $3,$4
-  div $3,2
   mul $4,2
   div $0,2
   add $1,$3
   div $2,2
 lpe
+div $1,2
 mov $0,$1

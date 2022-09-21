@@ -10,14 +10,13 @@ lpb $0
   div $1,2
   add $3,$1
   mod $3,2
-  add $3,8
-  dif $3,9
+  gcd $3,8
   mul $3,$2
   mul $4,2
   add $1,$3
   mul $2,5
   mul $3,2
 lpe
+div $1,2
 mul $1,$4
 mov $0,$1
-div $0,2

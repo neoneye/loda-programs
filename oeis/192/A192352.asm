@@ -1,19 +1,17 @@
 ; A192352: Constant term of the reduction of the polynomial p(n,x)=(1/2)((x+1)^n+(x-1)^n) by x^2->x+1.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,2,1,9,13,51,106,322,771,2135,5401,14445,37324,98514,256621,673933,1760997,4615823,12075526,31628466,82781215,216761547,567428401,1485645049,3889310328,10182603746,26657986681,69792188337,182717232061
 
+mov $1,1
+mov $2,1
 lpb $0
   sub $0,1
-  add $4,$1
-  add $1,$4
-  add $4,1
-  max $5,$1
-  add $5,$2
-  mov $2,$3
+  add $3,$1
+  mul $3,-1
+  sub $3,$4
+  add $1,$3
   add $2,$4
-  sub $5,$4
-  sub $5,$3
-  mov $3,$5
+  add $4,$2
+  sub $4,2
 lpe
-mov $0,$3
-add $0,1
+mov $0,$1
