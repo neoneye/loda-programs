@@ -6,7 +6,7 @@ mov $1,3
 add $0,1
 lpb $0
   sub $0,1
-  mod $0,16
+  mod $0,8
   add $2,$1
   div $2,22
   mul $1,10
