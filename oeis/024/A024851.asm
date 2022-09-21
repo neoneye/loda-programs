@@ -2,10 +2,12 @@
 ; Submitted by Simon Strandgaard
 ; 2,5,12,30,77,200,522,1365,3572,9350,24477,64080,167762,439205,1149852,3010350,7881197,20633240
 
+mov $1,1
+mov $2,2
 lpb $0
-  div $0,9
-  add $1,2
-  sub $0,$1
+  sub $0,1
+  add $2,$1
+  add $1,$2
 lpe
-seq $0,2878 ; Bisection of Lucas sequence: a(n) = L(2*n+1).
+mov $0,$1
 add $0,1

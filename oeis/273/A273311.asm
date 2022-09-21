@@ -5,19 +5,16 @@
 mov $1,$0
 mov $2,$0
 mov $3,$0
-mov $4,2
 pow $0,2
 sub $1,1
 lpb $1
+  sub $0,1
   add $0,$2
   add $2,$1
   sub $1,1
-  add $4,1
 lpe
-sub $4,1
-sub $0,$4
 mul $0,4
-add $0,15
+add $0,11
 lpb $3
   sub $3,2
   add $0,1
