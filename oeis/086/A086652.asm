@@ -1,13 +1,12 @@
 ; A086652: a(n) = A000225(n+3)-A052955(n).
+; Submitted by Simon Strandgaard
 ; 6,13,28,58,120,244,496,1000,2016,4048,8128,16288,32640,65344,130816,261760,523776,1047808,2096128,4192768,8386560,16774144,33550336,67102720,134209536,268423168,536854528,1073717248,2147450880
 
-mov $1,6
-mov $2,$0
-lpb $2
-  sub $2,1
-  mul $1,2
-  add $1,$0
-  trn $0,2
-  sub $1,$0
-lpe
-mov $0,$1
+mov $1,2
+pow $1,$0
+mul $1,8
+sub $1,1
+seq $0,209721 ; 1/4 the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
+sub $0,$1
+mul $0,-1
+add $0,2

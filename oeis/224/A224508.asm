@@ -7,10 +7,9 @@ mov $3,1
 mov $4,1
 lpb $0
   sub $0,1
-  mul $1,-1
   add $4,$2
-  sub $4,$1
-  mul $1,2
+  add $4,$1
+  mul $1,-2
   mov $2,$3
   mov $3,$4
 lpe

@@ -1,14 +1,11 @@
 ; A343994: Number of nodes in graph BC(n,2) when the internal nodes are counted with multiplicity.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 3,15,58,156,339,643,1110,1788,2731,3999,5658,7780,10443,13731,17734,22548,28275,35023,42906,52044,62563,74595,88278,103756,121179,140703,162490,186708,213531,243139,275718,311460,350563,393231,439674,490108,544755,603843,667606,736284,810123
 
-add $0,2
-mov $1,3
-add $1,$0
-mul $1,$0
-sub $1,6
+mov $1,$0
+mul $1,3
 bin $0,2
-sub $0,1
-mul $0,$1
-div $0,2
+add $0,$1
+pow $0,2
 add $0,3
+add $0,$1

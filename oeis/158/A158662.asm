@@ -1,12 +1,24 @@
 ; A158662: Sum of primes <= n if 1 is counted as a prime.
-; Submitted by Penguin
+; Submitted by Simon Strandgaard
 ; 1,3,6,6,11,11,18,18,18,18,29,29,42,42,42,42,59,59,78,78,78,78,101,101,101,101,101,101,130,130,161,161,161,161,161,161,198,198,198,198,239,239,282,282,282,282,329,329,329,329,329,329,382,382,382,382,382,382,441,441,502,502,502,502,502,502,569,569,569,569,640,640,713,713,713,713,713,713,792,792,792,792,875,875,875,875,875,875,964,964,964,964,964,964,964,964,1061,1061,1061,1061
 
 mov $1,1
+mov $2,1
+mov $5,1
 lpb $0
-  mov $2,$0
-  seq $2,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
+  add $3,9
+  lpb $3
+    sub $0,1
+    add $2,1
+    mov $4,$1
+    gcd $4,$2
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
+  lpe
+  add $2,1
+  add $5,$2
   sub $0,1
-  add $1,$2
+  mul $1,$2
 lpe
-mov $0,$1
+mov $0,$5

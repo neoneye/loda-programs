@@ -7,7 +7,7 @@ add $1,$0
 mov $2,1
 lpb $0
   sub $0,$2
-  add $3,$1
+  mov $3,$1
   lpb $3
     add $2,1
     mov $4,$1
@@ -17,6 +17,4 @@ lpb $0
   lpe
   add $2,1
 lpe
-sub $2,$1
-add $1,$2
-mov $0,$1
+mov $0,$2

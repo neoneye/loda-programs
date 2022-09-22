@@ -1,5 +1,5 @@
 ; A079559: Number of partitions of n into distinct parts of the form 2^j-1, j=1,2,....
-; Submitted by Elzeard BOUFFIER
+; Submitted by Simon Strandgaard
 ; 1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0
 
 add $0,1
@@ -13,6 +13,4 @@ lpb $1
   lpe
 lpe
 mov $0,$1
-cmp $0,0
-add $0,1
-mod $0,2
+dif $0,2

@@ -5,9 +5,8 @@
 add $0,1
 lpb $0
   sub $0,1
-  mov $2,2
+  mov $2,3
   add $2,$0
-  add $2,1
   bin $2,$0
   add $2,$3
   add $3,$1

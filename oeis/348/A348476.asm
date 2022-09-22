@@ -11,10 +11,9 @@ lpb $5
   mov $1,$3
   bin $1,$0
   div $0,2
-  mov $2,$0
-  add $2,1
-  mul $2,-1
-  add $2,$3
+  mov $2,$5
+  sub $2,1
+  add $2,$0
   bin $2,$0
   mul $1,$2
   add $4,$1
