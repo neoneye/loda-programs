@@ -5,19 +5,18 @@
 sub $0,4
 lpb $0
   sub $0,1
-  sub $3,1
+  sub $3,$1
   mov $7,$6
   add $7,$2
   mov $6,$4
-  add $6,$2
-  mov $4,$2
+  add $4,$2
   add $2,1
   add $2,$1
   sub $8,$3
   mov $1,$3
-  mov $3,$8
+  add $3,$8
   mov $8,$5
-  add $5,$7
+  mov $5,$7
 lpe
 mov $0,$4
 mod $0,2
