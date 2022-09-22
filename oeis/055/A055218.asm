@@ -5,11 +5,10 @@
 mov $1,$0
 mov $4,1
 mov $6,$0
-add $6,2
+add $6,3
 add $0,1
 lpb $0
   sub $0,1
-  sub $2,1
   sub $2,$6
   bin $2,$0
   sub $4,1

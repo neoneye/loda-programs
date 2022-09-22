@@ -5,8 +5,7 @@
 add $0,2
 lpb $0
   mov $2,$0
-  seq $2,28387 ; a(n) = n + (n+1)^2.
-  div $2,2
+  seq $2,96 ; a(n) = n*(n+3)/2.
   trn $0,2
   add $1,$2
 lpe

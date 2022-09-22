@@ -5,12 +5,12 @@
 mov $3,3
 add $0,3
 lpb $0
-  dif $3,2
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,80995 ; Characteristic function of generalized pentagonal numbers A001318.
-  add $4,8
+  mul $2,3
+  seq $2,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
+  add $4,4
   add $1,$2
   mov $3,$4
 lpe
