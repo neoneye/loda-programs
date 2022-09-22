@@ -20,8 +20,7 @@ lpb $3
   lpe
   trn $1,$0
   add $2,1
-  cmp $6,0
-  sub $3,$6
-  sub $3,2
+  gcd $3,$1
+  sub $3,1
 lpe
 mov $0,$1
