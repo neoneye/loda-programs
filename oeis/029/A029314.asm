@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,25857 ; Expansion of 1/((1-x^3)(1-x^10)(1-x^12)).
-  sub $0,3
-  trn $0,4
+  trn $0,7
   add $1,$2
 lpe
 mov $0,$1

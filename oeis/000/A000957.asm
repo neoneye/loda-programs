@@ -4,11 +4,9 @@
 
 mov $1,$0
 trn $1,1
-mov $6,2
 lpb $0
   sub $0,1
   cmp $2,1
-  gcd $2,2
   sub $2,$6
   bin $2,$0
   sub $4,1

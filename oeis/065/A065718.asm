@@ -7,9 +7,8 @@ mov $0,2
 pow $0,$1
 lpb $0
   mov $2,$0
-  sub $2,1
   mod $2,10
-  cmp $2,6
+  cmp $2,7
   div $0,10
   add $3,$2
 lpe

@@ -19,13 +19,12 @@ lpb $0
   mov $6,2
   lpb $0
     dif $0,$2
-    cmp $4,9
+    gcd $4,1
     sub $4,$6
     mov $7,$2
     pow $7,5
     mul $5,$7
     add $5,$4
-    add $5,1
     mov $6,1
   lpe
   mul $1,$5
