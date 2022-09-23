@@ -5,12 +5,8 @@
 mov $1,1
 lpb $0
   mov $4,$0
-  add $0,3
-  trn $0,6
-  mov $2,$1
-  mul $2,2
-  add $2,$1
-  div $2,$1
+  trn $0,3
+  mov $2,3
   pow $2,$1
   mov $3,$4
   bin $3,$1

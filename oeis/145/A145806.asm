@@ -1,4 +1,5 @@
 ; A145806: 1/4 of the number of islands of ones fitting in an n X n array symmetric under 90-degree rotation with all ones connected only either two adjacent vertically or two adjacent horizontally.
+; Submitted by Simon Strandgaard
 ; 0,0,0,1,1,2,3,3,4,6,6,8,10,11,12,15,16,18,21,23,25
 
 mov $7,$0
@@ -22,7 +23,7 @@ lpb $5
   lpe
 lpe
 lpb $7
-  mov $7,0
+  mov $7,2
   sub $1,$6
 lpe
 mov $0,$1
