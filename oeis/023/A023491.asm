@@ -5,6 +5,6 @@
 mov $1,$0
 add $1,1
 seq $1,90946 ; Non-Lucas numbers: complement of A000204.
-sub $1,1
-seq $0,48577 ; Pisot sequence L(3,4).
+add $0,3
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 add $0,$1

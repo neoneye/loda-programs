@@ -4,8 +4,7 @@
 
 add $0,1
 mov $1,$0
-min $0,1
-add $0,2
+mov $0,3
 lpb $1
   mov $2,$0
   mov $3,$0
