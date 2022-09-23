@@ -20,9 +20,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $6,$4
-    mov $4,2
-    sub $4,$6
-    mod $4,2
+    gcd $4,$4
     sub $4,$5
     add $5,$4
   lpe
