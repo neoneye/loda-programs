@@ -1,21 +1,20 @@
 ; A319663: Irregular triangle read by rows: T(n,k) = 5^k mod 2^n, n >= 2, 0 <= k <= 2^(n-2) - 1.
-; Submitted by fzs600
+; Submitted by Simon Strandgaard
 ; 1,1,5,1,5,9,13,1,5,25,29,17,21,9,13,1,5,25,61,49,53,9,45,33,37,57,29,17,21,41,13,1,5,25,125,113,53,9,45,97,101,121,93,81,21,105,13,65,69,89,61,49,117,73,109,33,37,57,29,17,85,41,77
 
-mov $1,1
-add $0,2
+mov $2,31
+mul $0,2
 lpb $0
   sub $0,1
-  mod $2,$1
-  div $3,$1
-  mul $3,$1
-  add $4,1
-  add $1,$3
-  mul $2,5
-  add $2,2
-  mov $3,$4
+  add $1,1
+  sub $0,$1
+  mul $1,2
 lpe
+add $1,2
+add $2,$0
+pow $2,5
+mul $2,$0
+mod $2,$1
 mov $0,$2
-div $0,10
-mul $0,4
+mul $0,2
 add $0,1

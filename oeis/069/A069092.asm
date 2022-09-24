@@ -19,8 +19,7 @@ lpb $0
   mov $6,2
   lpb $0
     dif $0,$2
-    div $4,2
-    add $4,1
+    gcd $4,1
     sub $4,$6
     mov $7,$2
     pow $7,7

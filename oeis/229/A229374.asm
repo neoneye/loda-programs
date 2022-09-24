@@ -11,8 +11,7 @@ lpb $0
   sub $3,$1
   mul $2,-1
   add $2,$3
+  sub $1,$2
   mul $1,2
-  sub $1,$2
-  sub $1,$2
 lpe
 gcd $0,$1

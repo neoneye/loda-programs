@@ -4,11 +4,12 @@
 
 seq $0,17914 ; Powers of sqrt(3) rounded to nearest integer.
 mov $1,$0
+sub $1,1
 lpb $0
-  sub $1,1
+  max $0,1
   div $2,$0
   add $0,$2
-  add $0,2
   div $0,2
   mov $2,$1
 lpe
+add $0,1
