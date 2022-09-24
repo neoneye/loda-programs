@@ -6,15 +6,14 @@ mov $2,1
 mov $4,1
 mov $5,1
 mov $3,$0
-add $3,1
 lpb $3
-  sub $3,2
+  sub $3,1
   mul $1,4
   add $2,$1
   mul $2,$3
   div $2,$4
   add $1,$5
-  sub $3,1
+  sub $3,2
   add $4,1
   trn $5,$2
   add $5,$2
