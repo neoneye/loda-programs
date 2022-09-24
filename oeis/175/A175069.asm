@@ -26,7 +26,8 @@ lpb $3
   add $2,1
   mov $7,$4
   cmp $7,1
-  cmp $7,0
+  add $7,1
+  mul $7,2
   sub $3,$7
 lpe
 mov $0,$1

@@ -9,13 +9,13 @@ lpe
 add $2,2
 sub $2,$0
 sub $4,$0
+sub $4,1
 mov $0,$2
 lpb $0
   sub $0,2
-  mov $3,$4
-  sub $3,3
-  bin $3,$0
   sub $4,2
+  mov $3,$4
+  bin $3,$0
   add $1,$3
 lpe
 mov $0,$1

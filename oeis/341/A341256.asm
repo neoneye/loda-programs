@@ -10,7 +10,7 @@ lpb $4
     add $2,2
     mov $0,$2
     lpb $3
-      mov $4,0
+      mov $4,2
       div $1,$0
       cmp $1,0
       sub $3,$1

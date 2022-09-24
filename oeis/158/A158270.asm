@@ -1,9 +1,11 @@
 ; A158270: Single-digit numbers in A061049.
+; Submitted by Simon Strandgaard
 ; 0,9,5,3,1,3,3,5,7,9
 
 mov $1,1
 mov $2,1
 mov $3,$0
+mod $3,9
 mul $3,5
 lpb $3
   mul $2,$3
