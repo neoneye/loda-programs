@@ -9,7 +9,6 @@ lpb $0
   sub $0,1
   sub $2,$6
   bin $2,$0
-  mul $2,-1
   sub $4,1
   trn $0,1
   mov $3,$4
@@ -20,4 +19,4 @@ lpb $0
   sub $1,3
   cmp $2,3
 lpe
-mov $0,$5
+sub $0,$5

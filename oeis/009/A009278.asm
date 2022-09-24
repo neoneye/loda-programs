@@ -4,5 +4,8 @@
 
 mov $1,$0
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $0,57021 ; Denominator of (sum of divisors of n / number of divisors of n).
-mul $0,$1
+mov $2,$1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+gcd $1,$0
+div $2,$1
+mul $0,$2
