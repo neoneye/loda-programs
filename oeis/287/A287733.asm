@@ -9,10 +9,8 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,69497 ; Triangular numbers of the form 6*k.
-  mov $2,$3
-  mul $2,$0
   add $1,$2
-  mov $5,$0
+  mov $2,$0
 lpe
-sub $1,$5
+sub $1,$2
 mov $0,$1
