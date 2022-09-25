@@ -4,20 +4,20 @@
 
 lpb $0
   add $2,1
-  add $3,1
-  add $4,2
+  add $3,2
   sub $0,$2
 lpe
 sub $2,$0
 mul $2,2
+mov $4,$3
 mov $0,$2
 lpb $0
+  div $3,2
   bin $3,$0
   sub $4,1
   sub $0,1
   add $1,$3
   mov $3,$4
-  div $3,2
 lpe
 mov $0,$1
 add $0,1

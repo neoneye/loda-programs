@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   add $2,1
   seq $2,8615 ; a(n) = floor(n/2) - floor(n/3).
-  sub $0,10
-  trn $0,1
+  trn $0,11
   add $1,$2
 lpe
 mov $0,$1
