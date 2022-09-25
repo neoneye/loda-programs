@@ -1,15 +1,15 @@
 ; A119968: Binomial transform of Fredholm-Rueppel sequence.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,3,5,9,16,27,44,73,130,251,507,1025,2016,3811,6907,12033,20282,33475,55253,94185,171896,342651,737266,1655657,3751786,8386587,18274843,38629505,79123224,157157411,303174298,569093601,1041436386
 
+mov $2,1
+gcd $4,$0
 lpb $0
-  add $0,$3
-  mov $2,$0
-  mul $3,2
-  add $3,1
-  sub $0,$3
-  bin $2,$0
-  add $1,$2
+  sub $0,$2
+  mul $2,2
+  mov $3,$4
+  bin $3,$0
+  add $1,$3
 lpe
-add $1,1
 mov $0,$1
+add $0,1

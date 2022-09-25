@@ -1,27 +1,16 @@
 ; A274627: Product_{i=0..3} (2^floor((n+i)/4)-1).
-; Submitted by JayPi
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,1,3,9,27,81,189,441,1029,2401,5145,11025,23625,50625,104625,216225,446865,923521,1876833,3814209,7751457,15752961,31755969,64016001,129048129,260144641,522337665,1048788225,2105834625,4228250625,8473082625,16979393025,34025371905,68184176641
 
+add $0,1
 mov $1,1
-mov $2,1
-mov $3,1
-mov $4,1
-mov $5,1
-sub $0,3
-lpb $0
+mov $2,$0
+lpb $2
+  div $2,2
+  seq $2,274230 ; Number of holes in a sheet of paper when you fold it n times and cut off the four corners.
   sub $0,1
-  mov $6,$1
-  mul $6,$4
-  mov $7,$2
-  mul $7,$6
-  mul $7,$3
-  mul $1,2
-  add $1,1
-  div $6,$5
-  mov $5,$4
-  mov $4,$3
-  mov $3,$2
-  mov $2,$1
-  mov $1,$6
+  mul $1,$2
+  mov $2,$0
+  mov $0,2
 lpe
-mov $0,$7
+mov $0,$1
