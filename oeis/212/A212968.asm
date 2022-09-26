@@ -5,12 +5,10 @@
 add $0,1
 mov $1,$0
 pow $0,2
+mul $0,7
 add $0,1
-gcd $2,$0
-mul $2,2
-div $0,2
-mul $0,3
-sub $0,1
+mov $2,$0
+gcd $2,4
 add $0,$2
 mul $0,$1
-div $0,6
+div $0,12
