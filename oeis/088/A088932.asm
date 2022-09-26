@@ -6,8 +6,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  mul $2,2
-  seq $2,8643 ; Molien series for group of 4 X 4 upper triangular matrices over GF(2).
+  seq $2,8804 ; Expansion of 1/((1-x)^2*(1-x^2)*(1-x^4)).
   trn $0,8
   add $1,$2
 lpe
