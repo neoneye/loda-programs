@@ -17,7 +17,7 @@ lpb $3
     mod $2,$0
     dif $2,3
     mul $2,$1
-    gcd $3,6
+    gcd $3,2
     sub $1,$2
     div $2,$0
   lpe

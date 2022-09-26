@@ -1,8 +1,9 @@
 ; A255285: List of ternary words obtained by expanding (2+x)^n mod 3 and reading the coefficients starting with the constant term.
-; Submitted by Dataman
+; Submitted by Simon Strandgaard
 ; 1,21,111,2001,12021,222111,1001001,21021021,111111111,2000000001,12000000021,222000000111,1002000002001,21012000012021,111222000222111,2002002001001001,12012012021021021,222222222111111111,1000000001000000001,21000000021000000021,111000000111000000111
 
 add $0,1
+mod $0,26
 lpb $0
   sub $0,1
   mov $2,$1
@@ -12,8 +13,6 @@ lpb $0
   pow $4,$0
   add $1,1
   mov $3,$2
-  pow $3,2
-  mul $3,$2
   mul $3,$4
   mod $3,3
   mul $5,10
