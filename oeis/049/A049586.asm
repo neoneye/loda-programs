@@ -1,9 +1,10 @@
 ; A049586: a(n) is the GCD of the cototients (A051953) of n and n+1.
-; Submitted by Simon Strandgaard
+; Submitted by damotbe
 ; 1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,3,1,1,1,1,3,3,1,1,1,1,1,1,1,1,3,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,3,3,1,1,3,1,1,1,1,1,1,1,3,3,1,1,1,1,1,3,1
 
 mov $1,$0
 seq $1,51953 ; Cototient(n) := n - phi(n).
 add $0,1
 seq $0,51953 ; Cototient(n) := n - phi(n).
-gcd $0,$1
+gcd $1,$0
+mov $0,$1
