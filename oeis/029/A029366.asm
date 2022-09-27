@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,25869 ; Expansion of 1/((1-x^4)(1-x^7)(1-x^10)).
-  sub $0,1
-  trn $0,10
+  trn $0,11
   add $1,$2
 lpe
 mov $0,$1
