@@ -7,10 +7,9 @@ lpb $0
   sub $0,1
   add $1,$2
   mul $1,5
-  mul $2,3
-  add $2,59
-  div $2,2
-  mod $2,4
+  mul $2,2
+  add $2,21
+  mod $2,5
 lpe
 add $1,$2
 mov $0,$1

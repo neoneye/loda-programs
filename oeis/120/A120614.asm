@@ -8,8 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,120613 ; a(n) = floor(phi*floor(n/phi)) where phi=(1+sqrt(5))/2.
-  mov $1,$2
+  trn $0,1
+  seq $0,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
+  mov $1,1
+  add $1,$2
   mov $2,$0
   mul $4,$3
 lpe

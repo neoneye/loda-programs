@@ -5,7 +5,6 @@
 mov $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
-trn $0,4
-add $0,1
+trn $0,3
 mul $0,$1
 div $0,2

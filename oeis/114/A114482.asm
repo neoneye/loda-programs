@@ -8,9 +8,9 @@ lpb $0
   lpb $3
     div $3,10
     mov $4,$0
-    min $4,1
   lpe
   mov $2,3
+  min $4,1
   mov $5,1
   lpb $0
     sub $0,$4
