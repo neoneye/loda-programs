@@ -7,13 +7,12 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-div $0,2
 lpb $0
-  sub $0,1
+  sub $0,2
   sub $2,1
   add $4,1
   mov $1,$2
   bin $1,$4
   add $3,$1
 lpe
-add $0,$3
+mov $0,$3
