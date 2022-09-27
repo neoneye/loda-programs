@@ -12,9 +12,9 @@ lpb $0
   mul $1,$4
   mul $1,2
   div $1,3
-  gcd $1,6
 lpe
 mov $2,$3
 mul $2,2
+gcd $1,6
 add $1,$2
 mov $0,$1

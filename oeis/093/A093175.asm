@@ -1,20 +1,19 @@
 ; A093175: Tetranacci numbers starting with first four squares.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,4,9,16,30,59,114,219,422,814,1569,3024,5829,11236,21658,41747,80470,155111,298986,576314,1110881,2141292,4127473,7955960,15335606,29560331,56979370,109831267,211706574,408077542,786594753,1516210136,2922589005
 
-mov $1,2
-mov $2,1
-mov $4,-2
-mov $5,1
+mov $1,1
+mov $5,3
 lpb $0
   sub $0,1
-  sub $3,$4
   mov $4,$2
   add $4,$3
-  mov $2,$3
-  add $2,$1
-  add $5,$4
+  add $4,$5
+  mov $2,$1
   mov $1,$3
+  add $1,$5
   mov $3,$5
+  mov $5,$4
 lpe
-mov $0,$5
+add $1,$2
+mov $0,$1

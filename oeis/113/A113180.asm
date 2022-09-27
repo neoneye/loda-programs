@@ -5,19 +5,18 @@
 add $0,1
 lpb $0
   sub $0,1
-  mov $4,2
-  pow $4,$0
+  mov $6,2
+  pow $6,$0
   add $2,$0
-  bin $2,$0
-  mov $3,$0
+  bin $2,$4
+  mul $2,$6
+  mov $3,$4
   bin $3,$1
+  mul $3,$2
   trn $0,2
   add $1,1
-  mul $3,$2
-  mul $3,$4
-  max $5,256
-  add $5,$3
   mov $2,$1
+  add $4,2
+  add $5,$3
 lpe
 mov $0,$5
-sub $0,256
