@@ -1,8 +1,16 @@
 ; A134115: Powers of 9 written backwards and sorted.
+; Submitted by Simon Strandgaard
 ; 1,9,18,927,1656,94095,144135,9692874,12764034,984024783,1044876843,90695018313,184635924282,9238285681452,16945429767822,946490231198502,1481588810203581,96566699618177661,121999692536490051
 
-mul $0,2
-mov $1,-3
-pow $1,$0
-seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $0,$1
+mov $1,$0
+mod $1,21
+mov $0,9
+pow $0,$1
+lpb $0
+  mov $2,$0
+  mod $2,10
+  div $0,10
+  mul $3,10
+  add $3,$2
+lpe
+mov $0,$3

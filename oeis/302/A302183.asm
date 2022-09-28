@@ -1,13 +1,14 @@
 ; A302183: Number of 3D walks of type abd.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,4,10,39,131,521,1989,8149,33205,139870,592120,2552155
 
 mov $3,$0
 mov $5,$0
 lpb $5
-  sub $5,1
+  sub $5,2
   mov $0,$3
   sub $0,$5
+  div $0,2
   mov $1,$0
   add $1,1
   add $1,$0
