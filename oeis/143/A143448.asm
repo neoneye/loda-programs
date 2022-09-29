@@ -6,9 +6,7 @@ mov $1,1
 mov $4,$0
 lpb $0
   trn $0,6
-  mov $2,$1
-  add $2,$1
-  div $2,$1
+  mov $2,2
   pow $2,$1
   mov $3,$4
   bin $3,$1

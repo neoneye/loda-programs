@@ -1,22 +1,24 @@
 ; A107953: Number of chains in the power set lattice of an (n+3)-element set X_(n+3) of specification n^1 2^1 1, that is, n identical objects of one kind, 2 identical objects of another kind and one other kind. It is the same as the number of fuzzy subsets X_(n+3).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 31,175,703,2415,7551,22143,61951,167167,438271,1122303,2818047,6959103,16941055,40730623,96862207,228130815,532676607,1234173951,2839543807,6491734015,14755561471,33361494015,75061264383,168124481535,375004332031,833223655423,1844688453631,4070286819327,8952859328511,19634442993663,42941083025407,93668941758463,203821967998975,442484710703103,958499261513727,2071960943067135,4470064522723327,9625674545364991,20690609811488767,44399379041222655,95120949942157311,203471223789715455
 
-mov $4,$0
 add $0,1
+mul $0,2
+mov $1,1
+mov $3,1
 lpb $0
-  sub $0,1
-  mov $2,0
-  sub $2,$1
-  sub $2,2
-  pow $2,2
-  mov $3,$4
-  bin $3,$1
-  add $1,1
-  mul $3,$1
-  mul $3,$2
-  add $5,$3
+  sub $0,2
+  add $1,$2
+  mul $1,2
+  add $1,$3
+  mov $2,$3
+  add $2,$1
+  add $4,2
+  mul $1,2
+  div $1,$4
+  add $3,$1
 lpe
-mov $0,$5
-mul $0,8
+mov $0,$2
+div $0,2
+mul $0,16
 sub $0,1
