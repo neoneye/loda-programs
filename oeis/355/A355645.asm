@@ -1,14 +1,13 @@
 ; A355645: The number of regions in the G-Shi arrangement when G is the cycle graph C_n.
-; Submitted by shiva
+; Submitted by Simon Strandgaard
 ; 1,3,16,61,206,659,2052,6297,19162,58015,175088,527333,1586118,4766571,14316124,42981169,129009074,387158327,1161737160,3485735805,10458256030,31376865283,94134790196,282412759241,847255054986,2541798719439,7625463267232
 
 add $0,1
-mov $1,2
-pow $1,$0
-add $1,1
-mov $2,3
+mov $2,2
 pow $2,$0
-sub $2,$1
-trn $2,$0
-mov $0,$2
-add $0,1
+mov $1,3
+pow $1,$0
+sub $1,$2
+max $1,2
+sub $1,$0
+mov $0,$1

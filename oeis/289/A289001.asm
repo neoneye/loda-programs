@@ -1,8 +1,9 @@
 ; A289001: Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
-; Submitted by damotbe
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
 
-add $0,2
-seq $0,36693 ; Number of Gaussian integers z = a + bi satisfying n-1 < |z| <= n.
-div $0,4
-mod $0,2
+mov $1,$0
+seq $1,80764 ; First differences of A049472, floor(n/sqrt(2)).
+add $1,1
+mov $0,1
+div $0,$1
