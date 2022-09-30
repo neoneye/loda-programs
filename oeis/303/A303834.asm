@@ -1,19 +1,10 @@
 ; A303834: Number of total dominating sets in the n-gear graph.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 3,21,48,161,473,1476,4553,14241,44688,141081,447153,1422596,4539473,14522361,46556048,149508801,480810153,1548053316,4988972313,16090635281,51928966928,167675418921,541639730273,1750245266436,5657268819873,18289912673001
 
-mov $1,1
-mov $2,2
-add $0,2
-lpb $0
-  sub $0,1
-  mov $3,$2
-  mov $4,$2
-  add $4,$1
-  mul $4,$2
-  max $5,1
-  mul $1,2
-  mov $2,$5
-  add $5,$3
-lpe
-mov $0,$4
+add $0,1
+mov $1,2
+pow $1,$0
+seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
+add $1,$0
+mul $0,$1
