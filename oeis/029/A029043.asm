@@ -6,9 +6,9 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  mul $2,2
-  seq $2,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
-  trn $0,11
+  seq $2,8672 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)).
+  sub $0,2
+  trn $0,9
   add $1,$2
 lpe
 mov $0,$1

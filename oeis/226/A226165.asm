@@ -4,4 +4,4 @@
 
 seq $0,77425 ; a(n) == 1 (mod 4) (see A016813), but not a square (i.e., not in A000290).
 sub $0,1
-seq $0,37449 ; Discriminant of quadratic field Q(sqrt(n)).
+seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
