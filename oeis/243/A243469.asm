@@ -1,17 +1,19 @@
 ; A243469: Denominators of the rational convergents to the periodic continued fraction 1/(2 + 1/(7 + 1/(2 + 1/(7 + ...)))).
-; Submitted by Simon Strandgaard
+; Submitted by Ralfy
 ; 1,2,15,32,239,510,3809,8128,60705,129538,967471,2064480,15418831,32902142,245733825,524369792,3916322369,8357014530,62415424079,133187862688,994730462895,2122648788478,15853271982241,33829192752960,252657621252961,539144435258882
 
 mov $3,1
 add $0,1
 lpb $0
   sub $0,1
+  add $3,$1
   add $2,$3
   mov $3,$1
   mov $1,$2
   dif $2,2
-  dif $2,7
-  mul $2,14
+  add $3,$1
+  add $3,$2
+  mov $2,$1
 lpe
-dif $1,7
-mov $0,$1
+dif $2,2
+mov $0,$2

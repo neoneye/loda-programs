@@ -1,6 +1,8 @@
-; A188009: [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
-; Submitted by Simon Strandgaard
+; A188009: a(n) = [nr] - [nr-kr] - [kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
+; Submitted by damotbe
 ; 0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0
 
-trn $0,2
-seq $0,123740 ; Characteristic sequence for Wythoff AB-numbers A003623.
+sub $0,2
+trn $0,1
+seq $0,139764 ; Smallest term in Zeckendorf representation of n.
+cmp $0,2

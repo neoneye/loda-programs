@@ -1,15 +1,24 @@
 ; A291362: The arithmetic function u(n,2,7).
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 8,2,3,2,5,2,7,2,3,2,8,2,8,2,3,2,8,2,8,2,3,2,8,2,5,2,3,2,8,2,8,2,3,2,5,2,8,2,3,2,8,2,8,2,3,2,8,2,7,2,3,2,8,2,5,2,3,2,8,2,8,2,3,2,5,2,8,2,3,2,8,2,8,2,3,2,7,2,8,2,3,2,8,2,5,2,3,2,8,2,7,2,3,2,5,2,8,2,3,2
 
-add $0,1
-mov $2,2
-mov $3,6
-lpb $3
-  mov $1,$0
-  mod $1,$2
-  min $1,1
-  add $2,$1
-  sub $3,$1
+mov $1,2
+add $1,$0
+mov $2,1
+gcd $0,2
+lpb $0
+  add $0,1
+  add $3,2
+  mul $3,$0
+  lpb $3
+    add $2,1
+    mov $4,$1
+    mod $4,$2
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
+  lpe
+  div $0,$2
 lpe
 mov $0,$2
+add $0,1

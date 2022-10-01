@@ -1,9 +1,5 @@
 ; A289001: Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
-; Submitted by Simon Strandgaard
+; Submitted by Olaf
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
 
-mov $1,$0
-seq $1,80764 ; First differences of A049472, floor(n/sqrt(2)).
-add $1,1
-mov $0,1
-div $0,$1
+seq $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.
