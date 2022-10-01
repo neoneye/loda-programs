@@ -1,16 +1,15 @@
 ; A129280: a(1)=1. a(n) = the sum of the earlier terms which are <= n.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Simon Strandgaard
 ; 1,1,2,4,8,8,8,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800,800
 
+mov $1,50
 mov $2,2
 sub $0,1
 lpb $0
   add $0,1
   sub $1,$2
   div $1,2
-  cmp $3,4
-  add $3,$1
-  mod $3,2
+  mod $3,4
   sub $3,$1
   max $3,2
   sub $0,$3

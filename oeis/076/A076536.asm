@@ -5,6 +5,13 @@
 add $0,1
 mov $1,3
 lpb $1
+  mov $2,$0
+  dif $0,2
+  mod $2,2
+  lpb $2
+    sub $2,1
+    mul $0,3
+    add $0,1
+  lpe
   sub $1,1
-  seq $0,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
 lpe

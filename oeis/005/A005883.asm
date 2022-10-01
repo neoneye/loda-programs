@@ -1,17 +1,10 @@
 ; A005883: Theta series of square lattice with respect to deep hole.
-; Submitted by Cesium_133*
+; Submitted by Simon Strandgaard
 ; 4,8,4,8,8,0,12,8,0,8,8,8,4,8,0,8,16,0,8,0,4,16,8,0,8,8,0,8,8,8,4,16,0,0,8,0,16,8,8,8,0,0,12,8,0,8,16,0,8,8,0,16,0,0,0,16,12,8,8,0,8,8,0,0,8,8,16,8,0,8,8,0,12,8,0,0,16,0,8,8,0,24,0,8,8,0,0,8,8,0,4,16,8,8,16,0,0,8,0,8
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
-  add $4,2
-  add $1,$2
-  mov $3,$4
-lpe
-mov $0,$1
-mul $0,4
+mov $1,$0
+seq $1,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+mul $1,4
+sub $1,1
+mov $0,1
+add $0,$1
