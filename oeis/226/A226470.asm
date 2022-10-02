@@ -4,8 +4,7 @@
 
 mov $2,$0
 add $2,1
-mul $2,$0
-div $2,2
+bin $2,2
 mov $4,1
 pow $0,2
 lpb $0

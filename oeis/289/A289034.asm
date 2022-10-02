@@ -1,28 +1,9 @@
 ; A289034: Fixed point of the morphism 0->010, 1->10 starting with 1.
-; Submitted by Ralfy
+; Submitted by Simon Strandgaard
 ; 1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0
 
-mov $7,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  sub $4,$6
-  mov $0,$7
-  sub $0,$3
-  mov $1,0
-  mov $5,2
-  sub $5,$0
-  add $0,$4
-  lpb $0
-    mov $0,0
-    cmp $1,0
-    add $2,$1
-    mov $5,1
-    add $5,$2
-  lpe
-  mov $6,$5
-  sub $6,1
-lpe
+cmp $1,$0
+trn $0,2
+seq $0,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
+bin $1,$0
 mov $0,$1
-add $0,1
-mod $0,2

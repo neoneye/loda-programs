@@ -12,15 +12,14 @@ lpb $0
   sub $2,$6
   bin $2,$0
   sub $4,1
+  trn $0,2
   mov $3,$4
   bin $3,$1
-  sub $6,1
-  trn $0,2
   add $1,1
   mul $3,$2
   div $3,$1
   add $5,$3
-  sub $1,2
-  trn $1,2
+  sub $6,1
+  trn $1,4
 lpe
 mov $0,$5
