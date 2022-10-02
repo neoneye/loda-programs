@@ -11,6 +11,6 @@ lpb $3
   sub $0,1
   mov $2,15
   bin $2,$0
-  mul $1,$2
 lpe
+mul $1,$2
 mov $0,$1

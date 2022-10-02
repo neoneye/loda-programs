@@ -5,13 +5,12 @@
 mov $4,$0
 mov $3,2
 lpb $3
-  div $3,2
   mov $0,$4
-  add $0,1
   add $0,$3
   seq $0,100006 ; Integer log of 2n: sum of primes dividing 2n (with repetition).
   mov $1,$2
   mov $2,$0
+  div $3,2
   sub $4,1
   mul $4,$3
 lpe

@@ -20,6 +20,6 @@ lpb $2
   mul $4,2
   div $5,2
   div $0,2
-  add $1,$3
 lpe
+add $1,$3
 mov $0,$1

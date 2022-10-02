@@ -4,7 +4,7 @@
 
 mov $3,$0
 cmp $3,0
-add $0,$3
+mov $1,$3
 lpb $0
   mov $2,$0
   mod $2,10
