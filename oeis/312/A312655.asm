@@ -4,8 +4,7 @@
 
 mov $1,$0
 mod $1,6
-add $1,6
-div $1,10
+div $1,4
 mul $0,7
 div $0,3
 add $0,$1

@@ -7,7 +7,7 @@ mov $2,$0
 div $2,3
 pow $2,5
 mul $0,2
-seq $1,43563 ; Number of runs in base-11 representation of n.
+seq $1,171463 ; The natural numbers excluding 2 and 3.
 lpb $2
   sub $0,$1
   sub $2,$1
