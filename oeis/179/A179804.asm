@@ -10,7 +10,7 @@ lpb $0
   bin $2,2
   min $2,1
   mul $2,3
-  div $0,10
+  div $0,11
   mul $1,$2
 lpe
 mov $0,$1

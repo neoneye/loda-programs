@@ -25,7 +25,7 @@ lpb $5
   lpe
   mov $1,$5
   lpb $4
-    mov $4,$3
+    mov $4,$1
     add $4,3
     trn $1,6
   lpe
