@@ -9,8 +9,7 @@ gcd $0,3
 mov $2,$3
 mul $2,3
 mul $1,$0
-add $1,4
+add $1,1
 div $1,3
-sub $1,1
 add $1,$2
 mov $0,$1

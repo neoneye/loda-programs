@@ -13,8 +13,8 @@ mov $2,$0
 lpb $0
   mov $0,1
   add $2,3
-  mod $2,10
 lpe
+mod $2,10
 mul $3,10
 mov $1,$2
 add $1,$3

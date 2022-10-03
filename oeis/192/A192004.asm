@@ -1,13 +1,13 @@
 ; A192004: Alternating row sums of array A187360: minimal polynomial of 2*cos(Pi/n) evaluated for x=-1.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,-1,-2,-1,1,-2,1,-1,1,1,1,-2,1,1,1,-1,1,1,1,1,1,1,1,-2,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-2,1,1,1,1
 
 mov $2,2
 lpb $0
   sub $2,4
+  mov $4,$0
   mov $3,$0
   lpb $3
-    mov $4,$0
     mod $4,$2
     mov $1,$3
     cmp $1,0
