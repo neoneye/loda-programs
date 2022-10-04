@@ -20,8 +20,8 @@ lpb $0
     mov $5,$4
     add $5,2
     mul $4,$2
-    add $5,$4
   lpe
+  add $5,$4
   mul $1,$5
 lpe
 mov $0,$1

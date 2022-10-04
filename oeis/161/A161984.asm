@@ -8,12 +8,12 @@ lpb $0
 lpe
 mov $1,$2
 sub $2,1
+mov $3,$0
 lpb $0
-  mov $3,$0
-  mul $3,2
   mov $0,0
   mul $1,$2
   sub $1,1
+  mul $3,2
 lpe
 add $3,$1
 mov $0,$3

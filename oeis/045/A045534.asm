@@ -16,7 +16,7 @@ lpb $0
   lpb $0
     sub $0,$3
     max $0,0
-    seq $0,53661 ; For n > 1: if n is present, 2n is not.
+    seq $0,115216 ; "Correlation triangle" for 2^n.
     trn $1,8
   lpe
   lpb $0

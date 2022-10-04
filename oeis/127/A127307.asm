@@ -26,7 +26,7 @@ lpb $4
       add $2,$1
       max $3,$2
     lpe
-    add $2,1
+    add $2,2
     div $2,2
     mov $9,$8
     mul $9,$2

@@ -7,7 +7,9 @@ lpb $0
   sub $0,1
   mov $1,$2
   mul $1,2
-  seq $1,137893 ; Fixed point of the morphism 0->100, 1->101, starting from a(1) = 1.
+  add $1,1
+  seq $1,189640 ; Fixed point of the morphism 0->001, 1->101.
+  cmp $1,0
   sub $0,$1
   add $2,3
 lpe

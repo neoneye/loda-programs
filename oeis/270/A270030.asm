@@ -17,7 +17,6 @@ lpb $3
       sub $5,$4
     lpe
   lpe
-  trn $1,$0
   add $2,1
   cmp $4,0
   sub $3,$4
