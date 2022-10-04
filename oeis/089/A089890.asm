@@ -7,7 +7,7 @@ add $1,1
 mov $0,$1
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 mov $2,$0
-sub $2,2
+sub $2,1
 bin $0,2
 sub $1,3
 mov $3,$1
@@ -16,4 +16,4 @@ lpb $3
   sub $3,1
   mul $0,2
 lpe
-mul $0,2
+mul $0,4

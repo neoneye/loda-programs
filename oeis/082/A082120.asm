@@ -4,16 +4,15 @@
 
 mov $2,3
 lpb $0
-  mov $3,$2
+  add $3,1
   lpb $3
     lpb $0
       add $2,2
       sub $0,$2
       mov $1,$0
-      cmp $1,0
+      mov $3,0
     lpe
     sub $3,$1
-    mul $1,32
   lpe
   sub $0,1
   add $2,1

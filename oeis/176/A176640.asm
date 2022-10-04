@@ -1,10 +1,20 @@
 ; A176640: Partial sums of A005985.
+; Submitted by Simon Strandgaard
 ; 0,1,5,14,46,111,303,688,1712,3761,8881,19122,43698,92851,207539,436916,961204,2009781,4369077,9087670,19573430,40544951,86682295,178956984,380283576,782936761,1655351993,3400182458,7158278842
 
-lpb $0
-  mov $2,$0
-  seq $2,5985 ; Length of longest trail (i.e., path with all distinct edges) on the edges of an n-cube.
-  sub $0,1
-  add $1,$2
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  add $0,1
+  add $3,1
+  mod $3,$0
+  sub $0,$3
+  mov $5,$0
+  div $5,2
+  mul $1,2
+  add $1,$5
 lpe
 mov $0,$1

@@ -6,21 +6,20 @@ mov $4,$0
 add $0,2
 mov $2,$0
 lpb $2
-  add $3,$0
-  add $6,$2
+  add $3,$2
   mov $5,12
   lpb $5
     mov $5,1
-    sub $6,3
+    sub $3,3
   lpe
   mov $1,41
   mov $2,0
-  sub $6,6
-  lpb $6
-    mul $1,2
-    add $2,$6
+  sub $3,6
+  lpb $3
     sub $4,1
-    trn $6,$3
+    mul $1,2
+    add $2,$3
+    trn $3,$0
   lpe
   trn $2,1
 lpe
