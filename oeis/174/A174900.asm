@@ -2,10 +2,10 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,0,5,0,7,4,0,0,11,0,13,0,0,0,17,0,19,0,0,0,23,0,0,0,9,0,29,0
 
-mov $2,2
 add $0,1
+mov $2,2
+mov $3,$0
 lpb $0
-  mov $3,$0
   lpb $3
     mov $4,$0
     mod $4,$2

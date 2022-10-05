@@ -4,5 +4,6 @@
 
 mov $1,$0
 seq $1,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
-seq $0,20695 ; Pisot sequence E(2,3).
+add $0,3
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 sub $0,$1

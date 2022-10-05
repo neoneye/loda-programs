@@ -8,7 +8,7 @@ mul $0,2
 sub $1,1
 div $1,2
 add $1,1
-seq $1,99323 ; Expansion of (sqrt(1+3*x) + sqrt(1-x))/(2*sqrt(1-x)).
+seq $1,261300 ; Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
 gcd $1,2
 mul $0,$1
 div $0,2

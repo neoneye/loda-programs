@@ -8,8 +8,7 @@ seq $0,194082 ; Sum{floor(sqrt(3)*k/2) : 1<=k<=n}
 add $0,$1
 lpb $0
   pow $0,2
-  sub $0,1
-  add $2,1
+  add $2,2
   sub $0,$2
 lpe
 add $0,1

@@ -8,12 +8,11 @@ lpb $0
 lpe
 mov $2,$1
 sub $2,$0
-bin $1,$0
-pow $3,$0
-gcd $3,2
-sub $3,2
+bin $3,$0
 mov $0,2
 pow $0,$2
 mul $0,2
-add $0,$3
-mul $0,$1
+sub $0,$3
+bin $1,$2
+mul $1,$0
+mov $0,$1

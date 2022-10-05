@@ -4,7 +4,7 @@
 
 seq $0,266535 ; Sums of two successive terms of A256249, with a(0) = 0.
 mov $1,$0
-seq $2,142268 ; Primes congruent to 19 mod 43.
+seq $2,40270 ; Continued fraction for sqrt(287).
 lpb $2
   mov $2,$0
   add $1,1
