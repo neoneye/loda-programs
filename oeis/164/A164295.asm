@@ -18,6 +18,6 @@ lpb $0
   div $1,$3
   mul $1,$3
   add $1,1
-  div $1,$2
 lpe
+div $1,$2
 mov $0,$1

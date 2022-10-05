@@ -7,8 +7,7 @@ lpb $0
   sub $0,2
   mul $1,8
 lpe
-lpb $0
-  trn $0,9
-  mul $1,12
-lpe
+mov $2,12
+bin $2,$0
+mul $1,$2
 mov $0,$1
