@@ -2,11 +2,10 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,9,11,15,18,22,25
 
-mov $1,2
+mov $1,1
 mov $2,$0
 add $0,1
 lpb $0
-  sub $0,1
   add $1,12
   add $1,$0
   mul $2,$1
