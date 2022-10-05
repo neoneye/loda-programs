@@ -9,6 +9,4 @@ seq $0,270107 ; First differences of number of active (ON,black) cells in n-th s
 mul $0,-1
 add $0,4
 add $0,$1
-div $0,2
-mul $0,2
 add $0,4

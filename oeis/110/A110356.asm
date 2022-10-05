@@ -2,22 +2,20 @@
 ; Submitted by Simon Strandgaard
 ; 1,4,4,6,1,6,5,6,6,5
 
-mov $1,-3
 mov $3,$0
 mul $3,5
+mov $1,-3
+add $1,$3
 mov $2,$3
 lpb $2
-  add $1,$2
-  lpb $2
-    mov $5,$0
-    div $5,3
-    sub $2,$5
-    mov $4,$5
-    cmp $4,0
-    add $5,$4
-    div $1,$5
-    div $2,$5
-  lpe
+  mov $5,$0
+  div $5,3
+  sub $2,$5
+  mov $4,$5
+  cmp $4,0
+  add $5,$4
+  div $1,$5
+  div $2,$5
 lpe
 cmp $4,0
 add $2,$4

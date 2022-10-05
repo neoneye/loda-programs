@@ -8,7 +8,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,347950 ; Characteristic function of numbers that have middle divisors.
+  seq $3,67742 ; Number of middle divisors of n, i.e., divisors in the half-open interval [sqrt(n/2), sqrt(n*2)).
   add $4,1
   add $1,1
   add $2,$3

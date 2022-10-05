@@ -14,6 +14,5 @@ mov $0,$2
 add $0,3
 mov $2,2
 pow $2,$1
-mul $2,$0
-mov $0,$2
+mul $0,$2
 sub $0,1

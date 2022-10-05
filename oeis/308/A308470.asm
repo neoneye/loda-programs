@@ -5,6 +5,6 @@
 mov $1,$0
 add $1,1
 seq $1,466 ; a(n) = 4*n^2 - 1.
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
 gcd $0,$1
 div $0,2

@@ -4,7 +4,7 @@
 
 mov $3,$0
 mod $0,2
-seq $0,181067 ; a(n) = Sum_{k=0..n-1} binomial(n-1,k)^2 * binomial(n,k).
+seq $0,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
 sub $0,2
 add $2,$3
 sub $3,6005

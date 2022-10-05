@@ -4,7 +4,6 @@
 
 lpb $0
   seq $0,32615 ; a(n) = floor(n/Pi).
-  trn $1,1
   sub $1,1
   pow $1,$0
   mov $0,0

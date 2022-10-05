@@ -7,8 +7,6 @@ lpb $0
   sub $0,$1
 lpe
 add $1,$0
-add $0,1
-div $0,2
 bin $1,3
 mod $1,-2
 sub $1,1

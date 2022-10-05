@@ -17,7 +17,7 @@ lpb $0
   lpb $0
     dif $0,$2
     sub $0,$2
-    mov $2,0
+    mov $2,$0
   lpe
   add $1,1
   mov $2,2

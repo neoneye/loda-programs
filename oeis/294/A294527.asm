@@ -1,22 +1,22 @@
 ; A294527: Number of Dyck paths of length 2n with exactly 2 hills.
-; Submitted by Cruncher Pete
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,3,6,21,66,220,744,2562,8942,31569,112530,404445,1464042,5332872,19532688,71893470,265778040,986416614,3674092044,13729259586,51455182260,193369903608,728504292576,2750904025276,10409856537786,39470613237645,149935171349546
 
-mov $4,1
+mov $1,$0
 lpb $0
-  sub $0,1
-  mov $2,2
-  mul $2,$0
-  add $2,$4
-  add $2,1
+  sub $0,2
+  cmp $2,1
+  sub $2,$6
   bin $2,$0
-  mul $2,$1
-  mov $3,-2
+  mul $2,3
+  sub $4,1
+  mov $3,$4
   bin $3,$1
+  add $6,2
+  add $1,1
   mul $3,$2
-  sub $1,3
-  add $4,1
+  div $3,$1
+  sub $1,1
   add $5,$3
 lpe
 mov $0,$5
-div $0,6

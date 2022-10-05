@@ -7,8 +7,8 @@ mov $2,1
 lpb $2
   sub $2,1
   trn $0,1
-  seq $0,60632 ; a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
 lpe
+seq $0,60632 ; a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
 min $1,2
 mul $1,$0
 mov $0,$1

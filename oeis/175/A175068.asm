@@ -9,7 +9,7 @@ mov $4,$0
 mov $3,$0
 lpb $3
   sub $3,2
-  mov $5,$4
+  mov $5,$3
   lpb $5
     mov $7,$0
     mod $7,$2
