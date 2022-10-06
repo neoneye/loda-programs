@@ -1,24 +1,21 @@
 ; A034751: Dirichlet convolution of 3^(n-1) with itself.
-; Submitted by [SG]ATA-Rolf
+; Submitted by Simon Strandgaard
 ; 1,6,18,63,162,540,1458,4536,13203,39852,118098,356238,1062882,3193020,9567396,28711665,86093442,258324066,774840978,2324645406,6973581924,20921060700,62762119218,188287473024,564859079523,1694580407532
 
 add $0,1
 mov $1,1
-mov $4,$0
+mov $2,$0
 lpb $0
+  mov $3,$2
+  dif $3,$0
+  mov $4,$3
   sub $0,1
-  add $1,$0
-  mov $2,$4
-  gcd $2,$1
-  bin $2,$1
-  mul $2,3
-  mov $3,$4
-  div $3,$1
-  cmp $1,1
-  add $1,1
-  pow $2,$3
-  mul $5,3
-  add $5,$2
+  cmp $3,$2
+  cmp $3,0
+  mul $3,3
+  pow $3,$4
+  mul $1,3
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1
 div $0,3

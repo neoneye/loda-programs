@@ -5,8 +5,7 @@
 mov $1,$0
 mov $2,$0
 mov $3,2
-mov $0,4
-add $0,$1
+add $0,4
 add $1,$0
 gcd $0,4
 lpb $0

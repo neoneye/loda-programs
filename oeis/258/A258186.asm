@@ -4,6 +4,4 @@
 
 trn $0,10
 seq $0,8644 ; Molien series of 5 X 5 upper triangular matrices over GF( 2 ).
-mul $0,2
-add $0,1
 seq $0,30109 ; Write n in binary, reverse bits, subtract 1, divide by 2.

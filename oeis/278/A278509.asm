@@ -1,5 +1,5 @@
 ; A278509: a(n) = 3^{number of primes congruent to 3 modulo 4 dividing n (with multiplicity)}.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,1,3,1,1,3,3,1,9,1,3,3,1,3,3,1,1,9,3,1,9,3,3,3,1,1,27,3,1,3,3,1,9,1,3,9,1,3,3,1,1,9,3,3,9,3,3,3,9,1,3,1,1,27,3,3,9,1,3,3,1,3,27,1,1,9,3,1,9,3,3,9,1,1,3,3,9,3,3,1,81,1,3,9,1,3,3,3,1,9,3,3,9,3,3,3,1,9,27,1
 
 mov $1,1
@@ -23,9 +23,7 @@ lpb $0
   mov $5,1
   lpb $0
     dif $0,$2
-    lpb $2
-      mod $2,4
-    lpe
+    mod $2,4
     mul $5,$2
   lpe
   mul $1,$5
