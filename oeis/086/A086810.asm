@@ -7,12 +7,11 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,1
-mov $2,1
+mov $2,2
 add $2,$1
 sub $0,1
 bin $1,$0
 max $0,0
-add $2,1
 add $2,$0
 bin $2,$0
 add $0,1

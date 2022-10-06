@@ -8,7 +8,6 @@ lpb $0
 lpe
 mov $2,9
 pow $2,$0
-mov $0,3
+mov $0,9
 pow $0,$1
-pow $0,2
 add $0,$2

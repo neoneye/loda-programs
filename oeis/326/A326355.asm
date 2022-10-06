@@ -1,5 +1,5 @@
 ; A326355: Number of permutations of length n with at most two descents.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,2,6,23,93,360,1312,4541,15111,48854,154674,482355,1487905,4553684,13857492,41998265,126912075,382702050,1152300166,3465813071,10416313221,31288785152,93950241096,282026883573,846449748943,2540120998190,7621973606682
 
 lpb $0
@@ -8,10 +8,9 @@ lpb $0
   mul $2,2
   sub $1,$0
   add $1,$3
-  mul $3,3
-  add $1,$3
   add $1,2
-  add $3,1
+  mul $3,3
+  add $3,4
 lpe
 mov $0,$2
 div $0,2

@@ -4,11 +4,11 @@
 
 mov $2,$0
 seq $2,48701 ; List of binary palindromes of even length (written in base 10).
-mov $4,4
+mov $4,1
 lpb $0
   mov $3,$0
   add $3,$2
-  sub $3,1
+  add $3,1
   mod $3,2
   mul $3,$4
   div $0,2
@@ -17,4 +17,3 @@ lpb $0
   mul $4,2
 lpe
 mov $0,$1
-div $0,4

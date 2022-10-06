@@ -7,7 +7,7 @@ mov $2,$0
 trn $3,$0
 mov $1,8
 lpb $1
-  lpb $2
+  lpb $1
     lpb $2
       sub $2,2
       mul $3,2

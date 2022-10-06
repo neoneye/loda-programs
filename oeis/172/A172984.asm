@@ -1,5 +1,5 @@
 ; A172984: For n <= 18, a(n) = Fibonacci(n) mod 5, using representatives {5,1,2,3,4} (i.e., 5 instead of the usual 0), and a(19)=2.
-; Submitted by Skillz
+; Submitted by Simon Strandgaard
 ; 1,1,2,3,5,3,3,1,4,5,4,4,3,2,5,2,2,4,2
 
 lpb $0
@@ -9,8 +9,7 @@ lpb $0
   max $5,$1
   add $5,1
   add $1,$3
-  mov $2,$3
-  add $2,$5
+  add $2,$3
   mov $3,$5
   max $1,3
   sub $1,1

@@ -1,10 +1,10 @@
 ; A104490: Read central column in Table 3 in reference from right to left.
-; Submitted by GolfSierra
+; Submitted by Simon Strandgaard
 ; 1,1,11,1,101,101,11,1,1001,1001,1011,1,101,101,11,1,10001,10001,10011,10001,101,101,11,1,1001,1001,1011,1,101,101,11,1
 
 mov $2,$0
 seq $2,105033 ; Read binary numbers downwards to the right.
-mov $4,4
+mov $4,1
 lpb $0
   mov $3,$0
   add $3,35
@@ -18,5 +18,4 @@ lpb $0
   mul $4,10
 lpe
 mov $0,$1
-div $0,4
 add $0,1
