@@ -7,9 +7,8 @@ dif $2,2
 mov $1,$0
 add $1,2
 pow $1,2
-mul $1,2
 mul $0,$1
 add $0,$1
-div $0,6
+div $0,3
 add $0,$2
 add $0,1

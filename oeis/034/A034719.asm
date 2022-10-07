@@ -1,24 +1,21 @@
 ; A034719: Dirichlet convolution of powers of 3 (3,9,27,...) with themselves.
-; Submitted by johngo54
+; Submitted by Simon Strandgaard
 ; 9,54,162,567,1458,4860,13122,40824,118827,358668,1062882,3206142,9565938,28737180,86106564,258404985,774840978,2324916594,6973568802,20921808654,62762237316,188289546300,564859072962,1694587257216
 
 add $0,1
 mov $1,1
-mov $4,$0
+mov $2,$0
 lpb $0
+  mov $3,$2
+  dif $3,$0
+  mov $4,$3
   sub $0,1
-  add $1,$0
-  mov $2,$4
-  gcd $2,$1
-  bin $2,$1
-  mul $2,3
-  mov $3,$4
-  div $3,$1
-  cmp $1,1
-  add $1,1
-  pow $2,$3
-  mul $5,3
-  add $5,$2
+  cmp $3,$2
+  cmp $3,0
+  mul $3,3
+  pow $3,$4
+  mul $1,3
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1
 mul $0,3
