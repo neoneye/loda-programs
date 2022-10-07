@@ -11,10 +11,9 @@ lpb $0
   mov $2,$4
   gcd $2,$1
   bin $2,$1
-  cmp $2,0
   mov $3,$4
   div $3,$1
-  pow $3,$2
+  gcd $3,$2
   mul $5,$3
   add $1,1
 lpe

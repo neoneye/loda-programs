@@ -4,7 +4,8 @@
 
 add $0,1
 mov $1,$0
-mov $3,2
+mov $3,6
+div $0,3
 lpb $0
   mov $2,$0
   mul $2,$3
@@ -12,4 +13,5 @@ lpb $0
   add $1,$2
   mul $3,9
 lpe
+mul $1,3
 mov $0,$1

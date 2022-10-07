@@ -6,9 +6,7 @@ mul $0,55
 mov $1,-2
 bin $1,$0
 mod $1,3
-mul $1,4
-add $1,9
+mul $1,8
+add $1,2
 add $0,$1
-mul $0,17
-sub $0,1
 mod $0,10
