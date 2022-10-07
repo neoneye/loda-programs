@@ -18,8 +18,8 @@ lpb $0
   lpb $0
     dif $0,$2
     trn $2,3
-    mul $1,$2
   lpe
+  mul $1,$2
   add $2,1
   mul $5,$2
   mul $1,$5
