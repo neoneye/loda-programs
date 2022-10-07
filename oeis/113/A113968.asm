@@ -1,47 +1,16 @@
-; A113968: Series expansion of Farey rational polynomial based on A112627.
-; Submitted by Gunnar Hjern
+; A113968: a(0) = 0 and a(n) = (5*(-4)^n + 16*(-1)^n + 9*4^n)/240 for n >= 1.
+; Submitted by Simon Strandgaard
 ; 0,0,1,1,15,17,239,273,3823,4369,61167,69905,978671,1118481,15658735,17895697,250539759,286331153,4008636143,4581298449,64138178287,73300775185,1026210852591,1172812402961,16419373641455,18764998447377
 
-mov $5,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $9,$5
-  mov $3,2
-  lpb $3
-    sub $3,1
-    mov $0,$5
-    add $0,$3
-    sub $0,1
-    mov $11,2
-    lpb $11
-      sub $11,1
-      add $0,$11
-      sub $0,1
-      mov $4,$0
-      gcd $4,2
-      mod $0,29
-      mov $6,4
-      pow $6,$0
-      div $6,5
-      mul $4,$6
-      mov $12,$11
-      lpb $12
-        sub $12,1
-        mov $10,$4
-      lpe
-    lpe
-    mov $7,$10
-    mov $8,$3
-    lpb $8
-      sub $8,1
-      mov $1,$10
-    lpe
-  lpe
-  lpb $9
-    mov $9,0
-    sub $1,$7
-  lpe
-lpe
+add $0,1
+mov $1,2
+pow $1,$0
+pow $1,2
+gcd $0,2
+mul $0,$1
+div $0,24
+mul $1,2
+div $1,20
+sub $1,$0
+div $1,4
 mov $0,$1
-div $0,6

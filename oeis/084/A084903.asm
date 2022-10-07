@@ -1,11 +1,10 @@
 ; A084903: Binomial transform of positive cubes.
-; Submitted by ChelseaOilman
+; Submitted by Simon Strandgaard
 ; 1,9,44,170,576,1792,5248,14688,39680,104192,267264,672256,1662976,4055040,9764864,23257088,54853632,128253952,297533440,685375488,1568669696,3569352704,8078229504,18192793600,40785412096,91049951232
 
 mov $1,$0
 mov $2,$0
 mov $4,$0
-add $4,2
 mov $5,-2
 add $0,2
 lpb $1
@@ -13,7 +12,7 @@ lpb $1
   mul $0,2
   add $2,$4
   add $2,3
-  add $5,1
+  add $5,3
 lpe
 mov $3,6
 add $3,$5

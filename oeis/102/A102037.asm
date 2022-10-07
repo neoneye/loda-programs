@@ -9,8 +9,7 @@ sub $0,$2
 seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 mov $5,$0
 min $0,$2
-lpb $2
-  sub $2,1
+lpb $0
   mov $3,$0
   mod $3,2
   mov $6,$5

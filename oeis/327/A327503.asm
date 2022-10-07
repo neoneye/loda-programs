@@ -1,5 +1,23 @@
 ; A327503: Number of steps to reach a fixed point starting with n and repeatedly taking the quotient by the maximum divisor that is 1 or not a perfect power (A327501, A327502).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,1,1,2,1,1,1,3,2,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,2,1,3,1,1,1,1,5,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2
 
-seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+mov $2,2
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+    add $5,1
+  lpe
+  gcd $1,$5
+lpe
+mov $0,$1

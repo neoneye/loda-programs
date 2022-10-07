@@ -12,9 +12,9 @@ lpb $1
   lpb $2
     dif $2,$3
     mul $4,$1
-    mov $0,$2
   lpe
   sub $1,1
+  mov $0,$2
   mul $0,$1
 lpe
 mov $0,$4

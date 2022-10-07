@@ -1,5 +1,5 @@
 ; A040262: Continued fraction for sqrt(279).
-; Submitted by Landjunge
+; Submitted by Simon Strandgaard
 ; 16,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1,32,1,2,2,1,2,2,1
 
 seq $0,10174 ; Continued fraction for sqrt(108).
@@ -7,8 +7,6 @@ gcd $1,$0
 add $1,1
 mul $1,8
 dif $1,$0
-div $1,5
-mul $1,5
 mov $0,$1
 sub $0,10
 div $0,5
