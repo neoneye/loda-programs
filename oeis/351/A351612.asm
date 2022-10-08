@@ -13,7 +13,7 @@ lpb $3
     mod $6,$2
     cmp $6,0
     div $0,$2
-    add $1,2
+    add $1,1
     sub $5,$6
   lpe
   add $2,1
@@ -25,5 +25,4 @@ lpb $3
   sub $3,$6
 lpe
 mov $0,$1
-div $0,2
 add $0,1

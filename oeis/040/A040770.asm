@@ -1,5 +1,5 @@
 ; A040770: Continued fraction for sqrt(799).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 28,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3,56,3,1,3
 
 seq $0,40281 ; Continued fraction for sqrt(299).
@@ -9,8 +9,7 @@ add $0,1
 div $0,2
 add $1,$0
 div $0,3
-add $0,6
 mul $0,4
 add $0,$1
 div $0,4
-sub $0,7
+sub $0,1

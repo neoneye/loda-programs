@@ -1,5 +1,5 @@
 ; A123505: Lengths of bit runs in A123504.
-; Submitted by Aurum
+; Submitted by Simon Strandgaard
 ; 1,2,1,2,2,2,3,3,5,6,7,8,11,14
 
 mov $2,1
@@ -13,7 +13,7 @@ lpb $0
   add $2,$1
   cmp $1,2
   add $5,$4
-  add $5,$1
 lpe
+add $5,$1
 mov $0,$5
 add $0,1
