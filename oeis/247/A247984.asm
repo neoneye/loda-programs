@@ -4,15 +4,13 @@
 
 add $0,1
 mov $1,$0
-mov $6,$0
 add $0,1
 lpb $0
   sub $0,1
-  cmp $2,1
-  sub $2,1
-  sub $2,$6
-  bin $2,$0
   sub $4,1
+  mov $2,$4
+  sub $2,$1
+  bin $2,$0
   mov $3,$4
   bin $3,$1
   mul $3,$2

@@ -1,16 +1,6 @@
 ; A054519: Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
-; Submitted by Conan
+; Submitted by Simon Strandgaard
 ; 1,2,4,6,9,11,15,17,21,24,28,30,36,38,42,46,51,53,59,61,67,71,75,77,85,88,92,96,102,104,112,114,120,124,128,132,141,143,147,151,159,161,169,171,177,183,187,189,199,202,208,212,218,220,228,232,240,244,248,250,262,264,268,274,281,285,293,295,301,305,313,315,327,329,333,339,345,349,357,359,369,374,378,380,392,396,400,404,412,414,426,430,436,440,444,448,460,462,468,474
 
-mov $2,$0
-lpb $0
-  sub $0,1
-  mov $1,$2
-  lpb $1
-    sub $1,1
-    sub $1,$0
-    add $3,1
-  lpe
-lpe
-mov $0,$3
+seq $0,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
 add $0,1

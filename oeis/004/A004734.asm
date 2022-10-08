@@ -1,10 +1,10 @@
 ; A004734: Numerator of average distance traveled by n-dimensional fly.
-; Submitted by Sphynx
+; Submitted by Simon Strandgaard
 ; 1,8,3,32,5,64,35,512,63,1024,231,4096,429,8192,6435,131072,12155,262144,46189,1048576,88179,2097152,676039,16777216,1300075,33554432,5014575,134217728,9694845,268435456,300540195
 
 mov $1,1
 mov $2,3
-mov $3,1
+mov $3,8
 lpb $0
   sub $0,1
   sub $3,$1
@@ -12,7 +12,6 @@ lpb $0
   mul $3,-1
   add $3,$1
   mul $3,$2
-  mul $1,8
   add $2,1
 lpe
 gcd $3,$1

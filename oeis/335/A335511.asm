@@ -15,7 +15,7 @@ lpb $0
     cmp $4,0
     mov $5,$2
     cmp $5,1
-    add $6,$0
+    add $6,$1
     add $2,1
     max $4,$5
     sub $3,$4

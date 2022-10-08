@@ -6,11 +6,10 @@ mov $1,$0
 seq $0,76627 ; a(n) = tau(n)*(n-tau(n)), where tau(n) = number of divisors of n (A000005).
 mul $0,-4
 mov $2,$1
-mul $2,2
+mul $2,6
 pow $1,2
 add $0,$2
 div $0,2
-add $0,$2
 add $0,$1
 div $0,2
 add $0,1
