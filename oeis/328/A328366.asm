@@ -2,16 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 6,20,40,70,102,150,194,256,318,394,462,566,646,750,858,984,1088,1238,1354,1518,1666,1826,1966,2182,2344,2532,2720,2944,3120,3384,3572,3826,4054,4298,4534,4860,5084,5356,5624,5964,6212,6572,6832,7176,7512,7840,8124,8564,8874,9260,9608,10012
 
-add $0,1
-mov $2,$0
-lpb $0
-  max $0,1
-  mov $3,$2
-  div $3,$0
-  add $3,2
-  mul $3,$0
-  sub $0,1
-  add $1,$3
-lpe
-mul $1,2
+mov $1,$0
+seq $1,299692 ; a(n) is the total area that is visible in the perspective view of the stepped pyramid with n levels described in A245092.
 mov $0,$1
+mul $0,2

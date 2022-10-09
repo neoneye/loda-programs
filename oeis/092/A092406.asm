@@ -5,5 +5,5 @@
 mov $1,$0
 seq $1,24916 ; a(n) = Sum_{k=1..n} k*floor(n/k); also Sum_{k=1..n} sigma(k) where sigma(n) = sum of divisors of n (A000203).
 sub $1,8
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
 max $0,$1
