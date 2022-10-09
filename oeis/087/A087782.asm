@@ -9,8 +9,7 @@ lpb $0
   pow $3,3
   add $3,$0
   mod $3,$2
-  add $3,1
-  cmp $3,1
+  cmp $3,0
   sub $0,1
   add $1,$3
 lpe
