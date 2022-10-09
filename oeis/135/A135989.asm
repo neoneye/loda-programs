@@ -9,6 +9,4 @@ div $0,5
 mul $0,45
 sub $0,$1
 mul $0,2
-div $0,3
-mul $0,3
-add $0,3
+add $0,1
