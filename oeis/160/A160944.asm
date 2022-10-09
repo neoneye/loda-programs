@@ -5,6 +5,4 @@
 mov $1,$0
 seq $1,160938 ; a(n)= n * digital sum(n+1)
 seq $0,76314 ; a(n) = floor(n/10) + (n mod 10).
-mul $0,2
 mul $0,$1
-div $0,2
