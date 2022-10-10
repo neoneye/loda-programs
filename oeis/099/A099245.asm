@@ -4,7 +4,6 @@
 
 mov $1,$0
 seq $1,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-mul $0,2
-seq $0,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 gcd $1,$0
 div $0,$1
