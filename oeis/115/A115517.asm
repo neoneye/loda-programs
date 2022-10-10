@@ -2,8 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1
 
-mov $1,$0
-seq $1,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-seq $0,157666 ; a(n) = 19683*n - 13716.
-add $1,$0
-div $0,$1
+seq $0,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+max $0,0
+bin $1,$0
+mov $0,$1
