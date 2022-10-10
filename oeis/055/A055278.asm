@@ -10,7 +10,6 @@ pow $1,2
 div $1,4
 sub $0,1
 pow $0,3
-div $0,6
-mul $0,2
+div $0,3
 add $0,$1
 div $0,12

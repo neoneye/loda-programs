@@ -4,7 +4,4 @@
 
 seq $0,328570 ; Index of the least significant zero digit in the primorial base expansion of n, when the rightmost digit is in the position 1.
 sub $0,1
-seq $0,129075 ; Numbers n such that (n-4)/3 is prime.
-sub $0,10
-div $0,3
-add $0,2
+seq $0,40 ; The prime numbers.

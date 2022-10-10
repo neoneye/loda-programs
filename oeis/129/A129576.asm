@@ -2,20 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,3,2,0,2,3,2,0,1,6,2,0,2,0,2,0,3,6,0,0,2,3,2,0,2,6,2,0,0,0,4,0,2,3,2,0,2,6,0,0,1,6,2,0,4,0,2,0,0,6,2,0,2,0,2,0,3,6,2,0,2,0,0,0,2,9,2,0,0,6,2,0,4,0,2,0,2,0,0,0,2,6,4,0,0,3,4,0,0,6,2,0,2,0,2,0,1,6,0,0
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
-  mod $5,2
-  add $5,1
-  add $1,$2
-  mov $3,2
-  add $3,$4
-  div $3,2
-  mul $3,$5
-  add $4,2
-lpe
-mov $0,$1
+mov $1,-1
+pow $1,$0
+mul $1,2
+bin $1,2
+seq $0,33687 ; Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
+mul $0,$1

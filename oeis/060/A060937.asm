@@ -2,10 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,2,4,2,4,3,4,2,5,2,4,4,3,2,5,2,5,4,4,2,5,3,4,4,5,2,5,2,5,4,4,4,4,2,4,4,5,2,5,2,5,5,4,2,5,3,5,4,5,2,5,4,5,4,4,2,6,2,4,5,3,4,5,2,5,4,5,2,6,2,4,5,5,4,5,2,5,3,4,2,6,4,4,4,5,2,6,4,5,4,4,4,6,2,5,5,4,2
 
-add $0,1
-lpb $0
-  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $0,1
-  add $1,1
-lpe
-add $0,$1
+cmp $1,$0
+trn $0,1
+seq $0,200815 ; Number of iterations of k -> d(k) until n reaches an odd prime.
+add $0,2
+sub $0,$1

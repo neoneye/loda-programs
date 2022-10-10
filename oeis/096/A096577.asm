@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $1,272007 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,46897 ; Sum of divisors of n that are not divisible by 4.
 div $0,$1
