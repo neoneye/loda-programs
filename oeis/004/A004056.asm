@@ -1,5 +1,5 @@
 ; A004056: The coding-theoretic function A(n,14,12).
-; Submitted by Orange Kid
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,2,2,3,4,4,6,8,13
 
 add $0,2
@@ -9,6 +9,5 @@ add $0,5
 mov $1,3
 mul $1,$0
 mov $0,$1
-sub $0,4
 div $0,4
-sub $0,1
+sub $0,2

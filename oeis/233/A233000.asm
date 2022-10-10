@@ -9,6 +9,5 @@ seq $0,61084 ; Fibonacci-type sequence based on subtraction: a(0) = 1, a(1) = 2 
 sub $1,$0
 pow $1,2
 add $1,$0
-add $1,$0
-mov $0,$1
+add $0,$1
 add $0,3

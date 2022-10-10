@@ -11,8 +11,7 @@ mul $0,22
 sub $1,3
 div $1,11
 add $1,14
-add $0,$1
-mul $1,102
+mul $1,103
 add $0,$1
 mul $0,8
 div $0,10

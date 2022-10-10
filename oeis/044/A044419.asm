@@ -1,5 +1,5 @@
 ; A044419: Numbers n such that string 8,7 occurs in the base 10 representation of n but not of n-1.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 87,187,287,387,487,587,687,787,870,887,987,1087,1187,1287,1387,1487,1587,1687,1787,1870,1887,1987,2087,2187,2287,2387,2487,2587,2687,2787,2870,2887,2987,3087,3187,3287,3387,3487,3587
 
 mul $0,10
@@ -9,8 +9,7 @@ div $0,11
 mul $0,22
 add $1,19
 div $1,11
-add $0,$1
-mul $1,102
+mul $1,103
 add $0,$1
 mul $0,4
 div $0,5

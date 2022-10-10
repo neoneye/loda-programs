@@ -6,8 +6,7 @@ mov $2,$0
 trn $2,2
 add $2,$0
 mov $1,$0
-mul $1,5
-sub $1,1
+sub $1,2
 gcd $1,3
 add $1,1
 gcd $1,$2
