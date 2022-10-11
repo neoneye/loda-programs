@@ -1,8 +1,11 @@
 ; A086847: a(n) = gcd(A001608(n), n), where A001608 = Perrin sequence.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,3,2,5,1,7,2,3,1,11,1,13,1,1,2,17,2,19,1,1,2,23,1,5,1,3,1,29,10,31,2,1,1,1,2,37,1,3,5,41,3,43,2,1,2,47,3,7,2,1,1,53,1,1,1,1,2,59,2,61,1,1,2,1,3,67,1,1,1,71,2,73,2,1,1,1,6,79,5,3,1,83,1,1,2,3,2,89,1,1,2,1,1,1
 
+mov $2,$0
+add $2,1
+add $0,1
+seq $0,1608 ; Perrin sequence (or Ondrej Such sequence): a(n) = a(n-2) + a(n-3) with a(0) = 3, a(1) = 0, a(2) = 2.
 mov $1,$0
-add $1,1
-seq $0,215339 ; a(n) = A001608(n) mod n.
-gcd $0,$1
+gcd $1,$2
+mov $0,$1

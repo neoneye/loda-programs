@@ -4,8 +4,5 @@
 
 sub $1,$0
 seq $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
-mov $2,$0
-mul $2,2
-add $0,$1
-mul $0,$2
-div $0,2
+add $1,$0
+mul $0,$1

@@ -1,11 +1,8 @@
 ; A104887: Triangle T(n,k) = (n-k+1)-th prime, read by rows.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Simon Strandgaard
 ; 2,3,2,5,3,2,7,5,3,2,11,7,5,3,2,13,11,7,5,3,2,17,13,11,7,5,3,2,19,17,13,11,7,5,3,2,23,19,17,13,11,7,5,3,2,29,23,19,17,13,11,7,5,3,2,31,29,23,19,17,13,11,7,5,3,2,37,31,29,23,19,17,13,11,7,5,3,2,41,37,31,29,23,19,17,13,11,7,5,3,2,43,41,37,31,29,23,19,17,13
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-sub $1,$0
-seq $1,40 ; The prime numbers.
-mov $0,$1
+seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
+seq $0,6005 ; The odd prime numbers together with 1.
+trn $0,2
+add $0,2

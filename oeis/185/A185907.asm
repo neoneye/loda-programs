@@ -1,11 +1,6 @@
 ; A185907: Weight array of A185908, by antidiagonals.
+; Submitted by Simon Strandgaard
 ; 1,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
 
-mov $1,1
-mul $0,2
-lpb $0
-  cmp $2,0
-  add $1,$2
-  sub $0,$1
-lpe
-cmp $0,$2
+seq $0,26729 ; Square array of binomial coefficients T(n,k) = binomial(n,k), n >= 0, k >= 0, read by antidiagonals.
+cmp $0,1

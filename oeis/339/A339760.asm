@@ -6,6 +6,5 @@ add $0,1
 mov $1,2
 pow $1,$0
 seq $0,177282 ; Number of permutations of 2 copies of 1..n with all adjacent differences <= 1 in absolute value.
-mul $1,$0
-mov $0,$1
+mul $0,$1
 div $0,2
