@@ -4,5 +4,3 @@
 
 min $0,10
 seq $0,63108 ; a(1) = 1; a(n+1) = a(n) + product of nonzero digits of a(n).
-mul $0,2
-dif $0,2

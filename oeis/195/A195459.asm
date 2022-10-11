@@ -2,7 +2,6 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,3,2,4,3,6,4,9,4,10,6,12,6,12,8,16,9,18,8,18,10,22,12,20,12,27,12,28,12,30,16,30,16,24,18,36,18,36,16,40,18,42,20,36,22,46,24,42,20,48,24,52,27,40,24,54,28,58,24,60,30,54,32,48,30,66,32,66,24,70,36,72,36,60,36,60,36,78,32,81,40,82,36,64,42,84,40,88,36,72,44,90,46,72,48,96,42,90,40
 
-add $0,1
 mul $0,3
-seq $0,225530 ; Number of ordered pairs (i,j) with i,j >= 0, i + j = n and gcd(i,j) <= 1.
-div $0,2
+add $0,1
+seq $0,23022 ; Number of partitions of n into two relatively prime parts. After initial term, this is the "half-totient" function phi(n)/2 (A000010(n)/2).
