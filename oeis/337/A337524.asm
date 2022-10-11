@@ -1,9 +1,8 @@
 ; A337524: a(n) = d(n) * (d(n) - 1), where d is the number of divisors of n (A000005).
-; Submitted by [DPC] hansR
+; Submitted by Simon Strandgaard
 ; 0,2,2,6,2,12,2,12,6,12,2,30,2,12,12,20,2,30,2,30,12,12,2,56,6,12,12,30,2,56,2,30,12,12,12,72,2,12,12,56,2,56,2,30,30,12,2,90,6,30,12,30,2,56,12,56,12,12,2,132,2,12,30,42,12,56,2,30,12,56,2,132,2,12,30,30
 
-add $0,1
-seq $0,145154 ; Coefficients in expansion of Eisenstein series E_1.
-div $0,4
-bin $0,2
-mul $0,2
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $1,$0
+sub $1,1
+mul $0,$1

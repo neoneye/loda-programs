@@ -1,9 +1,8 @@
 ; A082852: a(0)=0, a(n) = A014137(A072643(n)-1).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,1,2,2,4,4,4,4,4,9,9,9,9,9,9,9,9,9,9,9,9,9,9,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,65,65,65,65,65,65,65,65,65,65,65,65
 
 mov $1,$0
-seq $0,82854 ; Integers 1 to Catalan(n) followed by integers 1 to Catalan(n+1) etc.
-add $1,1
-sub $1,$0
-mov $0,$1
+seq $1,82854 ; Integers 1 to Catalan(n) followed by integers 1 to Catalan(n+1) etc.
+add $0,1
+sub $0,$1

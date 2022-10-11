@@ -4,7 +4,6 @@
 
 mov $1,$0
 min $1,1
-sub $0,1
-trn $0,1
+trn $0,2
 seq $0,163563 ; n occurs 1+a(n) times starting with a(1)=1.
 add $0,$1

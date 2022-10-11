@@ -1,11 +1,8 @@
 ; A221838: Number of integer Heron triangles of height n.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,0,2,2,2,2,2,6,6,2,2,20,2,2,20,12,2,6,2,20,20,2,2,56,6,2,12,20,2,20,2,20,20,2,20,56,2,2,20,56,2,20,2,20,56,2,2,110,6,6,20,20,2,12,20,56,20,2,2,182,2,2,56,30,20,20,2,20,20,20,2,156,2,2,56,20,20,20,2,110,20,2,2,182,20,2,20,56,2,56,20,20,20,2,20,182,2,6,56,56
 
 seq $0,46079 ; Number of Pythagorean triangles with leg n.
-mul $0,2
 add $0,1
-mov $1,$0
-pow $1,2
-mov $0,$1
-div $0,4
+bin $0,2
+mul $0,2

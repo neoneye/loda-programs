@@ -1,13 +1,9 @@
 ; A040950: Continued fraction for sqrt(982).
-; Submitted by Roadranner
+; Submitted by Simon Strandgaard
 ; 31,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1
 
 seq $0,40354 ; Continued fraction for sqrt(374).
-add $1,$0
-div $1,3
-mul $1,2
-lpb $1
-  add $1,$0
-  mov $0,$1
-  mov $1,3
-lpe
+mov $1,$0
+div $0,6
+mul $0,4
+add $0,$1
