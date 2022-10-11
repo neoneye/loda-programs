@@ -4,7 +4,7 @@
 
 mov $1,$0
 min $1,1
-add $0,1
+add $0,$1
 seq $0,168043 ; Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x+1, x+2, and 2*x for each element x in S(n-1). a(n) is the number of elements in S(n).
 mul $0,$1
 add $0,1

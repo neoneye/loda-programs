@@ -1,12 +1,8 @@
 ; A014027: Inverse of 18th cyclotomic polynomial.
-; Submitted by amazing
+; Submitted by Simon Strandgaard
 ; 1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1
 
-mov $2,1
-lpb $0
-  sub $0,3
-  sub $2,$1
-  add $1,$2
-lpe
-cmp $0,0
-mul $0,$2
+mov $1,-1
+pow $1,$0
+seq $0,14018 ; Inverse of 9th cyclotomic polynomial.
+mul $0,$1

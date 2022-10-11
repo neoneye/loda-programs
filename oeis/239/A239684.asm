@@ -1,12 +1,6 @@
 ; A239684: Number of digits in the decimal expansion of n^4.
+; Submitted by Simon Strandgaard
 ; 1,1,2,2,3,3,4,4,4,4,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 
-mov $1,-1
 pow $0,4
-add $0,1
-lpb $0
-  div $0,10
-  add $1,1
-lpe
-add $1,1
-mov $0,$1
+seq $0,55642 ; Number of digits in decimal expansion of n.

@@ -1,12 +1,6 @@
 ; A131026: Periodic sequence (2, 2, 1, 0, 0, 1).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0
 
-mov $2,1
-lpb $0
-  sub $0,1
-  add $2,$1
-  sub $1,$2
-lpe
-mov $0,$2
+seq $0,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
 add $0,1

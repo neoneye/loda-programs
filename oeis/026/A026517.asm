@@ -1,11 +1,8 @@
 ; A026517: a(n) = t(5n), where t = A001285 (Thue-Morse sequence).
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,1,2,1,1,2,2,1,1,2,1,1,1,1,1,2,1,2,2,1,1,1,1,2,2,1,2,1,1,1,1,1,2,1,1,2,2,1,1,2,1,2,1,1,1,1,1,1,2,1,1,2,2,2,2,1,1,2,1,1,1,1,1,1,2,1,2,1,1,2,2,1,2,1,2,2,2,2,2,1,2,1,1,2,2
 
-mul $0,5
-lpb $0
-  add $1,$0
-  mod $1,2
-  div $0,2
-lpe
-add $1,1
-mov $0,$1
+mul $0,10
+add $0,1
+seq $0,10059 ; Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+add $0,1

@@ -1,12 +1,6 @@
 ; A197870: Expansion of false theta series variation of Ramanujan theta function psi(x).
+; Submitted by Simon Strandgaard
 ; 1,-1,0,1,0,0,-1,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0
 
-lpb $0
-  mov $1,$0
-  sub $1,2
-  add $2,1
-  sub $0,1
-  trn $0,$2
-lpe
-bin $1,$2
-mov $0,$1
+seq $0,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+mod $0,2

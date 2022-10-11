@@ -10,6 +10,5 @@ mov $2,$0
 sub $0,13
 trn $0,11
 add $0,$2
-sub $0,2
-trn $0,4
+trn $0,6
 add $0,$1

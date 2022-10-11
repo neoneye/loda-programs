@@ -4,7 +4,5 @@
 
 mov $1,$0
 seq $1,77597 ; Coefficient of x in the n-th Moebius polynomial (A074586), M(n,x), which satisfies M(n,-1)=mu(n) the Moebius function of n.
-mov $2,$0
-mov $0,$1
-add $0,$2
+add $0,$1
 add $0,1

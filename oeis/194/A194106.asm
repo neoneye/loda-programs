@@ -5,6 +5,5 @@
 add $0,1
 sub $1,$0
 seq $0,22777 ; Place where n-th 1 occurs in A007337.
-add $1,$0
-mov $0,$1
 sub $0,1
+add $0,$1

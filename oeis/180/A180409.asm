@@ -4,6 +4,4 @@
 
 add $0,1
 seq $0,348287 ; Arrange nonzero digits of n in increasing order then append the zeros.
-lpb $0
-  dif $0,11
-lpe
+dif $0,11

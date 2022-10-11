@@ -1,13 +1,11 @@
 ; A120580: Hankel transform of sum{k=0..n, C(2k,k)}.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 1,0,-4,-8,0,32,64,0,-256,-512,0,2048,4096,0,-16384,-32768,0,131072,262144,0,-1048576,-2097152,0,8388608,16777216,0,-67108864,-134217728,0,536870912,1073741824,0,-4294967296,-8589934592,0,34359738368,68719476736,0,-274877906944,-549755813888,0
 
 mov $1,2
 pow $1,$0
-mul $0,2
-lpb $0
-  sub $0,2
-  add $2,$1
-  sub $1,$2
-lpe
-mov $0,$1
+add $0,1
+seq $0,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
+mul $0,3
+div $0,2
+mul $0,$1

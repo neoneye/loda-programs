@@ -1,12 +1,13 @@
 ; A271771: Maximum total Hamming distance between pairs of consecutive elements in any permutation of all 2^n binary words of length n.
+; Submitted by Simon Strandgaard
 ; 1,5,18,53,140,347,826,1913,4344,9719,21494,47093,102388,221171,475122,1015793,2162672,4587503,9699310,20447213,42991596,90177515,188743658,394264553,822083560,1711276007,3556769766,7381975013,15300820964,31675383779
 
-mov $1,1
-add $1,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mul $1,2
-  add $1,$0
-lpe
-mov $0,$1
+mov $1,2
+pow $1,$0
+mul $1,4
+sub $1,2
+mul $0,$1
+div $1,2
+add $0,$1
+add $0,2
+div $0,2

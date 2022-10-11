@@ -4,7 +4,6 @@
 
 mov $1,$0
 add $1,1
+pow $1,3
 seq $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
-mul $0,$1
-pow $1,2
 mul $0,$1

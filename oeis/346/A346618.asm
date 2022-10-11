@@ -1,12 +1,7 @@
 ; A346618: Triangle read by rows: T(n,k) = 1 iff 2 divides binomial(n,k) but 4 does not (0 <= k <= n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
 
-lpb $0
-  div $0,125
-  sub $0,1
-lpe
-seq $0,34931 ; Triangle, read by rows, formed by reading Pascal's triangle (A007318) mod 4.
-pow $0,$0
-sub $0,1
+seq $0,82907 ; A modified Pascal's triangle, read by rows, and modified as follows: binomial(n,j) is replaced by gcd(2^n, binomial(n,j)), i.e., the largest power of 2 dividing binomial(n,j).
+div $0,2
 mod $0,2

@@ -4,7 +4,7 @@
 
 mov $2,$0
 add $2,1
-seq $0,140756 ; Count up to k sequence with alternating signs (k always positive).
+seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
 mov $1,$0
 gcd $1,$2
 mov $0,$2

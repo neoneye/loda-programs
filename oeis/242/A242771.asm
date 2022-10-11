@@ -1,12 +1,9 @@
 ; A242771: Number of integer points in a certain quadrilateral scaled by a factor of n (another version).
+; Submitted by Simon Strandgaard
 ; 0,0,1,3,6,9,14,19,25,32,40,48,58,68,79,91,104,117,132,147,163,180,198,216,236,256,277,299,322,345,370,395,421,448,476,504,534,564,595,627,660,693,728,763,799,836,874,912,952,992,1033,1075,1118,1161,1206
 
-mov $2,$0
-lpb $2
-  sub $2,1
-  trn $0,2
-  add $1,$3
-  trn $1,$0
-  add $3,1
-lpe
-mov $0,$1
+mov $1,$0
+mul $1,10
+sub $1,4
+mul $0,$1
+div $0,24
