@@ -4,6 +4,5 @@
 
 add $0,1
 mov $1,$0
-seq $0,51596 ; Numerical values or Gematriot of Hebrew letters {aleph, bet, ..., tav}.
-sub $0,1
+seq $0,51885 ; Smallest number whose sum of digits is n.
 sub $0,$1

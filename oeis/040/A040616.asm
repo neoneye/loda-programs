@@ -1,12 +1,9 @@
 ; A040616: Continued fraction for sqrt(642).
-; Submitted by Jason Jung
+; Submitted by Simon Strandgaard
 ; 25,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1
 
-seq $0,40354 ; Continued fraction for sqrt(374).
-add $1,$0
-div $1,3
-lpb $1
-  add $1,$0
-  mov $0,$1
-  mov $1,3
-lpe
+seq $0,10124 ; Continued fraction for sqrt(19).
+mov $1,$0
+div $0,3
+mul $0,21
+add $0,$1

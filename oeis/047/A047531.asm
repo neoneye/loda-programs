@@ -5,5 +5,7 @@
 mov $1,$0
 mul $0,2
 div $0,3
-seq $0,75328 ; Difference between n-th pair in A075325.
+add $0,1
+mul $0,5
+div $0,2
 add $0,$1
