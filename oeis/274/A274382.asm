@@ -2,9 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,1,1,1,3,1,1,1,1,1,2,1,1,3,1,1,6,1,4,1,1,1,24,1,1,1,14,1,3,1,1,3,1,1,1,1,1,1,10,1,3,1,2,3,1,1,4,1,2,3,4,1,3,1,4,1,1,1,6,1,1,1,1,1,3,1,4,3,1,1,3,1,1,1,2,1,3,1,2,1,1,1,14,1,1,3,8,1,9,7,2,1,1,5,12,1,2,3,1
 
-mov $2,$0
-add $2,1
-seq $0,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
 mov $1,$0
-gcd $1,$2
-mov $0,$1
+seq $1,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
+add $0,1
+gcd $0,$1

@@ -4,5 +4,3 @@
 
 seq $0,189637 ; Positions of 1 in A116178; complement of A189636.
 sub $0,1
-mul $0,2
-dif $0,2

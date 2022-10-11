@@ -1,8 +1,6 @@
 ; A269528: Parity of number of runs of 1's in negabinary representation of n.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,1,1,1,0,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,0,1,1,1
 
-mul $0,6
-seq $0,181545 ; G.f.: A(x) = Sum_{n>=0} (3n)!/(n!)^3 * x^(3n)/(1-x-x^2)^(3n+1).
-div $0,2
-mod $0,2
+seq $0,5351 ; Base -2 representation for n regarded as base 2, then evaluated.
+seq $0,268411 ; Parity of number of runs of 1's in binary representation of n.

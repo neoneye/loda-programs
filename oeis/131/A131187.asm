@@ -5,7 +5,6 @@
 mov $1,$0
 add $0,2
 seq $0,274010 ; Boris Stechkin function: a(n) is the number of m with 2 <= m <= n and floor(n(m-1)/m) divisible by m-1.
-sub $0,150
+sub $0,1
 sub $1,$0
 mov $0,$1
-sub $0,149
