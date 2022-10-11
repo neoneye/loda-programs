@@ -1,12 +1,7 @@
 ; A356556: Parity of A061418.
-; Submitted by arkiss
+; Submitted by Simon Strandgaard
 ; 0,1,0,0,1,1,1,0,0,1,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,1,0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0,1,0,0,1,0,1
 
-lpb $0
-  sub $0,1
-  mul $1,3
-  add $1,2
-  div $1,2
-lpe
-mod $1,2
-mov $0,$1
+seq $0,156623 ; Values of register b when register a becomes 0 for the two register machine {i[1], i[1], i[1], d[2,1], d[1,6], i[2], d[1,5], d[2,3]}
+add $0,1
+mod $0,2

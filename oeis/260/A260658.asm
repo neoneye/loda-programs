@@ -7,5 +7,5 @@ pow $1,$0
 mul $0,2
 add $0,1
 mul $0,9
-seq $0,284254 ; Largest divisor of n such that all its prime factors are greater than the square of smallest prime factor of n, a(1) = 1.
+seq $0,93803 ; Greatest odd proper divisor of n; a(1)=1.
 mul $0,$1

@@ -1,10 +1,6 @@
 ; A099544: Odd part of n modulo 3.
+; Submitted by Simon Strandgaard
 ; 1,1,0,1,2,0,1,1,0,2,2,0,1,1,0,1,2,0,1,2,0,2,2,0,1,1,0,1,2,0,1,1,0,2,2,0,1,1,0,2,2,0,1,2,0,2,2,0,1,1,0,1,2,0,1,1,0,2,2,0,1,1,0,1,2,0,1,2,0,2,2,0,1,1,0,1,2,0,1,2,0,2,2,0,1,1,0,2,2,0,1,2,0,2,2,0,1,1,0,1
 
-mov $1,2
-add $0,1
-lpb $0
-  gcd $1,$0
-  div $0,$1
-lpe
+seq $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 mod $0,3

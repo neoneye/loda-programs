@@ -4,7 +4,7 @@
 
 mov $1,$0
 min $1,1
-add $0,1
+add $0,$1
 seq $0,88163 ; Numbers for which rotating one binary place to the right less rotating one binary place to the left is equal to zero.
 add $0,$1
 div $0,2

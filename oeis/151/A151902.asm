@@ -1,10 +1,7 @@
 ; A151902: a(n) = wt(k) + f(j) if n = 6k+j, 0 <= j < 6, where wt() = A000120(), f() = A151899().
+; Submitted by Simon Strandgaard
 ; 0,0,1,1,1,2,1,1,2,2,2,3,1,1,2,2,2,3,2,2,3,3,3,4,1,1,2,2,2,3,2,2,3,3,3,4,2,2,3,3,3,4,3,3,4,4,4,5,1,1,2,2,2,3,2,2,3,3,3,4,2,2,3,3,3,4,3,3,4,4,4,5,2,2,3,3,3,4,3,3,4,4,4,5,3,3,4,4,4,5,4,4,5,5,5,6,1,1,2,2
 
-mul $0,6
-div $0,9
-mov $1,$0
-lpb $1
-  div $1,2
-  sub $0,$1
-lpe
+mul $0,2
+div $0,3
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).

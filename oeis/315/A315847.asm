@@ -2,9 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 1,6,7,18,19,20,36,32,33,54,45,46,72,58,59,90,71,72,108,84,85,126,97,98,144,110,111,162,123,124,180,136,137,198,149,150,216,162,163,234,175,176,252,188,189,270,201,202,288,214
 
-sub $1,$0
-mul $1,4
-seq $0,301720 ; Coordination sequence for node of type V1 in "krb" 2-D tiling (or net).
-mul $0,5
-div $0,3
+mov $1,$0
+mov $2,$0
+seq $0,87509 ; Number of k such that (k*n) == 2 (mod 3) for 0 <= k <= n.
+sub $2,$0
+mov $3,$2
+cmp $3,0
+mul $2,5
+add $2,$3
+mov $0,$2
 add $0,$1

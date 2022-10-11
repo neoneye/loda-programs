@@ -1,11 +1,6 @@
 ; A204259: Matrix given by f(i,j) = 1 + [(2i+j) mod 3], by antidiagonals.
+; Submitted by Simon Strandgaard
 ; 1,2,3,3,1,2,1,2,3,1,2,3,1,2,3,3,1,2,3,1,2,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,3,1,2,3,1,2,3,1,2,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,3,1,2,3,1,2,3,1,2,3,1,2,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3
 
-lpb $0
-  mov $1,$0
-  mod $1,3
-  add $2,1
-  sub $0,$2
-lpe
-add $1,1
-mov $0,$1
+seq $0,204423 ; Infinite matrix: f(i,j)=(2i+j mod 3), by antidiagonals.
+add $0,1

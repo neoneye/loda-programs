@@ -6,7 +6,5 @@ seq $0,157502 ; Even numbers without the squares.
 mov $2,$0
 div $2,2
 mod $2,2
-mov $1,1
 sub $1,$2
 sub $0,$1
-add $0,1

@@ -5,6 +5,5 @@
 sub $1,$0
 add $0,1
 seq $0,253560 ; Multiply n by its largest prime factor: a(n) = A006530(n) * n.
-add $1,$0
-sub $1,2
-mov $0,$1
+sub $0,2
+add $0,$1

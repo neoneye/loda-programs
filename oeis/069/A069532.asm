@@ -7,6 +7,5 @@ seq $0,51596 ; Numerical values or Gematriot of Hebrew letters {aleph, bet, ...,
 mov $1,$0
 mod $0,2
 mul $0,9
-add $1,$0
-mov $0,$1
 sub $0,2
+add $0,$1

@@ -1,11 +1,7 @@
 ; A209615: Completely multiplicative with a(p^e) = 1 if p == 1 (mod 4), a(p^e) = (-1)^e otherwise.
+; Submitted by Simon Strandgaard
 ; 1,-1,-1,1,1,1,-1,-1,1,-1,-1,-1,1,1,-1,1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,1,-1,-1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,1,1,-1,1,1,-1,-1,1,1,1,-1,-1,1,-1,-1,-1,1,1,-1,1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,1,1,-1,1,1,-1,-1,1
 
-mov $1,1
+seq $0,106665 ; Alternate paper-folding (or alternate dragon curve) sequence.
 mul $0,2
-lpb $0
-  sub $0,2
-  dif $0,2
-  mul $1,-1
-lpe
-mov $0,$1
+sub $0,1

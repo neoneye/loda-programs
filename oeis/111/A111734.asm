@@ -5,7 +5,5 @@
 mov $1,-1
 pow $1,$0
 seq $0,7039 ; Number of cyclic binary n-bit strings with no alternating substring of length > 2.
+div $0,-2
 mul $0,$1
-sub $2,$0
-mov $0,$2
-div $0,2
