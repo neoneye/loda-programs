@@ -1,8 +1,8 @@
 ; A091069: Moebius mu sequence for real quadratic extension sqrt(2).
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,0,-1,0,-1,0,1,0,0,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,0,0,0,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,0,0,1,0,0,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,0,0,1,0,-1,0,-1,0,1,0,1,0,0,0,-1,0,1,0,0,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,0,0
 
-seq $0,323309 ; The sum of exponential semiproper divisors of n.
+seq $0,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
 pow $0,6
 mod $0,16
 add $0,1

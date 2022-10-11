@@ -4,10 +4,8 @@
 
 mov $2,$0
 add $2,1
-seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
-add $0,1
-mov $1,$0
+seq $0,7978 ; Least non-divisor of n.
+add $1,$0
 gcd $1,$2
-mul $2,$0
-div $2,$1
-mov $0,$2
+mul $0,$2
+div $0,$1
