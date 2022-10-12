@@ -5,7 +5,5 @@
 mov $1,2
 pow $1,$0
 mul $1,4
-add $1,1
 seq $0,77943 ; Expansion of 1/(1-2*x+2*x^2-2*x^3).
-sub $0,1
 add $0,$1

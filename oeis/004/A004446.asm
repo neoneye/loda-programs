@@ -5,5 +5,4 @@
 mov $1,-1
 pow $1,$0
 seq $0,4445 ; Nimsum n + 4.
-add $1,$0
-mov $0,$1
+add $0,$1

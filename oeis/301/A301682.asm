@@ -5,10 +5,8 @@
 mov $2,$0
 seq $0,87509 ; Number of k such that (k*n) == 2 (mod 3) for 0 <= k <= n.
 sub $2,$0
-mov $3,$2
-cmp $3,0
 mov $1,$2
-mul $1,5
-add $2,$3
+cmp $1,0
+mul $2,6
+add $2,$1
 mov $0,$2
-add $0,$1

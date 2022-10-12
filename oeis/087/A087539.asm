@@ -5,9 +5,8 @@
 mov $3,$0
 add $0,2
 seq $0,14018 ; Inverse of 9th cyclotomic polynomial.
-mov $4,1
+mov $4,3
 add $4,$0
-mul $4,2
 mov $2,$3
 mul $2,$3
 mov $1,$4

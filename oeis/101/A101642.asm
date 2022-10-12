@@ -1,11 +1,10 @@
 ; A101642: a(n) = Knuth's Fibonacci (or circle) product "3 o n".
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 8,13,21,29,34,42,47,55,63,68,76,84,89,97,102,110,118,123,131,136,144,152,157,165,173,178,186,191,199,207,212,220,228,233,241,246,254,262,267,275,280,288,296,301,309,317,322,330,335,343,351,356,364,369,377
 
-add $0,2
+add $0,1
 mov $1,$0
-seq $1,66096 ; Duplicate values in A060143.
-mul $1,3
-mul $0,2
-sub $0,5
+mul $1,5
+seq $0,5206 ; Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
+mul $0,3
 add $0,$1

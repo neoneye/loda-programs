@@ -7,5 +7,5 @@ gcd $1,$0
 mul $1,7
 mov $2,7
 div $2,$1
-seq $0,157658 ; a(1) = 0, a(n) = -mu(n) for n >= 2.
 mul $0,$2
+seq $0,157658 ; a(1) = 0, a(n) = -mu(n) for n >= 2.

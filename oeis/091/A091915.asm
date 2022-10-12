@@ -1,8 +1,7 @@
 ; A091915: Maximum of even products of partitions of n.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,2,2,4,6,8,12,18,24,36,54,72,108,162,216,324,486,648,972,1458,1944,2916,4374,5832,8748,13122,17496,26244,39366,52488,78732,118098,157464,236196,354294,472392,708588,1062882,1417176,2125764,3188646,4251528
 
-add $0,2
-seq $0,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
-div $0,3
+seq $0,319054 ; Maximum product of an aperiodic integer partition of n.
+div $0,2
 mul $0,2

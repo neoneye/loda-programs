@@ -1,8 +1,9 @@
 ; A040354: Continued fraction for sqrt(374).
-; Submitted by William Michael Kanar
+; Submitted by Simon Strandgaard
 ; 19,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1
 
-seq $0,40774 ; Continued fraction for sqrt(803).
-mul $0,2
-add $0,2
+seq $0,10124 ; Continued fraction for sqrt(19).
+mov $1,$0
 div $0,3
+mul $0,15
+add $0,$1

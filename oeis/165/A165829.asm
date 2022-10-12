@@ -1,8 +1,11 @@
 ; A165829: Totally multiplicative sequence with a(p) = 8.
-; Submitted by LCB001
+; Submitted by Simon Strandgaard
 ; 1,8,8,64,8,64,8,512,64,64,8,512,8,64,64,4096,8,512,8,512,64,64,8,4096,64,64,512,512,8,512,8,32768,64,64,64,4096,8,64,64,4096,8,512,8,512,512,64,8,32768,64,512,64,512,8,4096,64,4096,64,64,8,4096,8,64,512,262144,64,512,8,512,64,512,8,32768,8,64,512,512,64,512,8,32768,4096,64,8,4096,64,64,64,4096,8,4096,64,512,64,64,64,262144,8,512,512,4096
 
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-mov $1,8
-pow $1,$0
-mov $0,$1
+mov $1,$0
+min $1,1
+seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+mul $1,$0
+mov $2,8
+pow $2,$1
+mov $0,$2

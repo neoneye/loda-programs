@@ -4,7 +4,6 @@
 
 mov $1,$0
 seq $1,6463 ; Convolve natural numbers with characteristic function of triangular numbers.
-add $1,1
+add $1,3
 div $1,2
 add $0,$1
-add $0,1

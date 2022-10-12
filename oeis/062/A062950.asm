@@ -5,6 +5,5 @@
 seq $0,55684 ; Number of different n-pointed stars.
 mov $1,$0
 seq $1,237588 ; Sigma(n) - 2n + 1.
-add $1,$0
-mov $0,$1
+add $0,$1
 sub $0,1
