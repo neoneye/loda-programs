@@ -8,7 +8,6 @@ bin $2,$0
 mov $1,$2
 mul $1,16
 add $0,$1
-sub $0,16
 div $0,2
 mul $0,2
-add $0,18
+add $0,2

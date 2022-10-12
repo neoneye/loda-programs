@@ -2,7 +2,5 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,1,2,4,2,3,7,7,3,4,10,12,10,4,5,13,17,17,13,5,6,16,22,24,22,16,6,7,19,27,31,31,27,19,7,8,22,32,38,40,38,32,22,8,9,25,37,45,49,49,45,37,25,9,10,28,42,52,58,60,58,52,42,28,10,11,31,47,59,67,71,71,67,59,47,31,11,12,34,52,66,76,82,84,82,76,66,52,34,12,13,37,57,73,85,93,97,97,93
 
-mov $1,$0
-seq $1,98353 ; Multiplication table of the odd numbers read by antidiagonals.
-mov $0,$1
+seq $0,98353 ; Multiplication table of the odd numbers read by antidiagonals.
 div $0,2

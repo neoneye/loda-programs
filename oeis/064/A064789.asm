@@ -5,7 +5,6 @@
 mov $1,$0
 seq $1,130517 ; Triangle read by rows: row n counts down from n in steps of 2, then counts up the remaining elements in the set {1,2,...n}, again in steps of 2.
 add $1,$0
-seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 sub $1,$0
 mov $0,$1
-add $0,1
