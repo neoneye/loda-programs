@@ -7,5 +7,4 @@ seq $0,53650 ; Cototient function of n^2.
 mul $0,3
 add $1,1
 pow $1,2
-add $1,$0
-mov $0,$1
+add $0,$1
