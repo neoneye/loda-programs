@@ -7,11 +7,9 @@ add $0,1
 div $0,2
 mov $1,2
 pow $1,$2
-mul $1,4
 mov $2,$0
 mul $2,2
 bin $2,$0
-mul $2,4
 sub $1,$2
 mov $0,$1
-div $0,2
+mul $0,2
