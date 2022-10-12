@@ -2,19 +2,11 @@
 ; Submitted by Simon Strandgaard
 ; 1,-1,2,-1,0,0,2,-1,0,0,0,0,0,0,2,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  gcd $1,$0
-  seq $0,106348 ; Partial sums of a generalized Fredholm-Rueppel sequence.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
-lpe
-mul $1,$0
-mov $0,$2
-sub $0,$1
+mov $1,-1
+pow $1,$0
+mul $1,9
+add $1,3
+dif $0,2
+seq $0,69517 ; a(n) = (-1)*sum( d divides n, moebius(d)*(-1)^d).
+mul $0,$1
+div $0,12

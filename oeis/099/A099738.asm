@@ -2,8 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 2,5,10,15,24,30,43,52,66,78,99,107,132,150,171,188,221,236,273,291,322,352,397,409,453,489,530,558,615,633,694,727,778,826,883,900,973,1027,1088,1118,1199,1229,1314,1362,1419,1485,1578,1598,1688,1745,1826,1884
 
-add $0,1
 mov $1,$0
-seq $0,121896 ; Let M be the matrix defined in A111490. Sequence gives M(1,1), M(1,2)+M(1,2)+M(2,2), M(1,3)+M(2,3)+M(3,1)+M(3,2)+M(3,3), etc.
-sub $0,1
-sub $0,$1
+seq $1,354801 ; n^2 minus the sum of all aliquot divisors of all positive integers <= n.
+add $0,$1
+add $0,1

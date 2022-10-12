@@ -5,14 +5,9 @@
 add $0,5
 mov $1,$0
 bin $1,3
-mov $3,4
-add $3,$1
+mov $2,-6
+add $2,$1
+max $2,9
 mod $0,2
-mov $2,5
-lpb $2
-  mov $2,1
-  sub $3,10
-  max $3,9
-lpe
 add $0,14
-add $0,$3
+add $0,$2

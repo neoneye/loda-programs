@@ -5,5 +5,7 @@
 mov $1,$0
 add $1,1
 seq $1,90946 ; Non-Lucas numbers: complement of A000204.
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+add $0,1
+seq $0,1612 ; a(n) = a(n-1) + a(n-2) - 1 for n > 1, a(0)=3, a(1)=2.
+sub $0,1
 add $0,$1

@@ -4,5 +4,5 @@
 
 seq $0,53191 ; a(n) = n^2 * phi(n).
 sub $0,1
-seq $0,39649 ; a(n) = phi(n)+1.
-sub $0,1
+seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+add $0,1

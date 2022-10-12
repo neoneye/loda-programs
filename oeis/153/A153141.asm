@@ -4,7 +4,6 @@
 
 mul $0,2
 seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
-sub $0,1
-trn $0,1
+trn $0,2
 seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
 div $0,2

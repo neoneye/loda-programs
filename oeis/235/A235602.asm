@@ -5,6 +5,4 @@
 add $0,1
 mov $1,$0
 seq $1,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-mov $2,$0
-dif $2,$1
-mov $0,$2
+dif $0,$1

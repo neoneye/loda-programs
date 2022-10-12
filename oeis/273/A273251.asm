@@ -10,6 +10,5 @@ div $1,2
 trn $1,1
 mul $1,6
 add $1,$0
-mul $1,$0
-mov $0,$1
+mul $0,$1
 div $0,3
