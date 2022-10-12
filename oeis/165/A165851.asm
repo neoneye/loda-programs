@@ -1,8 +1,11 @@
 ; A165851: Totally multiplicative sequence with a(p) = 30.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,30,30,900,30,900,30,27000,900,900,30,27000,30,900,900,810000,30,27000,30,27000,900,900,30,810000,900,900,27000,27000,30,27000,30,24300000,900,900,900,810000,30,900,900,810000,30,27000,30,27000,27000,900,30,24300000,900,27000,900,27000,30,810000,900,810000,900,900,30,810000,30,900,27000,729000000,900,27000,30,27000,900,27000,30,24300000,30,900,27000,27000,900,27000,30,24300000,810000,900,30,810000,900,900,900,810000,30,810000,900,27000,900,900,900,729000000,30,27000,27000,810000
 
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-mov $1,30
-pow $1,$0
-mov $0,$1
+mov $1,$0
+min $1,1
+seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+mul $1,$0
+mov $2,30
+pow $2,$1
+mov $0,$2
