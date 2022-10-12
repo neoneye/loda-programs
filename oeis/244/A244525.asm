@@ -5,5 +5,5 @@
 mov $1,-1
 pow $1,$0
 mul $0,2
-seq $0,115359 ; Matrix (1,x)-(x,x^2) in Riordan array notation.
+seq $0,23531 ; a(n) = 1 if n is of the form m(m+3)/2, otherwise 0.
 mul $0,$1

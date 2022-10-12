@@ -1,12 +1,10 @@
 ; A040502: Continued fraction for sqrt(525).
-; Submitted by BarnardsStern
+; Submitted by Simon Strandgaard
 ; 22,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10
 
 seq $0,10182 ; Continued fraction for sqrt(117).
 gcd $1,$0
 add $1,2
 div $1,5
-mul $1,2
-sub $0,$1
-mul $1,4
+mul $1,6
 add $0,$1

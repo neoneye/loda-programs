@@ -1,13 +1,11 @@
 ; A293046: Number of even permutations on {1,2,...,n} with exactly 2 weak excedances.
-; Submitted by [SG-FC] hl
+; Submitted by Simon Strandgaard
 ; 0,0,1,1,7,11,31,57,127,247,511,1013,2047,4083,8191,16369,32767,65519,131071,262125,524287,1048555,2097151,4194281,8388607,16777191,33554431,67108837,134217727,268435427,536870911,1073741793,2147483647,4294967263,8589934591
 
-mov $4,$0
-lpb $0
-  sub $0,2
-  mov $3,$4
-  bin $3,$1
-  mov $1,$0
-  add $2,$3
-lpe
-mov $0,$2
+trn $0,1
+mov $1,2
+pow $1,$0
+add $0,1
+seq $0,93178 ; If n is even then 1, otherwise n.
+sub $1,$0
+mov $0,$1
