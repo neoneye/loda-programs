@@ -5,9 +5,7 @@
 lpb $0
   mov $0,5
 lpe
-lpb $0
-  dif $0,4
-lpe
+dif $0,4
 mov $1,1
 add $1,$0
 div $1,2

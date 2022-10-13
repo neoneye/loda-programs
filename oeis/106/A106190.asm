@@ -1,6 +1,11 @@
 ; A106190: Triangle read by rows: T(n,k) = binomial(2(n-k),n-k)/(1-2(n-k)).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,-2,1,-2,-2,1,-4,-2,-2,1,-10,-4,-2,-2,1,-28,-10,-4,-2,-2,1,-84,-28,-10,-4,-2,-2,1,-264,-84,-28,-10,-4,-2,-2,1,-858,-264,-84,-28,-10,-4,-2,-2,1,-2860,-858,-264,-84,-28,-10,-4,-2,-2,1,-9724,-2860,-858,-264,-84,-28,-10,-4,-2,-2,1,-33592,-9724,-2860,-858
 
-seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
-seq $0,2420 ; Expansion of sqrt(1 - 4*x) in powers of x.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+seq $1,2420 ; Expansion of sqrt(1 - 4*x) in powers of x.
+mov $0,$1

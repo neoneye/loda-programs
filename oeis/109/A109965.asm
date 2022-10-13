@@ -4,7 +4,7 @@
 
 mov $2,$0
 trn $2,1
-lpb $0
+lpb $0,$$9
   add $1,1
   mov $0,$2
   div $0,$1
