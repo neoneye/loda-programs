@@ -1,9 +1,9 @@
 ; A191687: Table T(n,k)=[Ceiling[1/2*((k+1)^n+(1+(-1)^k)/2)] read by antidiagonals
-; Submitted by shiva
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,2,2,1,1,4,5,2,1,1,8,14,8,3,1,1,16,41,32,13,3,1,1,32,122,128,63,18,4,1,1,64,365,512,313,108,25,4,1,1,128,1094,2048,1563,648,172,32,5,1
 
 mov $1,2
-lpb $0
+lpb $0,$$9
   add $1,1
   sub $0,$1
 lpe

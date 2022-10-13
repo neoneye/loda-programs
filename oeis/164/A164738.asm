@@ -4,4 +4,6 @@
 
 seq $0,88696 ; Triangle read by rows, giving number of partial quotients in continued fraction representation of terms in the left branch of the infinite Stern-Brocot tree.
 sub $0,1
-seq $0,40 ; The prime numbers.
+seq $0,6005 ; The odd prime numbers together with 1.
+trn $0,2
+add $0,2
