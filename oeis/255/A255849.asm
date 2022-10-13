@@ -1,12 +1,11 @@
 ; A255849: Characteristic function of pentagonal numbers.
+; Submitted by Simon Strandgaard
 ; 1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 
 lpb $0
-  sub $0,1
-  mov $2,$0
-  add $3,3
-  trn $0,$3
+  add $1,1
+  sub $0,$1
+  add $1,2
 lpe
-mov $1,1
-trn $1,$2
-mov $0,$1
+add $0,1
+cmp $0,1

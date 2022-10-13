@@ -6,7 +6,7 @@ mov $1,1
 mov $2,$0
 add $2,5
 mov $0,6
-lpb $0
+lpb $0,$$9
   sub $0,1
   mov $3,$2
   bin $3,$0

@@ -1,19 +1,16 @@
 ; A028283: Central elements in 4-Pascal triangle A028275 (by row).
-; Submitted by respawner
+; Submitted by Simon Strandgaard
 ; 1,4,10,32,110,392,1428,5280,19734,74360,281996,1074944,4115020,15808912,60917800,235350720,911315430,3535767000,13742347740,53495534400,208537056420,813950932080,3180614712600,12441628655040
 
-mov $3,$0
-mov $2,2
-lpb $2
-  div $2,2
-  sub $0,$2
-  mov $1,$0
-  add $1,$0
-  bin $1,$0
-  add $1,9
-  mov $0,$3
-  mul $4,2
-  add $4,$1
-lpe
-mov $0,$4
-sub $0,27
+mov $2,-1
+sub $2,$0
+sub $0,1
+mov $1,$2
+add $1,1
+bin $1,$0
+mul $1,2
+add $0,1
+bin $2,$0
+sub $2,$1
+gcd $3,$2
+mov $0,$3

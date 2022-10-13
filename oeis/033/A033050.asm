@@ -4,11 +4,11 @@
 
 mov $1,$0
 mov $3,12
-lpb $0
+lpb $0,$$9
   div $0,2
   mov $2,$0
   mul $2,$3
   add $1,$2
   mul $3,14
 lpe
-add $0,$1
+mov $0,$1

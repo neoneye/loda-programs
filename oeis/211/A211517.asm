@@ -4,7 +4,7 @@
 
 mov $4,$0
 mov $3,7
-lpb $3
+lpb $3,$$9
   div $3,2
   sub $3,1
   mov $0,$4
