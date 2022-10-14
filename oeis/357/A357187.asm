@@ -1,5 +1,5 @@
 ; A357187: First differences A357186 = "Take the k-th composition in standard order for each part k of the n-th composition in standard order, then add up everything."
-; Submitted by Science United
+; Submitted by Simon Strandgaard
 ; 1,1,0,0,1,0,0,0,0,1,0,-1,1,0,0,-1,1,0,0,0,1,0,0,-1,0,1,0,-1,1,0,0,-2,1,1,0,-1,1,0,0,0,0,1,0,-1,1,0,0,-2,1,0,0,0,1,0,0,-1,0,1,0,-1,1,0,0,-3,1,1,0,0,1,0,0,-1,0,1,0,-1,1,0,0,-1,1,0
 
 mov $4,$0
@@ -13,7 +13,6 @@ lpb $3
   mul $2,$0
   add $1,$2
   mul $4,$3
-  mov $5,$0
 lpe
-sub $1,$5
+sub $1,$0
 mov $0,$1
