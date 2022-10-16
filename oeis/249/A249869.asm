@@ -13,12 +13,9 @@ mov $3,$1
 mul $3,$0
 add $0,$1
 sub $1,$2
-mul $1,$0
-mul $2,2
-mul $3,$1
-add $0,$2
+mul $3,$0
 gcd $0,$1
-mov $1,1
+pow $0,$1
 div $1,$0
 mul $1,$3
 mov $0,$1
