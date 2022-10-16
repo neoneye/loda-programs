@@ -6,9 +6,9 @@ mov $3,$0
 mov $4,59
 mov $5,$0
 sub $5,60
+pow $5,2
 mov $0,60
 lpb $0
-  pow $5,2
   div $5,$4
   add $5,1
   add $2,$0
