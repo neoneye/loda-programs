@@ -4,7 +4,7 @@
 
 sub $2,$0
 mov $0,1
-seq $0,56450 ; a(n) = (3*2^n - (-2)^n)/2.
+seq $0,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
 mul $0,3
 add $1,$0
 add $2,$1
