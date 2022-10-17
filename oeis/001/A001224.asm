@@ -7,6 +7,4 @@ seq $1,123231 ; Row sums of A123230.
 add $0,2
 seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 add $0,$1
-sub $0,1
 div $0,2
-add $0,1

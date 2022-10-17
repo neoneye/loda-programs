@@ -6,8 +6,6 @@ mul $0,3
 seq $0,10163 ; Continued fraction for sqrt(92).
 dif $0,4
 mov $1,$0
-div $1,2
-mul $1,2
 dif $1,6
 mul $0,21
 add $0,$1

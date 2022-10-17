@@ -7,7 +7,7 @@ dif $3,12
 mov $4,$3
 lpb $3,3
   mov $2,1
-  sub $4,11
+  mod $4,11
 lpe
 mov $1,$2
 add $1,1
