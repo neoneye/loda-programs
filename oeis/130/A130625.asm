@@ -1,13 +1,14 @@
 ; A130625: First differences of A130624.
+; Submitted by Simon Strandgaard
 ; 1,4,7,11,20,41,85,172,343,683,1364,2729,5461,10924,21847,43691,87380,174761,349525,699052,1398103,2796203,5592404,11184809,22369621,44739244,89478487,178956971,357913940,715827881,1431655765,2863311532
 
-mov $1,1
-mov $3,4
-lpb $0
-  sub $0,1
-  add $2,$1
-  add $1,$3
-  sub $1,$2
-  mul $3,2
-lpe
-mov $0,$1
+mov $1,$0
+add $0,5
+seq $0,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
+add $0,1
+mov $2,2
+pow $2,$1
+add $0,$2
+mul $0,4
+sub $0,3
+div $0,3
