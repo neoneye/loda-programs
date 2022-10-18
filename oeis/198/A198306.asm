@@ -1,14 +1,15 @@
 ; A198306: Moore lower bound on the order of a (6,g)-cage.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 7,12,37,62,187,312,937,1562,4687,7812,23437,39062,117187,195312,585937,976562,2929687,4882812,14648437,24414062,73242187,122070312,366210937,610351562,1831054687,3051757812,9155273437,15258789062
 
-add $0,1
 mov $1,$0
+add $1,2
+div $1,2
+mov $2,5
+pow $2,$1
 mod $0,2
-lpb $1
-  sub $1,2
-  mul $0,5
-  add $0,2
-lpe
-mul $0,5
+mul $0,4
 add $0,2
+mul $0,$2
+div $0,4
+add $0,$2
