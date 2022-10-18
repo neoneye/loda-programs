@@ -4,13 +4,10 @@
 
 add $0,1
 mov $1,$0
-add $0,14
-pow $1,4
-div $1,4
-add $1,1
-lpb $1
-  gcd $0,4
-  sub $0,1
-  sub $1,$0
-lpe
-mov $0,$1
+pow $0,4
+div $0,4
+add $0,1
+add $1,14
+gcd $1,4
+sub $1,1
+sub $0,$1

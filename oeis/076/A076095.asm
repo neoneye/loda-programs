@@ -11,11 +11,10 @@ add $2,$0
 div $2,2
 mov $3,$0
 trn $3,$2
-mov $4,1
-add $4,$1
+mov $4,$1
 add $4,2
 sub $3,$4
-add $3,9
+add $3,8
 div $3,2
 mov $1,4
 sub $1,$3

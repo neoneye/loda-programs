@@ -1,16 +1,14 @@
 ; A007572: Generalization of the golden ratio (expansion of (5-13x)/((1+x)(1-4x))).
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 5,2,26,86,362,1430,5738,22934,91754,366998,1468010,5872022,23488106,93952406,375809642,1503238550,6012954218,24051816854,96207267434,384829069718,1539316278890,6157265115542,24629060462186
 
-mov $1,10
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $2,$3
-  mul $2,4
-  mul $3,3
-  add $3,$1
-  mov $1,$2
-lpe
-mov $0,$1
-div $0,2
+mov $1,2
+pow $1,$0
+pow $1,2
+div $1,5
+mul $1,7
+mod $0,2
+mul $0,-2
+add $0,3
+seq $0,1612 ; a(n) = a(n-1) + a(n-2) - 1 for n > 1, a(0)=3, a(1)=2.
+add $0,$1
