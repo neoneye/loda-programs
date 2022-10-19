@@ -7,8 +7,6 @@ div $2,9
 mul $2,90
 mov $1,1
 add $1,$2
-lpb $0
-  add $1,$0
-  div $0,10
-lpe
-mov $0,$1
+add $1,$0
+div $0,10
+add $0,$1
