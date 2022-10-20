@@ -5,9 +5,12 @@
 add $0,2
 lpb $0
   mov $2,$0
-  seq $2,76314 ; a(n) = floor(n/10) + (n mod 10).
+  mod $2,10
+  mov $3,$0
+  div $3,10
+  add $3,$2
   sub $0,1
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1
 sub $0,1

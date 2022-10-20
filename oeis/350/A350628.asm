@@ -7,9 +7,13 @@ mul $0,2
 lpb $0
   sub $0,2
   sub $0,$3
+  mov $5,-2
   mov $2,$0
-  max $2,0
-  seq $2,46666 ; a(n) = n - (smallest prime dividing n).
+  lpb $2
+    dif $2,$5
+    sub $2,1
+    sub $5,1
+  lpe
   cmp $2,0
   mul $4,3
   sub $4,1

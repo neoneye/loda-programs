@@ -9,8 +9,7 @@ lpb $1
   mov $0,$3
   sub $0,$1
   mov $2,$0
-  seq $0,39649 ; a(n) = phi(n)+1.
-  sub $0,1
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $0,$2
   add $4,$0
 lpe

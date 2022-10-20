@@ -1,11 +1,24 @@
 ; A133670: Partial sums of A000016.
-; Submitted by LCB001
+; Submitted by Simon Strandgaard
 ; 1,2,3,5,7,11,17,27,43,73,125,219,391,707,1293,2389,4437,8293,15579,29377,55593,105533,200859,383221,732757,1403849,2694405,5179939,9973431,19229827,37125563,71762397,138871261,269021849,521666985
 
 lpb $0
   sub $0,1
-  seq $2,63776 ; Number of subsets of {1,2,...,n} which sum to 0 modulo n.
-  add $1,$2
+  add $2,1
+  mov $3,0
+  mov $4,$2
+  lpb $2
+    mul $5,$2
+    mov $6,$4
+    gcd $6,$5
+    sub $2,1
+    mov $5,2
+    pow $5,$6
+    add $3,$5
+  lpe
+  mul $4,$6
+  div $3,$4
+  add $1,$3
   mov $2,$0
 lpe
 mov $0,$1

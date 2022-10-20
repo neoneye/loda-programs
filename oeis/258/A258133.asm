@@ -7,10 +7,12 @@ mov $3,2
 lpb $3
   sub $3,1
   mov $0,$5
-  add $0,1
   add $0,$3
-  trn $0,1
-  seq $0,11960 ; Number of ferrites M_2Y_n that repeat after 6n+10 layers.
+  mov $6,$0
+  div $6,3
+  add $0,1
+  div $0,2
+  sub $0,$6
   mov $4,$0
   mul $4,$0
   add $4,$0

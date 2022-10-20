@@ -6,7 +6,7 @@ add $0,1
 mov $1,$0
 pow $1,5
 lpb $1
-  seq $2,87123 ; a(n) = Fibonacci(n+1) - (-1)^n*Fibonacci(n).
+  add $2,1
   sub $0,$2
   mul $0,31
   sub $1,$0

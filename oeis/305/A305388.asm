@@ -1,11 +1,15 @@
 ; A305388: Indicator function of A140103.
-; Submitted by pututu
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0
 
 mov $2,$0
 lpb $2
   mov $3,$1
-  seq $3,92782 ; The ternary tribonacci word; also a Rauzy fractal sequence: fixed point of the morphism 1 -> 12, 2 -> 13, 3 -> 1, starting from a(1) = 1.
+  seq $3,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
+  lpb $3
+    mod $3,4
+  lpe
+  add $3,1
   cmp $3,2
   sub $0,1
   sub $0,$3
