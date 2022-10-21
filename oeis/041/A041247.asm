@@ -7,9 +7,10 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
-  add $3,1
+  add $3,189011
   mov $1,$3
-  seq $1,10194 ; Continued fraction for sqrt(135).
+  dif $1,2
+  seq $1,10195 ; Continued fraction for sqrt(136).
   mul $1,$2
   add $1,$4
 lpe

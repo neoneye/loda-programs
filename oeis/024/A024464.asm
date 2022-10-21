@@ -12,7 +12,10 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
+  mul $0,55
+  div $0,34
+  mul $0,2
+  add $0,1
   add $3,$0
   add $4,$3
   sub $4,1

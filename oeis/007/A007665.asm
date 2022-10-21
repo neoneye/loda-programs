@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,124171 ; Sequence obtained by reading the triangles shown below by rows.
+  seq $2,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+  add $2,1
   sub $0,$2
   add $1,$2
   mul $1,2

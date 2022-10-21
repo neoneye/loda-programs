@@ -9,10 +9,11 @@ lpb $3
   mov $0,$4
   add $0,$3
   bin $0,2
-  seq $0,277547 ; a(n) = n/9^m mod 9, where 9^m is the greatest power of 9 that divides n.
+  lpb $0
+    mod $0,9
+  lpe
   mov $2,$3
   mul $2,$0
-  mul $4,$3
   add $1,$2
   mov $5,$0
 lpe

@@ -11,7 +11,9 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
+  add $0,1
+  seq $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
+  div $0,2
   add $3,$0
   add $4,$3
   mov $3,$5

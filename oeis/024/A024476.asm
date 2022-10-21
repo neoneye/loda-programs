@@ -1,5 +1,5 @@
-; A024476: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = [ (n+1)/2 ], s = (Lucas numbers), t = A023533.
-; Submitted by mmonnin
+; A024476: a(n) = s(1)*t(n) + s(2)*t(n-1) + ... + s(k)*t(n+1-k), where k = floor((n+1)/2), s = (Lucas numbers), t = A023533.
+; Submitted by Simon Strandgaard
 ; 1,0,0,1,3,4,7,0,0,1,3,4,7,11,18,29,47,76,123,1,3,4,7,11,18,29,47,76,123,199,322,521,843,1364,2208,3574,5782,9356,15138,18,29,47,76,123,199,322,521,843,1364,2207,3571,5778,9349,15127,24476,39604,64082,103686,167768
 
 mov $1,$0
@@ -13,7 +13,8 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,23533 ; a(n) = 1 if n is of the form m(m+1)(m+2)/6, and 0 otherwise.
+  seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+  cmp $0,0
   add $3,$0
   add $4,$3
 lpe

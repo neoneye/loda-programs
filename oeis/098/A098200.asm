@@ -6,7 +6,8 @@ mov $1,2
 lpb $0
   add $1,1
   mov $2,$0
-  seq $2,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
+  seq $2,62570 ; a(n) = phi(2*n).
+  dif $2,2
   sub $0,$2
 lpe
 mov $0,$1

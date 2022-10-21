@@ -4,10 +4,17 @@
 
 lpb $0
   add $3,2
+  mov $5,0
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,272188 ; Triangle with 2*n+1 terms per row, read by rows: the first row is 1 (by decree), following rows contain 0 to 2n+1 but omitting 2n.
+  lpb $2
+    add $5,1
+    sub $2,$5
+    add $5,1
+  lpe
+  sub $5,$2
+  cmp $5,0
+  add $2,$5
   mov $4,$2
   cmp $4,2
   sub $0,1

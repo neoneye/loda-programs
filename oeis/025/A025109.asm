@@ -1,5 +1,5 @@
 ; A025109: a(n) = s(1)*t(n) + s(2)*t(n-1) + ... + s(k)*t(n-k+1), where k = floor(n/2), s = (F(2), F(3), F(4), ...), t = A023533.
-; Submitted by Skillz
+; Submitted by Simon Strandgaard
 ; 0,0,1,2,3,0,0,0,1,2,3,5,8,13,21,34,55,0,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1598,2586,4184,6770,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946,17711,28658,46370,75028,121398,196426,317824,514250
 
 mov $1,$0
@@ -12,7 +12,8 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,23533 ; a(n) = 1 if n is of the form m(m+1)(m+2)/6, and 0 otherwise.
+  seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+  cmp $0,0
   add $3,$0
   add $4,$3
   mov $3,$5

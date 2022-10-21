@@ -7,8 +7,17 @@ sub $0,2
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,8766 ; Expansion of (1+x^5)/((1-x)*(1-x^2)*(1-x^3)*(1-x^4)).
+  add $2,3
+  mov $4,$2
+  pow $4,2
+  mul $4,3
+  sub $2,2
+  pow $2,3
+  div $2,3
+  mul $2,2
+  add $2,$4
+  add $2,24
+  div $2,48
   add $1,$2
   mov $3,10
 lpe

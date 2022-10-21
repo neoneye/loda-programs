@@ -1,5 +1,5 @@
 ; A161891: Primes p with the property that every non-solvable transitive permutation group of degree p is alternating or symmetric.
-; Submitted by Leviathan
+; Submitted by Simon Strandgaard
 ; 5,19,29,37,41,43,47,53,59,61,67,71,79,83,89,97
 
 mov $1,$0
@@ -13,4 +13,4 @@ lpb $0
   add $0,$1
   sub $0,1
 lpe
-seq $0,140475 ; 1 along with primes greater than 3.
+seq $0,65091 ; Odd primes.

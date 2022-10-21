@@ -7,8 +7,11 @@ add $0,6
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,4
-  seq $2,308066 ; Number of triangles with perimeter n whose side lengths are even.
+  dif $2,-2
+  add $2,1
+  div $2,2
+  max $2,0
+  seq $2,5044 ; Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
   mov $3,7
   add $1,$2
 lpe

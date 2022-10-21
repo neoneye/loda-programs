@@ -7,7 +7,12 @@ lpb $0
   mov $2,$0
   trn $2,1
   mul $2,3
-  seq $2,325488 ; Dimensions of space of harmonic polynomials of each degree invariant under the full icosahedral group.
+  mov $3,-1
+  pow $3,$2
+  add $3,1
+  seq $2,307897 ; Dimensions of space of harmonic polynomials of each degree invariant under the icosahedral rotation group.
+  mul $2,$3
+  div $2,2
   trn $0,11
   add $1,$2
 lpe

@@ -5,9 +5,17 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,33183 ; a(n) = number of pairs (p,q) such that 4*p + 9*q = n.
+  sub $2,1
+  mul $2,2
+  mov $4,$0
+  lpb $4
+    trn $4,4
+    add $3,1
+    trn $3,$2
+    sub $2,8
+    trn $2,1
+  lpe
   trn $0,7
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

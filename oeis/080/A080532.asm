@@ -1,9 +1,11 @@
 ; A080532: Number of nucleons in longest known radioactive decay series ending with Lead 209, reversed.
+; Submitted by Simon Strandgaard
 ; 209,209,209,213,217,221,225,225,229,233,233,237,237,241,245,249,253,257,261,265,269,273
 
 lpb $0
   mov $2,$0
-  seq $2,70469 ; a(n) = n^2 mod 47.
+  pow $2,2
+  mod $2,47
   mov $3,$2
   bin $3,7
   min $3,1

@@ -11,5 +11,8 @@ mov $0,$1
 bin $0,$2
 sub $1,$2
 add $1,1
-seq $1,5773 ; Number of directed animals of size n (or directed n-ominoes in standard position).
+seq $1,25565 ; a(n) = T(n,n-1), where T is array defined in A025564.
+sub $1,2
+div $1,2
+add $1,1
 mul $0,$1

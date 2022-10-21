@@ -1,5 +1,5 @@
 ; A055044: Numbers of the form 2^(2i+1)*(8*j+1).
-; Submitted by Vester
+; Submitted by Simon Strandgaard
 ; 2,8,18,32,34,50,66,72,82,98,114,128,130,136,146,162,178,194,200,210,226,242,258,264,274,288,290,306,322,328,338,354,370,386,392,402,418,434,450,456,466,482,498,512,514,520,530,544,546,562,578
 
 mov $2,$0
@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,72400 ; (Factors of 4 removed from n) modulo 8.
+  add $3,1
+  lpb $3
+    dif $3,4
+  lpe
+  lpb $3
+    mod $3,8
+  lpe
   cmp $3,1
   sub $0,$3
   add $1,1

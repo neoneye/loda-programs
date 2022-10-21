@@ -1,5 +1,5 @@
 ; A029854: a(n) = gcd(prime(n)+prime(n+1), prime(n+1)+prime(n+2)).
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,4,6,6,6,6,6,2,4,4,2,6,6,10,4,8,8,2,6,8,2,2,2,6,6,6,6,6,6,6,2,4,12,12,4,4,10,10,4,8,12,12,6,6,2,2,2,6,6,2,8,12,4,4,4,4,4,2,6,12,24,6,6,6,18,4,4,12,6,2,2,2,4,2,2,2,6,6,18,12,12,12,8,2,2,2,6,6,6,2,2,6,6,6,2,2,2,4,8,16
 
 add $0,1
@@ -10,7 +10,8 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $2,40 ; The prime numbers.
+  seq $2,13634 ; a(n) = nextprime(n) + n.
   bin $0,$3
   gcd $1,$2
 lpe
