@@ -5,8 +5,11 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,165190 ; G.f.: 1/((1-x^4)*(1-x^5)).
+  add $2,3
+  mov $3,$2
+  div $3,5
+  div $2,4
+  sub $2,$3
   trn $0,10
   add $1,$2
 lpe

@@ -1,5 +1,5 @@
 ; A143733: Aliquot sequence starting at 62.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 62,34,20,22,14,10,8,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 seq $1,199310 ; 7*5^n+1.
@@ -11,6 +11,10 @@ sub $0,18
 lpb $2
   sub $2,1
   trn $0,1
-  seq $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
+  mov $3,$0
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,$3
+  mul $0,2
+  sub $0,1
   div $0,2
 lpe

@@ -14,9 +14,15 @@ lpb $5
   add $7,3
   pow $7,2
   lpb $7
-    add $6,2
     mov $8,$6
-    seq $8,60236 ; If n mod 3 = 0 then a(n) = a(n/3), otherwise a(n) = n mod 3.
+    add $6,2
+    add $8,3
+    lpb $8
+      lpb $8
+        dif $8,3
+      lpe
+      mod $8,3
+    lpe
     cmp $8,1
     sub $4,$8
     mov $9,$4

@@ -6,8 +6,15 @@ lpb $0
   sub $0,1
   mod $0,13
   mov $2,$0
-  max $2,0
-  seq $2,91335 ; Number of prime divisors of n-th term of Sylvester's sequence A000058.
+  sub $2,2
+  div $2,2
+  mov $3,17
+  sub $3,$0
+  bin $3,$2
+  trn $3,2
+  mov $2,$3
+  add $2,1
+  mod $2,10
   add $1,$2
 lpe
 mov $0,$1

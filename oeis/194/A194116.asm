@@ -1,9 +1,12 @@
 ; A194116: a(n) = Sum_{j=1..n} floor(j*sqrt(13)); n-th partial sum of Beatty sequence for sqrt(13).
+; Submitted by Simon Strandgaard
 ; 3,10,20,34,52,73,98,126,158,194,233,276,322,372,426,483,544,608,676,748,823,902,984,1070,1160,1253,1350,1450,1554,1662,1773,1888,2006,2128,2254,2383,2516,2653,2793,2937,3084,3235,3390,3548,3710,3875
 
 lpb $0
   mov $2,$0
-  seq $2,171983 ; Beatty sequence for sqrt(13).
+  add $2,1
+  seq $2,198270 ; Ceiling(n*sqrt(13)).
+  sub $2,1
   sub $0,1
   add $1,$2
 lpe

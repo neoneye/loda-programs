@@ -13,4 +13,10 @@ lpb $0
   add $0,$1
   sub $0,1
 lpe
-seq $0,65091 ; Odd primes.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+lpe
+seq $2,40 ; The prime numbers.
+mov $0,$2

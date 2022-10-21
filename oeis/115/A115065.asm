@@ -8,7 +8,15 @@ lpb $0
   sub $0,$3
   mov $2,$0
   div $2,2
-  seq $2,22777 ; Place where n-th 1 occurs in A007337.
+  mov $4,-1
+  sub $4,$2
+  mul $4,2
+  sub $2,$4
+  pow $2,2
+  pow $4,2
+  add $2,$4
+  div $2,15
+  add $2,1
   add $1,$2
   div $3,2
 lpe

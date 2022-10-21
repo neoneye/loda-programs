@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,48093 ; Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= sqrt(n).
+  add $0,1
+  mov $5,$0
+  seq $5,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  bin $0,$5
   mov $1,$2
   mov $2,$0
   mul $4,$3

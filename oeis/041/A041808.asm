@@ -9,7 +9,8 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40404 ; Continued fraction for sqrt(425).
+  seq $1,10143 ; Continued fraction for sqrt(58).
+  seq $1,24639 ; n written in fractional base 7/2.
   mul $1,$2
   add $1,$4
   add $3,1

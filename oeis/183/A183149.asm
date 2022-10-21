@@ -1,5 +1,5 @@
 ; A183149: Number of toothpicks added at n-th stage to the toothpick structure of A183148.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Simon Strandgaard
 ; 0,1,3,9,9,21,9,21,21,57,9,21,21,57,21,57,57,165,9,21,21,57,21,57,57,165,21,57,57,165,57,165,165,489,9,21,21,57,21,57,57,165,21,57,57,165,57,165,165,489,21,57,57,165,57,165
 
 mov $5,2
@@ -10,9 +10,24 @@ lpb $5
   pow $3,$5
   mov $4,$0
   max $4,0
-  seq $4,183148 ; Toothpick sequence on the semi-infinite square grid with toothpicks connected by their endpoints.
+  mov $6,$4
+  mov $8,2
+  lpb $8
+    mov $8,0
+    trn $4,1
+    mov $7,$4
+    seq $4,147562 ; Number of "ON" cells at n-th stage in the "Ulam-Warburton" two-dimensional cellular automaton.
+    div $4,2
+    add $4,$7
+  lpe
+  add $4,1
+  min $6,1
+  add $6,2
+  mul $6,$4
   mov $2,$5
-  mul $2,$4
+  mul $2,$6
+  mov $4,$6
+  mul $0,$5
   add $1,$2
 lpe
 mul $3,$4

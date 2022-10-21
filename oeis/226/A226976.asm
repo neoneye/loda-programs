@@ -1,5 +1,5 @@
 ; A226976: Fibonacci(n)^3 + Fibonacci(n+2)^3
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,9,28,133,539,2322,9773,41501,175636,744273,3152359,13354306,56568617,239630337,1015087436,4299984173,18215017507,77160064914,326855259829,1384581132277,5865179743556,24845300179929,105246380344463,445830821750018,1888569667033489
 
 mov $1,$0
@@ -10,7 +10,8 @@ lpb $3
   add $0,$3
   add $0,$3
   max $0,0
-  seq $0,56570 ; Third power of Fibonacci numbers (A000045).
+  seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  pow $0,3
   add $2,$0
 lpe
 mov $0,$2

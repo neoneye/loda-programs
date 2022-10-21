@@ -1,5 +1,5 @@
 ; A049730: a(n)=T(n,n+2), array T as in A049723.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by Simon Strandgaard
 ; 9,22,39,60,92,129,169,222,271,335,400,476,561,638,738,831,939,1052,1157,1297,1422,1562,1699,1840,2008,2165,2337,2510,2682,2879,3064,3276,3477,3693,3906,4115,4359,4596,4844,5085,5337
 
 mov $3,1
@@ -11,7 +11,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
+  seq $2,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  add $2,1
   mul $2,2
   add $1,$2
   sub $1,1

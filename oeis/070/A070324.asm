@@ -1,10 +1,12 @@
 ; A070324: Max( sigma(k) : k=1,2,3,...,n ).
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,3,4,7,7,12,12,15,15,18,18,28,28,28,28,31,31,39,39,42,42,42,42,60,60,60,60,60,60,72,72,72,72,72,72,91,91,91,91,91,91,96,96,96,96,96,96,124,124,124,124,124,124,124,124,124,124,124,124,168,168,168,168,168,168
 
 lpb $0
   mov $2,$0
-  seq $2,173455 ; Row sums of triangle A027751.
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $2,1
+  sub $2,$0
   sub $0,1
   max $1,$2
   add $1,1

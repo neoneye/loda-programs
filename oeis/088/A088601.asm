@@ -7,7 +7,9 @@ lpb $0
   add $1,1
   mov $2,$0
   add $2,1
-  seq $2,261424 ; Difference between n and the largest palindrome <= n.
+  mov $3,$2
+  seq $3,261423 ; Largest palindrome <= n.
+  sub $2,$3
   mov $0,$2
   sub $0,1
 lpe

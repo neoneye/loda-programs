@@ -1,4 +1,5 @@
 ; A071823: Number of numbers x <= n with largest prime factor of the form 4k+3.
+; Submitted by Simon Strandgaard
 ; 0,0,1,1,1,2,3,3,4,4,5,6,6,7,7,7,7,8,9,9,10,11,12,13,13,13,14,15,15,15,16,16,17,17,18,19,19,20,20,20,20,21,22,23,23,24,25,26,27,27,27,27,27,28,29,30,31,31,32,32,32,33,34,34,34,35,36,36,37,38,39,40,40,40,40,41
 
 mov $6,$0
@@ -7,7 +8,8 @@ lpb $4
   sub $4,1
   mov $0,$6
   sub $0,$4
-  seq $0,299766 ; Greatest odd noncomposite divisor of n.
+  seq $0,111089 ; Largest prime factor of 2n.
+  dif $0,2
   bin $0,2
   sub $0,1
   mov $3,$0

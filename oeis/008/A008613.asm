@@ -7,7 +7,10 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  seq $2,307897 ; Dimensions of space of harmonic polynomials of each degree invariant under the icosahedral rotation group.
+  mov $3,$2
+  sub $3,1
+  seq $2,106006 ; [n/2] + [n/3] + [n/5].
+  sub $2,$3
   add $1,$2
 lpe
 mov $0,$1

@@ -7,7 +7,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,101264 ; a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
+  mul $2,2
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,$2
 lpe
 mov $0,$1

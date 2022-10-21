@@ -15,7 +15,12 @@ lpb $18
   mov $2,2
   lpb $2,2
     mul $2,20
-    seq $3,292639 ; Rank of (3+r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
+    mov $19,$3
+    add $19,1
+    mul $19,3
+    seq $19,284621 ; Positions of 0 in A284620.
+    mov $3,$19
+    div $3,2
     mod $3,3
     add $4,1
     gcd $2,$3
@@ -24,5 +29,5 @@ lpb $18
   mov $0,$4
   add $0,2
   add $17,$0
-  mov $0,$17
 lpe
+mov $0,$17

@@ -5,7 +5,9 @@
 add $0,1
 mov $2,$0
 div $0,2
-seq $0,284393 ; Positions of 1 in A284391; complement of A284392.
+mov $4,$0
+seq $0,171947 ; P-positions for game of UpMark.
+sub $0,$4
 mul $0,-1
 sub $2,$0
 sub $2,1

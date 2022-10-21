@@ -1,16 +1,32 @@
 ; A122114: Primes of the form 2n^2 + 26n + 1.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 29,61,97,137,181,229,281,337,397,461,601,677,757,929,1021,1117,1217,1321,1429,1657,1777,1901,2029,2161,2297,2437,2729,3037,3361,3529,3701,3877,4057,4241,4621,4817,5641,5857,6301,6529,6761,6997,7237,7481,8237
 
 mov $4,24
 add $0,1
-mov $3,$0
+mov $3,3
 pow $3,$0
 lpb $3
+  mov $6,0
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,1
+  lpb $1
+    gcd $6,2
+    mov $7,$1
+    div $7,3
+    lpb $7
+      mov $5,$1
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    add $1,1
+    div $1,$6
+    pow $1,2
+    mov $6,1
+  lpe
   add $4,4
-  sub $0,$1
+  sub $0,$6
   add $2,$4
   sub $3,$0
 lpe

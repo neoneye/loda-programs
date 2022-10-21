@@ -16,7 +16,11 @@ lpb $6
     mov $0,$2
     add $0,$4
     trn $0,1
-    seq $0,125107 ; Subtract compositions (A011782) from Catalan numbers (A000108).
+    mov $7,2
+    pow $7,$0
+    seq $0,262543 ; Number of rooted asymmetrical polyenoids of type U_n* having n edges.
+    sub $0,$7
+    div $0,2
     mov $3,$4
     mul $3,$0
     add $1,$3

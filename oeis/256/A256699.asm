@@ -1,18 +1,24 @@
 ; A256699: Numbers with negative triangular trace.
-; Submitted by Skillz
+; Submitted by Simon Strandgaard
 ; 2,5,7,9,11,12,14,17,18,20,22,24,25,27,30,32,33,35,37,39,41,42,44,47,49,51,52,54,56,58,60,62,63,65,68,70,72,74,75,77,81,83,85,87,88,90,92,95,97,99,101,102,104,107,110,112,114,116,117,119,121,123,126,128,130,132,133,135,137,138,140,143,145,147,149,150,152,155,156,158,161,163,165,167,168,170,174,175,177,180,182,184,186,187,189,191,194,195,197,200
 
-mov $1,1
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,0
   mov $3,$1
-  seq $3,182321 ; Number of iterations of A025581(n) required to reach 0.
-  sub $3,1
-  mod $3,2
+  lpb $3
+    seq $3,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
+    sub $3,1
+    add $5,1
+  lpe
+  mov $3,$5
+  add $3,1
+  gcd $3,2
   sub $0,$3
-  add $1,1
+  add $0,1
+  add $1,$4
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -20,3 +26,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+add $0,1
