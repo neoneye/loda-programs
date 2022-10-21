@@ -1,5 +1,5 @@
 ; A276309: Integer part of the ratio of alternate consecutive prime gaps.
-; Submitted by Vato
+; Submitted by Simon Strandgaard
 ; 2,2,1,1,1,1,3,0,1,2,0,1,3,1,0,1,2,0,1,2,1,2,0,0,1,1,1,7,1,0,0,1,1,0,3,0,1,1,0,1,1,0,1,3,6,0,0,1,3,0,1,3,0,1,0,1,2,0,2,7,0,0,1,7,1,0,0,0,3,2,1,0,0,1,2,0,1,2,0,1,1,0,2,1,2,0,0,1,6,2,0,1,1,0,3,0
 
 mov $4,$0
@@ -13,6 +13,7 @@ lpb $3
   mov $2,$3
   mul $2,$0
   add $1,$2
+  mul $4,$3
   mov $5,$0
 lpe
 div $1,$5

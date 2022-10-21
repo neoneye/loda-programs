@@ -4,10 +4,16 @@
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
-  trn $2,1
-  seq $2,25797 ; Expansion of 1/((1-x^2)(1-x^3)(1-x^8)).
+  lpb $2
+    mov $4,$2
+    add $4,1
+    seq $4,8615 ; a(n) = floor(n/2) - floor(n/3).
+    trn $2,8
+    add $3,$4
+  lpe
   trn $0,9
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

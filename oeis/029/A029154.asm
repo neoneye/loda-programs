@@ -8,8 +8,7 @@ lpb $0
   add $2,1
   seq $2,8615 ; a(n) = floor(n/2) - floor(n/3).
   bin $2,2
-  sub $0,3
-  trn $0,8
+  trn $0,11
   add $1,$2
 lpe
 mov $0,$1

@@ -1,13 +1,15 @@
 ; A225857: Numbers of form 2^i*3^j*(4k+1), i, j, k >= 0.
-; Submitted by Dataman
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,8,9,10,12,13,15,16,17,18,20,24,25,26,27,29,30,32,34,36,37,39,40,41,45,48,49,50,51,52,53,54,58,60,61,64,65,68,72,73,74,75,77,78,80,81,82,85,87,89,90,96,97,98,100,101,102,104,106,108,109,111
 
 mov $2,$0
 pow $2,2
 add $2,12
 lpb $2
-  mov $3,$1
-  seq $3,254048 ; a(n) = A126760(A007494(n)).
+  mov $5,$1
+  seq $5,126759 ; a(0) = 1; a(2n) = a(n); a(3n) = a(n); otherwise write n = 6i+j, where j = 1 or 5 and set a(n) = 2i+2 if j = 1, otherwise a(n) = 2i+3.
+  mov $3,$5
+  sub $3,1
   div $3,10
   add $3,1
   gcd $3,2

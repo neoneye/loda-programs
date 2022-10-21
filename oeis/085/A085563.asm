@@ -6,7 +6,12 @@ add $0,1
 lpb $0
   mov $2,$0
   mod $2,10
-  seq $2,331044 ; a(n) is the greatest prime number of the form floor(n/10^k) for some k >= 0, or 0 if no such prime number exists.
+  lpb $2
+    mov $3,$2
+    seq $3,55671 ; Number of prime Hurwitz quaternions of norm n.
+    add $2,$3
+    div $2,10
+  lpe
   div $0,10
   add $1,$2
 lpe

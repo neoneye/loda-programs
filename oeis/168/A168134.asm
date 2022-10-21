@@ -1,5 +1,5 @@
 ; A168134: Numbers not of the form 7*k+11*m (with nonnegative k, m).
-; Submitted by Skillz
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,8,9,10,12,13,15,16,17,19,20,23,24,26,27,30,31,34,37,38,41,45,48,52,59
 
 mov $2,$0
@@ -11,7 +11,6 @@ lpb $2
   seq $3,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
   sub $3,1
   add $3,$4
-  cmp $3,1
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -8,8 +8,8 @@ lpb $0
   mov $1,1
 lpe
 lpb $0
-  seq $0,127252 ; Sequence composed of 1 and -1 with the -1's occurring at odious indexed positions given by A091855.
-  add $0,1
+  seq $0,127245 ; Row sums of a signed Thue-Morse related triangle.
+  mul $0,2
   sub $1,$0
 lpe
 mov $0,$1

@@ -6,8 +6,13 @@ mov $2,$0
 pow $2,2
 add $2,6
 lpb $2
+  mov $5,$1
+  seq $5,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  add $5,945
   mov $3,$1
-  seq $3,81946 ; a(n) = Sum_{i=1..n} floor(r*floor(i/r)), where r=sqrt(2).
+  add $3,$5
+  div $3,2
+  sub $3,2
   mod $3,3
   div $3,2
   sub $0,$3

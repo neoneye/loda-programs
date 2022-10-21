@@ -11,7 +11,6 @@ lpb $3
   seq $0,138380 ; First differences of A138377.
   add $1,$2
   mov $2,$0
-  pow $4,$3
 lpe
 sub $1,$2
 mov $0,$1

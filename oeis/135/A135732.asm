@@ -8,5 +8,7 @@ cmp $2,$0
 add $0,$2
 sub $0,$1
 seq $1,40 ; The prime numbers.
-seq $1,13632 ; Difference between n and the next prime greater than n.
+mov $3,$1
+seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
+sub $1,$3
 add $0,$1

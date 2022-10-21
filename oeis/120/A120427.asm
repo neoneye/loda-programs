@@ -5,10 +5,29 @@
 mov $1,-1
 mov $2,$0
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-  div $3,2
+  mov $4,1
+  mov $5,2
+  add $1,2
+  add $3,3
+  lpb $3
+    mov $6,$3
+    lpb $6
+      mov $7,$3
+      mod $7,$5
+      mul $7,3
+      add $5,1
+      sub $6,$7
+    lpe
+    lpb $3
+      dif $3,$5
+    lpe
+    mul $4,2
+  lpe
+  min $3,3
+  add $3,1
+  mul $3,$4
+  div $3,4
   sub $0,$3
   mov $2,$0
 lpe

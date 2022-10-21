@@ -5,8 +5,18 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25804 ; Expansion of 1/((1-x^2)(1-x^4)(1-x^9)).
+  sub $2,1
+  mov $3,$2
+  div $3,2
+  gcd $2,2
+  pow $2,3
+  add $2,6
+  div $2,2
+  add $2,$3
+  sub $2,1
+  pow $2,2
+  add $2,8
+  div $2,36
   trn $0,8
   add $1,$2
 lpe

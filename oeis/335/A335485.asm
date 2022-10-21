@@ -1,7 +1,8 @@
 ; A335485: Numbers k such that the k-th composition in standard order (A066099) is not weakly decreasing.
-; Submitted by ChelseaOilman
+; Submitted by Simon Strandgaard
 ; 6,12,13,14,20,22,24,25,26,27,28,29,30,38,40,41,44,45,46,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,70,72,76,77,78,80,81,82,83,84,86,88,89,90,91,92,93,94,96,97,98,99,100,101,102,103,104,105,106
 
+mov $1,1
 mov $2,$0
 add $0,1
 add $2,3

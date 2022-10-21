@@ -4,9 +4,10 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
-  trn $2,1
-  seq $2,8795 ; Molien series for 3-dimensional representation of dihedral group D_6 of order 6.
+  mov $2,-2
+  bin $2,$0
+  div $2,2
+  bin $2,2
   trn $0,6
   add $1,$2
 lpe
