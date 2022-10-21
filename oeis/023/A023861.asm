@@ -8,13 +8,12 @@ mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  add $4,$3
   mov $0,$1
   sub $0,$2
   add $0,1
   seq $0,211 ; a(n) = a(n-1) + a(n-2) - 2, a(0) = 4, a(1) = 3.
   sub $0,2
   add $3,$0
+  add $4,$3
 lpe
-add $4,$3
 mov $0,$4

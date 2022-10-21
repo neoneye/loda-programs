@@ -9,10 +9,13 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,238410 ; a(n) = floor((3(n-1)^2 + 1)/2).
+  pow $0,2
+  mul $0,3
+  add $0,1
+  div $0,2
   add $3,$0
-  add $4,2
   add $4,$3
+  add $4,2
 lpe
 mov $0,$4
 div $0,2

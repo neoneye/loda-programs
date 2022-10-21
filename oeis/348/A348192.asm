@@ -5,9 +5,10 @@
 mov $1,1
 lpb $0
   add $1,1
+  mov $3,$0
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mov $2,$0
-  trn $2,1
-  seq $2,66750 ; Greatest common divisor of n and its digit sum.
+  gcd $2,$3
   sub $0,$2
 lpe
 mov $0,$1

@@ -5,7 +5,10 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,299287 ; Coordination sequence for "tcd" 3D uniform tiling.
+  pow $2,2
+  mul $2,31
+  add $2,11
+  div $2,4
   sub $0,1
   add $1,$2
 lpe

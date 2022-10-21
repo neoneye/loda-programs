@@ -5,10 +5,12 @@
 mov $2,$0
 mov $1,1
 lpb $1
-  sub $1,1
+  div $1,2
   mov $0,$2
   trn $0,1
-  seq $0,14664 ; Order of 2 modulo the n-th prime.
+  seq $0,5097 ; (Odd primes - 1)/2.
+  mul $0,2
+  seq $0,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
 lpe
 dif $0,2
 min $2,1

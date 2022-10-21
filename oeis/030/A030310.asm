@@ -1,12 +1,28 @@
 ; A030310: Position of n-th 1 in A030308.
-; Submitted by Joe
+; Submitted by Simon Strandgaard
 ; 1,3,4,5,8,9,11,13,14,15,16,17,21,22,25,27,29,30,31,33,36,37,38,40,41,43,44,45,46,47,48,49,54,55,59,61,64,65,66,69,72,74,75,77,79,81,82,84,85,86,87,89,93,94,95,98,99,101,103,104,105
 
 mov $2,$0
 add $2,45
 lpb $2
   mov $3,$1
-  seq $3,30308 ; Triangle T(n, k): Write n in base 2, reverse order of digits, to get the n-th row.
+  mov $6,0
+  mov $7,$1
+  mov $8,$1
+  lpb $8
+    lpb $7
+      add $6,2
+      mov $8,2
+      mov $3,$6
+      lpb $7
+        div $5,$3
+        cmp $5,0
+        sub $7,$5
+        div $3,2
+      lpe
+    lpe
+  lpe
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

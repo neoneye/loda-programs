@@ -1,5 +1,5 @@
 ; A003251: Complement of A003250.
-; Submitted by SystemViper
+; Submitted by Simon Strandgaard
 ; 1,2,3,5,6,7,8,9,10,12,13,14,16,17,18,19,20,21,23,24,25,27,28,30,31,32,34,35,36,37,38,39,41,42,43,45,46,47,48,49,50,52,53,54,55,56,57,59,60,61,63,64,65,66,67,68,70,71,72,74,75,77,78,79,81,82,83
 
 mov $2,$0
@@ -8,7 +8,15 @@ pow $2,3
 lpb $2
   sub $2,17
   mov $3,$1
-  seq $3,120868 ; a(n) is the number k for which there exists a unique pair (j,k) of positive integers such that (j + k + 1)^2 - 4*k = 5*n^2.
+  add $3,1
+  mov $5,$3
+  mul $3,3
+  pow $5,2
+  lpb $5
+    add $5,1
+    sub $5,$3
+    sub $3,2
+  lpe
   mod $3,5
   cmp $3,0
   gcd $3,4

@@ -1,4 +1,5 @@
 ; A081305: Number of numbers m <= n with at least one prime factor greater than 2*spf(m), where spf(m) is the smallest prime factor of m (A020639).
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,2,2,3,4,5,5,5,5,6,6,7,7,8,8,8,9,10,10,10,10,11,12,13,13,14,14,15,15,16,16,16,16,17,18,19,19,19,20,21,22,23,23,24,24,25,26,26,27,28,28,29,30,31,31,31,31,32,32,33,33,34,34,35,35,36,36,37,38,39,40,41,41,42,42,43,44,45,46,46,46,47,48,49
 
 mov $7,$0
@@ -11,8 +12,11 @@ lpb $6
   sub $0,$6
   mov $5,$0
   lpb $0
+    mov $8,$0
+    seq $8,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
     mov $2,$0
-    seq $2,130065 ; a(n) = (n / GreatestPrimeFactor(n)) * SmallestPrimeFactor(n).
+    seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+    mul $2,$8
     add $3,$2
     mov $4,$2
     min $4,1

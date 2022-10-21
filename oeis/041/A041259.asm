@@ -8,8 +8,14 @@ lpb $0
   mov $4,$2
   mov $2,$1
   add $3,1
-  mov $1,$3
-  seq $1,10200 ; Continued fraction for sqrt(141).
+  min $1,1
+  add $1,3
+  mov $5,$3
+  gcd $5,$1
+  sub $5,1
+  add $1,$5
+  mul $1,$5
+  add $1,1
   mul $1,$2
   add $1,$4
 lpe

@@ -1,5 +1,5 @@
 ; A208773: Number of n-bead necklaces labeled with numbers 1..4 not allowing reversal, with no adjacent beads differing by more than 1.
-; Submitted by emoga
+; Submitted by Simon Strandgaard
 ; 4,7,10,18,30,65,128,293,658,1544,3622,8711,20924,50889,124150,304718,750334,1855429,4600696,11442853,28528618,71294416,178529670,447923761,1125756860,2833917147,7144466842,18036449390,45591671454,115381885423,292329164912,741411257693,1882219950046,4782783122992,12163730636250,30960475589355,78864882839084,201037498781053,512827535064810,1309034921388198,3343510142393854,8545008362035209,21850863616722280,55906160381369127,143111689531593630,366526239863254520,939161596952251398
 
 mov $1,$0
@@ -8,10 +8,33 @@ mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
+  mov $8,0
   mov $0,$1
   gcd $0,$2
-  seq $0,124697 ; Number of base 4 circular n-digit numbers with adjacent digits differing by 1 or less.
-  add $3,$0
+  lpb $0
+    mov $7,2
+    mov $9,-2
+    mov $10,-1
+    mov $5,$0
+    lpb $5
+      sub $5,1
+      add $8,$7
+      dif $10,-1
+      add $7,$8
+      add $7,$9
+      add $9,$10
+      sub $10,$9
+    lpe
+    mov $0,0
+    mov $4,$7
+    add $4,$7
+    sub $4,2
+    mov $6,$7
+    min $6,1
+  lpe
+  add $4,$6
+  add $4,1
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

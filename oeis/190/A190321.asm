@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,48760 ; Largest square <= n.
+  seq $2,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  pow $2,2
   mov $3,$2
   cmp $3,0
   add $2,$3

@@ -5,8 +5,9 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,8644 ; Molien series of 5 X 5 upper triangular matrices over GF( 2 ).
+  sub $2,1
+  div $2,2
+  seq $2,88932 ; G.f.: 1/((1-x)^2*(1-x^2)*(1-x^4)*(1-x^8)).
   trn $0,31
   add $1,$2
 lpe

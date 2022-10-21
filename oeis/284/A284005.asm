@@ -4,8 +4,13 @@
 
 mov $1,1
 lpb $0
+  mov $3,$0
   mov $2,$0
-  seq $2,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+  lpb $2
+    div $3,2
+    sub $2,$3
+  lpe
+  add $2,1
   div $0,2
   mul $1,$2
 lpe

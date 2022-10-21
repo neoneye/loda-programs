@@ -11,7 +11,9 @@ lpb $2
   mov $7,0
   add $1,1
   mov $3,$1
-  seq $3,348030 ; a(n) = A003968(n) - n, where A003968 is multiplicative with a(p^e) = p*(p+1)^(e-1).
+  seq $3,3968 ; Möbius transform of A003959.
+  sub $3,1
+  sub $3,$1
   mov $5,$3
   gcd $5,$6
   lpb $5

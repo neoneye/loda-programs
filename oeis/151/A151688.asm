@@ -1,5 +1,5 @@
 ; A151688: G.f.: Product_{n>=0} (1 + x^(2^n-1) + 2*x^(2^n)).
-; Submitted by Orange Kid
+; Submitted by Simon Strandgaard
 ; 2,4,6,6,8,14,16,10,8,14,18,20,30,44,40,18,8,14,18,20,30,44,42,28,30,46,56,70,104,128,96,34,8,14,18,20,30,44,42,28,30,46,56,70,104,128,98,44,30,46,56,70,104,130,112,86,106,148,182,244,336,352,224,66,8,14,18,20,30,44
 
 mov $2,$0
@@ -8,7 +8,8 @@ lpb $3
   bin $3,2
   mov $0,$2
   add $0,$3
-  seq $0,151549 ; a(n) = (A151548(n)-1)/2.
+  seq $0,151548 ; When A160552 is regarded as a triangle with rows of lengths 1, 1, 2, 4, 8, 16, ..., this is what the rows converge to.
+  div $0,2
   add $1,$0
 lpe
 mov $0,$1

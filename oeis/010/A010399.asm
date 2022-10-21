@@ -1,12 +1,13 @@
 ; A010399: Squares mod 38.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 0,1,4,5,6,7,9,11,16,17,19,20,23,24,25,26,28,30,35,36
 
 mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,70481 ; a(n) = n^3 mod 19.
+  pow $3,3
+  mod $3,19
   gcd $3,2
   sub $0,$3
   add $0,1

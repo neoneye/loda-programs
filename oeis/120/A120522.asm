@@ -8,8 +8,21 @@ lpb $2
   sub $2,1
   mov $0,$3
   add $0,$2
-  max $0,0
-  seq $0,6949 ; A well-behaved cousin of the Hofstadter sequence: a(n) = a(n - 1 - a(n-1)) + a(n - 2 - a(n-2)) for n > 2 with a(0) = a(1) = a(2) = 1.
+  mov $4,$0
+  lpb $0
+    lpb $4
+      add $0,1
+      lpb $0
+        add $0,1
+        div $0,2
+        sub $4,$0
+      lpe
+      sub $0,1
+    lpe
+    sub $0,2
+  lpe
+  div $0,2
+  add $0,1
   add $1,$0
 lpe
 min $3,1

@@ -4,11 +4,16 @@
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
-  trn $2,1
-  seq $2,25821 ; Expansion of 1/((1-x^2)(1-x^8)(1-x^9)).
-  sub $0,1
-  trn $0,11
-  add $1,$2
+  lpb $2
+    mov $4,$2
+    trn $4,1
+    seq $4,8618 ; Expansion of 1/((1-x^2)(1-x^9)).
+    trn $2,8
+    add $3,$4
+  lpe
+  trn $0,12
+  add $1,$3
 lpe
 mov $0,$1

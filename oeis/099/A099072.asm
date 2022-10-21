@@ -8,13 +8,19 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,278484 ; Main diagonal of A278482.
+  mov $5,1
+  add $5,$0
+  lpb $5
+    mul $0,$5
+    trn $5,2
+    add $5,1
+    div $0,$5
+  lpe
   mov $2,$3
   mul $2,$0
   mul $4,$3
   add $1,$2
-  mov $5,$0
 lpe
-sub $1,$5
+sub $1,$0
 mov $0,$1
 div $0,2

@@ -4,10 +4,16 @@
 
 mov $1,$0
 add $1,1
+mov $4,1
 mov $0,$1
-seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-mov $2,$0
+lpb $0
+  add $4,2
+  trn $0,$4
+lpe
+div $4,2
+mov $2,$4
 sub $2,1
+mov $0,$4
 bin $0,2
 sub $1,3
 mov $3,$1

@@ -5,7 +5,9 @@
 add $0,2
 lpb $0
   mov $2,$0
-  seq $2,96 ; a(n) = n*(n+3)/2.
+  add $2,2
+  bin $2,2
+  sub $2,1
   trn $0,2
   add $1,$2
 lpe

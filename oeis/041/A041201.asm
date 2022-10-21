@@ -9,7 +9,10 @@ lpb $0
   mov $2,$1
   add $3,1
   mov $1,$3
-  seq $1,10176 ; Continued fraction for sqrt(111).
+  seq $1,10225 ; Continued fraction for sqrt(183).
+  mul $1,4
+  max $1,7
+  div $1,5
   mul $1,$2
   add $1,$4
 lpe

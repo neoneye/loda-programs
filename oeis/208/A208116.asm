@@ -9,7 +9,10 @@ lpb $0
   mov $2,$1
   mov $1,$3
   div $1,2
-  seq $1,207597 ; Number of n X 6 0..1 arrays avoiding 0 0 0 and 0 1 0 horizontally and 0 0 1 and 1 0 1 vertically.
+  add $1,3
+  bin $1,4
+  mul $1,600
+  add $1,25
   add $3,1
 lpe
 mul $2,$1

@@ -5,7 +5,8 @@
 mov $1,$0
 lpb $0
   trn $0,1
-  seq $0,38718 ; Number of permutations P of {1,2,...,n} such that P(1)=1 and |P^-1(i+1)-P^-1(i)| equals 1 or 2 for i=1,2,...,n-1.
+  seq $0,3410 ; Expansion of (1+x)(1+x^2)/(1-x-x^3).
+  sub $0,1
   mov $1,$0
   mov $0,2
 lpe

@@ -1,11 +1,13 @@
 ; A000480: a(n) = floor(cos(n)).
-; Submitted by [SG-FC] hl
+; Submitted by Simon Strandgaard
 ; 1,0,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1,0,0,0,-1,-1,-1
 
 mov $1,1
 lpb $0
-  trn $0,1
-  seq $0,176360 ; a(n) = quadrant of unit circle corresponding to n radians.
+  mul $0,7
+  div $0,11
+  mod $0,4
+  add $0,1
   sub $1,1
   pow $1,$0
   div $0,2

@@ -5,8 +5,10 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25764 ; Expansion of 1/((1-x)(1-x^2)(1-x^7)).
+  add $2,4
+  pow $2,2
+  add $2,8
+  div $2,28
   trn $0,6
   add $1,$2
 lpe

@@ -1,5 +1,5 @@
 ; A118826: Denominators of the convergents of the 2-adic continued fraction of zero given by A118824.
-; Submitted by Conan
+; Submitted by Simon Strandgaard
 ; 1,1,-1,-1,1,0,1,4,-7,-3,-1,-5,9,4,1,12,-23,-11,-1,-13,25,12,1,16,-31,-15,-1,-17,33,16,1,32,-63,-31,-1,-33,65,32,1,36,-71,-35,-1,-37,73,36,1,44,-87,-43,-1,-45,89,44,1,48,-95,-47,-1,-49,97,48,1,80,-159,-79,-1,-81,161,80,1,84,-167,-83,-1,-85,169,84,1,92
 
 mov $1,1
@@ -8,8 +8,18 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  mov $5,-4
   mov $1,$3
-  seq $1,118824 ; 2-adic continued fraction of zero, where a(n) = -2 if n is odd, A006519(n/2) otherwise.
+  add $1,1
+  lpb $1
+    mov $5,1
+    lpb $1
+      dif $1,2
+      mul $5,2
+    lpe
+  lpe
+  mov $1,$5
+  div $1,2
   mul $1,$2
   add $1,$4
   add $3,1

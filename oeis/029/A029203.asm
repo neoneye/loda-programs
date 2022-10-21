@@ -4,10 +4,16 @@
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
-  trn $2,1
-  seq $2,25807 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^7)).
+  lpb $2
+    mov $4,$2
+    trn $4,1
+    seq $4,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
+    trn $2,7
+    add $3,$4
+  lpe
   trn $0,12
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

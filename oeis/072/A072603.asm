@@ -1,17 +1,18 @@
 ; A072603: Numbers which in base 2 have more 0's than 1's.
-; Submitted by Contact
+; Submitted by Simon Strandgaard
 ; 4,8,16,17,18,20,24,32,33,34,36,40,48,64,65,66,67,68,69,70,72,73,74,76,80,81,82,84,88,96,97,98,100,104,112,128,129,130,131,132,133,134,136,137,138,140,144,145,146,148,152,160,161,162,164,168,176,192,193,194,196,200,208,224,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,272,273,274,275,276,277,278,280,281,282,284,288,289,290,291,292,293,294,296,297,298
 
 mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,337319 ; a(n) = Sum_{i = 1..floor(log_2(n))+1} g(frac(n/2^i)), where g(t) = [0 if t = 0, -1 if 0 < t < 1/2, 1 if t >= 1/2], and where frac(x) denotes the fractional part.
+  add $3,3
+  seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   max $3,0
   cmp $3,0
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
