@@ -1,7 +1,8 @@
 ; A219115: Numbers whose squares have at least one 1 and one 2 in ternary representation.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 4,5,7,8,10,12,13,14,15,17,20,21,22,23,24,25,26,28,30,31,32,34,35,36,37,38,39,40,41,42,43,44,45,46,47,49,50,51,52,53,56,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,82,84
 
+mov $1,2
 mov $2,$0
 add $2,2
 pow $2,2
