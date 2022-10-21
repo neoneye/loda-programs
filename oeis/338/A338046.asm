@@ -7,8 +7,8 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  add $2,1
-  seq $2,292 ; Tetrahedral (or triangular pyramidal) numbers: a(n) = C(n+2,3) = n*(n+1)*(n+2)/6.
+  add $2,3
+  bin $2,3
   mov $3,1
   add $3,$0
   dif $3,2

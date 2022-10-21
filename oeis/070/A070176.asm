@@ -7,7 +7,9 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,161 ; Number of partitions of n into 2 squares.
+  seq $3,925 ; Number of ordered ways of writing n as a sum of 2 squares of nonnegative integers.
+  add $3,1
+  div $3,2
   add $4,1
   add $1,1
   add $2,$3

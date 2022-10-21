@@ -6,7 +6,11 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,25857 ; Expansion of 1/((1-x^3)(1-x^10)(1-x^12)).
+  mov $3,$2
+  mod $3,2
+  add $2,$3
+  add $2,$3
+  seq $2,25881 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^12)).
   trn $0,7
   add $1,$2
 lpe

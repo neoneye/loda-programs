@@ -5,7 +5,9 @@
 mov $2,$0
 lpb $0
   mul $0,0
-  seq $2,182768 ; Beatty sequence for 1+e^(-2).
+  add $2,1
+  mul $2,42
+  div $2,37
   add $0,$2
   add $0,1
   dif $0,5

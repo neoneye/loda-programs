@@ -1,5 +1,5 @@
 ; A120532: First differences of successive generalized meta-Fibonacci numbers A120510.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 1,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,1,1,1
 
 mov $5,$0
@@ -8,8 +8,19 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  trn $0,1
-  seq $0,120510 ; Generalized meta-Fibonacci sequence a(n) with parameters s=3 and k=4.
+  sub $0,1
+  mov $6,$0
+  lpb $0
+    lpb $6
+      lpb $0
+        sub $6,3
+        sub $6,$0
+        div $0,4
+      lpe
+    lpe
+    sub $0,1
+  lpe
+  add $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2

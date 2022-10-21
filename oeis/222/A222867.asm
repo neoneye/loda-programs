@@ -1,15 +1,43 @@
 ; A222867: Number of n X 1 0..5 arrays with no element equal to another at a city block distance of exactly two, and new values 0..5 introduced in row major order.
-; Submitted by Fardringle
+; Submitted by Simon Strandgaard
 ; 1,2,3,7,20,67,254,1057,4700,21847,104474,508477,2501480,12386227,61570694,306778297,1530678260,7643776207,38190084914,190864134517,954061999040,4769534367787,23845345743134,119219752001137,596077833007820,2980326390336967,14901443640161354,74506653291402157,372531571779128600,1862652774962659747,9313248623215675574,46566197361688161577,232830849546075465380,1164153835944891912127,5820767944371224541794,29103836015802860103397,145519168960867397602160,727595811449922049070107
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,56272 ; Word structures of length n using a 5-ary alphabet.
-  add $1,$2
-  div $3,2
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $5,0
+  mov $7,0
+  mov $8,0
+  mov $9,0
+  mov $10,0
+  mov $0,$1
+  add $0,$3
+  sub $0,1
+  lpb $0
+    sub $0,1
+    sub $8,$5
+    add $10,$7
+    mov $11,$10
+    add $11,$9
+    mul $6,$11
+    mov $7,$6
+    mul $10,3
+    add $11,$8
+    mov $5,-1
+    sub $5,$11
+    mov $6,1
+    mul $8,2
+    mul $9,2
+    add $9,$11
+  lpe
+  mov $0,$8
+  div $0,2
+  add $0,1
+  mov $4,$3
+  mul $4,$0
+  add $2,$4
 lpe
-mov $0,$1
+min $1,1
+mul $0,$1
+add $0,$2
