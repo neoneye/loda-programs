@@ -6,11 +6,26 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $6,0
   mov $3,$1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  trn $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
+  sub $3,1
+  lpb $3
+    gcd $6,2
+    mov $7,$3
+    div $7,3
+    lpb $7
+      mov $5,$3
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    add $3,1
+    div $3,$6
+    pow $3,2
+    mov $6,1
+  lpe
+  sub $0,$6
   add $1,1
   mov $4,$0
   max $4,0
