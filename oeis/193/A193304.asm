@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
+  seq $3,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
+  seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   dif $3,5
   add $3,1
   dif $3,2

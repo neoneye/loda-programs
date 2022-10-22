@@ -7,7 +7,10 @@ add $2,1
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,277544 ; a(n) = n/6^m mod 6, where 6^m is the greatest power of 6 that divides n.
+  add $3,1
+  lpb $3
+    dif $3,6
+  lpe
   gcd $3,2
   add $1,$3
 lpe
