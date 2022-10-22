@@ -4,11 +4,8 @@
 
 add $0,1
 lpb $0
-  mov $3,$0
-  seq $3,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
-  add $3,$0
   mov $2,$0
-  add $2,$3
+  seq $2,214971 ; Integers k for which the base-phi representation of k includes 1.
   add $2,2
   div $2,5
   seq $2,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
