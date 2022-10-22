@@ -7,7 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   div $5,3
   mov $3,$1
   seq $3,46951 ; a(n) is the number of squares dividing n.
