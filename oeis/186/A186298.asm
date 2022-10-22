@@ -1,16 +1,17 @@
 ; A186298: A007520(n)-2.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,9,17,41,57,65,81,105,129,137,161,177,209,225,249,281,305,329,345,377,417,441,465,489,497,521,545,561,569,585,617,641,657,681,689,737,785,809,825,857,881,905,945,969,1017,1049,1089,1121,1161,1169,1185
 
-mov $2,2
-mov $3,$0
-pow $3,5
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,8
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
+mov $3,45
+mov $2,$0
+pow $2,4
+lpb $2
+  add $1,2
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,6
+  sub $2,$0
 lpe
-mov $0,$2
-sub $0,1
+mov $0,$1
+add $0,1
