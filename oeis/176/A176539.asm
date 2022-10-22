@@ -5,7 +5,7 @@
 mov $2,$0
 mov $1,2
 lpb $1
-  sub $1,1
+  mov $1,0
   mov $0,$2
   trn $0,1
   seq $0,186621 ; Semiprimes - 1.

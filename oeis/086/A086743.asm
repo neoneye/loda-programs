@@ -6,6 +6,7 @@ mov $2,2
 lpb $0
   sub $0,2
   mov $1,$2
+  div $1,3
   seq $1,39968 ; An example of a d-perfect sequence.
   cmp $1,0
   sub $0,$1

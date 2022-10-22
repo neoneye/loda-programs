@@ -8,7 +8,5 @@ lpb $1
   sub $1,1
   dif $1,13
   seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  add $0,57
-  mod $1,$0
-  add $0,12
+  add $0,69
 lpe

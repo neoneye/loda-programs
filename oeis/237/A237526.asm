@@ -4,11 +4,15 @@
 
 lpb $0
   add $3,1
+  mov $4,1
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  lpb $2
+    add $4,2
+    trn $2,$4
+  lpe
+  div $4,2
+  add $1,$4
   add $3,1
-  add $1,$2
 lpe
 mov $0,$1

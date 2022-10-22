@@ -5,20 +5,14 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $5,$1
-  seq $5,72436 ; Remove prime factors of form 4*k+3.
   mov $3,$1
-  add $3,1
-  div $3,$5
-  cmp $3,$4
-  add $3,$4
-  gcd $3,2
+  seq $3,5082 ; Sum of primes = 3 mod 4 dividing n.
+  cmp $3,0
   sub $0,$3
-  add $0,1
-  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $1,1
   mul $2,$4
   sub $2,1
 lpe
