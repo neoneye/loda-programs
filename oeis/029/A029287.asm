@@ -4,10 +4,18 @@
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
-  trn $2,1
-  seq $2,25837 ; Expansion of 1/((1-x^3)*(1-x^5)*(1-x^9)).
-  trn $0,11
-  add $1,$2
+  lpb $2
+    mov $4,$2
+    trn $4,1
+    mul $4,2
+    seq $4,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
+    trn $2,9
+    add $3,$4
+  lpe
+  sub $0,3
+  trn $0,8
+  add $1,$3
 lpe
 mov $0,$1

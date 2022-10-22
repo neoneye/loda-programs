@@ -1,20 +1,16 @@
 ; A354936: Row 6 of A354940: Numbers k for which A345992(k) = 6, divided by 6.
-; Submitted by Skivelitis2
+; Submitted by Simon Strandgaard
 ; 7,13,19,25,31,37,43,49,61,67,73,79,97,103,109,121,127,139,151,157,163,169,181,193,199,211,223,229,241,271,277,283,289,307,313,331,337,343,349,361,367,373,379,397,409,421,433,439,457,463,487,499,523,529,541,547,571,577,601,607,613,619,625,631,643,661
 
-mov $2,$0
-pow $2,4
-lpb $2
-  sub $2,1
-  add $1,3
-  mov $3,$1
-  mul $3,2
-  seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
-  sub $0,$3
-  sub $2,$0
+add $0,1
+mov $2,6
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
+  sub $0,$1
+  add $2,6
+  sub $3,$0
 lpe
-mov $0,$1
-mul $0,3
-div $0,9
-mul $0,6
-add $0,7
+add $0,$2
