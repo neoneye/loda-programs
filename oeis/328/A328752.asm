@@ -5,7 +5,9 @@
 mov $3,2
 mov $4,$0
 lpb $0
-  seq $2,49705 ; a(n)=3-k(n), where k=A000002=Kolakoski sequence; also the sequence of runlengths of a is k.
+  seq $2,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
+  mod $2,2
+  add $2,1
   add $3,$2
   mul $3,2
   add $0,1

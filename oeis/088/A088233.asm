@@ -1,5 +1,5 @@
 ; A088233: First differences of roots of consecutive prime powers; a(1)=1.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,1,-1,3,2,-5,1,8,2,-11,15,2,4,-18,-2,26,2,-29,35,4,2,4,-40,46,6,2,-59,65,4,2,6,-76,80,6,8,4,2,4,2,4,-102,-6,122,-125,129,6,2,10,2,6,6,4,-154,160,6,2,10,2,4,2,12,12,4,2,4,6,2,-238,248,-249,255,6,6,2,6,4
 
 mov $3,2
@@ -9,6 +9,7 @@ lpb $3
   mov $7,2
   lpb $7
     sub $7,1
+    trn $7,$1
     sub $0,1
     mov $2,$0
     max $2,0

@@ -5,8 +5,10 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25769 ; Expansion of 1/((1-x)(1-x^3)(1-x^8)).
+  add $2,5
+  pow $2,2
+  add $2,20
+  div $2,48
   trn $0,10
   add $1,$2
 lpe

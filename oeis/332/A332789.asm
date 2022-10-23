@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,7069 ; First column of spectral array W(sqrt 2).
+  add $0,1
+  seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   mov $1,$2
   mov $2,$0
   mul $4,$3

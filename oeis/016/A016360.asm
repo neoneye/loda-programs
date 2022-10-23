@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,14026 ; Inverse of 17th cyclotomic polynomial.
-  sub $0,2
-  trn $0,11
+  trn $0,13
   add $1,$2
 lpe
 mov $0,$1

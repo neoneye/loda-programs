@@ -9,7 +9,9 @@ mov $3,2
 lpb $3
   div $3,2
   mov $0,$4
-  seq $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
+  add $0,1
+  seq $0,325459 ; Sum of numbers of nontrivial divisors (greater than 1 and less than k) of k for k = 1..n.
+  add $0,$4
   mov $2,$3
   mul $2,$0
   div $4,2
