@@ -16,6 +16,7 @@ lpb $3
     max $2,0
     seq $2,88190 ; Largest quadratic residue modulo prime(n).
     mov $4,$2
+    trn $7,$1
     mov $6,$7
     mul $6,$2
     add $1,$6
