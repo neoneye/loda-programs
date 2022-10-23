@@ -1,5 +1,5 @@
 ; A261188: Integers such that no subsequence of decimal representation is divisible by 3.
-; Submitted by Sir Stooper
+; Submitted by Simon Strandgaard
 ; 1,2,4,5,7,8,11,14,17,22,25,28,41,44,47,52,55,58,71,74,77,82,85,88
 
 mov $2,$0
@@ -13,7 +13,7 @@ lpb $2
   gcd $3,2
   sub $0,$3
   add $0,1
-  add $1,$4
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0

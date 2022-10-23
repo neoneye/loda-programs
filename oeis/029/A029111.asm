@@ -7,9 +7,11 @@ lpb $0
   mov $2,$0
   sub $2,1
   div $2,2
-  seq $2,25767 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^4)).
-  sub $0,3
-  trn $0,6
+  add $2,4
+  pow $2,2
+  add $2,9
+  div $2,24
+  trn $0,9
   add $1,$2
 lpe
 mov $0,$1
