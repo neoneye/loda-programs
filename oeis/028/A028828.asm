@@ -1,4 +1,5 @@
 ; A028828: Distinct orders of elements of Conway simple group Co_3.
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,7,8,9,10,11,12,14,15,18,20,21,22,23,24,30
 
 mov $5,$0
@@ -20,7 +21,7 @@ lpb $3
       add $2,1
       trn $0,$2
       seq $0,167878 ; A167877(n) + n.
-      mov $2,0
+      mov $2,1
     lpe
     mov $4,$0
     mov $6,$7

@@ -1,7 +1,8 @@
 ; A216848: Odd numbers for which 2 is not a primitive root.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Simon Strandgaard
 ; 7,15,17,21,23,31,33,35,39,41,43,45,47,49,51,55,57,63,65,69,71,73,75,77,79,85,87,89,91,93,95,97,99,103,105,109,111,113,115,117,119,123,127,129,133,135,137,141,143,145,147,151,153,155,157,159,161,165,167
 
+mov $1,2
 mov $2,$0
 add $2,3
 pow $2,2

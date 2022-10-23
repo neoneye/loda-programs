@@ -1,11 +1,11 @@
 ; A156265: a(n)=3*n-A078649(n)
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,1,1,2,2,3,2,1,2,2,1,1,2,1,0,0,1,1,2,1,1,2,2,1,0,1,1,2,1,1,2,2,3,2,1,1,2,2,1,2,2,3,2,2,3,3,4,3,2,3,3,2,2,3,3,4,3,2,2,3,2,1,2,2,1,0,1,1,2,1,1,2,2,1,2,2,3,3,2,1,2,2,3,2,2,3,3,2,1,2,2,1,1,2,1,0,0,1,1
 
 mov $1,1
 mov $2,$0
 mul $2,2
-add $2,107
+add $2,1
 lpb $2
   mov $3,$1
   seq $3,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
@@ -19,4 +19,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$2
-sub $0,106
