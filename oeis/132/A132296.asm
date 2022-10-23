@@ -11,12 +11,11 @@ lpb $3
   add $0,1
   mov $1,1
   lpb $1
-    lpb $0
-      mov $1,$0
-      seq $1,48763 ; Smallest cube >= n.
-      sub $1,$0
-      mov $0,0
-    lpe
+    mov $1,$0
+    trn $1,1
+    seq $1,333884 ; Difference between smallest cube > n and n.
+    sub $1,1
+    mov $0,0
   lpe
   add $4,$0
 lpe
