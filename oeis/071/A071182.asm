@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,92028 ; a(n) is the smallest m > 1 such that m divides n^m-1.
+  mov $5,$0
+  seq $5,46666 ; a(n) = n - (smallest prime dividing n).
+  sub $0,$5
   mov $1,$2
   mov $2,$0
   mul $4,$3

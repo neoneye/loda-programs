@@ -1,8 +1,8 @@
 ; A075823: Numbers that are not the last two digits (leading zeros omitted) of any perfect power.
-; Submitted by Landjunge
+; Submitted by Simon Strandgaard
 ; 2,5,6,10,14,15,18,20,22,26,30,34,35,38,40,42,45,46,50,54,55,58,60,62,65,66,70,74,78,80,82,85,86,90,94,95,98
 
-mov $1,1
+mov $1,2
 mov $2,$0
 add $2,2
 pow $2,2
