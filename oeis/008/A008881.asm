@@ -12,7 +12,8 @@ lpb $1
   add $0,2
   div $0,3
   mov $2,$0
-  seq $2,7590 ; a(n) = floor(n^2/2).
+  pow $2,2
+  div $2,2
   mul $4,$2
 lpe
 mov $0,$4
