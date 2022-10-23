@@ -9,8 +9,7 @@ lpb $2
   lpb $3
     mod $3,4
   lpe
-  add $3,1
-  cmp $3,2
+  cmp $3,1
   sub $0,1
   sub $0,$3
   mov $4,$0
