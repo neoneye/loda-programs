@@ -1,5 +1,5 @@
 ; A055046: Numbers of the form 4^i*(8*j+3).
-; Submitted by [TA]crashtech
+; Submitted by Simon Strandgaard
 ; 3,11,12,19,27,35,43,44,48,51,59,67,75,76,83,91,99,107,108,115,123,131,139,140,147,155,163,171,172,176,179,187,192,195,203,204,211,219,227,235,236,243,251,259,267,268,275,283,291,299,300,304
 
 mov $2,$0
@@ -7,7 +7,13 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,72400 ; (Factors of 4 removed from n) modulo 8.
+  add $3,1
+  lpb $3
+    dif $3,4
+  lpe
+  lpb $3
+    mod $3,8
+  lpe
   cmp $3,3
   sub $0,$3
   add $1,1

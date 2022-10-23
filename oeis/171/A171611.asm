@@ -22,10 +22,9 @@ lpb $0
     add $5,1
     add $6,$7
   lpe
-  mov $3,$6
   mov $9,10
   add $9,$2
-  mov $$9,$3
+  mov $$9,$6
   add $2,1
 lpe
 mov $0,$6
