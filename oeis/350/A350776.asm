@@ -10,8 +10,9 @@ lpb $3
   seq $0,5836 ; Numbers whose base 3 representation contains no 2.
   mov $2,$3
   mul $2,$0
-  mul $4,3
   add $1,$2
+  mul $4,3
+  mul $4,$3
   mov $5,$0
 lpe
 sub $1,$5

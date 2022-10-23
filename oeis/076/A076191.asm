@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,73093 ; Number of prime power divisors of n.
+  mov $5,$0
+  min $5,1
+  seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  add $0,$5
   add $1,$2
   mov $2,$0
   mul $4,$3

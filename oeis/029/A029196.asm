@@ -7,7 +7,9 @@ lpb $0
   sub $0,6
   mov $2,$0
   max $2,0
-  seq $2,25810 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^10)) in powers of x.
+  seq $2,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
+  add $2,1
+  bin $2,2
   add $1,$2
 lpe
 mov $0,$1

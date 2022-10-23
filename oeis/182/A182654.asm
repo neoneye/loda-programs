@@ -12,4 +12,10 @@ lpb $0
   add $0,$1
   sub $0,2
 lpe
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+mov $2,$0
+mul $2,$0
+lpb $2
+  sub $2,$0
+  add $0,1
+  sub $2,$0
+lpe

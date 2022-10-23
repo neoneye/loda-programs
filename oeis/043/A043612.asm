@@ -1,8 +1,8 @@
 ; A043612: Numbers whose base-6 representation has exactly 4 runs.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 222,224,225,226,227,228,229,231,232,233,234,235,236,238,239,240,241,242,243,245,246,247,248,249,250,289,290,291,292,293,294,296,297,298,299,306,307,308,310,311,312,313,314,315,317
 
-mov $1,216
+mov $1,217
 mov $2,$0
 add $2,11
 pow $2,2
