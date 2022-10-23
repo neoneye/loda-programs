@@ -1,5 +1,5 @@
 ; A131989: Start with the symbol **|* and for each iteration replace * with **|*. This sequence is the number of *'s between each dash.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 2,3,1,2,3,3,1,2,1,2,3,1,2,3,3,1,2,3,3,1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2,3,1,2,3,3,1,2,3,3,1,2,1,2,3,1,2,3,3,1,2,3,3,1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2,3,1,2,3,3,1,2,3
 
 mov $3,2
@@ -22,6 +22,7 @@ lpb $3
   lpe
   min $5,1
   mul $5,$4
+  mov $0,1
   mov $4,$1
   sub $4,$5
 lpe

@@ -1,8 +1,8 @@
 ; A043613: Numbers whose base-6 representation has exactly 5 runs.
-; Submitted by damotbe
+; Submitted by Simon Strandgaard
 ; 1333,1334,1335,1336,1337,1344,1345,1347,1348,1349,1350,1351,1352,1354,1355,1356,1357,1358,1359,1361,1362,1363,1364,1365,1366,1369,1370,1371,1372,1373,1374,1376,1377,1378,1379,1386
 
-mov $1,1
+mov $1,2
 mov $2,$0
 add $2,7
 pow $2,2

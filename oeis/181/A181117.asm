@@ -1,10 +1,22 @@
 ; A181117: Triangle T(n,k) read by rows. T(n,k) = A046644(A126988).
-; Submitted by Penguin
+; Submitted by Simon Strandgaard
 ; 1,2,1,2,0,1,8,2,0,1,2,0,0,0,1,4,2,2,0,0,1,2,0,0,0,0,0,1,16,8,0,2,0,0,0,1,8,0,2,0,0,0,0,0,1,4,2,0,0,2,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,1,16,4,8,2,0,2,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,1,4,2,0,0,0,0,2,0,0
 
-seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+add $2,$0
+add $2,2
+add $0,1
+lpb $0
+  gcd $0,$2
+  mov $2,1
+lpe
+div $2,$0
+mov $0,$2
 mul $0,2
-sub $0,1
+sub $0,3
 lpb $0
   div $0,2
   mov $1,$0
