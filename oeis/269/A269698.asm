@@ -8,9 +8,19 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,269695 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
+  mov $5,1
+  mov $6,3
+  lpb $0
+    lpb $0
+      dif $0,2
+      mov $6,2
+    lpe
+    add $6,2
+    sub $0,1
+    mul $5,$6
+  lpe
   add $1,$2
-  mov $2,$0
+  mov $2,$5
   mul $4,$3
 lpe
 sub $1,$2
