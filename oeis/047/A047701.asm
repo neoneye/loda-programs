@@ -5,8 +5,8 @@
 mov $2,42
 lpb $2
   mov $3,$1
-  seq $3,47700 ; Numbers that are the sum of 5 positive squares.
-  sub $3,1
+  seq $3,344805 ; Numbers that are the sum of six second powers in one or more ways.
+  sub $3,2
   add $0,1
   add $1,1
   add $2,$3

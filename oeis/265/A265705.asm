@@ -11,13 +11,12 @@ mov $5,$0
 min $0,$2
 lpb $5
   mov $3,$0
-  add $3,1
   mod $3,2
   mov $6,$5
   mod $6,2
   div $0,2
-  add $3,$6
-  cmp $3,0
+  sub $3,$6
+  cmp $3,1
   cmp $3,0
   mul $3,$4
   add $1,$3

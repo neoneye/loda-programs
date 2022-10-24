@@ -9,7 +9,12 @@ lpb $3
   mov $0,$4
   trn $0,1
   add $0,$3
-  seq $0,6364 ; Numbers n with an even number of 1's in binary, ignoring last bit.
+  mov $5,$0
+  sub $0,1
+  gcd $0,2
+  div $5,2
+  seq $5,92246 ; Odd "odious" numbers (A000069).
+  add $0,$5
   add $1,$2
   mov $2,$0
 lpe
