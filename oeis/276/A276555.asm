@@ -4,13 +4,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  sub $2,1
-  seq $2,36234 ; Number of primes <= n, if 1 is counted as a prime.
-  sub $2,1
-  mov $3,$2
-  min $3,1
+  seq $2,61395 ; Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
   sub $0,$2
-  add $1,$3
+  add $1,2
 lpe
+div $1,2
 mov $0,$1

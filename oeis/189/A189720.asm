@@ -7,7 +7,8 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,189718 ; Fixed point of the morphism 0->011, 1->100.
+  seq $3,160384 ; Number of nonzero digits in the base-3 representation of n.
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

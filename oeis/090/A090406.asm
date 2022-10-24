@@ -10,7 +10,7 @@ lpb $4
   sub $4,1
   min $4,1
   mov $0,$2
-  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   div $2,2
   mul $2,2
   add $1,1

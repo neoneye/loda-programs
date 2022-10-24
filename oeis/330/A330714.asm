@@ -11,5 +11,6 @@ lpb $3
   pow $0,2
   add $1,$0
   mul $2,2
+  mul $2,$3
 lpe
 mov $0,$1

@@ -1,8 +1,8 @@
 ; A096788: Numbers n such that both n and n+1 are composite numbers that add up to a prime of the form 4k+3.
-; Submitted by [TA]crashtech
+; Submitted by Simon Strandgaard
 ; 9,15,21,33,35,39,51,63,65,69,75,81,95,99,105,111,119,125,135,141,153,155,165,183,189,209,215,219,221,231,243,245,249,261,273,285,299,303,309,315,321,323,329,341,345,363,369,371,375,393,405,411,413,429,441
 
-mov $1,10
+mov $1,14
 mov $2,$0
 add $2,2
 pow $2,2

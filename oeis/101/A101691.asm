@@ -5,10 +5,9 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  sub $4,1
   mov $0,$2
   add $0,$4
-  add $0,1
+  sub $4,1
   seq $2,261366 ; a(n) = number of even terms in row n of triangle A261363.
   trn $2,$4
   mov $3,$4
