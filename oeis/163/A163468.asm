@@ -6,12 +6,7 @@ seq $0,6005 ; The odd prime numbers together with 1.
 mul $0,2
 sub $0,2
 mov $1,$0
-mov $3,$0
-seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-mul $3,2
-mov $2,$0
-sub $2,$3
-mov $0,$2
+seq $0,72731 ; Difference of numbers of composite and prime numbers <= n.
 add $0,$1
 div $0,2
 add $0,3
