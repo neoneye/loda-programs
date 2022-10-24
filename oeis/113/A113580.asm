@@ -9,9 +9,7 @@ lpb $0
   seq $2,52424 ; Numbers with no single-digit factors (apart from 1 and n).
   mov $3,$2
   mul $3,2
-  add $3,1
   div $0,10
-  sub $1,1
   add $1,$3
 lpe
 div $1,2
