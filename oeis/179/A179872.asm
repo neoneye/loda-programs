@@ -1,8 +1,8 @@
 ; A179872: Numbers h such that antiharmonic mean B(h) of the numbers k < h such that gcd(k, h) = 1 is not integer.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Simon Strandgaard
 ; 3,4,6,7,8,9,12,13,14,15,16,18,19,20,21,24,25,26,27,28,30,31,32,33,35,36,37,38,39,40,42,43,44,45,48,49,50,51,52,54,56,57,60,61,62,63,64,65,66,67
 
-mov $1,1
+mov $1,2
 mov $2,$0
 add $2,4
 pow $2,2

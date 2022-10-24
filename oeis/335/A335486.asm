@@ -1,7 +1,8 @@
 ; A335486: Numbers k such that the k-th composition in standard order (A066099) is not weakly increasing.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard
 ; 5,9,11,13,17,18,19,21,22,23,25,27,29,33,34,35,37,38,39,41,43,44,45,46,47,49,50,51,53,54,55,57,59,61,65,66,67,68,69,70,71,73,74,75,76,77,78,79,81,82,83,85,86,87,88,89,90,91,92,93,94,95,97,98,99
 
+mov $1,1
 mov $2,$0
 add $2,14
 pow $2,2
@@ -10,7 +11,7 @@ lpb $2
   mov $3,$1
   seq $3,124766 ; Number of monotonically increasing runs for compositions in standard order.
   bin $3,2
-  add $5,$4
+  add $5,1
   add $1,1
   cmp $3,0
   cmp $3,0

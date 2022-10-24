@@ -7,7 +7,13 @@ lpb $2
   sub $2,1
   mov $3,$1
   trn $3,1
-  seq $3,336551 ; a(n) = A003557(n) - 1.
+  mov $5,$3
+  add $5,1
+  seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+  mov $4,$3
+  mov $3,$5
+  div $3,$4
+  sub $3,1
   add $1,$0
   add $1,1
   add $2,$3

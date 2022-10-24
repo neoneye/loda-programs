@@ -1,5 +1,5 @@
 ; A238329: Fibonacci numbers that have no prime factors of the form 4k+1.
-; Submitted by ChelseaOilman
+; Submitted by Simon Strandgaard
 ; 1,1,2,3,8,21,144,987,46368,2178309,4807526976
 
 lpb $0
@@ -12,6 +12,13 @@ lpb $0
   sub $0,1
   mul $0,$1
 lpe
+mov $4,1
 trn $0,1
 seq $0,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+lpb $0
+  sub $0,1
+  mov $3,$2
+  add $2,$4
+  mov $4,$3
+lpe
+mov $0,$2
