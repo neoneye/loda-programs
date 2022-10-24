@@ -6,7 +6,10 @@ add $0,7
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,8615 ; a(n) = floor(n/2) - floor(n/3).
+  mov $3,$2
+  div $3,3
+  div $2,2
+  sub $2,$3
   bin $2,2
   sub $0,7
   add $1,$2

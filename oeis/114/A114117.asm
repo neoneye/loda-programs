@@ -1,5 +1,5 @@
 ; A114117: Inverse of 1's counting matrix A114116.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Simon Strandgaard
 ; 1,0,1,-2,1,1,-1,-1,1,1,0,-2,0,1,1,0,-1,-1,0,1,1,0,0,-2,0,0,1,1,0,0,-1,-1,0,0,1,1,0,0,0,-2,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,0,-2,0,0,0,0,1,1,0,0,0,0,-1,-1,0,0,0,0,1,1,0,0,0,0,0,-2,0,0,0,0,0,1,1,0,0,0,0,0,-1,-1,0,0
 
 mov $3,$0
@@ -9,7 +9,8 @@ lpb $5
   add $0,$5
   sub $0,1
   mov $4,$0
-  seq $4,114114 ; An invertible partition matrix.
+  seq $4,30528 ; Triangle read by rows: a(n,k) = binomial(k,n-k).
+  min $4,2
   mov $2,$5
   mul $2,$4
   add $0,2

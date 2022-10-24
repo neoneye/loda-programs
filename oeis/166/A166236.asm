@@ -7,7 +7,7 @@ lpb $1
   trn $1,1
   seq $1,309355 ; Even numbers k such that k! is divisible by k*(k+1)/2.
   mov $3,$1
-  mov $1,0
+  mov $1,1
 lpe
 mov $1,$3
 add $1,1

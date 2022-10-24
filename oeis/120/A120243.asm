@@ -8,10 +8,8 @@ pow $2,2
 lpb $2
   mov $5,$1
   seq $5,188298 ; Positions of 0 in A188297; complement of A188299.
-  add $5,3
   mov $3,$5
   add $3,$4
-  sub $3,1
   gcd $3,2
   sub $0,$3
   add $0,1
