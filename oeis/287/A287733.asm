@@ -8,7 +8,13 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,69497 ; Triangular numbers of the form 6*k.
+  mov $5,$0
+  div $5,2
+  mod $5,2
+  mul $0,2
+  add $0,$5
+  seq $0,104777 ; Integer squares congruent to 1 mod 6.
+  div $0,8
   add $1,$2
   mov $2,$0
 lpe

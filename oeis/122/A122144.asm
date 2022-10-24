@@ -1,13 +1,16 @@
 ; A122144: Numbers n such that q(n)=M(n) where q(n) is the largest prime divisor of n and M(n) is the largest prime power divisor of n.
-; Submitted by planetclown
+; Submitted by Simon Strandgaard
 ; 2,3,5,6,7,10,11,13,14,15,17,19,20,21,22,23,26,28,29,30,31,33,34,35,37,38,39,41,42,43,44,46,47,51,52,53,55,57,58,59,60,61,62,65,66,67,68,69,70,71,73,74,76,77,78,79,82,83,84,85,86,87,88,89,91,92,93,94,95,97,99
 
 mov $2,$0
 add $2,2
-pow $2,2
+pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,88388 ; Exponent of the largest prime power factor of n, a(1)=0.
+  seq $3,34699 ; Largest prime power factor of n.
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -2,16 +2,17 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,3,3,5,5,7,7,9,10,13,14,17,18,21,23,27,29,33,35,40,43,49,52,58,61,68,72,80,84,92,97,106,112,122,128,138,145,156,164,176,184,197,206,220,230,245,255,271,282,299
 
-mov $3,3
-add $0,3
+add $0,1
 lpb $0
-  sub $0,$3
   mov $2,$0
+  sub $2,1
   div $2,2
-  max $2,0
-  mul $2,3
-  seq $2,8649 ; Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
+  mov $3,$2
+  bin $2,2
+  div $2,3
+  add $2,$3
+  add $2,1
+  trn $0,11
   add $1,$2
-  mov $3,11
 lpe
 mov $0,$1

@@ -1,20 +1,20 @@
 ; A190691: Positions of 2 in A190688.
-; Submitted by owensse
+; Submitted by Simon Strandgaard
 ; 1,5,9,12,13,16,20,23,24,27,31,35,38,39,42,46,50,53,54,57,61,65,68,72,76,79,80,83,87,91,94,95,98,102,106,109,110,113,117,121,124,128,132,135,136,139,143,147,150,151,154,158,162,165,166,169,173,176,177,180,184,188,191,192,195,199,203,206,207,210,214,218,221,222
 
-mov $2,$0
-add $0,1
 mov $1,4
-add $2,3
+mov $2,$0
 pow $2,2
+add $2,6
 lpb $2
   mov $3,$1
-  seq $3,83054 ; a(n) = floor(sqrt(3)*n) - 3*floor(n/sqrt(3)).
-  cmp $3,2
+  seq $3,180123 ; Second of three "least, sum, least" self-generating sequences.
+  mod $3,3
+  div $3,2
   sub $0,$3
   add $1,3
   mov $4,$0
-  max $4,1
+  max $4,0
   cmp $4,$0
   mul $2,$4
   sub $2,1
