@@ -6,7 +6,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+  lpb $3
+    mul $3,2
+    sub $3,2
+    dif $3,4
+  lpe
+  seq $3,72436 ; Remove prime factors of form 4*k+3.
   sub $3,1
   cmp $3,0
   sub $0,$3

@@ -8,7 +8,11 @@ lpb $0
   mov $1,$2
   mul $1,2
   add $1,1
-  seq $1,189640 ; Fixed point of the morphism 0->001, 1->101.
+  lpb $1
+    dif $1,3
+  lpe
+  mod $1,3
+  div $1,2
   cmp $1,0
   cmp $1,0
   sub $0,$1

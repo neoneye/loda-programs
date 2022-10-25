@@ -4,7 +4,6 @@
 
 mov $1,1
 mov $2,$0
-add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
@@ -19,6 +18,7 @@ lpb $2
   trn $3,3
   min $3,1
   sub $0,$3
+  max $1,2
   add $1,1
   mov $4,$0
   max $4,0

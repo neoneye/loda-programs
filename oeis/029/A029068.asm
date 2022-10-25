@@ -4,11 +4,17 @@
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
-  trn $2,1
-  mul $2,2
-  seq $2,25808 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^8)).
+  add $2,3
+  lpb $2
+    mov $4,$2
+    div $4,4
+    sub $2,3
+    trn $2,2
+    add $3,$4
+  lpe
   trn $0,11
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1
