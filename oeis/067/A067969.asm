@@ -10,7 +10,10 @@ lpb $3
   add $0,3
   add $0,$3
   div $0,2
-  seq $0,69038 ; Expansion of x*(1+x)^4/(1-x)^6.
+  mov $4,$0
+  seq $4,8413 ; Coordination sequence for 5-dimensional cubic lattice.
+  mul $0,$4
+  div $0,10
   add $1,$0
 lpe
 mov $0,$1

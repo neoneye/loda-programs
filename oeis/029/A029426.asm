@@ -2,21 +2,17 @@
 ; Submitted by Simon Strandgaard
 ; 1,0,0,0,0,0,1,0,1,0,1,1,1,0,1,0,2,1,2,1,2,1,3,1,3,1,3,2,4,2,5,2,5,3,5,3,6,3,7,4,8,5,8,5,9,5,10,6,11,7,12,8,13,8,14,9,15,10,16,11,18,12,19,13,20,14,22,15,23,16,25,18
 
-add $0,3
+add $0,1
 lpb $0
-  sub $0,3
-  sub $0,$3
-  mov $4,0
   mov $2,$0
-  add $2,1
-  lpb $2
-    mov $5,$2
-    trn $5,1
-    seq $5,325488 ; Dimensions of space of harmonic polynomials of each degree invariant under the full icosahedral group.
-    trn $2,11
-    add $4,$5
-  lpe
-  add $1,$4
-  mov $3,5
+  trn $2,1
+  mov $3,-1
+  pow $3,$2
+  add $3,1
+  seq $2,25877 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^8)).
+  mul $2,$3
+  div $2,2
+  trn $0,11
+  add $1,$2
 lpe
 mov $0,$1

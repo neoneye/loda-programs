@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,199015 ; G.f.: 1/(1-x) * Product_{n>=1} (1 - x^(2*n))^2/(1 - x^(2*n-1))^2.
+  seq $2,57656 ; Number of points (x,y) in square lattice with (x-1/2)^2+y^2 <= n.
+  dif $2,2
   sub $0,1
   add $1,$2
 lpe

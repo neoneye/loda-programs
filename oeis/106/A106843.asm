@@ -1,13 +1,18 @@
 ; A106843: Numbers of form 3^i * prime(j), i>=0, j>0.
-; Submitted by Bok
+; Submitted by Simon Strandgaard
 ; 2,3,5,6,7,9,11,13,15,17,18,19,21,23,27,29,31,33,37,39,41,43,45,47,51,53,54,57,59,61,63,67,69,71,73,79,81,83,87,89,93,97,99,101,103,107,109,111,113,117,123,127,129,131,135,137,139,141,149,151,153,157,159
 
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,35191 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 9.
+  add $1,1
+  add $3,2
+  lpb $3
+    dif $3,3
+  lpe
+  seq $3,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+  add $3,1
   dif $3,2
   cmp $3,1
   sub $0,$3
