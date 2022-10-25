@@ -1,11 +1,28 @@
 ; A025543: Least common multiple of the first n composite numbers.
-; Submitted by kotenok2000
+; Submitted by Simon Strandgaard
 ; 1,4,12,24,72,360,360,2520,2520,5040,5040,5040,5040,55440,55440,277200,3603600,10810800,10810800,10810800,21621600,21621600,367567200,367567200,367567200,6983776800,6983776800,6983776800,6983776800,6983776800,6983776800,160626866400,160626866400,1124388064800,1124388064800,1124388064800,1124388064800,1124388064800,1124388064800,1124388064800,1124388064800,32607253879200,32607253879200,1010824870255200,1010824870255200,2021649740510400,2021649740510400,2021649740510400,2021649740510400
 
 lpb $0
-  trn $0,1
-  seq $0,309383 ; a(n) is the smallest b > 1 such that when c is equal to any of the first n composites the congruence b^(c-1) == 1 (mod c) is satisfied, i.e., smallest b larger than 1 such that any member of the set of smallest n composites is a base-b Fermat pseudoprime.
-  sub $0,2
+  mov $2,1
+  mov $3,1
+  add $0,1
+  lpb $0
+    add $4,9
+    lpb $4
+      mov $4,1
+      add $3,1
+      mov $5,$2
+      gcd $5,$3
+      dif $2,$5
+      cmp $5,1
+      cmp $5,0
+      sub $4,$5
+    lpe
+    sub $0,1
+    mul $2,$3
+  lpe
+  mov $0,$2
+  sub $0,1
   mov $1,$0
   mov $0,0
 lpe

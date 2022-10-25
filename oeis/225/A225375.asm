@@ -1,8 +1,8 @@
 ; A225375: Odd numbers with exactly 2 distinct prime factors.
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by Simon Strandgaard
 ; 15,21,33,35,39,45,51,55,57,63,65,69,75,77,85,87,91,93,95,99,111,115,117,119,123,129,133,135,141,143,145,147,153,155,159,161,171,175,177,183,185,187,189,201,203,205,207,209,213,215,217,219,221,225,235,237
 
-mov $1,8
+mov $1,10
 mov $2,$0
 add $2,2
 pow $2,2
