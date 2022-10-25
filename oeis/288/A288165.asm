@@ -4,10 +4,10 @@
 
 add $0,5
 lpb $0
-  sub $0,9
   mov $2,$0
-  max $2,0
-  seq $2,25828 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^6)).
+  add $2,3
+  seq $2,24165 ; Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b > b - a.
+  sub $0,9
   add $1,$2
 lpe
 mov $0,$1

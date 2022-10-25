@@ -6,9 +6,11 @@ add $0,1
 lpb $0
   mov $2,$0
   pow $2,2
-  trn $2,1
-  seq $2,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
+  sub $2,1
+  mov $3,-2
+  bin $3,$2
+  mod $3,3
   trn $0,8
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

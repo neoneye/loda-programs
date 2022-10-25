@@ -6,12 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,292639 ; Rank of (3+r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
+  add $3,3
+  seq $3,189663 ; Partial sums of A189661.
+  add $3,2
   mod $3,3
-  cmp $3,0
+  div $3,2
   sub $0,$3
+  add $1,3
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -19,4 +21,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,2
+div $0,3
+add $0,1
