@@ -6,9 +6,8 @@ mov $1,$0
 add $1,2
 lpb $1
   sub $1,1
-  mov $0,0
+  mov $0,1
   sub $0,$1
-  add $0,1
   bin $0,2
   mul $0,4
   seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.

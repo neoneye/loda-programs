@@ -6,9 +6,9 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,25831 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^9)).
+  seq $2,8680 ; Expansion of 1/((1-x^3)*(1-x^4)*(1-x^5)).
   sub $0,2
-  trn $0,3
+  trn $0,7
   add $1,$2
 lpe
 mov $0,$1

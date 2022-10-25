@@ -17,10 +17,14 @@ lpb $6
     sub $0,1
     div $0,$2
     div $0,2
-    max $0,0
-    seq $0,188190 ; Positions of 0 in A188189; complement of A188191.
-    sub $0,1
     mul $3,$4
+    mov $8,$0
+    add $8,9
+    mul $8,25
+    div $8,56
+    add $0,$8
+    add $0,$8
+    sub $0,7
     mul $2,2
     add $2,$3
   lpe

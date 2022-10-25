@@ -9,9 +9,6 @@ lpb $3
   mov $0,$2
   add $0,$3
   seq $0,151548 ; When A160552 is regarded as a triangle with rows of lengths 1, 1, 2, 4, 8, 16, ..., this is what the rows converge to.
-  div $0,2
   add $1,$0
 lpe
 mov $0,$1
-mul $0,2
-add $0,2

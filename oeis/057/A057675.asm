@@ -4,7 +4,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,466 ; a(n) = 4*n^2 - 1.
+  pow $2,2
+  mul $2,4
+  sub $2,1
   add $3,$2
   sub $0,1
   add $1,$3
