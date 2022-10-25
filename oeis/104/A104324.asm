@@ -4,7 +4,12 @@
 
 lpb $0
   mov $2,$0
-  seq $2,82524 ; a(1)=1, a(2)=2, then use the rule when a(n) is the end of a run, n appears a(n) times.
+  sub $2,1
+  mov $3,$2
+  cmp $3,0
+  add $2,$3
+  max $2,0
+  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
   sub $0,$2
   add $1,2
 lpe

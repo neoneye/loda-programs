@@ -5,8 +5,11 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,8672 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)).
+  add $2,4
+  bin $2,2
+  sub $2,8
+  div $2,15
+  add $2,1
   trn $0,7
   add $1,$2
 lpe

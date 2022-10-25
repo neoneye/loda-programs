@@ -11,6 +11,6 @@ lpb $2
   sub $0,1
   mul $1,$2
   mov $2,$0
-  mov $0,5
+  mov $0,7
 lpe
 mov $0,$1
