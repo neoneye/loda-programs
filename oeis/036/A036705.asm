@@ -16,20 +16,8 @@ lpb $5
     mov $0,$1
     add $0,1
     mul $0,$1
-    mov $7,0
-    mov $9,3
-    mov $10,-1
-    add $0,3
-    lpb $0
-      sub $0,$9
-      mov $8,$0
-      max $8,0
-      seq $8,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-      add $10,2
-      add $7,$8
-      mov $9,$10
-    lpe
-    mov $0,$7
+    seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
+    div $0,4
     mov $1,7
   lpe
   mul $1,2
