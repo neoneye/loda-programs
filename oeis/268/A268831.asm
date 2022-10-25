@@ -4,7 +4,14 @@
 
 mov $1,$0
 trn $0,1
-seq $0,268827 ; Permutation of nonnegative integers: a(0) = 0, a(n) = A268717(1+A268825(n-1)).
+mov $2,$0
+trn $0,1
+seq $0,268825 ; Permutation of nonnegative integers: a(0) = 0, a(n) = A268717(1+A268823(n-1)).
+add $0,1
+seq $0,268717 ; Permutation of natural numbers: a(0) = 0, a(n) = A003188(1+A006068(n-1)), where A003188 is binary Gray code and A006068 is its inverse.
+cmp $2,0
+cmp $2,0
+mul $0,$2
 add $0,1
 seq $0,268717 ; Permutation of natural numbers: a(0) = 0, a(n) = A003188(1+A006068(n-1)), where A003188 is binary Gray code and A006068 is its inverse.
 cmp $1,0

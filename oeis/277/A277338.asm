@@ -1,15 +1,22 @@
 ; A277338: Reverse and Add! sequence starting with 295.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 295,887,1675,7436,13783,52514,94039,187088,1067869,10755470,18211171,35322452,60744805,111589511,227574622,454050344,897100798,1794102596,8746117567,16403234045,70446464506,130992928913,450822227944,900544455998,1800098901007,8801197801088,17602285712176,84724043932847,159547977975595
 
 mov $1,99
 mov $2,$0
 lpb $2
   sub $2,1
+  mov $3,0
   mov $0,$1
   add $0,196
-  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  add $1,$0
+  lpb $0
+    mov $4,$0
+    mod $4,10
+    div $0,10
+    mul $3,10
+    add $3,$4
+  lpe
+  add $1,$3
 lpe
 mov $0,$1
 add $0,196
