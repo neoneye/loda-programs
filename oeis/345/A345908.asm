@@ -6,13 +6,28 @@ mov $3,$0
 mov $5,2
 lpb $5
   sub $5,1
+  mov $9,0
   add $0,$5
   sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,163493 ; Number of binary strings of length n which have the same number of 00 and 01 substrings.
+  mov $8,0
+  mov $10,$0
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $4,$8
+    div $4,2
+    mov $6,$8
+    sub $6,1
+    mov $7,$10
+    bin $7,$4
+    bin $6,$4
+    mul $6,$7
+    add $8,1
+    add $9,$6
+  lpe
   mov $2,$5
-  mul $2,$4
+  mul $2,$9
+  mov $4,$9
   add $1,$2
 lpe
 min $3,1

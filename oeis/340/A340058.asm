@@ -1,7 +1,8 @@
 ; A340058: Composite numbers c such that phi(c)/phi(mind(c)) mod phi(c)/phi(maxd(c)) = 0, where phi is the Euler function, mind(c) is the smallest nontrivial divisor of c, maxd(c) is the largest nontrivial divisor of c.
-; Submitted by Cesium_133*
+; Submitted by Simon Strandgaard
 ; 4,6,8,9,10,12,14,15,16,18,20,21,22,24,25,26,27,28,30,32,33,34,36,38,39,40,42,44,45,46,48,49,50,51,52,54,56,57,58,60,62,63,64,65,66,68,69,70,72,74,75,76,78,80,81,82,84,85,86,87,88,90,91,92,93,94,96,98,99
 
+mov $1,1
 mov $2,$0
 add $0,1
 add $2,3

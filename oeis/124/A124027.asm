@@ -8,6 +8,6 @@ lpb $0
   max $2,0
   seq $2,97610 ; Triangle read by rows: T(n,k) is number of Motzkin paths of length n and having k horizontal steps.
   mov $0,1
-  add $1,$2
 lpe
+add $1,$2
 mov $0,$1

@@ -8,8 +8,7 @@ add $1,1
 gcd $1,4
 bin $1,2
 lpb $1
-  sub $1,10
-  div $1,4
+  sub $1,11
   mod $1,2
   mul $0,$1
   div $1,4
