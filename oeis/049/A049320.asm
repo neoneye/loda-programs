@@ -6,7 +6,11 @@ mov $2,1
 lpb $0
   sub $0,1
   mov $1,$2
-  seq $1,189640 ; Fixed point of the morphism 0->001, 1->101.
+  lpb $1
+    dif $1,3
+  lpe
+  mod $1,3
+  div $1,2
   sub $0,$1
   add $2,1
 lpe
