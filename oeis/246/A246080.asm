@@ -11,6 +11,7 @@ lpb $2
   div $0,2
   seq $0,7601 ; Positions where A007600 increases.
   sub $0,1
+  mul $1,$2
   add $1,1
   add $3,$0
 lpe

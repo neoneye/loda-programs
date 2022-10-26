@@ -1,5 +1,5 @@
 ; A156248: a(n)=sum(k=1,n,(-1)^k*A000002(2*k))
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Simon Strandgaard
 ; -2,-1,-3,-1,-2,0,-1,0,-2,-1,-2,0,-2,-1,-3,-2,-3,-1,-3,-2,-4,-2,-3,-2,-4,-3,-5,-3,-4,-2,-4,-3,-5,-4,-5,-3,-5,-4,-5,-3,-4,-2,-3,-2,-4,-2,-3,-1,-2,0,-2,-1,-2,0,-2,-1,-3,-2,-3,-1,-2,-1,-3,-2,-3,-1,-2,0,-2,-1,-3
 
 add $0,1
@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mul $2,2
-  seq $2,6928 ; a(n) = length of (n+1)st run, with initial terms 1, 2.
+  seq $2,78880 ; The sequence starting with 2 that equals its own run length sequence.
   sub $2,$1
 lpe
 sub $1,2

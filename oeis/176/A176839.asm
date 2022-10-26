@@ -8,7 +8,6 @@ lpb $0
   sub $2,1
   seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,$2
-  add $1,2
+  add $1,1
 lpe
 mov $0,$1
-div $0,2

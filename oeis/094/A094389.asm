@@ -19,8 +19,7 @@ lpb $0
     lpe
     mul $0,$4
     lpb $2
-      trn $2,2
-      add $2,1
+      sub $2,2
       mov $3,5
     lpe
     sub $4,$0

@@ -8,7 +8,12 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
-  seq $0,182220 ; Largest number k such that there exists an extensional acyclic digraph on n labeled nodes with k sources.
+  mov $5,$0
+  lpb $5
+    div $5,2
+    sub $0,1
+  lpe
+  add $0,1
   mov $4,2
   pow $4,$0
   mov $0,$4

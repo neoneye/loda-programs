@@ -10,7 +10,14 @@ lpb $0
   add $3,189011
   mov $1,$3
   dif $1,2
-  seq $1,10195 ; Continued fraction for sqrt(136).
+  dif $1,2
+  mov $5,$1
+  gcd $5,2
+  add $5,9
+  cmp $1,0
+  add $1,$5
+  mul $1,$5
+  sub $1,99
   mul $1,$2
   add $1,$4
 lpe
