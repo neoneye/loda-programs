@@ -1,5 +1,5 @@
 ; A143755: Aliquot sequence starting at 80.
-; Submitted by ChelseaOilman
+; Submitted by Simon Strandgaard
 ; 80,106,56,64,63,41,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 seq $1,199318 ; 3*6^n+1.
@@ -9,6 +9,10 @@ mul $0,$1
 lpb $2
   sub $2,1
   trn $0,1
-  seq $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
+  mov $3,$0
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,$3
+  mul $0,2
+  sub $0,1
   div $0,2
 lpe

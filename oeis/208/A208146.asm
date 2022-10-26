@@ -7,7 +7,11 @@ mov $1,1
 mov $2,$0
 lpb $2
   div $2,2
-  seq $2,27818 ; a(n) = (n+1)*binomial(n+6,6).
+  add $2,6
+  mov $3,$2
+  bin $3,6
+  sub $2,5
+  mul $2,$3
   sub $0,1
   mul $1,$2
   mov $2,$0

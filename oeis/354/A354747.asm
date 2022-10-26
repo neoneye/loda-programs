@@ -1,5 +1,5 @@
 ; A354747: Start with 2*n-1; repeatedly triple and add 2 until reaching a prime. a(n) = number of steps until reaching a prime > 2*n-1, or 0 if no prime is ever reached.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,1,1,1,1,2,1,2,1,1,3,1,1,1,2,10,1,1,2,1,2,4,1,1,1,2,1,1,4,3,2,3,1,1,1,3,1,1,1,1,2,1,2,1,3,3,1,1,2,3,3,5,1,1,1,2,3,9,1,1,2,1,2,4,1,2,1,6,1,1,2,1,1,5,1,3,1,2,1,1,3,1
 
 mov $2,$0
@@ -18,8 +18,9 @@ lpb $2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   lpb $3
     div $3,4
-    mul $2,0
+    mul $2,3
   lpe
   mov $1,$4
 lpe
+add $5,1
 mov $0,$5

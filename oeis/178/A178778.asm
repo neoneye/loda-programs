@@ -1,11 +1,23 @@
 ; A178778: Partial sums of walks of length n+1 on a tetrahedron A001998.
+; Submitted by Simon Strandgaard
 ; 1,3,7,17,42,112,308,882,2563,7565,22449,66979,200204,599514,1796350,5385764,16150725,48442327,145307291,435892341,1307617966,3922765316,11768118792,35304090646,105911740487,317734424289,953201678533,2859602644103,8578803149328,25736402273518,77209192471634,231627555891528,694882624627849,2084647809313451,6253943298800175,18761829702690265,56285488720650290,168856465580820120,506569395580198876,1519708184997204410,4559124551504828811,13677373649284309813,41032120937392576217
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,1998 ; Bending a piece of wire of length n+1; walks of length n+1 on a tetrahedron; also non-branched catafusenes with n+2 condensed hexagons.
+  add $2,1
+  mov $3,1
+  mov $4,$2
+  lpb $4
+    div $4,2
+    add $4,1
+    seq $4,124302 ; Number of set partitions with at most 3 blocks; number of Dyck paths of height at most 4; dimension of space of symmetric polynomials in 3 noncommuting variables.
+    sub $2,1
+    mul $3,$4
+    mov $4,$2
+    mov $2,2
+  lpe
   sub $0,1
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

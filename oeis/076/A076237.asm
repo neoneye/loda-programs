@@ -6,7 +6,12 @@ add $0,1
 lpb $0
   mov $1,$0
   seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-  seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  mov $2,$1
+  mul $2,-2
+  div $2,$1
+  sub $1,$2
+  seq $1,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $1,1
   mod $1,$0
   mov $0,1
 lpe
