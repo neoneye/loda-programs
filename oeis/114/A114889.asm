@@ -5,8 +5,13 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  seq $1,39966 ; a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
-  add $0,$1
+  mul $1,2
+  lpb $1
+    gcd $3,$1
+    div $1,3
+  lpe
+  sub $3,1
+  add $0,$3
   sub $0,1
 lpe
 add $0,1

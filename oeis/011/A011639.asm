@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,10891 ; Inverse of 5th cyclotomic polynomial.
-  sub $0,7
-  trn $0,6
+  trn $0,13
   add $1,$2
 lpe
 mov $0,$1

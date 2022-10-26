@@ -8,7 +8,10 @@ lpb $3
   add $0,$3
   mov $2,$0
   div $2,4
-  seq $2,76826 ; a(n) = 2*(Sum_{k=0..n} A010060(k)) - n, where A010060 is a Thue-Morse sequence.
+  mov $4,$2
+  seq $4,245710 ; Number of nonzero evil numbers <= n, see A001969.
+  mul $4,2
+  sub $2,$4
   sub $0,1
   add $1,$2
 lpe

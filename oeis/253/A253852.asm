@@ -6,8 +6,10 @@ mov $1,1
 lpb $0
   sub $0,2
   mov $2,$0
-  max $2,0
-  seq $2,105734 ; For n>2, a(n) > 0 is such that a(n-1)^2+4*a(n-2)*a(n) is a minimal square, with a(1)=1, a(2)=1.
+  bin $2,2
+  pow $2,3
+  mod $2,5
+  add $2,1
   mul $1,$2
 lpe
 mov $0,$1

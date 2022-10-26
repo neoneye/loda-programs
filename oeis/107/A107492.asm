@@ -5,7 +5,8 @@
 mov $2,$0
 seq $2,72436 ; Remove prime factors of form 4*k+3.
 mov $4,1
-seq $0,175286 ; Pisano period of the Jacobsthal sequence A001045 modulo n.
+seq $0,61570 ; a(1)=0, a(2)=1, a(n)=3*n-1 for n >= 3.
+seq $0,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
 mov $5,$0
 max $5,$2
 min $0,$2
