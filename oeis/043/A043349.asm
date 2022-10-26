@@ -1,30 +1,28 @@
 ; A043349: Numbers having one 0 in base 5.
-; Submitted by Simon Strandgaard
+; Submitted by Landjunge
 ; 5,10,15,20,26,27,28,29,30,35,40,45,51,52,53,54,55,60,65,70,76,77,78,79,80,85,90,95,101,102,103,104,105,110,115,120,131,132,133,134,136,137,138,139,141,142,143,144,146,147,148,149,151
 
+add $0,2
 mov $2,$0
-add $2,3
-pow $2,2
+sub $0,1
+pow $2,4
 lpb $2
-  mov $5,6
+  mov $4,0
   mov $3,$1
-  seq $3,7091 ; Numbers in base 5.
   lpb $3
-    mov $6,$3
-    mod $6,10
-    cmp $6,0
+    mul $3,2
+    mov $5,$3
+    add $5,2
+    mod $5,10
+    cmp $5,2
     div $3,10
-    add $5,$6
+    add $4,$5
   lpe
-  sub $5,6
-  mov $3,$5
-  cmp $3,1
+  mov $3,$4
+  sub $3,1
+  cmp $3,0
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
