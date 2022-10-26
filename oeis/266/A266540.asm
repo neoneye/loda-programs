@@ -7,7 +7,9 @@ lpb $0
   trn $2,1
   seq $2,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
   sub $0,$2
+  add $1,$0
   pow $2,2
+  sub $0,1
   add $1,$2
 lpe
 div $1,2
