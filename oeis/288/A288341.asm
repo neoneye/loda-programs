@@ -7,10 +7,6 @@ lpb $0
   mov $2,$0
   add $2,6
   seq $2,26812 ; Number of partitions of n in which the greatest part is 6.
-  mul $2,240
-  sub $2,31680
-  div $2,240
-  add $2,132
   sub $0,1
   add $1,$2
 lpe

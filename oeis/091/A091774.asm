@@ -1,15 +1,26 @@
 ; A091774: G.f.: Product((1+x^i)/(1-x^i),i=1..n-1)/(1-x^n), with n = 6.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 1,2,4,8,14,24,39,60,90,132,188,262,359,482,638,834,1074,1368,1725,2152,2662,3266,3974,4802,5765,6876,8154,9618,11284,13176,15317,17726,20432,23462,26840,30600,34773,39388,44484,50098,56264,63026,70427,78506,87314
 
 add $0,3
 lpb $0
   sub $0,3
   sub $0,$3
+  mov $4,0
+  mov $6,0
   mov $2,$0
-  max $2,0
-  seq $2,53800 ; Number of basis partitions of n+25 with Durfee square size 5.
-  add $1,$2
+  add $2,3
+  lpb $2
+    sub $2,3
+    sub $2,$6
+    mov $5,$2
+    max $5,0
+    seq $5,91773 ; G.f.: Product((1+x^i)/(1-x^i),i=1..n-1)/(1-x^n), with n = 5.
+    add $4,$5
+    mul $6,$2
+    add $6,2
+  lpe
+  add $1,$4
   mov $3,3
 lpe
 mov $0,$1

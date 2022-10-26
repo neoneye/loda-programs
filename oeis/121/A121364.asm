@@ -8,8 +8,8 @@ lpb $0
   seq $2,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
   div $0,$1
   add $1,$2
-  mul $2,2
 lpe
+mul $2,2
 sub $1,$2
 mov $0,$1
 sub $0,2

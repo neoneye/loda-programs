@@ -6,10 +6,9 @@ mov $1,$0
 div $0,8
 seq $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
 mul $0,4
-add $0,1
 add $0,$1
 mul $0,9
+add $0,5
 div $0,6
 mul $0,6
-sub $0,5
 div $0,4

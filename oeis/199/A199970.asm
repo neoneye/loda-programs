@@ -19,6 +19,7 @@ lpb $1
   mul $3,$4
   mod $6,$3
 lpe
+min $0,3
 add $0,1
 seq $0,145172 ; Number of pentagonal numbers needed to represent n with greedy algorithm.
 mov $1,$6

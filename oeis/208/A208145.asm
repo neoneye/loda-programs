@@ -7,9 +7,13 @@ mov $1,1
 mov $2,$0
 lpb $2
   div $2,2
-  seq $2,27810 ; a(n) = (n+1)*binomial(n+5, 5).
+  mov $3,5
+  add $3,$2
+  bin $3,$2
+  mul $2,$3
+  add $3,$2
   sub $0,1
-  mul $1,$2
+  mul $1,$3
   mov $2,$0
   mov $0,2
 lpe

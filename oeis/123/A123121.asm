@@ -9,7 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,211665 ; Minimal number of iterations of log_10 applied to n until the result is < 1.
+  trn $0,8
+  cmp $0,0
+  gcd $0,2
   mul $1,2
   add $1,$0
 lpe
