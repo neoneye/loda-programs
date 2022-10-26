@@ -6,9 +6,9 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,14038 ; Inverse of 29th cyclotomic polynomial.
+  sub $2,$0
+  mod $2,29
+  pow $2,$2
   add $1,$2
   mov $3,11
 lpe
