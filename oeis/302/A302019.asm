@@ -25,7 +25,7 @@ lpb $0
   mov $3,$6
   mov $$9,$3
   add $2,1
-  mov $8,$3
 lpe
+mov $8,$3
 mov $0,$8
 max $0,1

@@ -1,5 +1,5 @@
 ; A029422: Expansion of 1/((1-x^6)(1-x^7)(1-x^11)(1-x^12)).
-; Submitted by Jason Jung
+; Submitted by Simon Strandgaard
 ; 1,0,0,0,0,0,1,1,0,0,0,1,2,1,1,0,0,1,3,2,1,1,1,2,4,3,2,1,2,3,5,4,3,3,3,5,7,5,4,4,5,6,9,7,6,6,7,9,11,9,8,8,9,11,14,12,11,11,12,14,17,15,14,14,15,17,21,19,18,18,19,21,25,23,22,22,23,26,30,28,27,27,28,31,36,33,32,32,34,37,42,40,38,38,40,44,49,46,45,45
 
 add $0,3
@@ -7,11 +7,18 @@ lpb $0
   sub $0,3
   sub $0,$3
   sub $0,$4
+  mov $5,0
   mov $2,$0
-  max $2,0
-  seq $2,25900 ; Expansion of 1/((1-x^6)(1-x^7)(1-x^11)).
-  mov $4,7
-  add $1,$2
+  add $2,6
+  lpb $2
+    sub $2,6
+    mov $6,$2
+    max $6,0
+    seq $6,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
+    add $5,$6
+  lpe
+  add $1,$5
   mov $3,2
+  mov $4,7
 lpe
 mov $0,$1

@@ -8,7 +8,10 @@ lpb $3
   add $0,$3
   mov $4,$0
   div $4,2
-  seq $4,6046 ; Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1). For n>0, a(n) = Sum_{i=0..n-1} 2^wt(i).
+  mov $5,$4
+  trn $4,1
+  seq $4,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
+  add $4,$5
   mul $0,2
   mov $2,$3
   mul $2,$4

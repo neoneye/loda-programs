@@ -4,10 +4,21 @@
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
-  trn $2,1
-  seq $2,25906 ; Expansion of 1/((1-x^6)(1-x^10)(1-x^11)).
+  lpb $2
+    mov $4,$2
+    trn $4,1
+    mov $5,-1
+    pow $5,$4
+    add $5,1
+    seq $4,307897 ; Dimensions of space of harmonic polynomials of each degree invariant under the icosahedral rotation group.
+    mul $4,$5
+    div $4,2
+    trn $2,11
+    add $3,$4
+  lpe
   trn $0,12
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

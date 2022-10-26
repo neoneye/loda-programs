@@ -5,9 +5,13 @@
 add $0,6
 lpb $0
   sub $0,6
+  mov $3,$0
+  cmp $3,0
+  cmp $3,0
+  sub $3,3
   mov $2,$0
-  max $2,0
-  seq $2,323202 ; Expansion of (1 - x) * (1 - x^3) / (1 - x^4) in powers of x.
+  gcd $2,4
+  add $2,$3
   add $1,$2
 lpe
 mov $0,$1
