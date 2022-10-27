@@ -1,6 +1,7 @@
 ; A154032: Number of planar triangular n X n X n nonnegative integer grids symmetric under 120 degree rotation with every similarly oriented 2 X 2 X 2 subtriangle summing to 3.
 ; Submitted by Simon Strandgaard
 ; 1,2,10,2,3,11,3,2,12,2,3,11,3,2,12,2,3,11,3,2,12,2,3,11,3,2,12,2,3,11,3,2,12,2,3,11,3,2,12,2,3,11,3,2,12,2,3,11,3,2,12,2,3,11,3,2,12,2,3
+; Formula: a(n) = 3*max(n%3,1)^2+(((n+3)-6)%2-1)
 
 add $0,3
 mov $1,$0
