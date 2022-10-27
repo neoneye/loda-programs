@@ -4,18 +4,16 @@
 
 mov $1,1
 mov $2,$0
+add $2,11
 pow $2,2
 lpb $2
+  sub $2,1
   mov $3,$1
   seq $3,46645 ; a(n) = log_2(A046644(n)); also the 2-adic valuation of A046644(n).
   mod $3,2
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
 add $0,1

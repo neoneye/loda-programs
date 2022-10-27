@@ -9,7 +9,6 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
   lpb $3
     dif $3,2
   lpe
@@ -22,6 +21,7 @@ lpb $2
   add $5,2
   sub $0,$3
   add $1,1
+  mov $3,$1
   mov $4,$0
   max $4,0
   cmp $4,$0
