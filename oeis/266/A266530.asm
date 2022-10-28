@@ -6,9 +6,7 @@ lpb $0
   mov $2,$0
   div $2,2
   seq $2,160552 ; a(0)=0, a(1)=1; a(2^i+j) = 2*a(j) + a(j+1) for 0 <= j < 2^i.
-  mul $2,2
   sub $0,1
   add $1,$2
 lpe
-div $1,2
 mov $0,$1
