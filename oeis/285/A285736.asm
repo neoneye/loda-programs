@@ -1,36 +1,9 @@
 ; A285736: a(n) = A285735(n) - A285734(n) = n - 2*A285734(n).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,0,1,0,1,0,3,2,3,0,1,0,1,0,5,4,3,4,7,0,1,0,3,2,3,0,1,0,1,0,3,2,5,0,7,2,7,0,5,2,3,0,1,0,1,0,5,4,3,8,7,0,7,8,3,4,5,0,1,0,1,0,3,2,3,0,1,0,1,0,3,2,3,0,1,0,1,0,3,2,3,0,1,0,1,0,5,4,3,4,15,0,1,0,11,10,5,4,7,6
 
-add $0,2
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    max $0,$6
-    mov $7,$4
-    trn $7,1
-    seq $7,228483 ; a(n) = 2 - mu(n), where mu(n) is the Moebius function (A008683).
-    cmp $7,2
-    cmp $7,$8
-    mov $9,10
-    add $9,$5
-    mov $10,$0
-    sub $4,$0
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-lpe
-mov $0,$5
-sub $0,$3
+mov $1,$0
+seq $0,285735 ; a(1) = 1, and for n > 1, a(n) = the least squarefree number x such that x > n-x, and n-x is also squarefree.
+mul $0,2
 sub $0,1
+sub $0,$1
