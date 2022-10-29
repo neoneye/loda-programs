@@ -1,5 +1,5 @@
 ; A208523: Triangle of coefficients of polynomials v(n,x) jointly generated with A208522; see the Formula section.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,3,1,3,5,1,3,7,11,1,3,9,19,21,1,3,11,27,43,43,1,3,13,35,69,103,85,1,3,15,43,99,183,231,171,1,3,17,51,133,283,449,523,341,1,3,19,59,171,403,747,1107,1155,683,1,3,21,67,213,543,1133,1971,2637,2543
 
 mov $3,3
@@ -28,7 +28,10 @@ lpb $0
   mul $5,-1
   add $5,$1
 lpe
-mul $6,3
-add $6,$1
-mov $0,$6
+add $1,$6
+div $1,2
+add $1,$6
+mov $0,$1
 div $0,3
+mul $0,2
+add $0,1
