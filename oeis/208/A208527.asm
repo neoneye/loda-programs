@@ -1,5 +1,5 @@
 ; A208527: Triangle of coefficients of polynomials v(n,x) jointly generated with A208526; see the Formula section.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]ATA-Rolf
 ; 1,1,4,1,4,10,1,4,12,28,1,4,14,40,76,1,4,16,52,124,208,1,4,18,64,176,384,568,1,4,20,76,232,592,1168,1552,1,4,22,88,292,832,1936,3520,4240,1,4,24,100,356,1104,2880,6240,10512,11584,1,4,26,112,424,1408
 
 mov $3,3
