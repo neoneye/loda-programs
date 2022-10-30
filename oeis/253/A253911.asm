@@ -1,0 +1,14 @@
+; A253911: Concatenation of n-th nonprime and n-th prime.
+; Submitted by Simon Strandgaard
+; 12,43,65,87,911,1013,1217,1419,1523,1629,1831,2037,2141,2243,2447,2553,2659,2761,2867,3071,3273,3379,3483,3589,3697,38101,39103,40107,42109,44113,45127,46131,48137,49139,50149,51151,52157,54163,55167,56173,57179,58181,60191,62193,63197,64199,65211,66223,68227,69229
+
+mov $1,$0
+seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+mov $2,$1
+seq $0,40 ; The prime numbers.
+mov $1,$0
+lpb $1
+  div $1,10
+  mul $2,10
+lpe
+add $0,$2
