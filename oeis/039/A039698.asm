@@ -7,8 +7,6 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,296079 ; a(n) = 1 if 1+phi(n) is prime, 0 otherwise, where phi = A000010, Euler totient function.
-  cmp $3,0
-  cmp $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

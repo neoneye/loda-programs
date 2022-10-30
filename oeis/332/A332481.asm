@@ -7,7 +7,11 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,176360 ; a(n) = quadrant of unit circle corresponding to n radians.
+  add $3,1
+  mul $3,7
+  div $3,11
+  mod $3,4
+  add $3,1
   cmp $3,2
   sub $0,$3
   add $1,1
