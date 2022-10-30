@@ -11,6 +11,7 @@ lpb $2
   seq $3,124754 ; Alternating sum of compositions in standard order.
   cmp $3,2
   sub $0,$3
+  add $1,$3
   add $1,1
   mov $4,$0
   max $4,0
