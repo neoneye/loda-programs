@@ -1,5 +1,5 @@
 ; A208915: Triangle of coefficients of polynomials u(n,x) jointly generated with A208916; see the Formula section.
-; Submitted by Simon Strandgaard
+; Submitted by gemini8
 ; 1,1,2,1,4,6,1,6,12,14,1,8,18,36,38,1,10,24,66,108,94,1,12,30,104,210,308,246,1,14,36,150,344,674,892,622,1,16,42,204,510,1224,2098,2500,1606,1,18,48,266,708,1990,4024,6402,7052,4094,1,20,54,336,938
 
 mov $3,3

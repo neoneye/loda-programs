@@ -1,25 +1,20 @@
 ; A239278: Smallest k > 1 such that n*(n+1)*...*(n+k-1) / (n+(n+1)+...+(n+k-1)) is an integer.
-; Submitted by Simon Strandgaard
+; Submitted by eikosaedra
 ; 3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,9,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3
 
+mov $2,2
 mul $0,2
 add $0,1
-mov $4,1
-mov $2,$0
-lpb $2
-  add $4,$5
-  mov $5,$0
-  mod $5,$4
-  cmp $5,0
-  mov $3,2
-  mul $3,$5
-  add $1,$3
-  mov $5,$1
-  sub $5,$4
-  add $5,1
-  cmp $5,0
-  cmp $5,0
-  sub $2,$5
+lpb $0
+  mov $1,$0
+  lpb $1
+    mov $1,0
+    add $2,1
+  lpe
+  lpb $0
+    dif $0,$2
+  lpe
+  add $2,1
 lpe
-mov $0,$1
+mov $0,$2
 add $0,1
