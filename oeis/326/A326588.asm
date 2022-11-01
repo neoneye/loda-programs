@@ -1,0 +1,7 @@
+; A326588: Sum of all the parts in the partitions of n into 10 parts.
+; Submitted by Simon Strandgaard
+; 0,0,0,0,0,0,0,0,0,0,10,11,24,39,70,105,176,255,396,570,840,1155,1650,2231,3072,4100,5512,7209,9520,12267,15900,20243,25824,32472,40936,50925,63396,78144,96292,117585,143600,173922,210546,253184,304128,363150
+
+mov $1,$0
+seq $1,26816 ; Number of partitions of n in which the greatest part is 10.
+mul $0,$1
