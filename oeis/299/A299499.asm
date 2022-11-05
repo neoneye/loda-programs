@@ -1,5 +1,5 @@
 ; A299499: Triangle read by rows, T(n,k) = [x^k] Sum_{k=0..n} p_{n,k}(x) where p_{n,k}(x) = x^k*binomial(n, k)*hypergeom([-k, k-n, k-n], [1, -n], 1/x), for 0 <= k <= n.
-; Submitted by Simon Strandgaard
+; Submitted by damotbe
 ; 1,1,1,2,2,1,5,5,3,1,11,16,9,4,1,26,44,34,14,5,1,63,122,111,60,20,6,1,153,341,351,225,95,27,7,1,376,940,1103,796,400,140,35,8,1,931,2581,3384,2764,1561,651,196,44,9,1,2317,7064,10224,9304,5915,2772,994,264,54,10,1
 
 lpb $0
@@ -17,8 +17,8 @@ lpb $1
   mov $5,$6
   bin $5,$3
   mul $5,$4
-  add $6,1
   add $2,$5
   add $3,1
+  add $6,1
 lpe
 mov $0,$2
