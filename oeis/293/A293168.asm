@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  dif $0,9
+  dif $0,2
   seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   add $1,$0

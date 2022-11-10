@@ -1,7 +1,8 @@
 ; A085371: Non-Niven (or non-Harshad) numbers that are divisible by 3.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard
 ; 15,33,39,51,57,66,69,75,78,87,93,96,99,105,123,129,138,141,147,159,165,168,174,177,183,186,189,213,219,231,237,246,249,255,258,267,273,276,279,282,291,294,297,303,309,318,321,327,339,345,348,354,357,363
 
+mov $1,3
 mov $2,$0
 add $0,1
 add $2,4

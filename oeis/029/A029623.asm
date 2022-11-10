@@ -5,7 +5,6 @@
 mov $2,7257
 lpb $2
   sub $2,44
-  sub $2,$0
   mov $3,$1
   seq $3,29621 ; Numbers in (3,2)-Pascal triangle A029618 that are different from 3.
   mov $5,$3

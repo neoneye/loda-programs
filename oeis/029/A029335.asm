@@ -5,12 +5,13 @@
 add $0,3
 lpb $0
   sub $0,3
+  sub $3,6
+  trn $3,2
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,2
-  seq $2,25909 ; Expansion of 1/((1-x^7)(1-x^8)(1-x^10)).
+  seq $2,25863 ; Expansion of 1/((1-x^4)(1-x^5)(1-x^11)).
   add $1,$2
-  mov $3,8
+  mov $3,12
 lpe
 mov $0,$1

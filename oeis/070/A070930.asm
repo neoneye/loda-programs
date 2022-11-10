@@ -6,9 +6,9 @@ add $0,1
 pow $0,4
 lpb $0
   mov $1,$0
-  trn $1,1
+  sub $1,1
   seq $1,333884 ; Difference between smallest cube > n and n.
   sub $1,1
-  mov $0,0
+  mov $0,1
 lpe
 mov $0,$1

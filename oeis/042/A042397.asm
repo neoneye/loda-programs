@@ -9,7 +9,12 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40698 ; Continued fraction for sqrt(725).
+  seq $1,10182 ; Continued fraction for sqrt(117).
+  gcd $5,$1
+  add $5,2
+  div $5,5
+  mul $5,8
+  add $1,$5
   mul $1,$2
   add $1,$4
 lpe

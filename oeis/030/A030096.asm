@@ -11,8 +11,8 @@ lpb $2
   seq $3,14261 ; Numbers that contain odd digits only.
   mov $5,$3
   sub $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  cmp $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -11,6 +11,7 @@ lpb $3
   seq $0,264619 ; a(0) = 1; for n>0, working in binary, write n followed by 1 then n-reversed (including leading zeros); show result in base 10.
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
 lpe
 sub $1,$0

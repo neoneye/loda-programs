@@ -5,16 +5,11 @@
 mov $1,$0
 mov $2,$0
 lpb $2
-  mov $5,$1
-  seq $5,30107 ; Base 8 reversal of n (written in base 10).
-  mov $3,$1
-  sub $3,$5
-  cmp $3,0
-  mov $4,$0
-  add $4,$3
-  cmp $4,$0
-  add $1,1
-  mul $2,$4
   sub $2,1
+  mov $3,$1
+  seq $3,55957 ; n - reversal of base 8 digits of n (written in base 10).
+  cmp $3,0
+  add $1,1
+  add $2,$3
 lpe
 mov $0,$1

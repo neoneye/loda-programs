@@ -8,9 +8,32 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
+  mov $6,0
+  mov $10,1
+  mov $11,1
+  mov $7,$0
+  add $7,6
+  pow $7,3
+  lpb $7
+    mul $11,4
+    cmp $6,0
+    mov $8,$11
+    seq $8,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+    sub $0,$8
+    mov $9,$0
+    max $9,0
+    cmp $9,$0
+    mul $7,$9
+    sub $7,18
+    add $10,1
+    add $10,$6
+    mov $11,$10
+  lpe
+  mov $0,$10
+  mul $0,4
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
   mov $5,$0
 lpe

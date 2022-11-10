@@ -5,16 +5,15 @@
 mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
+  div $3,2
   mov $0,$4
   add $0,$3
   seq $0,80085 ; Number of factors of 2 in the factorial of the n-th prime, counted with multiplicity.
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
-  pow $4,$3
   mov $5,$0
 lpe
-mul $4,$5
-sub $1,$4
+sub $1,$5
 mov $0,$1

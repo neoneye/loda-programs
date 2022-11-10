@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $6,$1
-  seq $6,115361 ; Inverse of matrix (1,x)-(x,x^2) (expressed in Riordan array notation).
+  seq $6,51537 ; Triangle read by rows: T(i,j) = lcm(i,j)/gcd(i,j) for 1 <= j <= i.
+  seq $6,209229 ; Characteristic function of powers of 2, cf. A000079.
   mov $3,$1
   seq $3,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   add $3,1

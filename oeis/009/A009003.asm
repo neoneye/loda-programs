@@ -9,8 +9,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
-  seq $3,5068 ; Sum of 4th powers of odd primes dividing n.
-  min $3,1
+  seq $3,267155 ; Middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -5,8 +5,7 @@
 mov $3,2
 mov $4,$0
 lpb $0
-  seq $2,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
-  mod $2,2
+  seq $2,78012 ; Expansion of (1 - x) / (1 - x - x^3) in powers of x.
   add $2,1
   add $3,$2
   mul $3,2

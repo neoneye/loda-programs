@@ -1,12 +1,12 @@
 ; A168565: Let p = prime(n); then a(n) = p + (p-1)/2.
-; Submitted by Athlici
+; Submitted by Simon Strandgaard
 ; 4,7,10,16,19,25,28,34,43,46,55,61,64,70,79,88,91,100,106,109,118,124,133,145,151,154,160,163,169,190,196,205,208,223,226,235,244,250,259,268,271,286,289,295,298,316,334,340,343,349,358,361,376,385,394,403
 
-mov $1,2
 add $0,1
 lpb $0
   sub $0,1
   seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
+  add $1,1
 lpe
 mov $0,$1
 sub $0,3

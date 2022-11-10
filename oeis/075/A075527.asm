@@ -14,6 +14,7 @@ lpb $5
   seq $4,6093 ; a(n) = prime(n) - 1.
   mov $2,$5
   mul $2,$4
+  mul $0,$5
   add $1,$2
 lpe
 min $3,1

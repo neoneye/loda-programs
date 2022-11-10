@@ -1,5 +1,12 @@
 ; A104638: Number of odd digits in n-th prime.
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,2,2,2,2,1,1,2,2,1,1,1,2,2,1,1,2,2,2,1,1,2,2,2,2,2,3,2,3,3,3,2,3,3,2,2,3,3,2,3,3,3,3,2,1,1,1,2,2,1,2,2,1,1,2,2,1,1,2,2,3,3,3,3,3,2,2,3,3,2,3,3,2,2,3,1,1,2,1,2,2,2,1,1,2,1,1,1,2,1,2,2,2,2,2,2,2
 
 seq $0,40 ; The prime numbers.
-seq $0,196564 ; Number of odd digits in decimal representation of n.
+lpb $0
+  mov $2,$0
+  mod $2,2
+  div $0,10
+  add $1,$2
+lpe
+mov $0,$1

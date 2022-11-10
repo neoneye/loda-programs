@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  seq $3,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
+  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $3,2
   mov $5,$3
   add $1,1
   mod $3,2

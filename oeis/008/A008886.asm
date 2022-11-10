@@ -1,13 +1,11 @@
 ; A008886: Aliquot sequence starting at 42.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 42,54,66,78,90,144,259,45,33,15,9,4,3,1,0
 
-seq $1,199310 ; 7*5^n+1.
-sub $1,4
+seq $1,199317 ; 2*6^n+1.
 mov $2,$0
-mov $0,15
+mov $0,14
 mul $0,$1
-sub $0,18
 lpb $2
   sub $2,1
   trn $0,1

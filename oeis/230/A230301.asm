@@ -1,13 +1,21 @@
 ; A230301: Positive numbers not of the form m + wt(m-1), m >= 1.
-; Submitted by jmorken
+; Submitted by Simon Strandgaard
 ; 2,5,7,14,16,19,22,24,31,33,38,40,47,49,52,55,57,64,72,79,81,84,87,89,96,98,103,105,112,114,117,120,122,129,131,134,136,143,145,148,151,153,160,162,167,169,176,178,181,184,186,193,201,208,210,213,216,218,225,227,232,234,241,243,246,249,251,271,273,276
 
 mov $2,$0
 mul $2,5
 lpb $2
   add $1,1
-  mov $3,$1
-  seq $3,228085 ; a(n) = number of distinct k which satisfy n = k + wt(k), where wt(k) (A000120) gives the number of 1's in binary representation of a nonnegative integer k.
+  mov $6,1
+  lpb $6
+    sub $6,1
+    mov $3,$1
+    seq $3,255744 ; a(1) = 1; for n > 1, a(n) = 10*9^(A000120(n-1)-1).
+    div $5,9
+    add $5,$3
+  lpe
+  mov $3,$5
+  mod $3,10
   cmp $3,0
   sub $0,$3
   mov $4,$0

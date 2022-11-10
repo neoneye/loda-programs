@@ -13,6 +13,7 @@ lpb $3
   seq $0,13632 ; Difference between n and the next prime greater than n.
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
   gcd $0,$1
   mov $5,$0

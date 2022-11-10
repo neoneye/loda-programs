@@ -9,9 +9,8 @@ lpb $2
   mov $3,$1
   seq $3,55483 ; a(n) is the GCD of n and the reverse of n.
   cmp $3,1
-  gcd $3,2
+  cmp $3,0
   sub $0,$3
-  add $0,1
   add $1,1
   mov $4,$0
   max $4,0
