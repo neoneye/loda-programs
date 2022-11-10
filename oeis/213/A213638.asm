@@ -11,7 +11,7 @@ lpb $2
   seq $3,213636 ; Remainder when n is divided by its least nondivisor.
   cmp $3,2
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0

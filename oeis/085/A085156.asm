@@ -8,7 +8,8 @@ lpb $2
   mov $3,$1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $3,1
-  seq $3,70824 ; Number of divisors of n which are > 1 and < n (nontrivial divisors).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  trn $3,2
   mov $5,1
   bin $5,$3
   sub $0,$5

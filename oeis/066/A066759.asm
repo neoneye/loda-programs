@@ -9,7 +9,7 @@ lpb $3
   mov $1,$2
   seq $1,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   sub $1,2
-  add $2,$0
+  mul $2,2
   sub $3,$1
 lpe
 mov $0,$2
