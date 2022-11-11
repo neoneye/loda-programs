@@ -9,8 +9,7 @@ lpb $2
   mov $3,$1
   seq $3,73184 ; Number of cubefree divisors of n.
   div $3,2
-  sub $3,3
-  cmp $3,0
+  cmp $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

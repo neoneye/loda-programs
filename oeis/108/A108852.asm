@@ -1,12 +1,17 @@
 ; A108852: Number of Fibonacci numbers <= n.
-; Submitted by Ralfy
+; Submitted by Simon Strandgaard
 ; 1,3,4,5,5,6,6,6,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12
 
-lpb $0
-  sub $0,1
-  mov $1,$0
-  seq $1,72649 ; n occurs Fibonacci(n) times (cf. A000045).
-  add $1,1
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  seq $0,130236 ; Partial sums of the 'upper' Fibonacci Inverse A130234.
+  add $1,$2
+  mov $2,$0
+  pow $4,$3
 lpe
+sub $1,$2
 mov $0,$1
-add $0,1

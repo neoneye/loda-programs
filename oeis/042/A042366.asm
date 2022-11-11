@@ -9,7 +9,8 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40683 ; Continued fraction for sqrt(710).
+  dif $1,2
+  seq $1,40693 ; Continued fraction for sqrt(720).
   mul $1,$2
   add $1,$4
   add $3,1

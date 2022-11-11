@@ -4,22 +4,15 @@
 
 mov $2,$0
 add $0,1
-pow $2,2
-add $2,12
+add $2,2
+pow $2,5
 lpb $2
   mov $3,$1
-  add $3,1
-  mul $3,4
-  seq $3,22844 ; a(n) = floor(n*Pi).
-  gcd $3,2
+  seq $3,191162 ; a(n) = [4*n*Pi] - 2*[2*n*Pi], where [ ]=floor.
+  cmp $3,0
   sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$1
 add $0,1

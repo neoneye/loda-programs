@@ -1,0 +1,13 @@
+; A218506: Number of partitions of n in which any two parts differ by at most 4.
+; Submitted by Simon Strandgaard
+; 1,1,2,3,5,7,11,14,20,25,34,41,54,64,81,95,118,136,165,189,226,256,301,339,395,441,507,564,644,711,804,885,995,1089,1215,1326,1473,1600,1766,1914,2105,2272,2486,2678,2921,3136,3406,3650,3954,4225,4560,4865
+
+trn $0,1
+add $0,1
+lpb $0
+  mov $2,$0
+  seq $2,1400 ; Number of partitions of n into at most 4 parts.
+  trn $0,4
+  add $1,$2
+lpe
+mov $0,$1

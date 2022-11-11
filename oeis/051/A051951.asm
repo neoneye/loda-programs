@@ -11,6 +11,7 @@ lpb $3
   seq $0,341062 ; Sequence whose partial sums give A000005.
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
 lpe
 sub $1,$0

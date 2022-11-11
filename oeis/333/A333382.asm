@@ -7,7 +7,7 @@ mov $2,$0
 lpb $2
   seq $2,124767 ; Number of level runs for compositions in standard order.
   mul $1,$2
-  sub $2,1
+  sub $2,2
 lpe
 mov $0,$1
 sub $0,1
