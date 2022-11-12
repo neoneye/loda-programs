@@ -6,7 +6,10 @@ mov $2,$0
 mul $2,1682
 lpb $2
   mov $3,$1
-  seq $3,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+  seq $3,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
+  lpb $3
+    dif $3,2
+  lpe
   mov $5,$1
   gcd $5,$3
   div $3,$5
