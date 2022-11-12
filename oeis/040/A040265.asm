@@ -1,11 +1,16 @@
 ; A040265: Continued fraction for sqrt(282).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 16,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1
 
-mov $1,-1
-pow $1,$0
-add $1,3
-dif $0,2
-seq $0,40249 ; Continued fraction for sqrt(266).
-mul $0,$1
-div $0,4
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  cmp $2,0
+  add $3,$4
+  mov $1,$3
+  seq $1,40249 ; Continued fraction for sqrt(266).
+  mul $1,$2
+  add $1,$4
+lpe
+mov $0,$1

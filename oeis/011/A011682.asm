@@ -1,7 +1,23 @@
 ; A011682: A binary m-sequence: expansion of reciprocal of x^7+x+1.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,0,1,0,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,0,1,1,1,0,0,0,0,1,0,1,1,1,1,1,0,0,1,0,1,0,1,1,1,0,0,1,1,0,1,0
 
-add $0,1
-seq $0,17901 ; Expansion of 1/(1 - x^7 - x^8 - ...).
+mov $4,3
+lpb $0
+  sub $0,1
+  mov $7,$6
+  add $2,$5
+  add $4,1
+  mov $6,$4
+  mov $4,$2
+  mov $2,$1
+  add $7,$4
+  add $7,$8
+  mov $1,$3
+  mov $3,$5
+  add $4,$2
+  add $5,$7
+  sub $8,$1
+lpe
+mov $0,$2
 mod $0,2
