@@ -1,6 +1,7 @@
 ; A018481: Divisors of 486.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,6,9,18,27,54,81,162,243,486
+; Formula: a(n) = A038754(n)
 
 mov $1,$0
 div $1,2
