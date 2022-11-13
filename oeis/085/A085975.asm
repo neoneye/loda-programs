@@ -1,5 +1,13 @@
 ; A085975: Number of 1's in decimal expansion of prime(n).
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,2,1,1,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,2,1,1,1,2,1,2,1,1,1,2,1,1,1,1,1,2,2,1,1,1,2,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,0,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1
 
 seq $0,40 ; The prime numbers.
-seq $0,268643 ; Number of 1's in decimal representation of n.
+lpb $0
+  mov $2,$0
+  mod $2,10
+  cmp $2,1
+  div $0,10
+  add $1,$2
+lpe
+mov $0,$1

@@ -10,7 +10,7 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40742 ; Continued fraction for sqrt(770).
+  seq $1,10197 ; Continued fraction for sqrt(138).
   mod $1,8
   mul $1,$2
   add $1,$4

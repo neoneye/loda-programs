@@ -10,23 +10,25 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    trn $4,1
-    mov $7,$4
-    seq $7,339747 ; a(n) = (5^(valuation(n, 5) + 1) - 1) / 4.
-    mul $7,2
+    sub $4,1
     mov $9,10
     add $9,$5
+    add $10,1
+    mov $7,2
     mul $7,$$9
     add $5,1
     add $6,$7
   lpe
-  div $6,$2
-  mov $9,10
+  div $6,2
   add $9,$2
+  add $9,$2
+  add $9,$2
+  add $9,$2
+  mov $10,$6
   mov $3,$6
   mov $$9,$3
   add $2,1
+  mov $8,$3
 lpe
-mov $8,$3
 mov $0,$8
 max $0,1

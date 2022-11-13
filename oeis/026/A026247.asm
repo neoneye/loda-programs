@@ -2,6 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 1,5,2,3,9,10,4,13,14,6,17,18,7,8,22,26,27,11,30,31,12,34,35,39,15,16,43,47,48,19,51,52,20,21,56,60,23,24,64,65,25,68,69,73,28,29,77,81,82,32,85,86,33,89,90,94,36,37,98,99,38,102,103
 
+mov $1,1
 mov $2,$0
 add $2,6
 pow $2,3
@@ -9,8 +10,6 @@ lpb $2
   sub $2,29
   mov $3,$1
   seq $3,2251 ; Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
-  add $3,1
-  sub $3,$4
   mov $5,$3
   mul $3,338
   gcd $3,4

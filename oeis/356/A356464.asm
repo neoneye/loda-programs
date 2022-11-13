@@ -2,5 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,2,3,2,3,2,3,2,3,2,3,2,3
 
-seq $0,4273 ; 0 together with odd numbers.
-seq $0,70402 ; a(n) = 2^n mod 5.
+lpb $0
+  gcd $0,2
+lpe
+add $0,1

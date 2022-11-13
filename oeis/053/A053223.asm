@@ -9,11 +9,11 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,53222 ; First differences of sigma(n).
-  mul $0,16
+  mov $2,$3
+  mul $2,$0
   add $1,$2
-  mov $2,$0
-  pow $4,$3
+  mul $4,$3
+  mov $5,$0
 lpe
-sub $1,$2
+sub $1,$5
 mov $0,$1
-div $0,16

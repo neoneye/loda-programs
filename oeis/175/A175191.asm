@@ -1,5 +1,5 @@
 ; A175191: a(n) = the smallest positive integer such that (the n-th prime)+2*a(n) is composite.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,3,2,1,2,1,2,1,1,2,1,1,2,1,1,1,2,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,1,2,1,2,1,2,1,1,1,2,1,1,2,1,1,1,1,2,1,1,2,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1
 
 mov $1,4
@@ -17,8 +17,8 @@ lpb $2
   gcd $4,2
   mul $2,$4
   mov $5,18
-  add $5,$3
 lpe
+add $5,$3
 mul $4,$5
 mov $0,$4
 div $0,19

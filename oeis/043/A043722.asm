@@ -6,15 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  add $1,1
   mov $3,$1
   seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
-  add $3,2
-  seq $3,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
-  sub $3,1981
-  gcd $3,2
+  mod $3,3
+  cmp $3,1
   sub $0,$3
-  add $0,1
-  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -22,3 +19,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+add $0,1

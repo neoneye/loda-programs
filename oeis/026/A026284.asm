@@ -11,9 +11,7 @@ lpb $0
   seq $3,26285 ; a(n) = least k such that s(k) = n, where s = A026284.
   sub $0,$3
   add $1,1
-  max $4,1
 lpe
-cmp $4,$0
-mul $2,$4
+mul $2,$0
 add $1,$2
 mov $0,$1

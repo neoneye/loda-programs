@@ -6,6 +6,7 @@ mov $2,$0
 mov $1,1
 lpb $1
   sub $1,1
+  gcd $2,$1
   mov $0,$2
   trn $0,1
   seq $0,14664 ; Order of 2 modulo the n-th prime.
