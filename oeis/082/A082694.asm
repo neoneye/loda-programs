@@ -1,11 +1,15 @@
 ; A082694: Partial sums of A082693.
+; Submitted by Simon Strandgaard
 ; 1,3,4,6,10,12,13,15,19,27,31,33,34,36,40,48,64,72,76,78,79,81,85,93,109,141,157,165,169,171,172,174,178,186,202,234,298,330,346,354,358,360,361,363,367,375,391,423,487,615,679,711,727,735,739,741,742,744
 
 lpb $0
   mov $2,$0
-  seq $2,82693 ; Pyramidal sequence built with powers of 2.
+  seq $2,4738 ; Concatenation of sequences (1,2,...,n-1,n,n-1,...,2) for n >= 2.
+  mov $3,2
+  pow $3,$2
+  div $3,2
   sub $0,1
-  add $1,$2
+  add $1,$3
 lpe
 add $1,1
 mov $0,$1

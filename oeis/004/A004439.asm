@@ -8,7 +8,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,25441 ; Number of partitions of n into 2 distinct nonzero squares.
+  sub $3,1
+  seq $3,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
+  div $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

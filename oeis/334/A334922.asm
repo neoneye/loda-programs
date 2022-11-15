@@ -13,11 +13,10 @@ seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 add $0,1
 lpb $2
   sub $2,1
-  dif $2,3
+  dif $2,$2
   mov $3,$0
   mul $3,$4
   div $4,2
-  trn $4,$1
   div $0,-2
   add $1,$3
 lpe

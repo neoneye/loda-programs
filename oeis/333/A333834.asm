@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,53837 ; Sum of digits of n modulo 10.
+  seq $3,65039 ; If n in base 10 is d_1 d_2 ... d_k then a(n) = d_1 + d_1d_2 + d_1d_2d_3 + ... + d_1...d_k.
+  mod $3,10
   cmp $3,0
   sub $0,$3
   add $1,8
