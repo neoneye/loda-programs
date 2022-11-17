@@ -13,5 +13,5 @@ lpb $3
   mul $2,$0
   mul $4,$3
   add $1,$2
-  gcd $0,$1
 lpe
+gcd $0,$1

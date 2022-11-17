@@ -10,7 +10,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$5
-    seq $7,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+    seq $7,130321 ; Triangle, (2^0, 2^1, 2^2, ...) in every column.
     mul $7,$$9
     gcd $7,$4
     cmp $7,1

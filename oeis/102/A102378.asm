@@ -2,12 +2,28 @@
 ; Submitted by Simon Strandgaard
 ; 1,3,5,9,13,19,25,35,45,59,73,93,113,139,165,201,237,283,329,389,449,523,597,691,785,899,1013,1153,1293,1459,1625,1827,2029,2267,2505,2789,3073,3403,3733,4123,4513,4963,5413,5937,6461,7059,7657,8349
 
+mov $2,2
+mov $10,2
 lpb $0
-  mov $2,$0
-  seq $2,123 ; Number of binary partitions: number of partitions of 2n into powers of 2.
   sub $0,1
-  div $0,2
-  add $1,$2
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mov $7,2
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  div $6,2
+  add $9,$2
+  mov $3,$6
+  mov $$9,$3
+  add $1,$6
+  add $2,1
 lpe
-add $1,1
 mov $0,$1
+add $0,1

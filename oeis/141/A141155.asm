@@ -16,7 +16,13 @@ lpb $2
   sub $1,$2
   add $1,$0
   mul $1,2
-  seq $1,35363 ; Number of partitions of n into even parts.
+  mov $5,-1
+  pow $5,$1
+  add $5,1
+  dif $1,2
+  seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $1,$5
+  div $1,2
   add $3,$1
 lpe
 mov $0,$3

@@ -6,9 +6,29 @@ mov $2,$0
 mov $3,2
 lpb $3
   sub $3,1
+  mov $9,0
   mov $0,$2
   add $0,$3
-  seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
+  mov $5,2
+  mov $6,$0
+  add $6,2
+  pow $6,2
+  lpb $6
+    max $7,$9
+    seq $7,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+    sub $0,$7
+    mov $8,$0
+    max $8,0
+    cmp $8,$0
+    sub $9,2
+    div $9,4
+    add $5,1
+    mul $6,$8
+    sub $6,1
+    add $9,$5
+  lpe
+  mov $0,$9
+  add $0,1
   add $1,$4
   gcd $2,$1
   mov $4,$0

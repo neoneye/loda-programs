@@ -1,12 +1,32 @@
 ; A092149: Partial sums of A092673.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,-1,-2,-1,-2,0,-1,-1,-1,1,0,-1,-2,0,1,1,0,0,-1,-2,-1,1,0,0,0,2,2,1,0,-2,-3,-3,-2,0,1,1,0,2,3,3,2,0,-1,-2,-2,0,-1,-1,-1,-1,0,-1,-2,-2,-1,-1,0,2,1,2,1,3,3,3,4,2,1,0,1,-1,-2,-2,-3,-1,-1,-2,-1,-3,-4,-4,-4,-2,-3,-2,-1,1,2,2,1,1,2,1,2,4,5,5,4,4,4,4
 
+add $0,1
+mov $2,$0
+mov $6,1
 lpb $0
-  mov $2,$0
-  seq $2,92673 ; a(n) = moebius(n) - moebius(n/2) where moebius(n) is zero if n is not an integer.
   sub $0,1
-  add $1,$2
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    sub $4,$0
+    mul $7,$11
+    cmp $7,$8
+    mov $9,10
+    add $9,$5
+    mul $7,$$9
+    mov $5,$4
+    add $6,$7
+  lpe
+  add $4,$6
+  sub $6,$3
+  div $6,-1
+  mov $9,10
+  add $9,$2
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+  add $6,1
 lpe
-add $1,1
-mov $0,$1
+mov $0,$4

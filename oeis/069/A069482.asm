@@ -8,18 +8,13 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,40 ; The prime numbers.
-  pow $5,2
-  mul $5,2
+  seq $5,79704 ; a(n) = 2*prime(n)^2.
   sub $0,1
   mov $2,$3
   mul $2,$5
   add $1,$2
   mov $4,$5
-  mov $6,5
 lpe
-min $6,1
-mul $6,$4
-sub $1,$6
+sub $1,$4
 mov $0,$1
 div $0,2

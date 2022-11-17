@@ -5,7 +5,7 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  sub $5,1
+  bin $5,$4
   add $0,$5
   sub $0,1
   mov $4,$0
@@ -13,6 +13,7 @@ lpb $5
   seq $4,266252 ; Total number of OFF (white) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
   mov $2,$5
   mul $2,$4
+  mul $0,$5
   add $1,$2
 lpe
 min $3,1

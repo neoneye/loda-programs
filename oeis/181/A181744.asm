@@ -10,8 +10,18 @@ lpb $2
   mov $3,$1
   add $3,1
   dif $3,2
-  sub $3,1
-  seq $3,46079 ; Number of Pythagorean triangles with leg n.
+  dif $3,2
+  mov $5,0
+  mov $6,$3
+  lpb $3
+    mov $7,$6
+    dif $7,$3
+    cmp $7,$6
+    cmp $7,0
+    sub $3,2
+    add $5,$7
+  lpe
+  mov $3,$5
   add $3,1
   cmp $3,2
   sub $0,$3

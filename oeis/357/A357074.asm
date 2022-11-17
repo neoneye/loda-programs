@@ -1,10 +1,10 @@
 ; A357074: Numbers sandwiched between a pair of numbers each with exactly two prime factors (counted without multiplicity).
-; Submitted by ChelseaOilman
+; Submitted by Simon Strandgaard
 ; 11,13,19,21,23,25,27,34,35,37,39,45,47,49,51,53,55,56,57,64,73,75,76,81,86,87,92,93,94,95,97,99,105,107,116,117,118,123,134,135,142,143,144,145,146,147,154,159,160,161,163,165,176,177,184,186,188,193,195
 
-mov $1,1
+mov $1,9
 mov $2,$0
-add $2,10
+add $2,4
 pow $2,2
 lpb $2
   mov $5,$1

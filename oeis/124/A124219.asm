@@ -8,7 +8,7 @@ seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpb $0
   sub $0,1
   mod $2,$1
-  add $3,$1
+  add $3,$0
   lpb $3
     add $2,1
     mov $4,$1

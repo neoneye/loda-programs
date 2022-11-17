@@ -16,8 +16,17 @@ lpb $4
   add $3,1
   div $5,$3
   sub $3,$5
-  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $3,3
+  mov $7,$3
+  lpb $7
+    sub $7,1
+    mov $8,$6
+    seq $8,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+    add $6,1
+    sub $6,$4
+    add $6,$8
+  lpe
+  mov $3,$6
+  sub $3,2
 lpe
 min $2,1
 mul $2,$3
