@@ -1,15 +1,15 @@
 ; A016420: 481st cyclotomic polynomial.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,-1,1,-1,0,0,0,0,0,0,0,0,0,1,-1,1,-1,0,0,0,0,0,0,0,0,0,1,-1,1,-1,0,0,0,0,0,0,0,1,-1,1,-1,1,-1,0,0,0,0,0,0,0,1,-1,1,-1,1,-1,0,0,0,0,0,0,0
 
-mov $3,3
 add $0,3
 lpb $0
+  sub $0,3
   sub $0,$3
   mov $2,$0
   max $2,0
   seq $2,240328 ; Inverse of 37th cyclotomic polynomial.
   add $1,$2
-  mov $3,13
+  mov $3,10
 lpe
 mov $0,$1

@@ -1,8 +1,13 @@
 ; A014019: Inverse of 10th cyclotomic polynomial.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0
+; Formula: a(n) = binomial(-1,n)/(1-n%5-n%5)
 
-mov $1,-1
-pow $1,$0
-seq $0,10891 ; Inverse of 5th cyclotomic polynomial.
-mul $0,$1
+mov $1,$0
+mov $0,-1
+bin $0,$1
+mod $1,5
+mov $2,1
+sub $2,$1
+sub $2,$1
+div $0,$2
