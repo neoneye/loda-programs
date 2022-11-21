@@ -1,5 +1,5 @@
 ; A088427: Number of primes in arithmetic progression starting with 23 and with d=2n.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,2,2,1,1,2,1,3,2,1,3,1,1,4,1,1,2,2,1,1,2,1,2,2,1,1,2,1,2,1,1,2,1,1,1,2,1,4,2,1,3,2,1,2,1,1,1,1,1,1,2,1,4,1,1,3,2,1,1,1,1,2,2,1,1,2,1,1,2,1,3,1,1,2,1,1,2,2,1,1,1,1,3,2,1,2,2,1,1,1,1,1,2,1,1,1,1,1,2
 
 mov $4,12

@@ -1,5 +1,5 @@
 ; A037888: a(n)=(1/2)*Sum{|d(i)-e(i)|} where Sum{d(i)*2^i} is base 2 representation of n and e(i) are digits d(i) in reverse order.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,0,1,0,1,0,1,0,2,1,2,1,1,0,1,0,2,1,1,0,2,1,2,1,1,0,2,1,1,0,1,0,2,1,2,1,3,2,2,1,3,2,1,0,2,1,2,1,1,0,3,2,2,1,3,2,2,1,2,1,1,0,1,0,2,1,2,1,3,2,1,0,2,1,2,1,3,2,2,1,3,2,1,0,2,1,2,1,3,2,1,0,2,1,2,1,1,0,3
 
 add $0,1
