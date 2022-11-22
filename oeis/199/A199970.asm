@@ -1,6 +1,7 @@
 ; A199970:  a(n) = the smallest number m with the smallest non-divisor n such that 1<n<m, or 0 if no such m exists.
 ; Submitted by Simon Strandgaard
 ; 0,3,4,6,12,0,60,420,840,0,2520,0,27720,0,0,360360,720720,0,12252240,0,0,0,232792560,0,5354228880
+; Formula: a(n) = A145172(n+1)*(A328449(n)/gcd(A328449(n),A145172(n+1)))
 
 mov $3,1
 mov $4,1

@@ -1,21 +1,21 @@
 ; A114986: Characteristic function of (A000201 prefixed with 0).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0
 
-mov $5,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  trn $0,1
-  seq $0,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
+mov $2,2
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,2
+  bin $3,$2
+  add $3,$1
+  div $3,2
+  mod $3,2
+  add $3,2
+  mul $2,2
+  mul $2,$3
+  sub $3,2
 lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+mov $0,$3
+add $0,1
