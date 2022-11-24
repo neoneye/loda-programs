@@ -1,6 +1,7 @@
 ; A011643: 84th cyclotomic polynomial.
 ; Submitted by Simon Strandgaard
 ; 1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1
+; Formula: a(n) = A016329(n/2+n)
 
 mov $1,-1
 pow $1,$0
