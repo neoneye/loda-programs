@@ -1,5 +1,5 @@
 ; A324981: a(n) = Product_{d|n} (d*pod(d)) where pod(k) = the product of the divisors of k (A007955).
-; Submitted by Simon Strandgaard
+; Submitted by ChelseaOilman
 ; 1,4,9,128,25,7776,49,65536,2187,100000,121,5159780352,169,537824,759375,1073741824,289,198359290368,361,512000000000,4084101,5153632,529,21035720123168587776,78125,11881376,43046721,10578455953408,841,15943230000000000000,961
 
 mov $2,$0
@@ -15,8 +15,9 @@ lpb $4
   bin $1,$0
   mul $1,$0
   sub $0,1
-  seq $0,7955 ; Product of divisors of n.
+  seq $0,7956 ; Product of the proper divisors of n.
   mul $0,$3
+  pow $1,2
   mul $1,$0
   max $3,$1
 lpe

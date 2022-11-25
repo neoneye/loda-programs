@@ -1,15 +1,10 @@
 ; A358551: Number of nodes in the ordered rooted tree with binary encoding A014486(n).
-; Submitted by Simon Strandgaard
+; Submitted by Landjunge
 ; 1,2,3,3,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7
+; Formula: a(n) = A162550(n)/2+1
 
-mul $0,2
-mov $1,1
-mov $2,$0
-sub $2,1
-mul $2,$0
-mul $2,2
-lpb $2
-  div $2,8
-  add $1,1
-lpe
+mov $1,$0
+seq $1,162550 ; 2n repeated C_n times, where C_n = A000108(n) is a Catalan number.
 mov $0,$1
+div $0,2
+add $0,1
