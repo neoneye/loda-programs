@@ -14,7 +14,8 @@ lpb $0
     mov $10,3
     sub $4,1
     trn $7,1
-    seq $7,240351 ; Inverse of 64th cyclotomic polynomial.
+    dif $7,4
+    seq $7,14025 ; Expansion of the inverse of the 16th cyclotomic polynomial.
     mul $7,$$9
     add $5,1
     add $6,$7
