@@ -11,7 +11,13 @@ lpb $0
   mov $5,1
   sub $5,$3
   mov $1,$3
-  seq $1,10125 ; Continued fraction for sqrt(21).
+  min $1,1
+  mul $1,2
+  add $1,4
+  gcd $1,$3
+  bin $1,2
+  div $1,2
+  add $1,1
   gcd $5,2
   add $5,$1
   mov $1,$5

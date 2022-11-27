@@ -6,12 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
-  cmp $3,0
-  add $3,5
-  mod $3,2
+  seq $3,5883 ; Theta series of square lattice with respect to deep hole.
+  min $3,1
   sub $0,$3
-  add $1,4
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -19,6 +17,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,4
 mul $0,8
 add $0,2

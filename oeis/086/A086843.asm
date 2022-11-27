@@ -6,8 +6,12 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,$1
-  seq $3,85002 ; a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
+  mov $4,$1
+  add $4,1
+  seq $4,188012 ; Positions of 0 in A188011; complement of A188013.
+  mov $3,$4
+  sub $3,1
+  mod $3,2
   sub $0,$3
   add $1,2
   sub $2,$0

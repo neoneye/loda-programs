@@ -6,9 +6,12 @@ mov $1,1
 add $0,5
 lpb $0
   sub $0,5
+  mov $3,1
   mov $2,$0
-  max $2,0
-  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  mul $1,$2
+  lpb $2
+    sub $2,1
+    seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  lpe
+  mul $1,$3
 lpe
 mov $0,$1

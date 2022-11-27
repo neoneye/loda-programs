@@ -11,6 +11,6 @@ lpb $2
   max $1,1
   cmp $1,$0
   mul $2,$1
-  sub $2,1
+  sub $2,2
 lpe
 add $0,1

@@ -11,9 +11,8 @@ lpb $3
   seq $0,182402 ; Total number of digits in n-th row of a triangle formed by the positive integers.
   mov $2,$3
   mul $2,$0
-  mul $4,$3
   add $1,$2
-  mov $5,$0
+  mul $4,$3
 lpe
-sub $1,$5
+sub $1,$0
 mov $0,$1

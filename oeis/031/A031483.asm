@@ -1,7 +1,8 @@
 ; A031483: Numbers whose base-7 representation has one more 0 than 6's.
-; Submitted by Landjunge
+; Submitted by Simon Strandgaard
 ; 7,14,21,28,35,50,51,52,53,54,56,63,70,77,84,99,100,101,102,103,105,112,119,126,133,148,149,150,151,152,154,161,168,175,182,197,198,199,200,201,203,210,217,224,231,246,247,248,249,250
 
+mov $1,3
 mov $2,$0
 add $2,3
 pow $2,2

@@ -6,7 +6,7 @@ mov $1,-1
 mov $2,$0
 pow $2,3
 lpb $2
-  add $1,3
+  add $1,1
   mov $3,$1
   seq $3,72436 ; Remove prime factors of form 4*k+3.
   dif $3,4
@@ -20,6 +20,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
-div $0,3
-add $0,1
+add $0,2

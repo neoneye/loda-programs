@@ -14,7 +14,7 @@ lpb $4
     trn $1,1
     seq $1,136798 ; First term in a sequence of at least 3 consecutive composite integers.
     sub $1,4
-    mov $0,0
+    mov $0,1
     mov $2,1
   lpe
   max $3,$1

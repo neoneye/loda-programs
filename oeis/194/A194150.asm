@@ -6,8 +6,13 @@ add $0,1
 mul $0,2
 lpb $0
   mov $2,$0
-  seq $2,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
+  mul $2,89
+  div $2,34
+  lpb $2
+    mov $3,$2
+    mov $2,1
+  lpe
   sub $0,2
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

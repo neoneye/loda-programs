@@ -8,21 +8,14 @@ lpb $0
 lpe
 sub $1,$0
 mov $4,$1
-mov $2,$1
+add $2,$1
 add $2,1
 lpb $2
   sub $2,1
   mov $1,$4
   sub $1,$2
   add $1,$0
-  mul $1,2
-  mov $5,-1
-  pow $5,$1
-  add $5,1
-  dif $1,2
-  seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
-  mul $1,$5
-  div $1,2
+  seq $1,218509 ; Number of partitions of n in which any two parts differ by at most 7.
   add $3,$1
 lpe
 mov $0,$3

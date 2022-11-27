@@ -13,6 +13,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  mul $0,$1
   sub $0,$1
   mov $5,$0
   seq $5,336040 ; Characteristic function of refactorable numbers (A033950).
