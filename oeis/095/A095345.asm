@@ -1,18 +1,12 @@
 ; A095345: a(n) is the length of the n-th run in A095346.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,188010 ; Positions of 0 in A188009; complement of A101866.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $5,$0
+trn $0,1
+lpb $0
+  seq $0,95346 ; a(n) is the length of the n-th run of A095345.
+  sub $0,2
+  add $1,2
 lpe
 sub $1,$5
 mov $0,$1

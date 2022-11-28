@@ -1,6 +1,16 @@
 ; A101979: Antidiagonal sums of A101309, which is the matrix logarithm of A047999 (Pascal's triangle mod 2).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,1,0,2,1,1,0,2,1,3,0,2,1,1,0,2,1,3,0,4,1,3,0,2,1,3,0,2,1,1,0,2,1,3,0,4,1,3,0,4,1,5,0,4,1,3,0,2,1,3,0,4,1,3,0,2,1,3,0,2,1,1,0,2,1,3,0,4,1,3,0,4,1,5,0,4,1,3,0,4,1,5,0,6,1,5,0,4,1,5,0,4,1,3,0,2,1,3,0
 
-seq $0,3815 ; a(0) = 0, a(n) = a(n-1) XOR n.
-seq $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+mov $1,3
+lpb $0
+  sub $0,1
+  mov $2,$0
+  max $2,0
+  seq $2,34947 ; Jacobi (or Kronecker) symbol (-1/n).
+  sub $0,1
+  add $1,$2
+lpe
+sub $1,3
+add $1,$0
+mov $0,$1

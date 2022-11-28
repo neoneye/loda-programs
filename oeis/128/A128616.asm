@@ -1,5 +1,5 @@
 ; A128616: Expansion of q * psi(q^3) * psi(q^5) in powers of q where psi() is a Ramanujan theta function.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,0,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,0,2,0,0,0,0,1,1,0,0,0,0,0,2,0,0,2,0,1,0,0,0,1,0,0,0,0,0,2,0,0,1,0,2,0,0,1,0,0,0,0,0,1,2,0,0,1,0,0,0,0,2,0,0,0,0,0,0,2,0,0,2,0,1,0,0,0,2,0,0,0,0,1,0,0,0,2,0,1,0,0,0,1
 
 mov $3,3
