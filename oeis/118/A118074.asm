@@ -1,5 +1,5 @@
 ; A118074: Start with 1 and repeatedly reverse the digits and add 41 to get the next term.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,42,65,97,120,62,67,117,752,298,933,380,124,462,305,544,486,725,568,906,650,97,120,62,67,117,752,298,933,380,124,462,305,544,486,725,568,906,650,97,120,62,67,117,752,298,933,380,124,462,305,544,486,725
 
 mov $1,$0
