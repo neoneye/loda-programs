@@ -9,6 +9,9 @@ lpe
 add $1,1
 mov $2,$1
 add $0,1
-pow $1,$0
-pow $0,$2
-mul $0,$1
+add $2,$0
+mov $1,$0
+pow $1,$2
+pow $2,$0
+mul $2,$1
+mov $0,$2

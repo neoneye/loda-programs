@@ -6,12 +6,45 @@ mov $1,2
 mov $2,1
 lpb $0
   sub $0,1
-  add $3,$1
-  add $1,2
-  sub $1,$4
-  add $1,$3
-  add $2,$4
-  mov $4,$2
-  mov $2,$3
+  mov $7,$0
+  mov $9,2
+  lpb $9
+    sub $9,1
+    mov $0,$7
+    add $0,$9
+    sub $0,1
+    mov $2,$0
+    mov $4,4
+    mov $0,2
+    lpb $2
+      mul $0,2
+      add $0,2
+      mov $12,$2
+      mul $12,$4
+      add $0,$12
+      sub $2,1
+      mov $4,3
+    lpe
+    mov $3,$0
+    mov $10,$9
+    lpb $10
+      sub $10,1
+      mov $8,$0
+    lpe
+  lpe
+  lpb $7
+    mov $7,0
+    sub $8,$3
+  lpe
+  mov $3,$8
+  mov $6,$5
+  lpb $6
+    sub $6,1
+    mov $1,$8
+  lpe
+lpe
+lpb $11
+  mov $11,0
+  sub $1,$3
 lpe
 mov $0,$1

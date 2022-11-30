@@ -1,5 +1,5 @@
 ; A118216: Start with 1 and repeatedly reverse the digits and add 69 to get the next term.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,70,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136,700,76,136
 
 mov $1,$0

@@ -1,5 +1,5 @@
 ; A118616: Start with 1 and repeatedly reverse the digits and add 29 to get the next term.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,30,32,52,54,74,76,96,98,118,840,77,106,630,65,85,87,107,730,66,95,88,117,740,76,96,98,118,840,77,106,630,65,85,87,107,730,66,95,88,117,740,76,96,98,118,840,77,106,630,65,85,87,107,730,66,95,88,117,740,76,96,98
 
 mov $1,$0
