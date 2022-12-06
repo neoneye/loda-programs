@@ -1,6 +1,9 @@
 ; A188436: [3r]-[nr]-[3r-nr], where r=(1+sqrt(5))/2 and [.]=floor.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+; Formula: a(n) = ((2*A110006(n))^2)/64
 
 seq $0,110006 ; a(n)=n-floor(phi*floor(phi^-1*floor(phi*floor(phi^-1*n)))) where phi=(1+sqrt(5))/2.
-div $0,4
+mul $0,2
+pow $0,2
+div $0,64

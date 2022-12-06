@@ -1,9 +1,9 @@
 ; A341945: Number of partitions of n into 2 primes (counting 1 as a prime).
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,2,1,2,1,2,1,2,0,2,1,3,1,2,0,3,1,3,1,3,0,4,1,3,0,2,0,4,1,3,1,4,0,4,0,3,1,3,0,5,1,4,1,4,0,6,1,4,0,3,0,6,1,3,0,4,0,7,1,4,1,5,0,6,0,3,1,5,0,7,1,6,1,5,0,7,0,5,1,5,0,9,1,5,0,4,0,10,1,4,0,5,0,7,0,4,1,6,0
 
 mov $2,1
-mov $3,1
+pow $3,$0
 mov $10,1
 lpb $0
   sub $0,1
