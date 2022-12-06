@@ -1,14 +1,12 @@
 ; A276867: First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
-; Submitted by Simon Strandgaard (M1)
-; 3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4
+; Submitted by USTL-FIL (Lille Fr)
+; 3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3
+; Formula: a(n) = (n-max(n-1,0))+A014675(max(n-1,0))+1
 
-seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
-lpb $0
-  div $0,-1
-  max $0,0
-  add $1,4
-lpe
+mov $1,$0
+trn $0,1
+sub $1,$0
+seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+add $1,$0
 mov $0,$1
-sub $0,6
-div $0,4
-add $0,4
+add $0,1
