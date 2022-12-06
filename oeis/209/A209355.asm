@@ -1,5 +1,5 @@
 ; A209355: Sequence with each term appearing in runs of every length infinitely often.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1
 
 add $0,1

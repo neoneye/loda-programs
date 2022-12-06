@@ -9,5 +9,16 @@ lpb $0
   trn $0,2
   add $2,$3
   add $1,$2
+  add $2,3
 lpe
+mov $7,$4
+mul $7,2
+mov $5,$4
+mul $5,$4
+add $6,$5
+mov $3,$6
+mul $3,2
+sub $1,7
+add $1,$7
+add $1,$3
 mov $0,$1

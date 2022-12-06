@@ -1,5 +1,5 @@
 ; A118529: Start with 1 and repeatedly reverse the digits and add 12 to get the next term.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,13,43,46,76,79,109,913,331,145,553,367,775,589,997,811,130,43,46,76,79,109,913,331,145,553,367,775,589,997,811,130,43,46,76,79,109,913,331,145,553,367,775,589,997,811,130,43,46,76,79,109,913,331
 
 mov $1,$0

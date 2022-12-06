@@ -1,5 +1,5 @@
 ; A118635: Start with 1 and repeatedly reverse the digits and add 39 to get the next term.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,40,43,73,76,106,640,85,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118,850,97,118
 
 mov $1,$0

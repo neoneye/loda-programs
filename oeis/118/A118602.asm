@@ -1,5 +1,5 @@
 ; A118602: Start with 1 and repeatedly reverse the digits and add 21 to get the next term.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,22,43,55,76,88,109,922,250,73,58,106,622,247,763,388,904,430,55,76,88,109,922,250,73,58,106,622,247,763,388,904,430,55,76,88,109,922,250,73,58,106,622,247,763,388,904,430,55,76,88,109,922,250,73,58
 
 mov $1,$0
