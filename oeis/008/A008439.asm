@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8438 ; Sum of divisors of 2*n + 1.
+  seq $2,2131 ; Sum of divisors d of n such that n/d is odd.
+  add $1,$2
+  mov $3,2
+  add $3,$4
   add $4,2
   add $1,$2
   mov $3,$4

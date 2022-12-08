@@ -13,10 +13,9 @@ lpe
 trn $2,2
 sub $3,1
 trn $3,$2
+mov $6,3
+mul $6,$5
 mov $1,$3
-lpb $5
-  sub $5,1
-  add $1,3
-lpe
+add $1,$6
 add $1,3
 mov $0,$1

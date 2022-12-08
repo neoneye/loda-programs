@@ -1,5 +1,5 @@
 ; A337923: a(n) is the exponent of the highest power of 2 dividing the n-th Fibonacci number.
-; Submitted by Simon Strandgaard
+; Submitted by Stony666
 ; 0,0,1,0,0,3,0,0,1,0,0,4,0,0,1,0,0,3,0,0,1,0,0,5,0,0,1,0,0,3,0,0,1,0,0,4,0,0,1,0,0,3,0,0,1,0,0,6,0,0,1,0,0,3,0,0,1,0,0,4,0,0,1,0,0,3,0,0,1,0,0,5,0,0,1,0,0,3,0,0,1,0,0,4,0,0,1,0,0,3,0,0,1,0,0,7,0,0,1,0
 
 add $0,1
@@ -20,7 +20,7 @@ lpb $3
   lpe
   add $8,$6
   mov $1,$8
-  add $2,1
+  add $2,4
   mov $7,$0
   gcd $7,$2
   cmp $7,1
