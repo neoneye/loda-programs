@@ -1,6 +1,7 @@
 ; A115516: The mode of the bits of n (using 0 if bimodal).
-; Submitted by Simon Strandgaard
+; Submitted by Landjunge
 ; 0,1,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1
+; Formula: a(n) = A115517(2*n)
 
 mul $0,2
 seq $0,115517 ; The mode of the bits of n (using 1 if bimodal).

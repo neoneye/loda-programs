@@ -1,15 +1,21 @@
 ; A113980: Number of compositions of n with an odd number of 1's.
-; Submitted by Simon Strandgaard
+; Submitted by Athlici
 ; 1,0,3,2,10,12,36,56,136,240,528,992,2080,4032,8256,16256,32896,65280,131328,261632,524800,1047552,2098176,4192256,8390656,16773120,33558528,67100672,134225920,268419072,536887296,1073709056,2147516416
 
 mov $1,1
-mov $3,1
+add $0,1
 lpb $0
   sub $0,1
-  add $2,$1
-  mul $1,-2
+  add $1,$5
+  sub $2,$5
+  mov $5,$1
+  add $5,$2
   add $1,$3
-  add $1,$2
-  mul $3,2
+  div $1,2
+  add $3,$5
+  mov $4,$2
+  mov $2,$6
+  add $6,$5
+  add $6,$4
 lpe
-mov $0,$1
+mov $0,$6

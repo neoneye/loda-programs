@@ -1,9 +1,18 @@
 ; A278597: One half of A278481.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,2,2,3,2,2,3,3,2,2,3,3,3,2,2,3,3,3,3,2,2,3,3,3,3,3,2,2,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3
 
-cmp $1,$0
-trn $0,1
-seq $0,129765 ; Triangle, (1, 1, 2, 2, 2, ...) in every column.
+lpb $0
+  lpb $0
+    add $1,1
+    sub $0,$1
+  lpe
+  bin $1,$0
+  mov $0,$1
+  pow $0,2
+lpe
+lpb $0
+  mov $0,2
+lpe
 add $0,1
 sub $0,$1
