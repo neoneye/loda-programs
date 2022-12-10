@@ -1,5 +1,4 @@
-; A239141: Number of strict partitions of n having standard deviation σ <= 1.
-; Submitted by Simon Strandgaard
+; A239141: Number of strict partitions of n having standard deviation <= 1.
 ; 1,1,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2
 
 mov $1,$0
