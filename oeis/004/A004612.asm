@@ -1,19 +1,18 @@
 ; A004612: Numbers that are divisible only by primes congruent to 2 mod 3.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,2,4,5,8,10,11,16,17,20,22,23,25,29,32,34,40,41,44,46,47,50,53,55,58,59,64,68,71,80,82,83,85,88,89,92,94,100,101,106,107,110,113,115,116,118,121,125,128,131,136,137,142,145,149,160,164,166,167,170,173,176,178,179,184,187,188,191,197,200,202,205,212,214,220,226,227,230,232,233,235,236,239,242,250,251,253,256,257,262,263,265,269,272,274,275,281,284,289,290
 
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,23900 ; Dirichlet inverse of Euler totient function (A000010).
-  mod $3,-3
-  sub $3,$4
-  gcd $3,2
+  seq $3,23896 ; Sum of positive integers in smallest positive reduced residue system modulo n. a(1) = 1 by convention.
+  add $3,1
+  mod $3,3
+  add $3,1
+  mod $3,2
   sub $0,$3
-  add $0,1
-  add $1,$4
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0

@@ -1,10 +1,12 @@
 ; A297086: a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
-; Submitted by Simon Strandgaard
+; Submitted by Stony666
 ; 1,1,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0
 
+mov $2,$0
+seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 mov $1,$0
-seq $0,121048 ; n + phi(n), for Euler totient function phi(n).
-add $1,1
+sub $1,$2
+add $0,1
 gcd $1,$0
-mov $0,1
-div $0,$1
+cmp $1,1
+mov $0,$1
