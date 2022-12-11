@@ -5,12 +5,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $2,1
-  div $2,2
-  add $2,4
-  pow $2,2
-  add $2,9
-  div $2,24
+  seq $2,25877 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^8)).
   sub $0,1
   trn $0,4
   add $1,$2
