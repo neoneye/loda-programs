@@ -9,15 +9,9 @@ lpb $0
   mov $4,0
   mov $2,$0
   mul $2,2
-  add $2,1
-  lpb $2
-    mov $5,$2
-    trn $5,1
-    seq $5,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-    trn $2,9
-    add $4,$5
-  lpe
-  add $1,$4
+  max $2,0
+  seq $2,25878 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^9)).
+  add $1,$2
   mov $3,14
 lpe
 mov $0,$1
