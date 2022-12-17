@@ -1,22 +1,22 @@
 ; A077447: Numbers n such that (n^2 - 14)/2 is a square.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 4,8,16,44,92,256,536,1492,3124,8696,18208,50684,106124,295408,618536,1721764,3605092,10035176,21012016,58489292,122467004,340900576,713790008,1986914164,4160273044,11580584408,24247848256,67496592284
 
-mov $1,$0
-mod $1,2
-mul $1,2
-sub $1,1
-mov $3,2
-div $0,2
-mul $0,2
-add $0,1
+mov $1,1
 lpb $0
   sub $0,1
-  add $3,$2
-  mov $2,$1
-  mul $2,2
-  add $1,1
+  add $2,$1
+  add $2,$1
   add $1,$3
+  sub $1,$2
+  sub $1,$2
+  add $1,4
+  add $4,$2
+  add $4,$2
+  sub $2,2
+  add $3,$4
 lpe
-mul $1,2
-mov $0,$1
+mov $0,$3
+div $0,4
+add $0,1
+mul $0,4
