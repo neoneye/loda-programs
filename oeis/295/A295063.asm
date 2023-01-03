@@ -1,5 +1,5 @@
 ; A295063: Solution of the complementary equation a(n) = 4*a(n-2) + b(n-1) + b(n-2), where a(0) = 1, a(1) = 3, b(0) = 2, and (a(n)) and (b(n)) are increasing complementary sequences.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Science United
 ; 1,3,10,21,51,97,219,405,896,1643,3609,6599,14465,26427,57893,105743,231609,423011,926478,1692089,3705959,6768405,14823887,27073673,59295603,108294749,237182471
 
 lpb $0
