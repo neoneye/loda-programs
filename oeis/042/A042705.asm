@@ -1,0 +1,17 @@
+; A042705: Denominators of continued fraction convergents to sqrt(882).
+; Submitted by Simon Strandgaard (M1)
+; 1,1,3,10,63,199,461,660,38741,39401,117543,392030,2469723,7801199,18072121,25873320,1518724681,1544598001,4607920683,15368360050,96818080983,305822602999,708463286981,1014285889980,59537044905821,60551330795801
+
+mov $1,1
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  mov $2,$1
+  mov $1,$3
+  seq $1,40852 ; Continued fraction for sqrt(882).
+  mul $1,$2
+  add $1,$4
+  add $3,1
+lpe
+mov $0,$1
