@@ -6,17 +6,19 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
-  add $3,$1
-  add $3,1
+  mov $3,$1
+  add $3,3
   mov $5,$3
-  mov $1,$3
+  mov $6,$3
   seq $3,40297 ; Continued fraction for sqrt(315).
-  mul $3,5
+  add $3,10
+  div $3,2
   lpb $5
     div $5,10
     mul $3,10
   lpe
-  add $3,$1
+  add $1,2
+  add $3,$6
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
@@ -26,4 +28,4 @@ lpb $2
   mul $2,$4
   trn $2,1
 lpe
-mov $0,$1
+mov $0,$6
