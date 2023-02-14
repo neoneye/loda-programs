@@ -1,17 +1,7 @@
 ; A025876: Expansion of 1/((1-x^5)*(1-x^6)*(1-x^7)).
-; Submitted by Simon Strandgaard (M1)
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,0,0,0,1,1,1,0,0,1,1,2,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,6,6,7,6,6,7,7,8,8,8,8,8,9,9,10,10,10,10,10,11,12,12,12,12,12,13,14,14,14,14,15,15
+; Formula: a(n) = A025916(2*n)
 
-add $0,1
-lpb $0
-  mov $2,$0
-  lpb $2
-    trn $0,8
-    mov $1,$2
-    trn $1,1
-    seq $1,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-    trn $2,7
-    add $3,$1
-  lpe
-lpe
-mov $0,$3
+mul $0,2
+seq $0,25916 ; Expansion of 1/((1-x^7)(1-x^10)(1-x^12)).
