@@ -1,12 +1,16 @@
 ; A190245: a(n) = [nu+nv]-[nu]-[nv], where u=sqrt(2), v=2u, and []=floor.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by NoclaF
 ; 1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1
 
 mul $0,2
-add $0,1
-mov $1,$0
-lpb $0
-  mov $0,1
-  seq $1,190191 ; a(n) = [n*u+n*v]-[n*u]-[n*v], where u=sqrt(2), v=1/u, and []=floor.
+mov $2,2
+lpb $2
+  div $2,2
+  add $0,$2
+  seq $0,190191 ; a(n) = [n*u+n*v]-[n*u]-[n*v], where u=sqrt(2), v=1/u, and []=floor.
+  add $1,$0
 lpe
 mov $0,$1
+sub $0,3
+div $0,2
+add $0,1
