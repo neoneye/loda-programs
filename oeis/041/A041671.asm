@@ -1,0 +1,17 @@
+; A041671: Denominators of continued fraction convergents to sqrt(354).
+; Submitted by Simon Strandgaard (M1)
+; 1,1,5,11,27,497,1021,2539,11177,13716,504953,518669,2579629,5677927,13935483,256516621,526968725,1310454071,5768785009,7079239080,260621391889,267700630969,1331423915765,2930548462499,7192520840763,132395923596233
+
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  mov $2,$1
+  mov $1,$3
+  seq $1,40335 ; Continued fraction for sqrt(354).
+  mul $1,$2
+  add $1,$4
+  add $3,1
+lpe
+mov $0,$1
