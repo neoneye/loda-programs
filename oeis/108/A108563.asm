@@ -1,5 +1,5 @@
 ; A108563: Number of representations of n as sum of twice a square plus thrice a square.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by vaughan
 ; 1,0,2,2,0,4,0,0,2,0,0,4,2,0,4,0,0,0,2,0,4,4,0,0,0,0,0,2,0,4,4,0,2,0,0,8,0,0,0,0,0,0,0,0,4,4,0,0,2,0,6,0,0,4,0,0,4,0,0,4,0,0,4,0,0,0,4,0,0,0,0,0,2,0,0,6,0,8,0,0,4,0,0,4,4,0,0,0,0,0,0,0,0,4,0,0,0,0,6,4
 
 mov $2,1
@@ -19,9 +19,9 @@ lpb $0
     mov $9,10
     add $9,$5
     sub $4,$0
-    sub $4,1
+    sub $4,2
     mul $7,$$9
-    trn $4,4
+    trn $4,3
     add $5,1
     add $6,$7
   lpe
