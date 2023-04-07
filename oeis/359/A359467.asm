@@ -2,20 +2,13 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,1,0
 
-add $0,1
-mov $1,$0
-lpb $1
-  mov $5,$1
-  mul $5,$1
-  mov $2,$0
-  lpb $2
-    dif $2,$5
-    mov $4,$3
-    sub $4,1
-    add $3,$1
-  lpe
-  sub $1,1
+seq $0,688 ; Number of Abelian groups of order n; number of factorizations of n into prime powers.
+lpb $0
+  add $0,1
+  dif $0,2
+  add $1,$0
+  div $0,-4
 lpe
-mov $0,$4
-add $0,2
+div $1,2
+add $0,$1
 mod $0,2
