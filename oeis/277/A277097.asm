@@ -1,20 +1,20 @@
 ; A277097: a(n) = 5 - (prime(n) mod 10).
-; Submitted by Jamie Morken(w3)
+; Submitted by www.urfak.petrsu.ru
 ; 3,2,0,-2,4,2,-2,-4,2,-4,4,-2,4,2,-2,2,-4,4,-2,4,2,-4,2,-4,-2,4,2,-2,-4,2,-2,4,-2,-4,-4,4,-2,2,-2,2,-4,4,4,2,-2,-4,4,2,-2,-4,2,-4,4,4,-2,2,-4,4,-2,4,2,2,-2,4,2,-2,4,-2,-2,-4,2
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $1,1
-  mov $2,$1
-  cmp $2,0
-  add $2,$1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  add $3,$2
-  mov $1,$3
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  seq $0,184593 ; 5n - A101306: sum_{i=1..n} the last digit of prime(i).
+  mov $4,$3
+  mul $4,$0
+  add $2,$4
 lpe
-mov $0,$1
-max $0,2
-mul $0,-1
-mod $0,10
-add $0,5
+min $1,1
+mul $1,$0
+mov $0,$2
+sub $0,$1
